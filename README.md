@@ -72,9 +72,7 @@ ros2 launch roboracer_description wall_follow.launch.py
 
 This launches:
 
-```
 The gapFollowing.py node from roboracer_py
-```
 
 Real-time dynamic path following using LiDAR data
 
