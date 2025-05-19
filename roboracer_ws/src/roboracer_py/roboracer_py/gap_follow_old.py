@@ -1,4 +1,4 @@
-mport rclpy
+import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
 from ackermann_msgs.msg import AckermannDriveStamped, AckermannDrive
@@ -15,16 +15,21 @@ class GapFollow(Node):
         self.bubble_radius = 160
         self.preprocess_conv_size = 3
         self.best_point_conv_size = 80
-        #self.max_lidar_dist = 30.0
+        self.max_lidar_dist = 3000000
+        self.fast_speed = 5.0
         self.straights_speed = 1.0
         self.corners_speed = 1.0
         self.straights_steering_angle = np.pi / 18
+        self.fast_steering_angle = 0.0785
+        self.safe_threshold = 5
         self.max_steer = 0.4
-        self.last_steering=0.0
+        self.safety_bubble = 0.1
+        self.min_obstacle_dist = 0.2
+        self.radians_per_elem = None
 
         # Ackermann geometry
         self.wheelbase = 0.35 # meters
-        #self.track_width = 0.20 # meters
+        self.track_width = 0.20 # meters
 
         # ROS parameters
         self.declare_parameter('use_curvature', True)
@@ -40,46 +45,38 @@ class GapFollow(Node):
             AckermannDriveStamped, '/ackermann_cmd', 10
         )
 
-    def preprocess_lidar(self, scan: LaserScan):
-        ranges = np.array(scan.ranges)
-        angles = scan.angle_min + np.arange(len(ranges)) * scan.angle_increment
-
-        mask = np.logical_and(angles >= -3*np.pi/4, angles <= 3*np.pi/4)
-        proc = ranges[mask]
-        proc_angles = angles[mask]
-
-        proc = np.nan_to_num(proc,
-                            nan=scan.range_max,
-                            posinf=scan.range_max,
-                            neginf=scan.range_min)
-
-        proc = np.clip(proc, scan.range_min, scan.range_max)
-
-        proc = np.convolve(proc,
-                        np.ones(self.preprocess_conv_size),
-                        mode='same') / self.preprocess_conv_size
-
-        return proc, proc_angles
+    def preprocess_lidar(self, ranges):
+        self.radians_per_elem = (2 * np.pi) / len(ranges)
+        proc_ranges = np.array(ranges[135:-120]) # crop front 270 degrees
+        proc_ranges = np.convolve(proc_ranges, np.ones(self.preprocess_conv_size), 'same') / self.preprocess_conv_size
+        proc_ranges = np.clip(proc_ranges, 0, self.max_lidar_dist)
+        return proc_ranges
 
     def laser_callback(self, scan_msg: LaserScan):
-        proc_ranges, proc_angles = self.preprocess_lidar(scan_msg)
-        if proc_ranges.size == 0:
-            self.get_logger().warn("Empty front scan")
+        try:
+            ranges = np.array(scan_msg.ranges)
+            proc_ranges = self.preprocess_lidar(ranges)
+
+            if proc_ranges.size == 0:
+                self.get_logger().warn("Processed ranges array is empty!")
+                return
+
+            closest = proc_ranges.argmin()
+            min_index = max(0, closest - self.bubble_radius)
+            max_index = min(len(proc_ranges) - 1, closest + self.bubble_radius)
+            proc_ranges[min_index:max_index] = 0
+
+            best_gap_start, best_gap_end = self.find_safe_gap(proc_ranges)
+            best = self.find_best_point(best_gap_start, best_gap_end, proc_ranges)
+
+            steering_angle = self.get_ackermann_steering_angle(best, len(proc_ranges))
+
+            speed = self.calculate_speed(steering_angle)
+            self.publish_drive(speed, steering_angle)
+
+        except Exception as e:
+            self.get_logger().error(f"Error in laser_callback: {e}")
             self.publish_drive(0.0, 0.0)
-            return
-
-        closest = int(np.argmin(proc_ranges))
-        min_i = max(0, closest - self.bubble_radius)
-        max_i = min(len(proc_ranges) - 1, closest + self.bubble_radius)
-        proc_ranges[min_i:max_i+1] = 0
-
-        start, end = self.find_safe_gap(proc_ranges, self.last_steering)
-        best_idx = self.find_best_point(start, end, proc_ranges)
-
-        steering = float(np.clip(proc_angles[best_idx], -self.max_steer, self.max_steer))
-        speed = self.calculate_speed(steering)
-        self.publish_drive(speed, steering)
-        self.last_steering = steering
 
     def find_safe_gap(self, free_space_ranges, current_steering_angle=0.0):
         if len(free_space_ranges) == 0:
@@ -99,9 +96,7 @@ class GapFollow(Node):
             end = min(len(free_space_ranges) - 1, sl.stop)
             gap_width = end - start
             gap_center = (start + end) / 2
-            span = 3*np.pi/2
-            center_angle = (gap_center / len(free_space_ranges)) * span - (span/2)
-
+            center_angle = (gap_center / len(free_space_ranges)) * np.pi - (np.pi / 2)
 
             if self.use_curvature:
                 curvature = abs(center_angle - current_steering_angle)
@@ -125,14 +120,16 @@ class GapFollow(Node):
         ) / self.best_point_conv_size
         return averaged_max_gap.argmax() + start_i
 
-    def get_ackermann_steering_angle(self, lidar_angle):
+    def get_ackermann_steering_angle(self, range_index, range_len):
+        lidar_angle = (range_index - (range_len / 2)) * self.radians_per_elem
+
         if abs(lidar_angle) < 1e-3:
-            return 0.0  
+            return 0.0 # Go straight
 
         turn_radius = self.wheelbase / math.tan(lidar_angle)
         steering_angle = math.atan(self.wheelbase / turn_radius)
-        return float(np.clip(steering_angle, -self.max_steer, self.max_steer))
 
+        return max(-self.max_steer, min(self.max_steer, steering_angle))
 
     def calculate_speed(self, steering_angle):
         abs_angle = abs(steering_angle)
