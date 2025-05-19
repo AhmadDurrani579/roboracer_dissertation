@@ -1,0 +1,1 @@
+/home/loq/roboracer_ws/build/roboracer_controller/ament_cmake_environment_hooks/local_setup.sh

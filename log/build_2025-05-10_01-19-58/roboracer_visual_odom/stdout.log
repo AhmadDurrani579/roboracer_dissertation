@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o[0m
+[100%] [32m[1mLinking CXX executable visual_odom[0m
+[100%] Built target visual_odom
+-- Install configuration: ""
+-- Installing: /home/loq/roboracer_ws/install/roboracer_visual_odom/lib/roboracer_visual_odom/visual_odom
+-- Set runtime path of "/home/loq/roboracer_ws/install/roboracer_visual_odom/lib/roboracer_visual_odom/visual_odom" to ""
+-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/ament_index/resource_index/package_run_dependencies/roboracer_visual_odom
+-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/ament_index/resource_index/parent_prefix_path/roboracer_visual_odom
+-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/environment/ament_prefix_path.sh
+-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/environment/path.sh
+-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/environment/path.dsv
+-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/local_setup.bash
+-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/local_setup.sh
+-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/local_setup.zsh
+-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/local_setup.dsv
+-- Installing: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/package.dsv
+-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/ament_index/resource_index/packages/roboracer_visual_odom
+-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/cmake/roboracer_visual_odomConfig.cmake
+-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/cmake/roboracer_visual_odomConfig-version.cmake
+-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/package.xml

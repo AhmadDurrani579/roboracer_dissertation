@@ -1,0 +1,346 @@
+[0.248s] Invoking command in '/home/loq/roboracer_ws/build/roboracer_visual_odom': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/roboracer_ws/install/roboracer_py:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble /usr/bin/cmake --build /home/loq/roboracer_ws/build/roboracer_visual_odom -- -j8 -l8
+[0.297s] [35m[1mConsolidate compiler generated dependencies of target visual_odom[0m
+[0.325s] [ 50%] [32mBuilding CXX object CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o[0m
+[5.386s] In file included from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+[5.386s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26[m[K,
+[5.386s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33[m[K,
+[5.386s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[5.386s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[5.386s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[5.386s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23[m[K,
+[5.387s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26[m[K,
+[5.387s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31[m[K,
+[5.387s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19[m[K:
+[5.387s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[5.387s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[5.387s]       |                                                                          [01;35m[K^~~~~~~~~~[m[K
+[5.387s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[5.387s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[5.387s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11[m[K:
+[5.387s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.387s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[5.387s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[5.404s] In file included from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[5.404s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26[m[K,
+[5.404s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33[m[K,
+[5.404s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[5.404s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[5.404s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[5.404s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23[m[K,
+[5.404s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26[m[K,
+[5.404s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31[m[K,
+[5.404s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19[m[K:
+[5.404s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[5.404s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[5.405s]       |                                                                                  [01;35m[K^~~~~~~~~~[m[K
+[5.405s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[5.405s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[5.405s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11[m[K:
+[5.405s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.405s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[5.405s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[5.405s] In file included from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[5.405s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26[m[K,
+[5.405s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33[m[K,
+[5.405s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[5.405s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[5.405s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[5.405s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23[m[K,
+[5.405s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26[m[K,
+[5.405s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31[m[K,
+[5.405s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19[m[K:
+[5.405s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[5.405s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[5.405s]       |                                                                                  [01;35m[K^~~~~~~~~~[m[K
+[5.405s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[5.405s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[5.405s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11[m[K:
+[5.405s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.406s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[5.406s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[5.684s] In file included from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+[5.684s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26[m[K,
+[5.684s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33[m[K,
+[5.684s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[5.684s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[5.684s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[5.684s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23[m[K,
+[5.684s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26[m[K,
+[5.684s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31[m[K,
+[5.684s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19[m[K:
+[5.685s] /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >[m[K’:
+[5.685s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_sba.h:40:35:[m[K   required from here
+[5.685s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[5.685s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[5.685s]       |                                                                  [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[5.685s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[5.685s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[5.685s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11[m[K:
+[5.685s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.685s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[5.685s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[5.707s] In file included from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+[5.707s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26[m[K,
+[5.707s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33[m[K,
+[5.707s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[5.707s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[5.707s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[5.707s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23[m[K,
+[5.707s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26[m[K,
+[5.707s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31[m[K,
+[5.707s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19[m[K:
+[5.707s] /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<6, g2o::SE3Quat>[m[K’:
+[5.708s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:[m[K   required from here
+[5.708s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[5.708s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[5.708s]       |                                                                  [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[5.708s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[5.708s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[5.708s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11[m[K:
+[5.708s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.708s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[5.708s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[5.732s] In file included from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[5.732s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26[m[K,
+[5.732s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33[m[K,
+[5.732s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[5.732s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[5.732s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[5.732s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23[m[K,
+[5.732s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26[m[K,
+[5.732s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31[m[K,
+[5.732s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19[m[K:
+[5.732s] /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<6, g2o::SE3Quat, g2o::VertexSE3Expmap, g2o::VertexSE3Expmap>[m[K’:
+[5.732s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:83:24:[m[K   required from here
+[5.732s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[5.732s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[5.732s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[5.732s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[5.732s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[5.732s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11[m[K:
+[5.732s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.732s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[5.732s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[5.732s] In file included from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[5.732s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26[m[K,
+[5.732s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33[m[K,
+[5.732s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[5.733s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[5.733s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[5.733s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23[m[K,
+[5.733s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26[m[K,
+[5.733s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31[m[K,
+[5.733s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19[m[K:
+[5.733s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[5.733s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[5.733s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[5.733s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[5.733s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[5.733s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11[m[K:
+[5.733s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.733s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[5.733s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[5.787s] In file included from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[5.787s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26[m[K,
+[5.787s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33[m[K,
+[5.788s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[5.788s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[5.788s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[5.788s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23[m[K,
+[5.788s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26[m[K,
+[5.788s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31[m[K,
+[5.788s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19[m[K:
+[5.788s] /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>[m[K’:
+[5.788s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:114:35:[m[K   required from here
+[5.788s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[5.788s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[5.788s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[5.788s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[5.788s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[5.788s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11[m[K:
+[5.788s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.788s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[5.788s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[5.799s] In file included from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[5.799s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26[m[K,
+[5.799s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33[m[K,
+[5.799s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[5.799s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[5.799s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[5.799s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23[m[K,
+[5.799s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26[m[K,
+[5.799s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31[m[K,
+[5.799s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19[m[K:
+[5.799s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[5.800s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[5.800s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[5.800s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[5.800s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[5.800s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11[m[K:
+[5.800s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.800s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[5.800s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[5.847s] In file included from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[5.847s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26[m[K,
+[5.847s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33[m[K,
+[5.848s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[5.848s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[5.848s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[5.848s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23[m[K,
+[5.848s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26[m[K,
+[5.848s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31[m[K,
+[5.848s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19[m[K:
+[5.848s] /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>[m[K’:
+[5.848s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:146:41:[m[K   required from here
+[5.848s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[5.849s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[5.849s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[5.849s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[5.849s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[5.849s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11[m[K:
+[5.849s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.849s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[5.849s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[5.849s] In file included from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[5.849s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26[m[K,
+[5.849s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33[m[K,
+[5.849s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[5.849s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[5.849s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[5.849s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23[m[K,
+[5.849s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26[m[K,
+[5.849s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31[m[K,
+[5.849s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19[m[K:
+[5.849s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[5.849s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[5.849s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[5.849s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[5.849s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[5.849s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11[m[K:
+[5.850s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.850s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[5.850s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[6.010s] In file included from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+[6.010s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26[m[K,
+[6.010s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33[m[K,
+[6.010s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[6.010s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[6.010s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[6.010s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23[m[K,
+[6.011s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26[m[K,
+[6.011s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31[m[K,
+[6.011s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19[m[K:
+[6.011s] /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<7, g2o::Sim3>[m[K’:
+[6.011s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:[m[K   required from here
+[6.011s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[6.011s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[6.011s]       |                                                                  [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[6.011s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[6.011s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[6.011s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11[m[K:
+[6.011s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[6.011s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[6.011s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[6.037s] In file included from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[6.038s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26[m[K,
+[6.038s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33[m[K,
+[6.038s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[6.038s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[6.038s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[6.038s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23[m[K,
+[6.038s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26[m[K,
+[6.038s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31[m[K,
+[6.038s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19[m[K:
+[6.038s] /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>[m[K’:
+[6.038s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:[m[K   required from here
+[6.038s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[6.039s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[6.039s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[6.039s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[6.039s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[6.039s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11[m[K:
+[6.039s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[6.039s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[6.039s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[6.039s] In file included from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[6.039s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26[m[K,
+[6.039s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33[m[K,
+[6.039s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[6.039s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[6.039s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[6.039s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23[m[K,
+[6.039s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26[m[K,
+[6.039s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31[m[K,
+[6.039s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19[m[K:
+[6.039s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[6.039s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[6.039s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[6.039s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[6.039s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[6.039s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11[m[K:
+[6.039s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[6.039s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[6.039s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[6.075s] In file included from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[6.075s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26[m[K,
+[6.075s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33[m[K,
+[6.075s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[6.075s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[6.075s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[6.076s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23[m[K,
+[6.076s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26[m[K,
+[6.076s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31[m[K,
+[6.076s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19[m[K:
+[6.076s] /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>[m[K’:
+[6.076s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:[m[K   required from here
+[6.076s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[6.076s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[6.076s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[6.076s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[6.076s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[6.076s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11[m[K:
+[6.076s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[6.076s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[6.076s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[6.087s] In file included from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[6.087s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26[m[K,
+[6.087s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33[m[K,
+[6.087s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[6.087s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[6.088s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[6.088s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23[m[K,
+[6.088s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26[m[K,
+[6.088s]                  from [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31[m[K,
+[6.088s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19[m[K:
+[6.088s] [01m[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[6.088s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[6.088s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[6.088s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[6.088s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[6.088s]                  from [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11[m[K:
+[6.088s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[6.088s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[6.088s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[17.765s] [100%] [32m[1mLinking CXX executable visual_odom[0m
+[19.236s] [100%] Built target visual_odom
+[19.248s] Invoked command in '/home/loq/roboracer_ws/build/roboracer_visual_odom' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/roboracer_ws/install/roboracer_py:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble /usr/bin/cmake --build /home/loq/roboracer_ws/build/roboracer_visual_odom -- -j8 -l8
+[19.249s] Invoking command in '/home/loq/roboracer_ws/build/roboracer_visual_odom': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/roboracer_ws/install/roboracer_py:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble /usr/bin/cmake --install /home/loq/roboracer_ws/build/roboracer_visual_odom
+[19.256s] -- Install configuration: ""
+[19.257s] -- Installing: /home/loq/roboracer_ws/install/roboracer_visual_odom/lib/roboracer_visual_odom/visual_odom
+[19.261s] -- Set runtime path of "/home/loq/roboracer_ws/install/roboracer_visual_odom/lib/roboracer_visual_odom/visual_odom" to ""
+[19.261s] -- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/ament_index/resource_index/package_run_dependencies/roboracer_visual_odom
+[19.261s] -- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/ament_index/resource_index/parent_prefix_path/roboracer_visual_odom
+[19.262s] -- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/environment/ament_prefix_path.sh
+[19.262s] -- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/environment/ament_prefix_path.dsv
+[19.262s] -- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/environment/path.sh
+[19.262s] -- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/environment/path.dsv
+[19.262s] -- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/local_setup.bash
+[19.262s] -- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/local_setup.sh
+[19.262s] -- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/local_setup.zsh
+[19.262s] -- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/local_setup.dsv
+[19.262s] -- Installing: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/package.dsv
+[19.262s] -- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/ament_index/resource_index/packages/roboracer_visual_odom
+[19.262s] -- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/cmake/roboracer_visual_odomConfig.cmake
+[19.262s] -- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/cmake/roboracer_visual_odomConfig-version.cmake
+[19.262s] -- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/package.xml
+[19.263s] Invoked command in '/home/loq/roboracer_ws/build/roboracer_visual_odom' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/roboracer_ws/install/roboracer_py:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble /usr/bin/cmake --install /home/loq/roboracer_ws/build/roboracer_visual_odom

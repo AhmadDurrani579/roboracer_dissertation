@@ -1,0 +1,1 @@
+/home/loq/roboracer_ws/build/roboracer_localization/ament_cmake_core/roboracer_localizationConfig-version.cmake

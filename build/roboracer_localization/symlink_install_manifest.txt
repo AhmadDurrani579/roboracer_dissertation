@@ -1,0 +1,17 @@
+/home/loq/roboracer_ws/install/roboracer_localization/lib//roboracer_localization/__init__.py
+/home/loq/roboracer_ws/install/roboracer_localization/share/roboracer_localization/launch/local_localization.launch.py
+/home/loq/roboracer_ws/install/roboracer_localization/share/ament_index/resource_index/package_run_dependencies/roboracer_localization
+/home/loq/roboracer_ws/install/roboracer_localization/share/ament_index/resource_index/parent_prefix_path/roboracer_localization
+/home/loq/roboracer_ws/install/roboracer_localization/share/roboracer_localization/environment/ament_prefix_path.sh
+/home/loq/roboracer_ws/install/roboracer_localization/share/roboracer_localization/environment/ament_prefix_path.dsv
+/home/loq/roboracer_ws/install/roboracer_localization/share/roboracer_localization/environment/path.sh
+/home/loq/roboracer_ws/install/roboracer_localization/share/roboracer_localization/environment/path.dsv
+/home/loq/roboracer_ws/install/roboracer_localization/share/roboracer_localization/local_setup.bash
+/home/loq/roboracer_ws/install/roboracer_localization/share/roboracer_localization/local_setup.sh
+/home/loq/roboracer_ws/install/roboracer_localization/share/roboracer_localization/local_setup.zsh
+/home/loq/roboracer_ws/install/roboracer_localization/share/roboracer_localization/local_setup.dsv
+/home/loq/roboracer_ws/install/roboracer_localization/share/roboracer_localization/package.dsv
+/home/loq/roboracer_ws/install/roboracer_localization/share/ament_index/resource_index/packages/roboracer_localization
+/home/loq/roboracer_ws/install/roboracer_localization/share/roboracer_localization/cmake/roboracer_localizationConfig.cmake
+/home/loq/roboracer_ws/install/roboracer_localization/share/roboracer_localization/cmake/roboracer_localizationConfig-version.cmake
+/home/loq/roboracer_ws/install/roboracer_localization/share/roboracer_localization/package.xml

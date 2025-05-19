@@ -1,0 +1,88 @@
+[0.343s] Invoking command in '/home/loq/roboracer_ws/build/roboracer_visual_odom': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/roboracer_ws/install/roboracer_py:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble /usr/bin/cmake /home/loq/roboracer_ws/src/roboracer_visual_odom -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/loq/roboracer_ws/install/roboracer_visual_odom
+[0.355s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.515s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.520s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.551s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.553s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.558s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.571s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.583s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.616s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.617s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.634s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.679s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.701s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.715s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.783s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.787s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.788s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.788s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.790s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.805s] -- Found Eigen3: TRUE (found suitable version "3.4.0", minimum required is "3.4.0") 
+[0.817s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.863s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.048s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[1.200s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.206s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.206s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[1.367s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.376s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.383s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.526s] -- Found Qhull version 8.0.2
+[1.678s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.842s] -- looking for PCL_COMMON
+[1.842s] -- looking for PCL_KDTREE
+[1.842s] -- looking for PCL_OCTREE
+[1.842s] -- looking for PCL_SEARCH
+[1.843s] -- looking for PCL_SAMPLE_CONSENSUS
+[1.843s] -- looking for PCL_FILTERS
+[1.843s] -- looking for PCL_2D
+[1.844s] -- looking for PCL_GEOMETRY
+[1.844s] -- looking for PCL_IO
+[1.844s] -- looking for PCL_FEATURES
+[1.844s] -- looking for PCL_ML
+[1.844s] -- looking for PCL_SEGMENTATION
+[1.845s] -- looking for PCL_VISUALIZATION
+[1.845s] -- looking for PCL_SURFACE
+[1.846s] -- looking for PCL_REGISTRATION
+[1.846s] -- looking for PCL_KEYPOINTS
+[1.847s] -- looking for PCL_TRACKING
+[1.848s] -- looking for PCL_RECOGNITION
+[1.848s] -- looking for PCL_STEREO
+[1.848s] -- looking for PCL_APPS
+[1.850s] -- looking for PCL_IN_HAND_SCANNER
+[1.850s] -- looking for PCL_MODELER
+[1.850s] -- looking for PCL_POINT_CLOUD_EDITOR
+[1.851s] -- looking for PCL_OUTOFCORE
+[1.851s] -- looking for PCL_PEOPLE
+[1.852s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[1.869s] -- → ORB-SLAM3 include: /home/loq/orb_slam3_ws/src/ORB_SLAM3/include
+[1.869s] -- → ORB-SLAM3 lib:     /home/loq/orb_slam3_ws/src/ORB_SLAM3/lib/libORB_SLAM3.so
+[1.960s] -- Configuring done
+[1.999s] -- Generating done
+[2.012s] -- Build files have been written to: /home/loq/roboracer_ws/build/roboracer_visual_odom
+[2.034s] Invoked command in '/home/loq/roboracer_ws/build/roboracer_visual_odom' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/roboracer_ws/install/roboracer_py:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble /usr/bin/cmake /home/loq/roboracer_ws/src/roboracer_visual_odom -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/loq/roboracer_ws/install/roboracer_visual_odom
+[2.035s] Invoking command in '/home/loq/roboracer_ws/build/roboracer_visual_odom': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/roboracer_ws/install/roboracer_py:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble /usr/bin/cmake --build /home/loq/roboracer_ws/build/roboracer_visual_odom -- -j8 -l8
+[2.100s] [35m[1mConsolidate compiler generated dependencies of target visual_odom[0m
+[2.132s] [100%] Built target visual_odom
+[2.144s] Invoked command in '/home/loq/roboracer_ws/build/roboracer_visual_odom' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/roboracer_ws/install/roboracer_py:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble /usr/bin/cmake --build /home/loq/roboracer_ws/build/roboracer_visual_odom -- -j8 -l8
+[2.146s] Invoking command in '/home/loq/roboracer_ws/build/roboracer_visual_odom': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/roboracer_ws/install/roboracer_py:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble /usr/bin/cmake --install /home/loq/roboracer_ws/build/roboracer_visual_odom
+[2.154s] -- Install configuration: "Debug"
+[2.154s] -- Execute custom install script
+[2.154s] -- Up-to-date symlink: /home/loq/roboracer_ws/install/roboracer_visual_odom/lib/roboracer_visual_odom/visual_odom
+[2.154s] -- Up-to-date symlink: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/ament_index/resource_index/package_run_dependencies/roboracer_visual_odom
+[2.155s] -- Up-to-date symlink: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/ament_index/resource_index/parent_prefix_path/roboracer_visual_odom
+[2.155s] -- Up-to-date symlink: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/environment/ament_prefix_path.sh
+[2.155s] -- Up-to-date symlink: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/environment/ament_prefix_path.dsv
+[2.155s] -- Up-to-date symlink: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/environment/path.sh
+[2.156s] -- Up-to-date symlink: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/environment/path.dsv
+[2.156s] -- Up-to-date symlink: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/local_setup.bash
+[2.156s] -- Up-to-date symlink: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/local_setup.sh
+[2.156s] -- Up-to-date symlink: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/local_setup.zsh
+[2.156s] -- Up-to-date symlink: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/local_setup.dsv
+[2.156s] -- Symlinking: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/package.dsv
+[2.168s] -- Up-to-date symlink: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/ament_index/resource_index/packages/roboracer_visual_odom
+[2.168s] -- Up-to-date symlink: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/cmake/roboracer_visual_odomConfig.cmake
+[2.169s] -- Up-to-date symlink: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/cmake/roboracer_visual_odomConfig-version.cmake
+[2.169s] -- Up-to-date symlink: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/package.xml
+[2.171s] Invoked command in '/home/loq/roboracer_ws/build/roboracer_visual_odom' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/roboracer_ws/install/roboracer_py:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble /usr/bin/cmake --install /home/loq/roboracer_ws/build/roboracer_visual_odom

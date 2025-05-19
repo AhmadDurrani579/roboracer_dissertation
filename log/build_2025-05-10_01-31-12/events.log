@@ -1,0 +1,671 @@
+[0.000000] (-) TimerEvent: {}
+[0.000188] (-) JobUnselected: {'identifier': 'roboracer_controller'}
+[0.000296] (-) JobUnselected: {'identifier': 'roboracer_description'}
+[0.000348] (-) JobUnselected: {'identifier': 'roboracer_localization'}
+[0.000381] (-) JobUnselected: {'identifier': 'roboracer_py'}
+[0.000409] (roboracer_visual_odom) JobQueued: {'identifier': 'roboracer_visual_odom', 'dependencies': OrderedDict()}
+[0.000439] (roboracer_visual_odom) JobStarted: {'identifier': 'roboracer_visual_odom'}
+[0.009863] (roboracer_visual_odom) JobProgress: {'identifier': 'roboracer_visual_odom', 'progress': 'cmake'}
+[0.011060] (roboracer_visual_odom) Command: {'cmd': ['/usr/bin/cmake', '/home/loq/roboracer_ws/src/roboracer_visual_odom', '-DCMAKE_BUILD_TYPE=Debug', '-DCMAKE_INSTALL_PREFIX=/home/loq/roboracer_ws/install/roboracer_visual_odom'], 'cwd': '/home/loq/roboracer_ws/build/roboracer_visual_odom', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'loq'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib:/usr/local/cuda-12.2/lib64:/home/loq/bumperbot_ws/install/bumperbot_msgs/lib:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_msgs/lib:/home/loq/ros2_action_ws/install/my_robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/loq'), ('OLDPWD', '/home/loq'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://127.0.0.1:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1509'), ('SYSTEMD_EXEC_PID', '1758'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3602'), ('COLCON_PREFIX_PATH', '/home/loq/roboracer_ws/install:/home/loq/bumperbot_ws/install:/home/loq/ros2_action_ws/install:/home/loq/turtlebot3_ws/install:/home/loq/drivingcar_ws/install:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'loq'), ('JOURNAL_STREAM', '8:16351'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'loq'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/loq/roboracer_ws/src:/home/loq/.gazebo/models:/usr/share/gazebo-11/models:/home/loq/drivingcar_ws/src/self_driving_car_pkg_models/models:/home/loq/drivingcar_ws/src/self_driving_car_pkg/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-12.2/bin:/opt/ros/humble/bin:/home/loq/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/bin'), ('SESSION_MANAGER', 'local/loq-LOQ-15ARP9:@/tmp/.ICE-unix/1734,unix/loq-LOQ-15ARP9:/tmp/.ICE-unix/1734'), ('INVOCATION_ID', '8c09917ce6d74426a357ed570b40aaa4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/loq/drivingcar_ws/install/self_driving_car_pkg_models:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/bumperbot_ws/install/bumperbot_msgs:/home/loq/bumperbot_ws/install/bumperbot_description:/home/loq/bumperbot_ws/install/bumperbot_cpp_example:/home/loq/bumperbot_ws/install/bumperbot_controller:/home/loq/roboracer_ws/install/roboracer_visual_odom:/home/loq/roboracer_ws/install/roboracer_py:/home/loq/roboracer_ws/install/roboracer_localization:/home/loq/roboracer_ws/install/roboracer_description:/home/loq/roboracer_ws/install/roboracer_controller:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_control:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_msgs:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_localization:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_bringup:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_description:/home/loq/turtlebot3_ws/install/turtlebot3_simulations:/home/loq/turtlebot3_ws/install/turtlebot3_gazebo:/home/loq/turtlebot3_ws/install/turtlebot3_fake_node:/home/loq/ros2_action_ws/install/my_robot_interfaces:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/lifecycle_cpp:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:3ccc13e9-5dd3-4a54-8062-fd61707979e3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', ':/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_description/share/saye_description/models:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_description/share/saye_description/worlds'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/loq/roboracer_ws/build/roboracer_visual_odom'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/loq/drivingcar_ws/install/self_driving_car_pkg/lib/python3.10/site-packages:/home/loq/bumperbot_ws/install/bumperbot_py_example/lib/python3.10/site-packages:/home/loq/bumperbot_ws/install/bumperbot_msgs/local/lib/python3.10/dist-packages:/home/loq/roboracer_ws/install/roboracer_py/lib/python3.10/site-packages:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_msgs/local/lib/python3.10/dist-packages:/home/loq/ros2_action_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/loq/ros2_action_ws/build/lifecycle_py:/home/loq/ros2_action_ws/install/lifecycle_py/lib/python3.10/site-packages:/home/loq/ros2_action_ws/build/action_py:/home/loq/ros2_action_ws/install/action_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/loq/ign_ws/install/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/loq/drivingcar_ws/install/self_driving_car_pkg_models:/home/loq/bumperbot_ws/install/bumperbot_msgs:/home/loq/bumperbot_ws/install/bumperbot_description:/home/loq/bumperbot_ws/install/bumperbot_cpp_example:/home/loq/bumperbot_ws/install/bumperbot_controller:/home/loq/roboracer_ws/install/roboracer_visual_odom:/home/loq/roboracer_ws/install/roboracer_localization:/home/loq/roboracer_ws/install/roboracer_description:/home/loq/roboracer_ws/install/roboracer_controller:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_control:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_msgs:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_localization:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_bringup:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_description:/home/loq/turtlebot3_ws/install/turtlebot3_simulations:/home/loq/turtlebot3_ws/install/turtlebot3_gazebo:/home/loq/turtlebot3_ws/install/turtlebot3_fake_node:/home/loq/ros2_action_ws/install/my_robot_interfaces:/home/loq/ros2_action_ws/install/lifecycle_cpp:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/roboracer_ws/install/roboracer_py:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble')]), 'shell': False}
+[0.030366] (roboracer_visual_odom) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099305] (-) TimerEvent: {}
+[0.152726] (roboracer_visual_odom) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.188628] (roboracer_visual_odom) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.191243] (roboracer_visual_odom) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.197900] (roboracer_visual_odom) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.199378] (-) TimerEvent: {}
+[0.208571] (roboracer_visual_odom) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.221252] (roboracer_visual_odom) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.255549] (roboracer_visual_odom) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.258194] (roboracer_visual_odom) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.278933] (roboracer_visual_odom) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.299484] (-) TimerEvent: {}
+[0.325669] (roboracer_visual_odom) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.352436] (roboracer_visual_odom) StdoutLine: {'line': b'-- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.367913] (roboracer_visual_odom) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.399586] (-) TimerEvent: {}
+[0.448532] (roboracer_visual_odom) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[0.452918] (roboracer_visual_odom) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.454080] (roboracer_visual_odom) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[0.454180] (roboracer_visual_odom) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.455334] (roboracer_visual_odom) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.471366] (roboracer_visual_odom) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found suitable version "3.4.0", minimum required is "3.4.0") \n'}
+[0.484335] (roboracer_visual_odom) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[0.499667] (-) TimerEvent: {}
+[0.525294] (roboracer_visual_odom) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[0.599771] (-) TimerEvent: {}
+[0.700027] (-) TimerEvent: {}
+[0.714297] (roboracer_visual_odom) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[0.800222] (-) TimerEvent: {}
+[0.836852] (roboracer_visual_odom) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[0.842200] (roboracer_visual_odom) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[0.842561] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[0.900353] (-) TimerEvent: {}
+[0.978241] (roboracer_visual_odom) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[0.984927] (roboracer_visual_odom) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[0.991341] (roboracer_visual_odom) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.000420] (-) TimerEvent: {}
+[1.100701] (-) TimerEvent: {}
+[1.120412] (roboracer_visual_odom) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[1.200793] (-) TimerEvent: {}
+[1.253727] (roboracer_visual_odom) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.300896] (-) TimerEvent: {}
+[1.379043] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[1.379337] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[1.379516] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[1.379716] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[1.379936] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[1.380157] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[1.380401] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[1.380578] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[1.380745] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[1.381009] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[1.381255] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[1.381473] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[1.381757] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[1.382030] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[1.382290] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[1.382560] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[1.382814] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[1.383062] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[1.383372] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[1.383595] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[1.384084] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[1.384257] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[1.384430] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[1.384596] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[1.384845] (roboracer_visual_odom) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[1.388244] (roboracer_visual_odom) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[1.401008] (-) TimerEvent: {}
+[1.407047] (roboracer_visual_odom) StdoutLine: {'line': b'-- \xe2\x86\x92 ORB-SLAM3 include: /home/loq/orb_slam3_ws/src/ORB_SLAM3/include\n'}
+[1.407222] (roboracer_visual_odom) StdoutLine: {'line': b'-- \xe2\x86\x92 ORB-SLAM3 lib:     /home/loq/orb_slam3_ws/src/ORB_SLAM3/lib/libORB_SLAM3.so\n'}
+[1.475027] (roboracer_visual_odom) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.501138] (-) TimerEvent: {}
+[1.514644] (roboracer_visual_odom) StdoutLine: {'line': b'-- Generating done\n'}
+[1.524289] (roboracer_visual_odom) StdoutLine: {'line': b'-- Build files have been written to: /home/loq/roboracer_ws/build/roboracer_visual_odom\n'}
+[1.539371] (roboracer_visual_odom) CommandEnded: {'returncode': 0}
+[1.540176] (roboracer_visual_odom) JobProgress: {'identifier': 'roboracer_visual_odom', 'progress': 'build'}
+[1.540914] (roboracer_visual_odom) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/loq/roboracer_ws/build/roboracer_visual_odom', '--', '-j8', '-l8'], 'cwd': '/home/loq/roboracer_ws/build/roboracer_visual_odom', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'loq'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib:/usr/local/cuda-12.2/lib64:/home/loq/bumperbot_ws/install/bumperbot_msgs/lib:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_msgs/lib:/home/loq/ros2_action_ws/install/my_robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/loq'), ('OLDPWD', '/home/loq'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://127.0.0.1:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1509'), ('SYSTEMD_EXEC_PID', '1758'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3602'), ('COLCON_PREFIX_PATH', '/home/loq/roboracer_ws/install:/home/loq/bumperbot_ws/install:/home/loq/ros2_action_ws/install:/home/loq/turtlebot3_ws/install:/home/loq/drivingcar_ws/install:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'loq'), ('JOURNAL_STREAM', '8:16351'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'loq'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/loq/roboracer_ws/src:/home/loq/.gazebo/models:/usr/share/gazebo-11/models:/home/loq/drivingcar_ws/src/self_driving_car_pkg_models/models:/home/loq/drivingcar_ws/src/self_driving_car_pkg/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-12.2/bin:/opt/ros/humble/bin:/home/loq/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/bin'), ('SESSION_MANAGER', 'local/loq-LOQ-15ARP9:@/tmp/.ICE-unix/1734,unix/loq-LOQ-15ARP9:/tmp/.ICE-unix/1734'), ('INVOCATION_ID', '8c09917ce6d74426a357ed570b40aaa4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/loq/drivingcar_ws/install/self_driving_car_pkg_models:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/bumperbot_ws/install/bumperbot_msgs:/home/loq/bumperbot_ws/install/bumperbot_description:/home/loq/bumperbot_ws/install/bumperbot_cpp_example:/home/loq/bumperbot_ws/install/bumperbot_controller:/home/loq/roboracer_ws/install/roboracer_visual_odom:/home/loq/roboracer_ws/install/roboracer_py:/home/loq/roboracer_ws/install/roboracer_localization:/home/loq/roboracer_ws/install/roboracer_description:/home/loq/roboracer_ws/install/roboracer_controller:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_control:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_msgs:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_localization:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_bringup:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_description:/home/loq/turtlebot3_ws/install/turtlebot3_simulations:/home/loq/turtlebot3_ws/install/turtlebot3_gazebo:/home/loq/turtlebot3_ws/install/turtlebot3_fake_node:/home/loq/ros2_action_ws/install/my_robot_interfaces:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/lifecycle_cpp:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:3ccc13e9-5dd3-4a54-8062-fd61707979e3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', ':/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_description/share/saye_description/models:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_description/share/saye_description/worlds'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/loq/roboracer_ws/build/roboracer_visual_odom'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/loq/drivingcar_ws/install/self_driving_car_pkg/lib/python3.10/site-packages:/home/loq/bumperbot_ws/install/bumperbot_py_example/lib/python3.10/site-packages:/home/loq/bumperbot_ws/install/bumperbot_msgs/local/lib/python3.10/dist-packages:/home/loq/roboracer_ws/install/roboracer_py/lib/python3.10/site-packages:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_msgs/local/lib/python3.10/dist-packages:/home/loq/ros2_action_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/loq/ros2_action_ws/build/lifecycle_py:/home/loq/ros2_action_ws/install/lifecycle_py/lib/python3.10/site-packages:/home/loq/ros2_action_ws/build/action_py:/home/loq/ros2_action_ws/install/action_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/loq/ign_ws/install/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/loq/drivingcar_ws/install/self_driving_car_pkg_models:/home/loq/bumperbot_ws/install/bumperbot_msgs:/home/loq/bumperbot_ws/install/bumperbot_description:/home/loq/bumperbot_ws/install/bumperbot_cpp_example:/home/loq/bumperbot_ws/install/bumperbot_controller:/home/loq/roboracer_ws/install/roboracer_visual_odom:/home/loq/roboracer_ws/install/roboracer_localization:/home/loq/roboracer_ws/install/roboracer_description:/home/loq/roboracer_ws/install/roboracer_controller:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_control:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_msgs:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_localization:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_bringup:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_description:/home/loq/turtlebot3_ws/install/turtlebot3_simulations:/home/loq/turtlebot3_ws/install/turtlebot3_gazebo:/home/loq/turtlebot3_ws/install/turtlebot3_fake_node:/home/loq/ros2_action_ws/install/my_robot_interfaces:/home/loq/ros2_action_ws/install/lifecycle_cpp:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/roboracer_ws/install/roboracer_py:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble')]), 'shell': False}
+[1.585182] (roboracer_visual_odom) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target visual_odom\x1b[0m\n'}
+[1.601235] (-) TimerEvent: {}
+[1.615348] (roboracer_visual_odom) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o\x1b[0m\n'}
+[1.701363] (-) TimerEvent: {}
+[1.801675] (-) TimerEvent: {}
+[1.901933] (-) TimerEvent: {}
+[2.002210] (-) TimerEvent: {}
+[2.102556] (-) TimerEvent: {}
+[2.202886] (-) TimerEvent: {}
+[2.303229] (-) TimerEvent: {}
+[2.403606] (-) TimerEvent: {}
+[2.503954] (-) TimerEvent: {}
+[2.604327] (-) TimerEvent: {}
+[2.704665] (-) TimerEvent: {}
+[2.805017] (-) TimerEvent: {}
+[2.905347] (-) TimerEvent: {}
+[3.005672] (-) TimerEvent: {}
+[3.106013] (-) TimerEvent: {}
+[3.206327] (-) TimerEvent: {}
+[3.306597] (-) TimerEvent: {}
+[3.406949] (-) TimerEvent: {}
+[3.507397] (-) TimerEvent: {}
+[3.607749] (-) TimerEvent: {}
+[3.708104] (-) TimerEvent: {}
+[3.808474] (-) TimerEvent: {}
+[3.908821] (-) TimerEvent: {}
+[4.009174] (-) TimerEvent: {}
+[4.109477] (-) TimerEvent: {}
+[4.209805] (-) TimerEvent: {}
+[4.310094] (-) TimerEvent: {}
+[4.410440] (-) TimerEvent: {}
+[4.510808] (-) TimerEvent: {}
+[4.611136] (-) TimerEvent: {}
+[4.711781] (-) TimerEvent: {}
+[4.812317] (-) TimerEvent: {}
+[4.912664] (-) TimerEvent: {}
+[5.013212] (-) TimerEvent: {}
+[5.113572] (-) TimerEvent: {}
+[5.214105] (-) TimerEvent: {}
+[5.314457] (-) TimerEvent: {}
+[5.414983] (-) TimerEvent: {}
+[5.515338] (-) TimerEvent: {}
+[5.615929] (-) TimerEvent: {}
+[5.716314] (-) TimerEvent: {}
+[5.816816] (-) TimerEvent: {}
+[5.917148] (-) TimerEvent: {}
+[6.017614] (-) TimerEvent: {}
+[6.117968] (-) TimerEvent: {}
+[6.218324] (-) TimerEvent: {}
+[6.318666] (-) TimerEvent: {}
+[6.419008] (-) TimerEvent: {}
+[6.519367] (-) TimerEvent: {}
+[6.619709] (-) TimerEvent: {}
+[6.720051] (-) TimerEvent: {}
+[6.820391] (-) TimerEvent: {}
+[6.920714] (-) TimerEvent: {}
+[7.021043] (-) TimerEvent: {}
+[7.056474] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37\x1b[m\x1b[K,\n'}
+[7.056703] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[7.056801] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[7.056883] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[7.056941] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[7.056991] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[7.057026] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[7.057061] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[7.057096] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[7.057129] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19\x1b[m\x1b[K:\n'}
+[7.057167] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.057207] (roboracer_visual_odom) StderrLine: {'line': b'   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & \x1b[01;35m\x1b[KAlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[7.057242] (roboracer_visual_odom) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.057277] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[7.057389] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[7.057442] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11\x1b[m\x1b[K:\n'}
+[7.057494] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[7.057541] (roboracer_visual_odom) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[7.057576] (roboracer_visual_odom) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.076489] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[7.076745] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[7.076987] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[7.077075] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[7.077153] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[7.077228] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[7.077326] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[7.077367] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[7.077404] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[7.077440] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19\x1b[m\x1b[K:\n'}
+[7.077476] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.077513] (roboracer_visual_odom) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & \x1b[01;35m\x1b[KAlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[7.077547] (roboracer_visual_odom) StderrLine: {'line': b'      |                                                                                  \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.077581] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[7.077615] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[7.077648] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11\x1b[m\x1b[K:\n'}
+[7.077681] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[7.077720] (roboracer_visual_odom) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[7.077752] (roboracer_visual_odom) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.077785] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[7.077822] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[7.077854] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[7.077886] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[7.077921] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[7.077952] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[7.077982] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[7.078013] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[7.078043] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[7.078074] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19\x1b[m\x1b[K:\n'}
+[7.078104] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.078151] (roboracer_visual_odom) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & \x1b[01;35m\x1b[KAlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[7.078183] (roboracer_visual_odom) StderrLine: {'line': b'      |                                                                                  \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.078214] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[7.078245] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[7.078276] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11\x1b[m\x1b[K:\n'}
+[7.078323] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[7.078366] (roboracer_visual_odom) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[7.078398] (roboracer_visual_odom) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.121148] (-) TimerEvent: {}
+[7.221610] (-) TimerEvent: {}
+[7.321936] (-) TimerEvent: {}
+[7.400779] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37\x1b[m\x1b[K,\n'}
+[7.401009] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[7.401112] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[7.401215] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[7.401393] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[7.401529] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[7.401630] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[7.401714] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[7.401793] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[7.401869] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19\x1b[m\x1b[K:\n'}
+[7.401944] (roboracer_visual_odom) StderrLine: {'line': b'/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.402022] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_sba.h:40:35:\x1b[m\x1b[K   required from here\n'}
+[7.402096] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.402176] (roboracer_visual_odom) StderrLine: {'line': b'   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[7.402279] (roboracer_visual_odom) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.402369] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[7.402445] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[7.402517] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11\x1b[m\x1b[K:\n'}
+[7.402559] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[7.402591] (roboracer_visual_odom) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[7.402628] (roboracer_visual_odom) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.422055] (-) TimerEvent: {}
+[7.427282] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37\x1b[m\x1b[K,\n'}
+[7.427495] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[7.427596] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[7.427696] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[7.427775] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[7.427852] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[7.427927] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[7.428000] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[7.428074] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[7.428155] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19\x1b[m\x1b[K:\n'}
+[7.428231] (roboracer_visual_odom) StderrLine: {'line': b'/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseVertex<6, g2o::SE3Quat>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.428328] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:\x1b[m\x1b[K   required from here\n'}
+[7.428409] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.428485] (roboracer_visual_odom) StderrLine: {'line': b'   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[7.428557] (roboracer_visual_odom) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.428626] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[7.428695] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[7.428763] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11\x1b[m\x1b[K:\n'}
+[7.428831] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[7.428899] (roboracer_visual_odom) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[7.428944] (roboracer_visual_odom) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.455623] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[7.455839] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[7.455940] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[7.456043] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[7.456121] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[7.456195] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[7.456267] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[7.456373] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[7.456452] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[7.456527] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19\x1b[m\x1b[K:\n'}
+[7.456571] (roboracer_visual_odom) StderrLine: {'line': b'/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<6, g2o::SE3Quat, g2o::VertexSE3Expmap, g2o::VertexSE3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.456613] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:83:24:\x1b[m\x1b[K   required from here\n'}
+[7.456649] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.456690] (roboracer_visual_odom) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[7.456724] (roboracer_visual_odom) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.456757] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[7.456791] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[7.456825] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11\x1b[m\x1b[K:\n'}
+[7.456858] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[7.456891] (roboracer_visual_odom) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[7.456924] (roboracer_visual_odom) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.456956] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[7.456992] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[7.457025] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[7.457063] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[7.457095] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[7.457128] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[7.457161] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[7.457192] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[7.457225] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[7.457257] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19\x1b[m\x1b[K:\n'}
+[7.457298] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.457335] (roboracer_visual_odom) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[7.457368] (roboracer_visual_odom) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.457399] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[7.457430] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[7.457461] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11\x1b[m\x1b[K:\n'}
+[7.457492] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[7.457523] (roboracer_visual_odom) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[7.457553] (roboracer_visual_odom) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.520255] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[7.520567] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[7.520671] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[7.520757] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[7.520839] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[7.520920] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[7.521027] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[7.521105] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[7.521180] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[7.521256] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19\x1b[m\x1b[K:\n'}
+[7.521340] (roboracer_visual_odom) StderrLine: {'line': b'/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.521383] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:114:35:\x1b[m\x1b[K   required from here\n'}
+[7.521418] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.521459] (roboracer_visual_odom) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[7.521495] (roboracer_visual_odom) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.521529] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[7.521562] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[7.521595] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11\x1b[m\x1b[K:\n'}
+[7.521626] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[7.521658] (roboracer_visual_odom) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[7.521689] (roboracer_visual_odom) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.522126] (-) TimerEvent: {}
+[7.533352] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[7.533572] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[7.533673] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[7.533755] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[7.533832] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[7.533907] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[7.533998] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[7.534079] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[7.534160] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[7.534236] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19\x1b[m\x1b[K:\n'}
+[7.534331] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.534415] (roboracer_visual_odom) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[7.534490] (roboracer_visual_odom) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.534543] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[7.534575] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[7.534608] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11\x1b[m\x1b[K:\n'}
+[7.534641] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[7.534675] (roboracer_visual_odom) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[7.534708] (roboracer_visual_odom) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.589749] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[7.590183] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[7.590392] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[7.590532] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[7.590628] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[7.590710] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[7.590805] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[7.590881] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[7.590959] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[7.590996] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19\x1b[m\x1b[K:\n'}
+[7.591030] (roboracer_visual_odom) StderrLine: {'line': b'/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.591065] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:146:41:\x1b[m\x1b[K   required from here\n'}
+[7.591098] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.591135] (roboracer_visual_odom) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[7.591169] (roboracer_visual_odom) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.591202] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[7.591234] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[7.591266] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11\x1b[m\x1b[K:\n'}
+[7.591319] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[7.591353] (roboracer_visual_odom) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[7.591388] (roboracer_visual_odom) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.591423] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[7.591456] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[7.591489] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[7.591522] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[7.591554] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[7.591585] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[7.591617] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[7.591648] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[7.591690] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[7.591725] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19\x1b[m\x1b[K:\n'}
+[7.591758] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.591793] (roboracer_visual_odom) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[7.591827] (roboracer_visual_odom) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.591860] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[7.591896] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[7.591928] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11\x1b[m\x1b[K:\n'}
+[7.591959] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[7.591991] (roboracer_visual_odom) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[7.592022] (roboracer_visual_odom) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.622258] (-) TimerEvent: {}
+[7.722626] (-) TimerEvent: {}
+[7.781400] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37\x1b[m\x1b[K,\n'}
+[7.781644] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[7.781744] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[7.781830] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[7.781909] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[7.781984] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[7.782060] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[7.782133] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[7.782202] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[7.782286] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19\x1b[m\x1b[K:\n'}
+[7.782421] (roboracer_visual_odom) StderrLine: {'line': b'/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseVertex<7, g2o::Sim3>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.782481] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:\x1b[m\x1b[K   required from here\n'}
+[7.782522] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.782562] (roboracer_visual_odom) StderrLine: {'line': b'   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[7.782599] (roboracer_visual_odom) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.782633] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[7.782667] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[7.782700] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11\x1b[m\x1b[K:\n'}
+[7.782734] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[7.782768] (roboracer_visual_odom) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[7.782801] (roboracer_visual_odom) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.822737] (-) TimerEvent: {}
+[7.923075] (-) TimerEvent: {}
+[8.023457] (-) TimerEvent: {}
+[8.123795] (-) TimerEvent: {}
+[8.224133] (-) TimerEvent: {}
+[8.324491] (-) TimerEvent: {}
+[8.391398] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[8.391619] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[8.391717] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[8.391799] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[8.391877] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[8.391951] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[8.392030] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[8.392105] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[8.392177] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[8.392250] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19\x1b[m\x1b[K:\n'}
+[8.392370] (roboracer_visual_odom) StderrLine: {'line': b'/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.392450] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:\x1b[m\x1b[K   required from here\n'}
+[8.392532] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.392600] (roboracer_visual_odom) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[8.392638] (roboracer_visual_odom) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.392673] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[8.392707] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[8.392740] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11\x1b[m\x1b[K:\n'}
+[8.392772] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[8.392804] (roboracer_visual_odom) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[8.392835] (roboracer_visual_odom) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.392867] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[8.392898] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[8.392930] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[8.392961] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[8.392992] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[8.393024] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[8.393055] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[8.393086] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[8.393117] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[8.393149] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19\x1b[m\x1b[K:\n'}
+[8.393184] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.393218] (roboracer_visual_odom) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[8.393249] (roboracer_visual_odom) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.393287] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[8.393325] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[8.393359] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11\x1b[m\x1b[K:\n'}
+[8.393391] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[8.393423] (roboracer_visual_odom) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[8.393454] (roboracer_visual_odom) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.424607] (-) TimerEvent: {}
+[8.432835] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[8.433059] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[8.433161] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[8.433246] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[8.433432] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[8.433491] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[8.433533] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[8.433585] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[8.433627] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[8.433661] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19\x1b[m\x1b[K:\n'}
+[8.433695] (roboracer_visual_odom) StderrLine: {'line': b'/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.433733] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:\x1b[m\x1b[K   required from here\n'}
+[8.433777] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.433815] (roboracer_visual_odom) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[8.433851] (roboracer_visual_odom) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.433886] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[8.433920] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[8.433953] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11\x1b[m\x1b[K:\n'}
+[8.433986] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[8.434018] (roboracer_visual_odom) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[8.434049] (roboracer_visual_odom) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.447292] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[8.447551] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[8.447652] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[8.447738] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[8.447816] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[8.447892] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[8.447968] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[8.448045] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[8.448121] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[8.448191] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:19\x1b[m\x1b[K:\n'}
+[8.448261] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.448393] (roboracer_visual_odom) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[8.448471] (roboracer_visual_odom) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.448542] (roboracer_visual_odom) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[8.448613] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[8.448684] (roboracer_visual_odom) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:11\x1b[m\x1b[K:\n'}
+[8.448754] (roboracer_visual_odom) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[8.448832] (roboracer_visual_odom) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[8.448903] (roboracer_visual_odom) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.524732] (-) TimerEvent: {}
+[8.625069] (-) TimerEvent: {}
+[8.725449] (-) TimerEvent: {}
+[8.825775] (-) TimerEvent: {}
+[8.926117] (-) TimerEvent: {}
+[9.026468] (-) TimerEvent: {}
+[9.126811] (-) TimerEvent: {}
+[9.227133] (-) TimerEvent: {}
+[9.327602] (-) TimerEvent: {}
+[9.427939] (-) TimerEvent: {}
+[9.528261] (-) TimerEvent: {}
+[9.628574] (-) TimerEvent: {}
+[9.728874] (-) TimerEvent: {}
+[9.829210] (-) TimerEvent: {}
+[9.929569] (-) TimerEvent: {}
+[10.029906] (-) TimerEvent: {}
+[10.130247] (-) TimerEvent: {}
+[10.230573] (-) TimerEvent: {}
+[10.330876] (-) TimerEvent: {}
+[10.431180] (-) TimerEvent: {}
+[10.531549] (-) TimerEvent: {}
+[10.631886] (-) TimerEvent: {}
+[10.732183] (-) TimerEvent: {}
+[10.832539] (-) TimerEvent: {}
+[10.932873] (-) TimerEvent: {}
+[11.033206] (-) TimerEvent: {}
+[11.133618] (-) TimerEvent: {}
+[11.233878] (-) TimerEvent: {}
+[11.334207] (-) TimerEvent: {}
+[11.434593] (-) TimerEvent: {}
+[11.534905] (-) TimerEvent: {}
+[11.635258] (-) TimerEvent: {}
+[11.735617] (-) TimerEvent: {}
+[11.836037] (-) TimerEvent: {}
+[11.936362] (-) TimerEvent: {}
+[12.036719] (-) TimerEvent: {}
+[12.137041] (-) TimerEvent: {}
+[12.237371] (-) TimerEvent: {}
+[12.337682] (-) TimerEvent: {}
+[12.437945] (-) TimerEvent: {}
+[12.538239] (-) TimerEvent: {}
+[12.638521] (-) TimerEvent: {}
+[12.738864] (-) TimerEvent: {}
+[12.839199] (-) TimerEvent: {}
+[12.939558] (-) TimerEvent: {}
+[13.039899] (-) TimerEvent: {}
+[13.140215] (-) TimerEvent: {}
+[13.240477] (-) TimerEvent: {}
+[13.340819] (-) TimerEvent: {}
+[13.441139] (-) TimerEvent: {}
+[13.541736] (-) TimerEvent: {}
+[13.642081] (-) TimerEvent: {}
+[13.742431] (-) TimerEvent: {}
+[13.842742] (-) TimerEvent: {}
+[13.943059] (-) TimerEvent: {}
+[14.043400] (-) TimerEvent: {}
+[14.143739] (-) TimerEvent: {}
+[14.244083] (-) TimerEvent: {}
+[14.344437] (-) TimerEvent: {}
+[14.444773] (-) TimerEvent: {}
+[14.545078] (-) TimerEvent: {}
+[14.645430] (-) TimerEvent: {}
+[14.745759] (-) TimerEvent: {}
+[14.846075] (-) TimerEvent: {}
+[14.946429] (-) TimerEvent: {}
+[15.046765] (-) TimerEvent: {}
+[15.147110] (-) TimerEvent: {}
+[15.247491] (-) TimerEvent: {}
+[15.347831] (-) TimerEvent: {}
+[15.448259] (-) TimerEvent: {}
+[15.548593] (-) TimerEvent: {}
+[15.648891] (-) TimerEvent: {}
+[15.749144] (-) TimerEvent: {}
+[15.849445] (-) TimerEvent: {}
+[15.949830] (-) TimerEvent: {}
+[16.050190] (-) TimerEvent: {}
+[16.150628] (-) TimerEvent: {}
+[16.250967] (-) TimerEvent: {}
+[16.351498] (-) TimerEvent: {}
+[16.451845] (-) TimerEvent: {}
+[16.552189] (-) TimerEvent: {}
+[16.652542] (-) TimerEvent: {}
+[16.752845] (-) TimerEvent: {}
+[16.853107] (-) TimerEvent: {}
+[16.953428] (-) TimerEvent: {}
+[17.053718] (-) TimerEvent: {}
+[17.154075] (-) TimerEvent: {}
+[17.254422] (-) TimerEvent: {}
+[17.354760] (-) TimerEvent: {}
+[17.455130] (-) TimerEvent: {}
+[17.555370] (-) TimerEvent: {}
+[17.655709] (-) TimerEvent: {}
+[17.756042] (-) TimerEvent: {}
+[17.856342] (-) TimerEvent: {}
+[17.956689] (-) TimerEvent: {}
+[18.057002] (-) TimerEvent: {}
+[18.157340] (-) TimerEvent: {}
+[18.257663] (-) TimerEvent: {}
+[18.358008] (-) TimerEvent: {}
+[18.458336] (-) TimerEvent: {}
+[18.558678] (-) TimerEvent: {}
+[18.659039] (-) TimerEvent: {}
+[18.759334] (-) TimerEvent: {}
+[18.859584] (-) TimerEvent: {}
+[18.959890] (-) TimerEvent: {}
+[19.060183] (-) TimerEvent: {}
+[19.160593] (-) TimerEvent: {}
+[19.261107] (-) TimerEvent: {}
+[19.361511] (-) TimerEvent: {}
+[19.461819] (-) TimerEvent: {}
+[19.562102] (-) TimerEvent: {}
+[19.662496] (-) TimerEvent: {}
+[19.762827] (-) TimerEvent: {}
+[19.863159] (-) TimerEvent: {}
+[19.963515] (-) TimerEvent: {}
+[20.063851] (-) TimerEvent: {}
+[20.164182] (-) TimerEvent: {}
+[20.264502] (-) TimerEvent: {}
+[20.364782] (-) TimerEvent: {}
+[20.465115] (-) TimerEvent: {}
+[20.565465] (-) TimerEvent: {}
+[20.665800] (-) TimerEvent: {}
+[20.766142] (-) TimerEvent: {}
+[20.866493] (-) TimerEvent: {}
+[20.966825] (-) TimerEvent: {}
+[21.067159] (-) TimerEvent: {}
+[21.167510] (-) TimerEvent: {}
+[21.267849] (-) TimerEvent: {}
+[21.368184] (-) TimerEvent: {}
+[21.468549] (-) TimerEvent: {}
+[21.568881] (-) TimerEvent: {}
+[21.669211] (-) TimerEvent: {}
+[21.769573] (-) TimerEvent: {}
+[21.869902] (-) TimerEvent: {}
+[21.970231] (-) TimerEvent: {}
+[22.070686] (-) TimerEvent: {}
+[22.171030] (-) TimerEvent: {}
+[22.271350] (-) TimerEvent: {}
+[22.371685] (-) TimerEvent: {}
+[22.472027] (-) TimerEvent: {}
+[22.572364] (-) TimerEvent: {}
+[22.672701] (-) TimerEvent: {}
+[22.773039] (-) TimerEvent: {}
+[22.873377] (-) TimerEvent: {}
+[22.973713] (-) TimerEvent: {}
+[23.074079] (-) TimerEvent: {}
+[23.174467] (-) TimerEvent: {}
+[23.274814] (-) TimerEvent: {}
+[23.375156] (-) TimerEvent: {}
+[23.406202] (roboracer_visual_odom) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable visual_odom\x1b[0m\n'}
+[23.475299] (-) TimerEvent: {}
+[23.575659] (-) TimerEvent: {}
+[23.676027] (-) TimerEvent: {}
+[23.776341] (-) TimerEvent: {}
+[23.876695] (-) TimerEvent: {}
+[23.977078] (-) TimerEvent: {}
+[24.077647] (-) TimerEvent: {}
+[24.178052] (-) TimerEvent: {}
+[24.278915] (-) TimerEvent: {}
+[24.379266] (-) TimerEvent: {}
+[24.479622] (-) TimerEvent: {}
+[24.580041] (-) TimerEvent: {}
+[24.680412] (-) TimerEvent: {}
+[24.780779] (-) TimerEvent: {}
+[24.881115] (-) TimerEvent: {}
+[24.981476] (-) TimerEvent: {}
+[25.049847] (roboracer_visual_odom) StdoutLine: {'line': b'[100%] Built target visual_odom\n'}
+[25.076736] (roboracer_visual_odom) CommandEnded: {'returncode': 0}
+[25.077575] (roboracer_visual_odom) JobProgress: {'identifier': 'roboracer_visual_odom', 'progress': 'install'}
+[25.081546] (-) TimerEvent: {}
+[25.089507] (roboracer_visual_odom) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/loq/roboracer_ws/build/roboracer_visual_odom'], 'cwd': '/home/loq/roboracer_ws/build/roboracer_visual_odom', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'loq'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib:/usr/local/cuda-12.2/lib64:/home/loq/bumperbot_ws/install/bumperbot_msgs/lib:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_msgs/lib:/home/loq/ros2_action_ws/install/my_robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/loq'), ('OLDPWD', '/home/loq'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://127.0.0.1:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1509'), ('SYSTEMD_EXEC_PID', '1758'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3602'), ('COLCON_PREFIX_PATH', '/home/loq/roboracer_ws/install:/home/loq/bumperbot_ws/install:/home/loq/ros2_action_ws/install:/home/loq/turtlebot3_ws/install:/home/loq/drivingcar_ws/install:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'loq'), ('JOURNAL_STREAM', '8:16351'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'loq'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/loq/roboracer_ws/src:/home/loq/.gazebo/models:/usr/share/gazebo-11/models:/home/loq/drivingcar_ws/src/self_driving_car_pkg_models/models:/home/loq/drivingcar_ws/src/self_driving_car_pkg/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-12.2/bin:/opt/ros/humble/bin:/home/loq/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/bin'), ('SESSION_MANAGER', 'local/loq-LOQ-15ARP9:@/tmp/.ICE-unix/1734,unix/loq-LOQ-15ARP9:/tmp/.ICE-unix/1734'), ('INVOCATION_ID', '8c09917ce6d74426a357ed570b40aaa4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/loq/drivingcar_ws/install/self_driving_car_pkg_models:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/bumperbot_ws/install/bumperbot_msgs:/home/loq/bumperbot_ws/install/bumperbot_description:/home/loq/bumperbot_ws/install/bumperbot_cpp_example:/home/loq/bumperbot_ws/install/bumperbot_controller:/home/loq/roboracer_ws/install/roboracer_visual_odom:/home/loq/roboracer_ws/install/roboracer_py:/home/loq/roboracer_ws/install/roboracer_localization:/home/loq/roboracer_ws/install/roboracer_description:/home/loq/roboracer_ws/install/roboracer_controller:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_control:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_msgs:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_localization:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_bringup:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_description:/home/loq/turtlebot3_ws/install/turtlebot3_simulations:/home/loq/turtlebot3_ws/install/turtlebot3_gazebo:/home/loq/turtlebot3_ws/install/turtlebot3_fake_node:/home/loq/ros2_action_ws/install/my_robot_interfaces:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/lifecycle_cpp:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:3ccc13e9-5dd3-4a54-8062-fd61707979e3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', ':/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_description/share/saye_description/models:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_description/share/saye_description/worlds'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/loq/roboracer_ws/build/roboracer_visual_odom'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/loq/drivingcar_ws/install/self_driving_car_pkg/lib/python3.10/site-packages:/home/loq/bumperbot_ws/install/bumperbot_py_example/lib/python3.10/site-packages:/home/loq/bumperbot_ws/install/bumperbot_msgs/local/lib/python3.10/dist-packages:/home/loq/roboracer_ws/install/roboracer_py/lib/python3.10/site-packages:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_msgs/local/lib/python3.10/dist-packages:/home/loq/ros2_action_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/loq/ros2_action_ws/build/lifecycle_py:/home/loq/ros2_action_ws/install/lifecycle_py/lib/python3.10/site-packages:/home/loq/ros2_action_ws/build/action_py:/home/loq/ros2_action_ws/install/action_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/loq/ign_ws/install/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/loq/drivingcar_ws/install/self_driving_car_pkg_models:/home/loq/bumperbot_ws/install/bumperbot_msgs:/home/loq/bumperbot_ws/install/bumperbot_description:/home/loq/bumperbot_ws/install/bumperbot_cpp_example:/home/loq/bumperbot_ws/install/bumperbot_controller:/home/loq/roboracer_ws/install/roboracer_visual_odom:/home/loq/roboracer_ws/install/roboracer_localization:/home/loq/roboracer_ws/install/roboracer_description:/home/loq/roboracer_ws/install/roboracer_controller:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_control:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_msgs:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_localization:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_bringup:/home/loq/Downloads/ros2-ackermann-vehicle-gz-sim-harmonic-nav2-main/install/saye_description:/home/loq/turtlebot3_ws/install/turtlebot3_simulations:/home/loq/turtlebot3_ws/install/turtlebot3_gazebo:/home/loq/turtlebot3_ws/install/turtlebot3_fake_node:/home/loq/ros2_action_ws/install/my_robot_interfaces:/home/loq/ros2_action_ws/install/lifecycle_cpp:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/roboracer_ws/install/roboracer_py:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble')]), 'shell': False}
+[25.097197] (roboracer_visual_odom) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[25.097416] (roboracer_visual_odom) StdoutLine: {'line': b'-- Installing: /home/loq/roboracer_ws/install/roboracer_visual_odom/lib/roboracer_visual_odom/visual_odom\n'}
+[25.123257] (roboracer_visual_odom) StdoutLine: {'line': b'-- Set runtime path of "/home/loq/roboracer_ws/install/roboracer_visual_odom/lib/roboracer_visual_odom/visual_odom" to ""\n'}
+[25.123574] (roboracer_visual_odom) StdoutLine: {'line': b'-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/ament_index/resource_index/package_run_dependencies/roboracer_visual_odom\n'}
+[25.123686] (roboracer_visual_odom) StdoutLine: {'line': b'-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/ament_index/resource_index/parent_prefix_path/roboracer_visual_odom\n'}
+[25.123830] (roboracer_visual_odom) StdoutLine: {'line': b'-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/environment/ament_prefix_path.sh\n'}
+[25.123922] (roboracer_visual_odom) StdoutLine: {'line': b'-- Installing: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/environment/ament_prefix_path.dsv\n'}
+[25.123986] (roboracer_visual_odom) StdoutLine: {'line': b'-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/environment/path.sh\n'}
+[25.124051] (roboracer_visual_odom) StdoutLine: {'line': b'-- Installing: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/environment/path.dsv\n'}
+[25.124092] (roboracer_visual_odom) StdoutLine: {'line': b'-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/local_setup.bash\n'}
+[25.124132] (roboracer_visual_odom) StdoutLine: {'line': b'-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/local_setup.sh\n'}
+[25.124207] (roboracer_visual_odom) StdoutLine: {'line': b'-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/local_setup.zsh\n'}
+[25.124243] (roboracer_visual_odom) StdoutLine: {'line': b'-- Installing: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/local_setup.dsv\n'}
+[25.124282] (roboracer_visual_odom) StdoutLine: {'line': b'-- Installing: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/package.dsv\n'}
+[25.124322] (roboracer_visual_odom) StdoutLine: {'line': b'-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/ament_index/resource_index/packages/roboracer_visual_odom\n'}
+[25.124355] (roboracer_visual_odom) StdoutLine: {'line': b'-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/cmake/roboracer_visual_odomConfig.cmake\n'}
+[25.124387] (roboracer_visual_odom) StdoutLine: {'line': b'-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/cmake/roboracer_visual_odomConfig-version.cmake\n'}
+[25.124419] (roboracer_visual_odom) StdoutLine: {'line': b'-- Up-to-date: /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/package.xml\n'}
+[25.126105] (roboracer_visual_odom) CommandEnded: {'returncode': 0}
+[25.142560] (roboracer_visual_odom) JobEnded: {'identifier': 'roboracer_visual_odom', 'rc': 0}
+[25.143664] (-) EventReactorShutdown: {}
