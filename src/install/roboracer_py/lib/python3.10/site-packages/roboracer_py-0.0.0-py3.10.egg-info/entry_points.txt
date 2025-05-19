@@ -1,4 +1,0 @@
-[console_scripts]
-disparity_extender = roboracer_py.disparity_extender:main
-gap_follow = roboracer_py.gap_follow:main
-

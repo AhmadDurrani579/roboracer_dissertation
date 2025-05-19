@@ -8,11 +8,14 @@ This project implements a **dynamic wall-following robot** using a **gap-followi
 
 ## 📁 Project Structure
 
+```
 roboracer_description/
 ├── launch/
 │ ├── gazebo.launch.py # Launches robot and world in Gazebo
 │ ├── wall_follow.launch.py # Launches the wall-following node
+```
 
+```
 roboracer_py/
 ├── GapFollowingAlgorithm.py # Python node that implements dynamic gap following
 roboracer_description/
@@ -23,12 +26,12 @@ roboracer_description/
 │ └── levine_loop_world.world # Custom dynamic world for navigation
 ├── urdf/
 │ └── f1tenth_chasis.urdf # Ackermann-style robot model
+```
 
+```
 roboracer_py/
-├── gap_followin.py # Python node for gap-following logic
-
-Inside in 
-
+├── gap_followin.py # Python node for gap-following logic Inside in 
+```
 
 ## 🚀 How to Run
 
@@ -42,14 +45,17 @@ Inside in
 
 ### 🔨 Build Instructions
 
-bash
+```
 cd ~/ros2_ws
 colcon build --packages-select roboracer_description roboracer_py
 source install/setup.bash
+```
 
 🧭 Launch the Simulation (Gazebo + Robot)
 
+```
 ros2 launch roboracer_description gazebo.launch.py
+```
 
 This launches:
 
@@ -60,10 +66,15 @@ All required sensor plugins (LiDAR, camera, etc.).
 🧠 Launch Wall-Following Algorithm
 In a new terminal:
 
+```
 ros2 launch roboracer_description wall_follow.launch.py
+```
+
 This launches:
 
+```
 The gapFollowing.py node from roboracer_py
+```
 
 Real-time dynamic path following using LiDAR data
 
@@ -77,6 +88,7 @@ Real-time dynamic path following using LiDAR data
 ✅ Clean modular structure for packages and nodes
 
 🌍 Topics Used
+
 /scan – LiDAR input for gap analysis
 
 /drive – Output command (AckermannDriveStamped)
@@ -104,6 +116,7 @@ numpy, math, etc. (Python libraries for logic)
 🧑‍💻 Author
 Ahmad Yar
 University of Surrey – Dynamic Track Navigation Project
+
 ROS 2 | Gazebo Sim | Python Robotics
 
 📌 Notes

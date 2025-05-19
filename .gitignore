@@ -1,0 +1,5 @@
+# ROS2 workspace build artifacts
+roboracer_ws/build/
+roboracer_ws/install/
+roboracer_ws/log/
+.vscode/
