@@ -21,7 +21,7 @@
       <origin xyz="0.46 -0.135 -0.180" rpy="1.57 0 3.14"/>
       <geometry>
         
-        <mesh filename="file:///home/loq/roboracer_ws/src/roboracer_description/meshes/chassis.stl" scale="0.000990 0.0009375 0.0009375"/>
+        <mesh filename="package://roboracer_description/meshes/chassis.stl" scale="0.000990 0.0009375 0.0009375"/>
       </geometry>
       <material name="red"/>
     </visual>
@@ -57,7 +57,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/loq/roboracer_ws/src/roboracer_description/meshes/left_wheel.stl"/>
+        <mesh filename="package://roboracer_description/meshes/left_wheel.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -92,7 +92,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/loq/roboracer_ws/src/roboracer_description/meshes/right_wheel.stl"/>
+        <mesh filename="package://roboracer_description/meshes/right_wheel.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -123,7 +123,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/loq/roboracer_ws/src/roboracer_description/meshes/hinge.stl"/>
+        <mesh filename="package://roboracer_description/meshes/hinge.stl"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -151,7 +151,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/loq/roboracer_ws/src/roboracer_description/meshes/hinge.stl"/>
+        <mesh filename="package://roboracer_description/meshes/hinge.stl"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -177,7 +177,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/loq/roboracer_ws/src/roboracer_description/meshes/left_wheel.stl"/>
+        <mesh filename="package://roboracer_description/meshes/left_wheel.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -206,7 +206,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/loq/roboracer_ws/src/roboracer_description/meshes/right_wheel.stl"/>
+        <mesh filename="package://roboracer_description/meshes/right_wheel.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -237,7 +237,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/loq/roboracer_ws/src/roboracer_description/meshes/laser_link.STL"/>
+        <mesh filename="package://roboracer_description/meshes/laser_link.STL"/>
       </geometry>
     </visual>
     <collision>

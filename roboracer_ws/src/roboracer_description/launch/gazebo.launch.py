@@ -18,6 +18,12 @@ def generate_launch_description():
     world_path = os.path.join(pkg_dir, 'world', 'levine_loop.world')
     urdf_path = os.path.join(pkg_dir, 'urdf', 'f1tenth_chassis.urdf')
 
+    share_dir, _ = os.path.split(pkg_dir)
+    env_vars.extend([
+        SetEnvironmentVariable(name='IGN_GAZEBO_RESOURCE_PATH', value=share_dir),
+        SetEnvironmentVariable(name='GZ_SIM_RESOURCE_PATH', value=share_dir),
+    ])
+
     # 3. Ignition Gazebo Launch
     gazebo = ExecuteProcess(
         cmd=['ign','gazebo','-v','4','--render-engine','ogre2','-r',world_path],
@@ -92,7 +98,7 @@ def generate_launch_description():
     #     output='screen'
     # )
 
-    ld = LaunchDescription()
+    ld = LaunchDescription(env_vars)
     ld.add_action(gazebo)
     ld.add_action(RegisterEventHandler(
         OnProcessStart(
