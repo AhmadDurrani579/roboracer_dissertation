@@ -16,9 +16,11 @@ roboracer_description/
 roboracer_py/
 ├── GapFollowingAlgorithm.py # Python node that implements dynamic gap following
 roboracer_description/
+
 ├── launch/
 │ ├── gazebo.launch.py # Launches robot and custom world in Gazebo 
 │ ├── wall_follow.launch.py # Launches the wall-following node
+
 ├── worlds/
 │ └── levine_loop_world.world # Custom dynamic world for navigation
 ├── urdf/
