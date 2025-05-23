@@ -1,2 +1,6 @@
 ros-humble-ackermann-msgs
 ros-humble-joint-state-publisher
+ros-humble-rviz2
+ros-humble-rviz-2d-overlay*
+ros-humble-joy
+ros-humble-teleop-twist-keyboard

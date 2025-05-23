@@ -32,6 +32,7 @@ RUN addgroup $GROUP && \
 
 USER $USER
 ARG WS_DIR=/home/$USER/workspace
-USER $USER
+
+RUN echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
 
 
