@@ -13,7 +13,7 @@ class FollowTheGapNode(Node):
 
         # parameters
         self.declare_parameter('safety_radius', 3.0)
-        self.declare_parameter('max_throttle', 1.7)
+        self.declare_parameter('max_throttle', 2.0)
         self.declare_parameter('min_throttle', 0.5)
         self.declare_parameter('max_steering_angle', 0.69)
         self.declare_parameter('gap_alpha', 2.0)
@@ -23,7 +23,7 @@ class FollowTheGapNode(Node):
         # PID steering control
         self.declare_parameter('steering_kp', 1.0)
         self.declare_parameter('steering_ki', 0.05)
-        self.declare_parameter('steering_kd', 0.1)
+        self.declare_parameter('steering_kd', 2.0)
         self.declare_parameter('steering_deadzone', 0.02)  # normalized output
         self.declare_parameter('integral_limit', 0.5)
         self.declare_parameter('derivative_filter_alpha', 0.7)
