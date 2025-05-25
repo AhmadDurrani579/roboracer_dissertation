@@ -237,7 +237,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://roboracer_description/meshes/laser_link.STL"/>
+        <mesh filename="package://roboracer_description/meshes/laser_link.stl"/>
       </geometry>
     </visual>
     <collision>
