@@ -15,13 +15,14 @@ def generate_launch_description():
 
     # 2. Path Configuration
     pkg_dir = get_package_share_directory('roboracer_description')
-    world_path = os.path.join(pkg_dir, 'world', 'levine_loop.world')
+    world_path = os.path.join(pkg_dir, 'world', 'track_porto.world')
     urdf_path = os.path.join(pkg_dir, 'urdf', 'f1tenth_chassis.urdf')
 
     share_dir, _ = os.path.split(pkg_dir)
+    models_dir = os.path.join(pkg_dir, 'models')
     env_vars.extend([
-        SetEnvironmentVariable(name='IGN_GAZEBO_RESOURCE_PATH', value=share_dir),
-        SetEnvironmentVariable(name='GZ_SIM_RESOURCE_PATH', value=share_dir),
+        SetEnvironmentVariable(name='IGN_GAZEBO_RESOURCE_PATH', value=f'{share_dir}:{models_dir}'),
+        SetEnvironmentVariable(name='GZ_SIM_RESOURCE_PATH', value=f'{share_dir}:{models_dir}'),
     ])
 
     # 3. Ignition Gazebo Launch
@@ -64,10 +65,10 @@ def generate_launch_description():
         arguments=[
             '-topic', '/robot_description',
             '-name', 'car_1',
-            '-x', '18.0', '-y', '-18.4', '-z', '0.1',
+            '-x', '0.0', '-y', '0.0', '-z', '0.1',
             '-R', '0.0',  # roll
             '-P', '0.0',  # pitch
-            '-Y', '0.0'   # yaw
+            '-Y', '0.30'   # yaw
         ],
         parameters=[{'use_sim_time': True}], output='screen'
     )

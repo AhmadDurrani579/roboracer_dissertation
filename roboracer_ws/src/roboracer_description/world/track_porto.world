@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+  <world name="track_porto">
+
+    <physics type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+    <light name="sun" type="directional">
+      <cast_shadows>1</cast_shadows>
+      <pose>0 0 100 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>-0.5 0.5 -1</direction>
+    </light>
+
+    <include>
+      <uri>model://roboracer_description/models/porto_track</uri>
+      <pose>1 2 -.5 0 0 -1.57</pose>
+      <name>porto_track</name>
+    </include>
+
+
+  </world>
+</sdf>

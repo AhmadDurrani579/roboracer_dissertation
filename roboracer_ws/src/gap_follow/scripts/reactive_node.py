@@ -12,14 +12,19 @@ class FollowTheGapNode(Node):
         super().__init__('follow_the_gap')
 
         # parameters
-        self.declare_parameter('safety_radius', 3.0)
+        self.declare_parameter('safety_radius', 3.5)
         self.declare_parameter('max_throttle', 2.0)
-        self.declare_parameter('min_throttle', 0.5)
+        self.declare_parameter('min_throttle', 1.0)
         self.declare_parameter('max_steering_angle', 0.69)
         self.declare_parameter('gap_alpha', 2.0)
-        self.declare_parameter('base_bubble', 1.75)
+        self.declare_parameter('base_bubble', 1.0)
         self.declare_parameter('bubble_gain', 0.55)
         self.declare_parameter('max_bubble_radius', 3.5)
+        # reactive enhancements parameters
+        self.declare_parameter('adaptive_bubble_speed_factor', 1.0)
+        self.declare_parameter('lookahead_angle', 1.57)  # radians
+        self.declare_parameter('gap_score_side_penalty', 1.0)
+        self.declare_parameter('throttle_turn_gain', 0.5)
         # PID steering control
         self.declare_parameter('steering_kp', 1.0)
         self.declare_parameter('steering_ki', 0.05)
@@ -48,6 +53,11 @@ class FollowTheGapNode(Node):
         self.deadzone           = p('steering_deadzone').value
         self.i_limit            = p('integral_limit').value
         self.d_filter_alpha     = p('derivative_filter_alpha').value
+        # load reactive enhancement parameters
+        self.adaptive_bubble_speed_factor = p('adaptive_bubble_speed_factor').value
+        self.lookahead_angle = p('lookahead_angle').value
+        self.gap_score_side_penalty = p('gap_score_side_penalty').value
+        self.throttle_turn_gain = p('throttle_turn_gain').value
 
         # internal state for PID
         self.error_integral = 0.0
@@ -70,12 +80,21 @@ class FollowTheGapNode(Node):
         idx = int(np.argmin(ranges))
         nearest = ranges[idx]
 
-        R = min(self.base_bubble + self.bubble_gain * nearest,
-                self.max_bubble_radius)
+        # adaptive bubble radius based on current speed
+        speed_factor = (self.last_speed / self.max_throttle) if self.max_throttle else 1.0
+        R = min(
+            self.base_bubble
+            + self.bubble_gain * nearest
+              * speed_factor * self.adaptive_bubble_speed_factor,
+            self.max_bubble_radius
+        )
         
         angles = np.arange(ranges.size) * angle_inc
-        d = np.sqrt(ranges**2 + nearest**2
-                    - 2 * ranges * nearest * np.cos(angles - angles[idx]))
+        # clip tiny negative values due to floating-point round-off
+        expr = ranges**2 + nearest**2 \
+               - 2 * ranges * nearest * np.cos(angles - angles[idx])
+        expr = np.clip(expr, 0.0, None)
+        d = np.sqrt(expr)
         proc = ranges.copy()
         proc[d < R] = 0.0
         return proc
@@ -83,42 +102,58 @@ class FollowTheGapNode(Node):
     def scan_callback(self, msg: LaserScan):
         ranges = np.array(msg.ranges)
         ranges[np.isinf(ranges)] = msg.range_max
+        # replace NaN values
+        ranges[np.isnan(ranges)] = msg.range_max
+        # apply lookahead window to focus on forward corridor
+        half_w = int((self.lookahead_angle / msg.angle_increment) / 2)
+        c = len(ranges) // 2
+        ranges[:max(0, c-half_w)] = 0.0
+        ranges[min(len(ranges), c+half_w):] = 0.0
 
         proc = self._apply_bubble(ranges, msg.angle_increment)
         raw = self._find_best_gap(proc, msg.angle_min, msg.angle_increment)
 
-        raw = (self.angle_smooth_alpha * raw +
-            (1 - self.angle_smooth_alpha) * getattr(self, 'last_raw_angle', 0.0))
-
-        delta = raw - getattr(self, 'last_raw_angle', raw)
-        raw = getattr(self, 'last_raw_angle', raw) + max(
-            -self.max_angle_change, min(self.max_angle_change, delta)
-        )
+        # disable smoothing and rate limiting
+#        raw = (self.angle_smooth_alpha * raw +
+#            (1 - self.angle_smooth_alpha) * getattr(self, 'last_raw_angle', 0.0))
+#
+#        delta = raw - getattr(self, 'last_raw_angle', raw)
+#        raw = getattr(self, 'last_raw_angle', raw) + max(
+#            -self.max_angle_change, min(self.max_angle_change, delta)
+#        )
         self.last_raw_angle = raw
 
         self.get_logger().info(f'Best raw angle: {math.degrees(raw):.1f}°')
         self._publish_ackermann(raw)
 
     def _find_best_gap(self, ranges, angle_min, angle_inc):
+            # weighted scoring of safe segments
             mask = ranges > self.safety_radius
-            if not np.any(mask):
-                return 0.0
-
-            max_len = start = end = cur = 0
-            for i, ok in enumerate(mask):
-                if ok:
-                    cur += 1
+            segments = []
+            i = 0
+            n = len(mask)
+            while i < n:
+                if mask[i]:
+                    start = i
+                    while i < n and mask[i]:
+                        i += 1
+                    end = i
+                    length = end - start
+                    mid = (start + end) // 2
+                    angle = angle_min + mid * angle_inc
+                    width = length * angle_inc
+                    # penalize side angles and weight by clearance
+                    side_pen = np.cos(angle) ** self.gap_score_side_penalty
+                    clearance = np.min(ranges[start:end]) / (np.max(ranges) if ranges.size else 1.0)
+                    score = width * side_pen * clearance
+                    segments.append((score, angle))
                 else:
-                    if cur > max_len:
-                        max_len, start, end = cur, i - cur, i
-                    cur = 0
-            if cur > max_len:
-                max_len, start, end = cur, len(mask) - cur, len(mask)
-
-            mid = (start + end) // 2
-            return angle_min + mid * angle_inc
-
-
+                    i += 1
+            if segments:
+                _, best_angle = max(segments, key=lambda x: x[0])
+                return best_angle
+            # no safe gap found
+            return 0.0
 
     def _publish_ackermann(self, error):
         # PID control
@@ -150,6 +185,10 @@ class FollowTheGapNode(Node):
         # adaptive throttle: reduce on high curvature
         penalty = min(abs(ctrl), 1.0)
         throttle = self.max_throttle * (1.0 - 0.7 * penalty)
+        # additional throttle reduction based on steering (raw error)
+        turn_pen = min(abs(error) / self.max_steering_angle, 1.0)
+        throttle = throttle * (1.0 - self.throttle_turn_gain * turn_pen)
+        # enforce minimum speed
         throttle = max(throttle, self.min_throttle)
         self.last_speed = throttle
 
