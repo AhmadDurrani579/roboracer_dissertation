@@ -19,6 +19,7 @@ services:
       - ../roboracer_ws:/home/dev/roboracer_ws:rw
     devices:
       - /dev/dri:/dev/dri
+      - /dev/input/js0:/dev/input/js0
     deploy:
       resources:
         reservations:
