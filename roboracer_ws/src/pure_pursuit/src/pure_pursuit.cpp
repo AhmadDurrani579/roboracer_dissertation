@@ -25,13 +25,13 @@
 
 PurePursuit::PurePursuit() : Node("pure_pursuit_node") {
     // initialise parameters
-    this->declare_parameter("waypoints_path", "/sim_ws/src/pure_pursuit/racelines/e7_floor5.csv");
-    this->declare_parameter("odom_topic", "/ego_racecar/odom");
-    this->declare_parameter("car_refFrame", "ego_racecar/base_link");
-    this->declare_parameter("drive_topic", "/drive");
+    this->declare_parameter("waypoints_path", "/sim_ws/src/pure_pursuit/racelines/levin_blocked.csv");
+    this->declare_parameter("odom_topic", "/car_1/odom");
+    this->declare_parameter("car_refFrame", "/car_1/base_link");
+    this->declare_parameter("drive_topic", "/ackermann_cmd");
     this->declare_parameter("rviz_current_waypoint_topic", "/current_waypoint");
     this->declare_parameter("rviz_lookahead_waypoint_topic", "/lookahead_waypoint");
-    this->declare_parameter("global_refFrame", "map");
+    this->declare_parameter("global_refFrame", "odom");
     this->declare_parameter("min_lookahead", 0.5);
     this->declare_parameter("max_lookahead", 1.0);
     this->declare_parameter("lookahead_ratio", 8.0);
@@ -130,7 +130,7 @@ void PurePursuit::load_waypoints() {
 
 void PurePursuit::visualize_lookahead_point(Eigen::Vector3d &point) {
     auto marker = visualization_msgs::msg::Marker();
-    marker.header.frame_id = "map";
+    marker.header.frame_id = "odom";
     marker.header.stamp = rclcpp::Clock().now();
     marker.type = visualization_msgs::msg::Marker::SPHERE;
     marker.action = visualization_msgs::msg::Marker::ADD;
@@ -148,7 +148,7 @@ void PurePursuit::visualize_lookahead_point(Eigen::Vector3d &point) {
 
 void PurePursuit::visualize_current_point(Eigen::Vector3d &point) {
     auto marker = visualization_msgs::msg::Marker();
-    marker.header.frame_id = "map";
+    marker.header.frame_id = "odom";
     marker.header.stamp = rclcpp::Clock().now();
     marker.type = visualization_msgs::msg::Marker::SPHERE;
     marker.action = visualization_msgs::msg::Marker::ADD;
@@ -165,11 +165,21 @@ void PurePursuit::visualize_current_point(Eigen::Vector3d &point) {
 }
 
 void PurePursuit::get_waypoint() {
-    // Main logic: Search within the next 500 points
+    // First, find the closest point to the car for velocity index
+    double shortest_distance = p2pdist(waypoints.X[0], x_car_world, waypoints.Y[0], y_car_world);
+    int velocity_i = 0;
+    for (int i = 0; i < num_waypoints; i++) {
+        if (p2pdist(waypoints.X[i], x_car_world, waypoints.Y[i], y_car_world) <= shortest_distance) {
+            shortest_distance = p2pdist(waypoints.X[i], x_car_world, waypoints.Y[i], y_car_world);
+            velocity_i = i;
+        }
+    }
+    
+    // Main logic: Search within the next 500 points FROM THE CLOSEST POINT
     double longest_distance = 0;
     int final_i = -1;
-    int start = waypoints.index;
-    int end = (waypoints.index + 500) % num_waypoints;
+    int start = velocity_i;  // Start from closest point instead of old index
+    int end = (velocity_i + 500) % num_waypoints;
 
     // Lookahead needs to be between the min_lookhead and the max_lookahead
     double lookahead = std::min(std::max(min_lookahead, max_lookahead * curr_velocity / lookahead_ratio), max_lookahead);
@@ -196,28 +206,12 @@ void PurePursuit::get_waypoint() {
         }
     }
 
-    if (final_i == -1) {  // if we haven't found anything, search from the beginning
-        final_i = 0;
-        for (int i = 0; i < num_waypoints; i++) {
-            if (p2pdist(waypoints.X[i], x_car_world, waypoints.Y[i], y_car_world) <= lookahead && p2pdist(waypoints.X[i], x_car_world, waypoints.Y[i], y_car_world) >= longest_distance) {
-                longest_distance = p2pdist(waypoints.X[i], x_car_world, waypoints.Y[i], y_car_world);
-                final_i = i;
-            }
-        }
+    if (final_i != -1) { // New logic: update index only if a valid point is found
+        waypoints.index = final_i;
     }
+    // If final_i remains -1, waypoints.index is not updated.
+    // This means the car will continue to target the previous lookahead point.
 
-    // Find the closest point to the car, and use the velocity index for that
-    double shortest_distance = p2pdist(waypoints.X[0], x_car_world, waypoints.Y[0], y_car_world);
-    int velocity_i = 0;
-    for (int i = 0; i < num_waypoints; i++) {
-        if (p2pdist(waypoints.X[i], x_car_world, waypoints.Y[i], y_car_world) <= shortest_distance) {
-            shortest_distance = p2pdist(waypoints.X[i], x_car_world, waypoints.Y[i], y_car_world);
-            velocity_i = i;
-        }
-    }
-
-    // If a waypoint is not found within our radius, then waypoints.index = 0
-    waypoints.index = final_i;
     waypoints.velocity_index = velocity_i;
 }
 
@@ -237,7 +231,7 @@ void PurePursuit::quat_to_rot(double q0, double q1, double q2, double q3) {
     rotation_m << r00, r01, r02, r10, r11, r12, r20, r21, r22;
 }
 
-void PurePursuit::transformandinterp_waypoint() {  // pass old waypoint here
+bool PurePursuit::transformandinterp_waypoint() {  // pass old waypoint here
     // initialise vectors
     waypoints.lookahead_point_world << waypoints.X[waypoints.index], waypoints.Y[waypoints.index], 0.0;
     waypoints.current_point_world << waypoints.X[waypoints.velocity_index], waypoints.Y[waypoints.velocity_index], 0.0;
@@ -252,7 +246,8 @@ void PurePursuit::transformandinterp_waypoint() {  // pass old waypoint here
         // Get the transform from the base_link reference to world reference frame
         transformStamped = tf_buffer_->lookupTransform(car_refFrame, global_refFrame, tf2::TimePointZero);
     } catch (tf2::TransformException &ex) {
-        RCLCPP_INFO(this->get_logger(), "Could not transform. Error: %s", ex.what());
+        RCLCPP_ERROR(this->get_logger(), "Could not transform %s to %s: %s. Skipping this cycle.", global_refFrame.c_str(), car_refFrame.c_str(), ex.what());
+        return false; // Indicate failure
     }
 
     // transform points (rotate first and then translate)
@@ -260,6 +255,7 @@ void PurePursuit::transformandinterp_waypoint() {  // pass old waypoint here
     quat_to_rot(transformStamped.transform.rotation.w, transformStamped.transform.rotation.x, transformStamped.transform.rotation.y, transformStamped.transform.rotation.z);
 
     waypoints.lookahead_point_car = (rotation_m * waypoints.lookahead_point_world) + translation_v;
+    return true; // Indicate success
 }
 
 double PurePursuit::p_controller() {
@@ -311,7 +307,15 @@ void PurePursuit::odom_callback(const nav_msgs::msg::Odometry::ConstSharedPtr od
     get_waypoint();
 
     // use tf2 transform the goal point
-    transformandinterp_waypoint();
+    if (!transformandinterp_waypoint()) {
+        RCLCPP_WARN(this->get_logger(), "TF transform failed, not publishing drive command for this cycle.");
+        // Optionally, publish a zero-speed command here if desired for safety
+        // auto drive_msgObj = ackermann_msgs::msg::AckermannDriveStamped();
+        // drive_msgObj.drive.speed = 0.0;
+        // drive_msgObj.drive.steering_angle = 0.0;
+        // publisher_drive->publish(drive_msgObj);
+        return; 
+    }
 
     // Calculate curvature/steering angle
     double steering_angle = p_controller();
