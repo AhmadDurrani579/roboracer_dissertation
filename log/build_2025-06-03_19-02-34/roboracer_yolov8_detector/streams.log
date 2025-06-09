@@ -1,0 +1,37 @@
+[0.917s] Invoking command in '/home/loq/roboracer_ws/src/roboracer_yolov8_detector': PYTHONPATH=/home/loq/roboracer_ws/build/roboracer_yolov8_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roboracer_yolov8_detector build --build-base /home/loq/roboracer_ws/build/roboracer_yolov8_detector/build install --record /home/loq/roboracer_ws/build/roboracer_yolov8_detector/install.log --single-version-externally-managed install_data
+[1.182s] running egg_info
+[1.184s] creating ../../build/roboracer_yolov8_detector/roboracer_yolov8_detector.egg-info
+[1.184s] writing ../../build/roboracer_yolov8_detector/roboracer_yolov8_detector.egg-info/PKG-INFO
+[1.184s] writing dependency_links to ../../build/roboracer_yolov8_detector/roboracer_yolov8_detector.egg-info/dependency_links.txt
+[1.184s] writing entry points to ../../build/roboracer_yolov8_detector/roboracer_yolov8_detector.egg-info/entry_points.txt
+[1.184s] writing requirements to ../../build/roboracer_yolov8_detector/roboracer_yolov8_detector.egg-info/requires.txt
+[1.184s] writing top-level names to ../../build/roboracer_yolov8_detector/roboracer_yolov8_detector.egg-info/top_level.txt
+[1.184s] writing manifest file '../../build/roboracer_yolov8_detector/roboracer_yolov8_detector.egg-info/SOURCES.txt'
+[1.186s] reading manifest file '../../build/roboracer_yolov8_detector/roboracer_yolov8_detector.egg-info/SOURCES.txt'
+[1.187s] writing manifest file '../../build/roboracer_yolov8_detector/roboracer_yolov8_detector.egg-info/SOURCES.txt'
+[1.187s] running build
+[1.187s] running build_py
+[1.187s] creating /home/loq/roboracer_ws/build/roboracer_yolov8_detector/build
+[1.187s] creating /home/loq/roboracer_ws/build/roboracer_yolov8_detector/build/lib
+[1.187s] creating /home/loq/roboracer_ws/build/roboracer_yolov8_detector/build/lib/roboracer_yolov8_detector
+[1.188s] copying roboracer_yolov8_detector/yolov8_detection_node.py -> /home/loq/roboracer_ws/build/roboracer_yolov8_detector/build/lib/roboracer_yolov8_detector
+[1.188s] copying roboracer_yolov8_detector/__init__.py -> /home/loq/roboracer_ws/build/roboracer_yolov8_detector/build/lib/roboracer_yolov8_detector
+[1.188s] running install
+[1.188s] running install_lib
+[1.189s] creating /home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages/roboracer_yolov8_detector
+[1.189s] copying /home/loq/roboracer_ws/build/roboracer_yolov8_detector/build/lib/roboracer_yolov8_detector/yolov8_detection_node.py -> /home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages/roboracer_yolov8_detector
+[1.189s] copying /home/loq/roboracer_ws/build/roboracer_yolov8_detector/build/lib/roboracer_yolov8_detector/__init__.py -> /home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages/roboracer_yolov8_detector
+[1.191s] byte-compiling /home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages/roboracer_yolov8_detector/yolov8_detection_node.py to yolov8_detection_node.cpython-310.pyc
+[1.191s] byte-compiling /home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages/roboracer_yolov8_detector/__init__.py to __init__.cpython-310.pyc
+[1.192s] running install_data
+[1.192s] creating /home/loq/roboracer_ws/install/roboracer_yolov8_detector/share/ament_index
+[1.192s] creating /home/loq/roboracer_ws/install/roboracer_yolov8_detector/share/ament_index/resource_index
+[1.192s] creating /home/loq/roboracer_ws/install/roboracer_yolov8_detector/share/ament_index/resource_index/packages
+[1.192s] copying resource/roboracer_yolov8_detector -> /home/loq/roboracer_ws/install/roboracer_yolov8_detector/share/ament_index/resource_index/packages
+[1.192s] copying package.xml -> /home/loq/roboracer_ws/install/roboracer_yolov8_detector/share/roboracer_yolov8_detector
+[1.192s] running install_egg_info
+[1.195s] Copying ../../build/roboracer_yolov8_detector/roboracer_yolov8_detector.egg-info to /home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages/roboracer_yolov8_detector-0.0.0-py3.10.egg-info
+[1.196s] running install_scripts
+[1.217s] Installing yolov8_detection_node script to /home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/roboracer_yolov8_detector
+[1.217s] writing list of installed files to '/home/loq/roboracer_ws/build/roboracer_yolov8_detector/install.log'
+[1.271s] Invoked command in '/home/loq/roboracer_ws/src/roboracer_yolov8_detector' returned '0': PYTHONPATH=/home/loq/roboracer_ws/build/roboracer_yolov8_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roboracer_yolov8_detector build --build-base /home/loq/roboracer_ws/build/roboracer_yolov8_detector/build install --record /home/loq/roboracer_ws/build/roboracer_yolov8_detector/install.log --single-version-externally-managed install_data

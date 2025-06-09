@@ -2,17 +2,15 @@ joy_teleop:
   ros__parameters:
     move:
       type: topic
-      interface_type: geometry_msgs/msg/TwistStamped
-      topic_name: /car_1/cmd_vel
-      deadman_buttons: [5]
+      interface_type: ackermann_msgs/msg/AckermannDriveStamped
+      topic_name: /ackermann_cmd
+      deadman_buttons: [5]  # hold this to enable drive
       axis_mappings:
-        twist-linear-x:
-          axis: 1
-          scale: 1.0
+        drive-speed:
+          axis: 1         # usually left stick vertical
+          scale: 2.0      # max speed in m/s
           offset: 0.0
-        twist-angular-z:
-          axis: 3
-          scale: 8.0
+        drive-steering_angle:
+          axis: 3         # usually right stick horizontal
+          scale: 0.4      # max steering angle in radians
           offset: 0.0
-
-          

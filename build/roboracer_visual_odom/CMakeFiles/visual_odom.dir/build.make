@@ -92,7 +92,7 @@ visual_odom_EXTERNAL_OBJECTS =
 
 visual_odom: CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o
 visual_odom: CMakeFiles/visual_odom.dir/build.make
-visual_odom: /home/loq/orb_slam3_ws/src/ORB_SLAM3/lib/libORB_SLAM3.so
+visual_odom: /usr/local/lib/libORB_SLAM3.so
 visual_odom: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
 visual_odom: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d
 visual_odom: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d

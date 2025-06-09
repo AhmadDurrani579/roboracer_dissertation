@@ -1,0 +1,18 @@
+[0.809s] Invoking command in '/home/loq/roboracer_ws/build/roboracer_py': PYTHONPATH=/home/loq/roboracer_ws/build/roboracer_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loq/roboracer_ws/install/roboracer_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/loq/roboracer_ws/build/roboracer_py/build --no-deps symlink_data
+[1.035s] running develop
+[1.196s] running egg_info
+[1.197s] writing roboracer_py.egg-info/PKG-INFO
+[1.197s] writing dependency_links to roboracer_py.egg-info/dependency_links.txt
+[1.197s] writing entry points to roboracer_py.egg-info/entry_points.txt
+[1.197s] writing requirements to roboracer_py.egg-info/requires.txt
+[1.197s] writing top-level names to roboracer_py.egg-info/top_level.txt
+[1.199s] reading manifest file 'roboracer_py.egg-info/SOURCES.txt'
+[1.199s] writing manifest file 'roboracer_py.egg-info/SOURCES.txt'
+[1.200s] running build_ext
+[1.200s] Creating /home/loq/roboracer_ws/install/roboracer_py/lib/python3.10/site-packages/roboracer-py.egg-link (link to .)
+[1.201s] Installing disparity_extender script to /home/loq/roboracer_ws/install/roboracer_py/lib/roboracer_py
+[1.201s] Installing gap_follow script to /home/loq/roboracer_ws/install/roboracer_py/lib/roboracer_py
+[1.201s] 
+[1.201s] Installed /home/loq/roboracer_ws/build/roboracer_py
+[1.201s] running symlink_data
+[1.232s] Invoked command in '/home/loq/roboracer_ws/build/roboracer_py' returned '0': PYTHONPATH=/home/loq/roboracer_ws/build/roboracer_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loq/roboracer_ws/install/roboracer_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/loq/roboracer_ws/build/roboracer_py/build --no-deps symlink_data

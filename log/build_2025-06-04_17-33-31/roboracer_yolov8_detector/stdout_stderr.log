@@ -1,0 +1,31 @@
+running develop
+Removing /home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages/roboracer-yolov8-detector.egg-link (link to .)
+running egg_info
+writing ../../build/roboracer_yolov8_detector/roboracer_yolov8_detector.egg-info/PKG-INFO
+writing dependency_links to ../../build/roboracer_yolov8_detector/roboracer_yolov8_detector.egg-info/dependency_links.txt
+writing entry points to ../../build/roboracer_yolov8_detector/roboracer_yolov8_detector.egg-info/entry_points.txt
+writing requirements to ../../build/roboracer_yolov8_detector/roboracer_yolov8_detector.egg-info/requires.txt
+writing top-level names to ../../build/roboracer_yolov8_detector/roboracer_yolov8_detector.egg-info/top_level.txt
+reading manifest file '../../build/roboracer_yolov8_detector/roboracer_yolov8_detector.egg-info/SOURCES.txt'
+writing manifest file '../../build/roboracer_yolov8_detector/roboracer_yolov8_detector.egg-info/SOURCES.txt'
+running build
+running build_py
+copying roboracer_yolov8_detector/detection_3d_node.py -> /home/loq/roboracer_ws/build/roboracer_yolov8_detector/build/lib/roboracer_yolov8_detector
+running install
+running install_lib
+creating /home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages/roboracer_yolov8_detector
+copying /home/loq/roboracer_ws/build/roboracer_yolov8_detector/build/lib/roboracer_yolov8_detector/yolov8_detection_node.py -> /home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages/roboracer_yolov8_detector
+copying /home/loq/roboracer_ws/build/roboracer_yolov8_detector/build/lib/roboracer_yolov8_detector/__init__.py -> /home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages/roboracer_yolov8_detector
+copying /home/loq/roboracer_ws/build/roboracer_yolov8_detector/build/lib/roboracer_yolov8_detector/detection_3d_node.py -> /home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages/roboracer_yolov8_detector
+byte-compiling /home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages/roboracer_yolov8_detector/yolov8_detection_node.py to yolov8_detection_node.cpython-310.pyc
+byte-compiling /home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages/roboracer_yolov8_detector/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages/roboracer_yolov8_detector/detection_3d_node.py to detection_3d_node.cpython-310.pyc
+running install_data
+copying resource/roboracer_yolov8_detector -> /home/loq/roboracer_ws/install/roboracer_yolov8_detector/share/ament_index/resource_index/packages
+copying package.xml -> /home/loq/roboracer_ws/install/roboracer_yolov8_detector/share/roboracer_yolov8_detector
+running install_egg_info
+Copying ../../build/roboracer_yolov8_detector/roboracer_yolov8_detector.egg-info to /home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages/roboracer_yolov8_detector-0.0.0-py3.10.egg-info
+running install_scripts
+Installing detection_3d_node script to /home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/roboracer_yolov8_detector
+Installing yolov8_detection_node script to /home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/roboracer_yolov8_detector
+writing list of installed files to '/home/loq/roboracer_ws/build/roboracer_yolov8_detector/install.log'

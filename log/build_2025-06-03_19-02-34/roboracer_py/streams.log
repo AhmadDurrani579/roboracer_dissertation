@@ -1,0 +1,41 @@
+[0.984s] Invoking command in '/home/loq/roboracer_ws/src/roboracer_py': PYTHONPATH=/home/loq/roboracer_ws/build/roboracer_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loq/roboracer_ws/install/roboracer_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roboracer_py build --build-base /home/loq/roboracer_ws/build/roboracer_py/build install --record /home/loq/roboracer_ws/build/roboracer_py/install.log --single-version-externally-managed install_data
+[1.272s] running egg_info
+[1.272s] creating ../../build/roboracer_py/roboracer_py.egg-info
+[1.272s] writing ../../build/roboracer_py/roboracer_py.egg-info/PKG-INFO
+[1.273s] writing dependency_links to ../../build/roboracer_py/roboracer_py.egg-info/dependency_links.txt
+[1.273s] writing entry points to ../../build/roboracer_py/roboracer_py.egg-info/entry_points.txt
+[1.273s] writing requirements to ../../build/roboracer_py/roboracer_py.egg-info/requires.txt
+[1.273s] writing top-level names to ../../build/roboracer_py/roboracer_py.egg-info/top_level.txt
+[1.273s] writing manifest file '../../build/roboracer_py/roboracer_py.egg-info/SOURCES.txt'
+[1.275s] reading manifest file '../../build/roboracer_py/roboracer_py.egg-info/SOURCES.txt'
+[1.275s] writing manifest file '../../build/roboracer_py/roboracer_py.egg-info/SOURCES.txt'
+[1.275s] running build
+[1.275s] running build_py
+[1.276s] creating /home/loq/roboracer_ws/build/roboracer_py/build
+[1.276s] creating /home/loq/roboracer_ws/build/roboracer_py/build/lib
+[1.276s] creating /home/loq/roboracer_ws/build/roboracer_py/build/lib/roboracer_py
+[1.276s] copying roboracer_py/__init__.py -> /home/loq/roboracer_ws/build/roboracer_py/build/lib/roboracer_py
+[1.276s] copying roboracer_py/gap_follow.py -> /home/loq/roboracer_ws/build/roboracer_py/build/lib/roboracer_py
+[1.276s] copying roboracer_py/disparity_extender.py -> /home/loq/roboracer_ws/build/roboracer_py/build/lib/roboracer_py
+[1.276s] running install
+[1.276s] running install_lib
+[1.278s] creating /home/loq/roboracer_ws/install/roboracer_py/lib/python3.10/site-packages/roboracer_py
+[1.278s] copying /home/loq/roboracer_ws/build/roboracer_py/build/lib/roboracer_py/__init__.py -> /home/loq/roboracer_ws/install/roboracer_py/lib/python3.10/site-packages/roboracer_py
+[1.278s] copying /home/loq/roboracer_ws/build/roboracer_py/build/lib/roboracer_py/gap_follow.py -> /home/loq/roboracer_ws/install/roboracer_py/lib/python3.10/site-packages/roboracer_py
+[1.278s] copying /home/loq/roboracer_ws/build/roboracer_py/build/lib/roboracer_py/disparity_extender.py -> /home/loq/roboracer_ws/install/roboracer_py/lib/python3.10/site-packages/roboracer_py
+[1.278s] byte-compiling /home/loq/roboracer_ws/install/roboracer_py/lib/python3.10/site-packages/roboracer_py/__init__.py to __init__.cpython-310.pyc
+[1.278s] byte-compiling /home/loq/roboracer_ws/install/roboracer_py/lib/python3.10/site-packages/roboracer_py/gap_follow.py to gap_follow.cpython-310.pyc
+[1.280s] byte-compiling /home/loq/roboracer_ws/install/roboracer_py/lib/python3.10/site-packages/roboracer_py/disparity_extender.py to disparity_extender.cpython-310.pyc
+[1.281s] running install_data
+[1.281s] creating /home/loq/roboracer_ws/install/roboracer_py/share/ament_index
+[1.281s] creating /home/loq/roboracer_ws/install/roboracer_py/share/ament_index/resource_index
+[1.281s] creating /home/loq/roboracer_ws/install/roboracer_py/share/ament_index/resource_index/packages
+[1.281s] copying resource/roboracer_py -> /home/loq/roboracer_ws/install/roboracer_py/share/ament_index/resource_index/packages
+[1.281s] copying package.xml -> /home/loq/roboracer_ws/install/roboracer_py/share/roboracer_py
+[1.281s] running install_egg_info
+[1.284s] Copying ../../build/roboracer_py/roboracer_py.egg-info to /home/loq/roboracer_ws/install/roboracer_py/lib/python3.10/site-packages/roboracer_py-0.0.0-py3.10.egg-info
+[1.284s] running install_scripts
+[1.305s] Installing disparity_extender script to /home/loq/roboracer_ws/install/roboracer_py/lib/roboracer_py
+[1.305s] Installing gap_follow script to /home/loq/roboracer_ws/install/roboracer_py/lib/roboracer_py
+[1.306s] writing list of installed files to '/home/loq/roboracer_ws/build/roboracer_py/install.log'
+[1.335s] Invoked command in '/home/loq/roboracer_ws/src/roboracer_py' returned '0': PYTHONPATH=/home/loq/roboracer_ws/build/roboracer_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loq/roboracer_ws/install/roboracer_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roboracer_py build --build-base /home/loq/roboracer_ws/build/roboracer_py/build install --record /home/loq/roboracer_ws/build/roboracer_py/install.log --single-version-externally-managed install_data

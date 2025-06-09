@@ -22,19 +22,19 @@ class DisparityExtender(Node):
         self.marker_scan = self.create_publisher(LaserScan, '/viz_scan', 10)
 
         # Parameters
-        self.car_half_width = 0.1
-        self.disparity_threshold = 0.5
-        self.safety_margin = 2.0
-        self.min_speed = 1.0
-        self.max_speed = 1.5
+        self.car_half_width = 0.1225
+        self.disparity_threshold = 1.0
+        self.safety_margin = 3.0
+        self.min_speed = 2.0
+        self.max_speed = 6.5
         self.safety_dist = 0.8
         self.dist_for_max_speed = 1.0
-        self.smoothing_factor = 0.2
-        self.deadband = 0.5
+        self.smoothing_factor = 0.1
+        self.deadband = 0.2
         self.max_steering_change = 1.0
         self.prev_steering_angle = 0.0
-        self.desired_min_angle = -pi/2  # -90°
-        self.desired_max_angle = pi/2    # +90°
+        self.desired_min_angle = -2*pi/3  # -90°
+        self.desired_max_angle =  2*pi/3    # +90°
 
         self.get_logger().info("Optimized Disparity Extender node started.")
 
@@ -111,13 +111,19 @@ class DisparityExtender(Node):
         return self.min_speed + ratio * (self.max_speed - self.min_speed)
 
     def expand_obstacle_buffer(self, lidar_data, angle_min, angle_inc):
-        """Expand the buffer around obstacles to ensure the car maintains a safe distance."""
         expanded_data = np.copy(lidar_data)
+        # Iterate through each point
         for i in range(len(lidar_data)):
-            distance = lidar_data[i] 
-            angle = angle_min + i * angle_inc
-            buffer_distance = max(0.5, distance - 2.5)  # Ebuffer by 2.5 meters (idk adjust it depending on the situation)
-            expanded_data[i] = buffer_distance
+            # If this point is an obstacle (e.g., its distance is within a threshold)
+            if lidar_data[i] < self.safety_dist + 0.5: # Or some other threshold for an obstacle
+                # Then, mark a range of points around it as effectively closer
+                # This creates the "buffer"
+                num_buffer_samples = int(self.car_half_width / (lidar_data[i] * angle_inc)) + 1 # Dynamic buffer based on distance
+                for j in range(-num_buffer_samples, num_buffer_samples + 1):
+                    idx = i + j
+                    if 0 <= idx < len(lidar_data):
+                        # Make these buffer points effectively closer to the obstacle's distance
+                        expanded_data[idx] = min(expanded_data[idx], lidar_data[i] * 1.1) # Maybe a bit more than the actual obstacle distance
         return expanded_data
 
     def lidar_callback(self, scan_msg):

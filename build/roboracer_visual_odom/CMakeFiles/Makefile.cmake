@@ -1048,7 +1048,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "ament_cmake_core/roboracer_visual_odomConfig.cmake"
   "ament_cmake_core/stamps/nameConfig-version.cmake.in.stamp"
   "ament_cmake_core/roboracer_visual_odomConfig-version.cmake"
-  "ament_cmake_symlink_install_targets_0_Debug.cmake"
+  "ament_cmake_symlink_install_targets_0_.cmake"
   "ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/roboracer_visual_odom"
   "ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/roboracer_visual_odom"
   "ament_cmake_index/share/ament_index/resource_index/packages/roboracer_visual_odom"

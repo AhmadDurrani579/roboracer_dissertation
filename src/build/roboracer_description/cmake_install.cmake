@@ -52,6 +52,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/loq/roboracer_ws/src/roboracer_description/urdf"
     "/home/loq/roboracer_ws/src/roboracer_description/photos"
     "/home/loq/roboracer_ws/src/roboracer_description/maps"
+    "/home/loq/roboracer_ws/src/roboracer_description/config"
     )
 endif()
 

@@ -10,7 +10,24 @@ def generate_launch_description():
             arguments=['0.1', '0.0', '0.3', '0.0', '0.0', '0.0', 'car_1_base_link', 'car_1_laser'],
             output='screen'
         ),
-        # Wall-following node (ensure it uses the same frame names)
+        
+        Node(
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            arguments=[
+                '0.40',  # x (m)
+                '0.00',  # y
+                '0.15',  # z
+                '0.00',  # roll
+                '0.00',  # pitch
+                '0.00',  # yaw
+                'car_1_base_link',     # parent frame
+                'car_1_camera_link'    # child frame
+            ],
+            output='screen'
+        ),
+
+        
         Node(
             package='roboracer_py',
             executable='disparity_extender',

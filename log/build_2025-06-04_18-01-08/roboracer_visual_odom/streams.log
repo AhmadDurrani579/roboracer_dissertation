@@ -1,0 +1,11 @@
+[0.297s] Invoking command in '/home/loq/roboracer_ws/build/roboracer_visual_odom': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/roboracer_ws/install/roboracer_yolov8_detector:/home/loq/roboracer_ws/install/roboracer_py:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble /usr/bin/cmake --build /home/loq/roboracer_ws/build/roboracer_visual_odom -- -j8 -l8
+[0.347s] [35m[1mConsolidate compiler generated dependencies of target visual_odom[0m
+[0.379s] [ 50%] [32mBuilding CXX object CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o[0m
+[1.777s] [01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:24:10:[m[K [01;31m[Kfatal error: [m[Kimu/ImuTypes.h: No such file or directory
+[1.777s]    24 | #include [01;31m[K<imu/ImuTypes.h>[m[K   // OR <ImuTypes.h> if your include path is set
+[1.777s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.777s] compilation terminated.
+[1.793s] gmake[2]: *** [CMakeFiles/visual_odom.dir/build.make:76: CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o] Error 1
+[1.794s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/visual_odom.dir/all] Error 2
+[1.794s] gmake: *** [Makefile:146: all] Error 2
+[1.797s] Invoked command in '/home/loq/roboracer_ws/build/roboracer_visual_odom' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/roboracer_ws/install/roboracer_yolov8_detector:/home/loq/roboracer_ws/install/roboracer_py:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble /usr/bin/cmake --build /home/loq/roboracer_ws/build/roboracer_visual_odom -- -j8 -l8

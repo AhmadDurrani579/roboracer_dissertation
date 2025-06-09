@@ -38,24 +38,37 @@ def generate_launch_description():
             '/hokuyo/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan',
             '/model/car_1/imu@sensor_msgs/msg/Imu@gz.msgs.IMU',
             '/model/car_1/joint_state@sensor_msgs/msg/JointState@gz.msgs.Model',
-            '/camera/image_raw@sensor_msgs/msg/Image@gz.msgs.Image',
-            '/camera/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo',
+            # RGB Image and Camera Info
+            '/rgbd_camera/image@sensor_msgs/msg/Image@gz.msgs.Image',
+            '/rgbd_camera/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo',
+            # Depth Image (corrected)
+            '/rgbd_camera/depth_image@sensor_msgs/msg/Image@gz.msgs.Image',
+            # Point Cloud (optional)
+            # '/rgbd_camera/points@sensor_msgs/msg/PointCloud2@gz.msgs.PointCloudPacked',
+            # '/rgbd_camera/points@sensor_msgs/msg/PointCloud2@gz.msgs.PointCloudPacked',
+
         ],
         remappings=[
             ('/model/car_1/cmd_vel', '/car_1/cmd_vel'),
             ('/model/car_1/imu', '/car_1/imu'),
-            ('/camera/image_raw', '/car_1/camera/image_raw'),
-            ('/camera/camera_info', '/car_1/camera/camera_info'),
+            # RGB camera remappings
+            ('/rgbd_camera/image', '/car_1/rgbd_camera/rgb/image_raw'),
+            ('/rgbd_camera/camera_info', '/car_1/rgbd_camera/rgb/camera_info'),
+            # Depth camera remapping (updated!)
+            ('/rgbd_camera/depth_image', '/car_1/rgbd_camera/depth/image_raw'),
+            # If you want to relay camera_info for depth, see previous replies.
+            # ('/rgbd_camera/points', '/car_1/rgbd_camera/points'),
+            # ('/rgbd_camera/points', '/car_1/rgbd_camera/points'),
+
         ],
         parameters=[{'use_sim_time': True}],
         output='screen'
     )
     
-    
     # 5. Robot Spawning and State Publishers (delayed until clock is active)
     spawn_robot = Node(
         package='ros_gz_sim', executable='create',
-        arguments=['-topic', '/robot_description', '-name', 'car_1', '-x', '18.0', '-y', '-18.4', '-z', '0.1'],
+        arguments=['-topic', '/robot_description', '-name', 'car_1', '-x', '0.0', '-y', '-18.3', '-z', '0.0'],
         parameters=[{'use_sim_time': True}], output='screen'
     )
     robot_state_publisher = Node(
@@ -81,16 +94,37 @@ def generate_launch_description():
         package='roboracer_controller', executable='ackerman_controller.py',
         parameters=[{'use_sim_time': True}], output='screen', name='ackermann_controller_node' # Give it a name
     )
-    ackermann_to_twist = Node(
-        package='roboracer_controller', executable='ackermann_to_twist.py', name='ackermann_to_twist',
-        parameters=[{'wheelbase': 0.325}], output='screen'
+    
+    joystick_config_path = os.path.join(
+        get_package_share_directory('roboracer_controller'),
+        'config',
+        'joystick_config.yaml'
     )
 
-    # 8. TF Echo Node (runs after the ackermann controller starts)
-    # tf_echo_node = ExecuteProcess(
-    #     cmd=['ros2', 'run', 'tf2_ros', 'tf2_echo', 'odom', 'car_1_base_link', '--ros-args', '-p', 'use_sim_time:=true'],
-    #     output='screen'
+    ackermann_to_twist = Node(
+        package='roboracer_controller',
+        executable='ackermann_to_twist.py',
+        name='ackermann_to_twist',
+        parameters=[joystick_config_path],
+        output='screen'
+    )
+
+    # ackermann_to_twist = Node(
+    #     package='roboracer_controller', executable='ackermann_to_twist.py', name='ackermann_to_twist',
+    #     parameters=[{'wheelbase': 0.325}], output='screen'
     # )
+    
+    camera_info_relay = Node(
+        package='topic_tools',
+        executable='relay',
+        arguments=[
+            '/car_1/rgbd_camera/rgb/camera_info',
+            '/car_1/rgbd_camera/depth/camera_info'
+        ],
+        name='depth_camera_info_relay',
+        parameters=[{'use_sim_time': True}],
+        output='screen'
+    )
 
     ld = LaunchDescription()
     ld.add_action(gazebo)
@@ -100,7 +134,8 @@ def generate_launch_description():
             on_start=[bridge]
         )
     ))
-
+    
+    
     # Delay sim‑time nodes (except ackermann_controller) by 1 s
     ld.add_action(TimerAction(
         period=1.0,
@@ -111,9 +146,10 @@ def generate_launch_description():
             ackermann_to_twist,
         ]
     ))
-
+    
     # Start ackermann_controller immediately
     ld.add_action(ackermann_controller)
+    ld.add_action(camera_info_relay)
 
     # Register the event handler to start tf_echo after ackermann_controller starts
     # ld.add_action(RegisterEventHandler(

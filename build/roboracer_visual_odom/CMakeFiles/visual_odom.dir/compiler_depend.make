@@ -692,23 +692,23 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__builder.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__traits.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__type_support.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/imu.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__builder.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/path.hpp \
@@ -722,11 +722,9 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp \
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp \
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp \
@@ -1072,19 +1070,19 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
   /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/se3.hpp \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/so3.hpp \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/rotation_matrix.hpp \
+  /usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/se3.hpp \
+  /usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/so3.hpp \
+  /usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/rotation_matrix.hpp \
   /usr/include/eigen3/Eigen/SVD \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/types.hpp \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/common.hpp \
+  /usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/types.hpp \
+  /usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/common.hpp \
   /usr/include/c++/11/random \
   /usr/include/c++/11/bits/random.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
   /usr/include/c++/11/bits/random.tcc \
   /usr/include/eigen3/Eigen/Core \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/formatstring.hpp \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp \
+  /usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/formatstring.hpp \
+  /usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp \
   /usr/include/eigen3/Eigen/LU \
   /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h \
   /usr/include/eigen3/Eigen/src/Geometry/Quaternion.h \
@@ -1178,22 +1176,15 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
   /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
   /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
   /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h \
-  /usr/include/pcl-1.12/pcl/point_cloud.h \
-  /usr/include/eigen3/Eigen/StdVector \
-  /usr/include/eigen3/Eigen/src/StlSupport/StdVector.h \
-  /usr/include/eigen3/Eigen/src/StlSupport/details.h \
-  /usr/include/eigen3/Eigen/Geometry \
-  /usr/include/pcl-1.12/pcl/PCLHeader.h \
-  /usr/include/pcl-1.12/pcl/memory.h \
-  /usr/include/pcl-1.12/pcl/type_traits.h \
-  /usr/include/pcl-1.12/pcl/point_struct_traits.h \
-  /usr/include/boost/mpl/assert.hpp \
-  /usr/include/boost/mpl/not.hpp \
-  /usr/include/boost/mpl/bool.hpp \
-  /usr/include/boost/mpl/bool_fwd.hpp \
-  /usr/include/boost/mpl/aux_/adl_barrier.hpp \
-  /usr/include/boost/mpl/aux_/config/adl.hpp \
-  /usr/include/boost/mpl/aux_/config/msvc.hpp \
+  /usr/local/include/ORB_SLAM3/System.h \
+  /usr/local/include/ORB_SLAM3/Tracking.h \
+  /usr/include/opencv4/opencv2/features2d/features2d.hpp \
+  /usr/local/include/ORB_SLAM3/Viewer.h \
+  /usr/local/include/ORB_SLAM3/FrameDrawer.h \
+  /usr/local/include/ORB_SLAM3/MapPoint.h \
+  /usr/local/include/ORB_SLAM3/KeyFrame.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/BowVector.h \
+  /usr/include/boost/serialization/serialization.hpp \
   /usr/include/boost/config.hpp \
   /usr/include/boost/config/user.hpp \
   /usr/include/boost/config/detail/select_compiler_config.hpp \
@@ -1206,30 +1197,84 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
   /usr/include/boost/config/detail/posix_features.hpp \
   /usr/include/boost/config/detail/suffix.hpp \
   /usr/include/boost/config/helper_macros.hpp \
-  /usr/include/boost/mpl/aux_/config/intel.hpp \
-  /usr/include/boost/mpl/aux_/config/gcc.hpp \
-  /usr/include/boost/mpl/aux_/config/workaround.hpp \
+  /usr/include/boost/serialization/strong_typedef.hpp \
+  /usr/include/boost/operators.hpp \
   /usr/include/boost/detail/workaround.hpp \
   /usr/include/boost/config/workaround.hpp \
-  /usr/include/boost/mpl/integral_c_tag.hpp \
-  /usr/include/boost/mpl/aux_/config/static_constant.hpp \
-  /usr/include/boost/mpl/aux_/nttp_decl.hpp \
-  /usr/include/boost/mpl/aux_/config/nttp.hpp \
-  /usr/include/boost/mpl/aux_/nested_type_wknd.hpp \
+  /usr/include/boost/core/addressof.hpp \
+  /usr/include/boost/type_traits/has_nothrow_assign.hpp \
+  /usr/include/boost/type_traits/integral_constant.hpp \
+  /usr/include/boost/type_traits/intrinsics.hpp \
+  /usr/include/boost/type_traits/detail/config.hpp \
+  /usr/include/boost/version.hpp \
+  /usr/include/boost/type_traits/is_const.hpp \
+  /usr/include/boost/type_traits/is_volatile.hpp \
+  /usr/include/boost/type_traits/is_assignable.hpp \
+  /usr/include/boost/type_traits/is_complete.hpp \
+  /usr/include/boost/type_traits/declval.hpp \
+  /usr/include/boost/type_traits/add_rvalue_reference.hpp \
+  /usr/include/boost/type_traits/is_void.hpp \
+  /usr/include/boost/type_traits/is_reference.hpp \
+  /usr/include/boost/type_traits/is_lvalue_reference.hpp \
+  /usr/include/boost/type_traits/is_rvalue_reference.hpp \
+  /usr/include/boost/type_traits/remove_reference.hpp \
+  /usr/include/boost/type_traits/is_function.hpp \
+  /usr/include/boost/type_traits/detail/is_function_cxx_11.hpp \
+  /usr/include/boost/type_traits/detail/yes_no_type.hpp \
+  /usr/include/boost/static_assert.hpp \
+  /usr/include/boost/type_traits/is_array.hpp \
+  /usr/include/boost/type_traits/has_nothrow_constructor.hpp \
+  /usr/include/boost/type_traits/is_default_constructible.hpp \
+  /usr/include/boost/type_traits/has_nothrow_copy.hpp \
+  /usr/include/boost/type_traits/is_copy_constructible.hpp \
+  /usr/include/boost/type_traits/is_constructible.hpp \
+  /usr/include/boost/type_traits/is_destructible.hpp \
+  /usr/include/boost/serialization/access.hpp \
+  /usr/include/boost/serialization/map.hpp \
+  /usr/include/boost/serialization/nvp.hpp \
+  /usr/include/boost/core/nvp.hpp \
+  /usr/include/boost/preprocessor/stringize.hpp \
+  /usr/include/boost/preprocessor/config/config.hpp \
+  /usr/include/boost/serialization/level.hpp \
+  /usr/include/boost/type_traits/is_fundamental.hpp \
+  /usr/include/boost/type_traits/is_arithmetic.hpp \
+  /usr/include/boost/type_traits/is_integral.hpp \
+  /usr/include/boost/type_traits/is_floating_point.hpp \
+  /usr/include/boost/type_traits/is_enum.hpp \
+  /usr/include/boost/type_traits/is_class.hpp \
+  /usr/include/boost/type_traits/is_base_and_derived.hpp \
+  /usr/include/boost/type_traits/remove_cv.hpp \
+  /usr/include/boost/type_traits/is_same.hpp \
+  /usr/include/boost/mpl/eval_if.hpp \
+  /usr/include/boost/mpl/if.hpp \
+  /usr/include/boost/mpl/aux_/value_wknd.hpp \
+  /usr/include/boost/mpl/aux_/static_cast.hpp \
+  /usr/include/boost/mpl/aux_/config/workaround.hpp \
+  /usr/include/boost/mpl/aux_/config/integral.hpp \
+  /usr/include/boost/mpl/aux_/config/msvc.hpp \
+  /usr/include/boost/mpl/aux_/config/eti.hpp \
   /usr/include/boost/mpl/aux_/na_spec.hpp \
   /usr/include/boost/mpl/lambda_fwd.hpp \
   /usr/include/boost/mpl/void_fwd.hpp \
+  /usr/include/boost/mpl/aux_/adl_barrier.hpp \
+  /usr/include/boost/mpl/aux_/config/adl.hpp \
+  /usr/include/boost/mpl/aux_/config/intel.hpp \
+  /usr/include/boost/mpl/aux_/config/gcc.hpp \
   /usr/include/boost/mpl/aux_/na.hpp \
+  /usr/include/boost/mpl/bool.hpp \
+  /usr/include/boost/mpl/bool_fwd.hpp \
+  /usr/include/boost/mpl/integral_c_tag.hpp \
+  /usr/include/boost/mpl/aux_/config/static_constant.hpp \
   /usr/include/boost/mpl/aux_/na_fwd.hpp \
   /usr/include/boost/mpl/aux_/config/ctps.hpp \
   /usr/include/boost/mpl/aux_/config/lambda.hpp \
   /usr/include/boost/mpl/aux_/config/ttp.hpp \
   /usr/include/boost/mpl/int.hpp \
   /usr/include/boost/mpl/int_fwd.hpp \
+  /usr/include/boost/mpl/aux_/nttp_decl.hpp \
+  /usr/include/boost/mpl/aux_/config/nttp.hpp \
   /usr/include/boost/mpl/aux_/integral_wrapper.hpp \
-  /usr/include/boost/mpl/aux_/static_cast.hpp \
   /usr/include/boost/preprocessor/cat.hpp \
-  /usr/include/boost/preprocessor/config/config.hpp \
   /usr/include/boost/mpl/aux_/lambda_arity_param.hpp \
   /usr/include/boost/mpl/aux_/template_arity_fwd.hpp \
   /usr/include/boost/mpl/aux_/arity.hpp \
@@ -1280,61 +1325,23 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
   /usr/include/boost/preprocessor/tuple/detail/is_single_return.hpp \
   /usr/include/boost/preprocessor/variadic/elem.hpp \
   /usr/include/boost/preprocessor/arithmetic/sub.hpp \
-  /usr/include/boost/mpl/aux_/config/eti.hpp \
   /usr/include/boost/mpl/aux_/config/overload_resolution.hpp \
   /usr/include/boost/mpl/aux_/lambda_support.hpp \
-  /usr/include/boost/mpl/aux_/value_wknd.hpp \
-  /usr/include/boost/mpl/aux_/config/integral.hpp \
-  /usr/include/boost/mpl/aux_/yes_no.hpp \
-  /usr/include/boost/mpl/aux_/config/arrays.hpp \
-  /usr/include/boost/mpl/aux_/config/gpu.hpp \
-  /usr/include/boost/mpl/aux_/config/pp_counter.hpp \
-  /usr/include/boost/mpl/identity.hpp \
-  /usr/include/boost/mpl/vector.hpp \
-  /usr/include/boost/mpl/limits/vector.hpp \
-  /usr/include/boost/preprocessor/stringize.hpp \
-  /usr/include/boost/mpl/vector/vector20.hpp \
-  /usr/include/boost/mpl/vector/vector10.hpp \
-  /usr/include/boost/mpl/vector/vector0.hpp \
-  /usr/include/boost/mpl/vector/aux_/at.hpp \
-  /usr/include/boost/mpl/at_fwd.hpp \
-  /usr/include/boost/mpl/vector/aux_/tag.hpp \
-  /usr/include/boost/mpl/aux_/config/typeof.hpp \
-  /usr/include/boost/mpl/long.hpp \
-  /usr/include/boost/mpl/long_fwd.hpp \
-  /usr/include/boost/mpl/void.hpp \
-  /usr/include/boost/mpl/aux_/type_wrapper.hpp \
-  /usr/include/boost/mpl/vector/aux_/front.hpp \
-  /usr/include/boost/mpl/front_fwd.hpp \
-  /usr/include/boost/mpl/vector/aux_/push_front.hpp \
-  /usr/include/boost/mpl/push_front_fwd.hpp \
-  /usr/include/boost/mpl/vector/aux_/item.hpp \
-  /usr/include/boost/mpl/next_prior.hpp \
-  /usr/include/boost/mpl/aux_/common_name_wknd.hpp \
-  /usr/include/boost/mpl/vector/aux_/pop_front.hpp \
-  /usr/include/boost/mpl/pop_front_fwd.hpp \
-  /usr/include/boost/mpl/vector/aux_/push_back.hpp \
-  /usr/include/boost/mpl/push_back_fwd.hpp \
-  /usr/include/boost/mpl/vector/aux_/pop_back.hpp \
-  /usr/include/boost/mpl/pop_back_fwd.hpp \
-  /usr/include/boost/mpl/vector/aux_/back.hpp \
-  /usr/include/boost/mpl/back_fwd.hpp \
-  /usr/include/boost/mpl/vector/aux_/clear.hpp \
-  /usr/include/boost/mpl/clear_fwd.hpp \
-  /usr/include/boost/mpl/vector/aux_/vector0.hpp \
-  /usr/include/boost/mpl/vector/aux_/iterator.hpp \
-  /usr/include/boost/mpl/iterator_tags.hpp \
-  /usr/include/boost/mpl/plus.hpp \
-  /usr/include/boost/mpl/aux_/arithmetic_op.hpp \
   /usr/include/boost/mpl/integral_c.hpp \
   /usr/include/boost/mpl/integral_c_fwd.hpp \
-  /usr/include/boost/mpl/aux_/largest_int.hpp \
-  /usr/include/boost/mpl/if.hpp \
+  /usr/include/boost/serialization/level_enum.hpp \
+  /usr/include/boost/serialization/tracking.hpp \
+  /usr/include/boost/mpl/identity.hpp \
+  /usr/include/boost/mpl/equal_to.hpp \
+  /usr/include/boost/mpl/aux_/comparison_op.hpp \
   /usr/include/boost/mpl/aux_/numeric_op.hpp \
   /usr/include/boost/mpl/numeric_cast.hpp \
   /usr/include/boost/mpl/apply_wrap.hpp \
   /usr/include/boost/mpl/aux_/has_apply.hpp \
   /usr/include/boost/mpl/has_xxx.hpp \
+  /usr/include/boost/mpl/aux_/type_wrapper.hpp \
+  /usr/include/boost/mpl/aux_/yes_no.hpp \
+  /usr/include/boost/mpl/aux_/config/arrays.hpp \
   /usr/include/boost/mpl/aux_/config/has_xxx.hpp \
   /usr/include/boost/mpl/aux_/config/msvc_typename.hpp \
   /usr/include/boost/preprocessor/array/elem.hpp \
@@ -1349,544 +1356,16 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
   /usr/include/boost/mpl/aux_/config/compiler.hpp \
   /usr/include/boost/mpl/aux_/preprocessed/gcc/apply_wrap.hpp \
   /usr/include/boost/mpl/tag.hpp \
-  /usr/include/boost/mpl/eval_if.hpp \
+  /usr/include/boost/mpl/void.hpp \
   /usr/include/boost/mpl/aux_/has_tag.hpp \
   /usr/include/boost/mpl/aux_/numeric_cast_utils.hpp \
   /usr/include/boost/mpl/aux_/config/forwarding.hpp \
   /usr/include/boost/mpl/aux_/msvc_eti_base.hpp \
   /usr/include/boost/mpl/aux_/is_msvc_eti_arg.hpp \
-  /usr/include/boost/mpl/aux_/preprocessed/gcc/plus.hpp \
-  /usr/include/boost/mpl/minus.hpp \
-  /usr/include/boost/mpl/aux_/preprocessed/gcc/minus.hpp \
-  /usr/include/boost/mpl/advance_fwd.hpp \
-  /usr/include/boost/mpl/distance_fwd.hpp \
-  /usr/include/boost/mpl/next.hpp \
-  /usr/include/boost/mpl/prior.hpp \
-  /usr/include/boost/mpl/vector/aux_/O1_size.hpp \
-  /usr/include/boost/mpl/O1_size_fwd.hpp \
-  /usr/include/boost/mpl/vector/aux_/size.hpp \
-  /usr/include/boost/mpl/size_fwd.hpp \
-  /usr/include/boost/mpl/vector/aux_/empty.hpp \
-  /usr/include/boost/mpl/empty_fwd.hpp \
-  /usr/include/boost/type_traits/is_same.hpp \
-  /usr/include/boost/type_traits/integral_constant.hpp \
-  /usr/include/boost/mpl/vector/aux_/begin_end.hpp \
-  /usr/include/boost/mpl/begin_end_fwd.hpp \
-  /usr/include/boost/mpl/vector/aux_/include_preprocessed.hpp \
-  /usr/include/boost/mpl/vector/aux_/preprocessed/typeof_based/vector10.hpp \
-  /usr/include/boost/mpl/vector/aux_/preprocessed/typeof_based/vector20.hpp \
-  /usr/include/boost/mpl/aux_/preprocessed/gcc/vector.hpp \
-  /usr/include/boost/preprocessor/seq/enum.hpp \
-  /usr/include/boost/preprocessor/seq/size.hpp \
-  /usr/include/pcl-1.12/pcl/exceptions.h \
-  /usr/include/boost/current_function.hpp \
-  /usr/include/pcl-1.12/pcl/pcl_macros.h \
-  /usr/include/pcl-1.12/pcl/pcl_config.h \
-  /usr/include/boost/preprocessor/comparison/equal.hpp \
-  /usr/include/boost/preprocessor/comparison/not_equal.hpp \
-  /usr/include/boost/preprocessor/comparison/less.hpp \
-  /usr/include/boost/preprocessor/comparison/less_equal.hpp \
-  /usr/include/boost/preprocessor/logical/not.hpp \
-  /usr/include/pcl-1.12/pcl/types.h \
-  /usr/include/pcl-1.12/pcl/console/print.h \
-  /usr/include/pcl-1.12/pcl/pcl_exports.h \
-  /usr/include/pcl-1.12/pcl/point_types.h \
-  /usr/include/c++/11/bitset \
-  /usr/include/pcl-1.12/pcl/impl/point_types.hpp \
-  /usr/include/pcl-1.12/pcl/PCLPointField.h \
-  /usr/include/pcl-1.12/pcl/register_point_struct.h \
-  /usr/include/boost/preprocessor/seq/for_each.hpp \
-  /usr/include/boost/preprocessor/repetition/for.hpp \
-  /usr/include/boost/preprocessor/repetition/detail/for.hpp \
-  /usr/include/boost/preprocessor/seq/seq.hpp \
-  /usr/include/boost/preprocessor/seq/elem.hpp \
-  /usr/include/boost/preprocessor/seq/detail/is_empty.hpp \
-  /usr/include/boost/preprocessor/seq/transform.hpp \
-  /usr/include/boost/preprocessor/seq/fold_left.hpp \
-  /usr/include/boost/mpl/and.hpp \
-  /usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp \
-  /usr/include/boost/mpl/contains.hpp \
-  /usr/include/boost/mpl/contains_fwd.hpp \
-  /usr/include/boost/mpl/sequence_tag.hpp \
-  /usr/include/boost/mpl/sequence_tag_fwd.hpp \
-  /usr/include/boost/mpl/aux_/has_begin.hpp \
-  /usr/include/boost/mpl/aux_/contains_impl.hpp \
-  /usr/include/boost/mpl/begin_end.hpp \
-  /usr/include/boost/mpl/aux_/begin_end_impl.hpp \
-  /usr/include/boost/mpl/aux_/traits_lambda_spec.hpp \
-  /usr/include/boost/mpl/find.hpp \
-  /usr/include/boost/mpl/find_if.hpp \
-  /usr/include/boost/mpl/aux_/find_if_pred.hpp \
-  /usr/include/boost/mpl/aux_/iter_apply.hpp \
-  /usr/include/boost/mpl/apply.hpp \
-  /usr/include/boost/mpl/apply_fwd.hpp \
-  /usr/include/boost/mpl/aux_/preprocessed/gcc/apply_fwd.hpp \
-  /usr/include/boost/mpl/placeholders.hpp \
-  /usr/include/boost/mpl/arg.hpp \
-  /usr/include/boost/mpl/arg_fwd.hpp \
-  /usr/include/boost/mpl/aux_/na_assert.hpp \
-  /usr/include/boost/mpl/aux_/arity_spec.hpp \
-  /usr/include/boost/mpl/aux_/arg_typedef.hpp \
-  /usr/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp \
-  /usr/include/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp \
-  /usr/include/boost/mpl/lambda.hpp \
-  /usr/include/boost/mpl/bind.hpp \
-  /usr/include/boost/mpl/bind_fwd.hpp \
-  /usr/include/boost/mpl/aux_/config/bind.hpp \
-  /usr/include/boost/mpl/aux_/preprocessed/gcc/bind_fwd.hpp \
-  /usr/include/boost/mpl/protect.hpp \
-  /usr/include/boost/mpl/aux_/preprocessed/gcc/bind.hpp \
-  /usr/include/boost/mpl/aux_/full_lambda.hpp \
-  /usr/include/boost/mpl/quote.hpp \
-  /usr/include/boost/mpl/aux_/has_type.hpp \
-  /usr/include/boost/mpl/aux_/config/bcc.hpp \
-  /usr/include/boost/mpl/aux_/preprocessed/gcc/quote.hpp \
-  /usr/include/boost/mpl/aux_/template_arity.hpp \
-  /usr/include/boost/mpl/aux_/preprocessed/gcc/template_arity.hpp \
-  /usr/include/boost/mpl/aux_/preprocessed/gcc/full_lambda.hpp \
-  /usr/include/boost/mpl/aux_/preprocessed/gcc/apply.hpp \
-  /usr/include/boost/mpl/deref.hpp \
-  /usr/include/boost/mpl/aux_/msvc_type.hpp \
-  /usr/include/boost/mpl/iter_fold_if.hpp \
-  /usr/include/boost/mpl/logical.hpp \
-  /usr/include/boost/mpl/or.hpp \
-  /usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp \
-  /usr/include/boost/mpl/always.hpp \
-  /usr/include/boost/mpl/aux_/preprocessor/default_params.hpp \
-  /usr/include/boost/mpl/pair.hpp \
-  /usr/include/boost/mpl/aux_/iter_fold_if_impl.hpp \
-  /usr/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_if_impl.hpp \
-  /usr/include/boost/mpl/same_as.hpp \
-  /usr/include/boost/mpl/aux_/lambda_spec.hpp \
-  /usr/include/boost/mpl/fold.hpp \
-  /usr/include/boost/mpl/O1_size.hpp \
-  /usr/include/boost/mpl/aux_/O1_size_impl.hpp \
-  /usr/include/boost/mpl/aux_/has_size.hpp \
-  /usr/include/boost/mpl/aux_/fold_impl.hpp \
-  /usr/include/boost/mpl/aux_/preprocessed/gcc/fold_impl.hpp \
-  /opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h \
-  /opt/ros/humble/include/message_filters/message_filters/message_event.h \
-  /opt/ros/humble/include/message_filters/message_filters/message_traits.h \
-  /usr/include/pcl-1.12/pcl/conversions.h \
-  /usr/include/pcl-1.12/pcl/PCLPointCloud2.h \
-  /usr/include/boost/predef/other/endian.h \
-  /usr/include/boost/predef/version_number.h \
-  /usr/include/boost/predef/make.h \
-  /usr/include/boost/predef/detail/test.h \
-  /usr/include/boost/predef/library/c/gnu.h \
-  /usr/include/boost/predef/library/c/_prefix.h \
-  /usr/include/boost/predef/detail/_cassert.h \
-  /usr/include/boost/predef/os/macos.h \
-  /usr/include/boost/predef/os/ios.h \
-  /usr/include/boost/predef/os/bsd.h \
-  /usr/include/boost/predef/os/bsd/bsdi.h \
-  /usr/include/boost/predef/os/bsd/dragonfly.h \
-  /usr/include/boost/predef/os/bsd/free.h \
-  /usr/include/boost/predef/os/bsd/open.h \
-  /usr/include/boost/predef/os/bsd/net.h \
-  /usr/include/boost/predef/platform/android.h \
-  /usr/include/pcl-1.12/pcl/PCLImage.h \
-  /usr/include/pcl-1.12/pcl/for_each_type.h \
-  /usr/include/boost/mpl/is_sequence.hpp \
-  /usr/include/boost/mpl/remove_if.hpp \
-  /usr/include/boost/mpl/reverse_fold.hpp \
-  /usr/include/boost/mpl/aux_/reverse_fold_impl.hpp \
-  /usr/include/boost/mpl/aux_/preprocessed/gcc/reverse_fold_impl.hpp \
-  /usr/include/boost/mpl/aux_/inserter_algorithm.hpp \
-  /usr/include/boost/mpl/back_inserter.hpp \
-  /usr/include/boost/mpl/push_back.hpp \
-  /usr/include/boost/mpl/aux_/push_back_impl.hpp \
-  /usr/include/boost/mpl/inserter.hpp \
-  /usr/include/boost/mpl/front_inserter.hpp \
-  /usr/include/boost/mpl/push_front.hpp \
-  /usr/include/boost/mpl/aux_/push_front_impl.hpp \
-  /usr/include/boost/mpl/clear.hpp \
-  /usr/include/boost/mpl/aux_/clear_impl.hpp \
-  /usr/include/boost/mpl/aux_/unwrap.hpp \
-  /usr/include/boost/ref.hpp \
-  /usr/include/boost/core/ref.hpp \
-  /usr/include/boost/core/addressof.hpp \
-  /usr/include/boost/foreach.hpp \
-  /usr/include/boost/noncopyable.hpp \
-  /usr/include/boost/core/noncopyable.hpp \
-  /usr/include/boost/range/end.hpp \
-  /usr/include/boost/range/config.hpp \
-  /usr/include/boost/range/detail/implementation_help.hpp \
-  /usr/include/boost/range/detail/common.hpp \
-  /usr/include/boost/range/detail/sfinae.hpp \
-  /usr/include/boost/type_traits/is_array.hpp \
-  /usr/include/boost/type_traits/detail/yes_no_type.hpp \
-  /usr/include/boost/type_traits/is_void.hpp \
-  /usr/include/boost/range/iterator.hpp \
-  /usr/include/boost/range/range_fwd.hpp \
-  /usr/include/boost/range/mutable_iterator.hpp \
-  /usr/include/boost/range/detail/extract_optional_type.hpp \
-  /usr/include/boost/type_traits/remove_reference.hpp \
-  /usr/include/boost/iterator/iterator_traits.hpp \
-  /usr/include/boost/range/detail/msvc_has_iterator_workaround.hpp \
-  /usr/include/boost/range/const_iterator.hpp \
-  /usr/include/boost/type_traits/remove_const.hpp \
-  /usr/include/boost/type_traits/is_const.hpp \
-  /usr/include/boost/range/begin.hpp \
-  /usr/include/boost/range/rend.hpp \
-  /usr/include/boost/range/reverse_iterator.hpp \
-  /usr/include/boost/iterator/reverse_iterator.hpp \
-  /usr/include/boost/iterator/iterator_adaptor.hpp \
-  /usr/include/boost/static_assert.hpp \
-  /usr/include/boost/core/use_default.hpp \
-  /usr/include/boost/iterator/iterator_categories.hpp \
-  /usr/include/boost/iterator/detail/config_def.hpp \
-  /usr/include/boost/type_traits/is_convertible.hpp \
-  /usr/include/boost/type_traits/intrinsics.hpp \
-  /usr/include/boost/type_traits/detail/config.hpp \
-  /usr/include/boost/version.hpp \
-  /usr/include/boost/type_traits/is_complete.hpp \
-  /usr/include/boost/type_traits/declval.hpp \
-  /usr/include/boost/type_traits/add_rvalue_reference.hpp \
-  /usr/include/boost/type_traits/is_reference.hpp \
-  /usr/include/boost/type_traits/is_lvalue_reference.hpp \
-  /usr/include/boost/type_traits/is_rvalue_reference.hpp \
-  /usr/include/boost/type_traits/is_function.hpp \
-  /usr/include/boost/type_traits/detail/is_function_cxx_11.hpp \
-  /usr/include/boost/type_traits/is_arithmetic.hpp \
-  /usr/include/boost/type_traits/is_integral.hpp \
-  /usr/include/boost/type_traits/is_floating_point.hpp \
-  /usr/include/boost/type_traits/is_abstract.hpp \
-  /usr/include/boost/type_traits/add_lvalue_reference.hpp \
-  /usr/include/boost/type_traits/add_reference.hpp \
-  /usr/include/boost/iterator/detail/config_undef.hpp \
-  /usr/include/boost/iterator/iterator_facade.hpp \
-  /usr/include/boost/iterator/interoperable.hpp \
-  /usr/include/boost/iterator/detail/facade_iterator_category.hpp \
-  /usr/include/boost/detail/indirect_traits.hpp \
-  /usr/include/boost/type_traits/is_pointer.hpp \
-  /usr/include/boost/type_traits/is_class.hpp \
-  /usr/include/boost/type_traits/is_volatile.hpp \
-  /usr/include/boost/type_traits/is_member_function_pointer.hpp \
-  /usr/include/boost/type_traits/detail/is_member_function_pointer_cxx_11.hpp \
-  /usr/include/boost/type_traits/is_member_pointer.hpp \
-  /usr/include/boost/type_traits/remove_cv.hpp \
-  /usr/include/boost/type_traits/remove_pointer.hpp \
-  /usr/include/boost/detail/select_type.hpp \
-  /usr/include/boost/iterator/detail/enable_if.hpp \
-  /usr/include/boost/type_traits/add_const.hpp \
-  /usr/include/boost/type_traits/add_pointer.hpp \
-  /usr/include/boost/type_traits/is_pod.hpp \
-  /usr/include/boost/type_traits/is_scalar.hpp \
-  /usr/include/boost/type_traits/is_enum.hpp \
-  /usr/include/boost/range/rbegin.hpp \
-  /usr/include/boost/type_traits/is_base_and_derived.hpp \
-  /usr/include/boost/utility/addressof.hpp \
-  /usr/include/boost/foreach_fwd.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/header.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__builder.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__type_support.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_field.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__builder.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__type_support.hpp \
-  /usr/include/pcl-1.12/pcl/PointIndices.h \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/point_indices.hpp \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__struct.hpp \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__builder.hpp \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__traits.hpp \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__type_support.hpp \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /usr/include/pcl-1.12/pcl/ModelCoefficients.h \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/model_coefficients.hpp \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__struct.hpp \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__builder.hpp \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__traits.hpp \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__type_support.hpp \
-  /usr/include/pcl-1.12/pcl/Vertices.h \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/vertices.hpp \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/vertices__struct.hpp \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/vertices__builder.hpp \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/vertices__traits.hpp \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/vertices__type_support.hpp \
-  /usr/include/pcl-1.12/pcl/PolygonMesh.h \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/polygon_mesh.hpp \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__struct.hpp \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__builder.hpp \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__traits.hpp \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__type_support.hpp \
-  /usr/include/pcl-1.12/pcl/io/pcd_io.h \
-  /usr/include/pcl-1.12/pcl/io/file_io.h \
-  /usr/include/boost/numeric/conversion/cast.hpp \
-  /usr/include/boost/type.hpp \
-  /usr/include/boost/numeric/conversion/converter.hpp \
-  /usr/include/boost/numeric/conversion/conversion_traits.hpp \
-  /usr/include/boost/numeric/conversion/detail/conversion_traits.hpp \
-  /usr/include/boost/numeric/conversion/detail/meta.hpp \
-  /usr/include/boost/mpl/equal_to.hpp \
-  /usr/include/boost/mpl/aux_/comparison_op.hpp \
   /usr/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp \
-  /usr/include/boost/numeric/conversion/detail/int_float_mixture.hpp \
-  /usr/include/boost/limits.hpp \
-  /usr/include/boost/numeric/conversion/int_float_mixture_enum.hpp \
-  /usr/include/boost/numeric/conversion/detail/sign_mixture.hpp \
-  /usr/include/boost/numeric/conversion/sign_mixture_enum.hpp \
-  /usr/include/boost/numeric/conversion/detail/udt_builtin_mixture.hpp \
-  /usr/include/boost/numeric/conversion/udt_builtin_mixture_enum.hpp \
-  /usr/include/boost/numeric/conversion/detail/is_subranged.hpp \
-  /usr/include/boost/mpl/multiplies.hpp \
-  /usr/include/boost/mpl/times.hpp \
-  /usr/include/boost/mpl/aux_/preprocessed/gcc/times.hpp \
-  /usr/include/boost/mpl/less.hpp \
-  /usr/include/boost/mpl/aux_/preprocessed/gcc/less.hpp \
-  /usr/include/boost/numeric/conversion/converter_policies.hpp \
-  /usr/include/boost/config/no_tr1/cmath.hpp \
-  /usr/include/boost/throw_exception.hpp \
-  /usr/include/boost/assert/source_location.hpp \
-  /usr/include/boost/cstdint.hpp \
-  /usr/include/boost/exception/exception.hpp \
-  /usr/include/boost/numeric/conversion/detail/converter.hpp \
-  /usr/include/boost/numeric/conversion/bounds.hpp \
-  /usr/include/boost/numeric/conversion/detail/bounds.hpp \
-  /usr/include/boost/numeric/conversion/numeric_cast_traits.hpp \
-  /usr/include/boost/numeric/conversion/detail/numeric_cast_traits.hpp \
-  /usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_common.hpp \
-  /usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_long_long.hpp \
-  /usr/include/boost/algorithm/string/predicate.hpp \
-  /usr/include/boost/algorithm/string/config.hpp \
-  /usr/include/boost/range/as_literal.hpp \
-  /usr/include/boost/range/iterator_range.hpp \
-  /usr/include/boost/range/iterator_range_core.hpp \
-  /usr/include/boost/assert.hpp \
-  /usr/include/boost/range/functions.hpp \
-  /usr/include/boost/range/size.hpp \
-  /usr/include/boost/range/size_type.hpp \
-  /usr/include/boost/range/difference_type.hpp \
-  /usr/include/boost/range/has_range_iterator.hpp \
-  /usr/include/boost/utility/enable_if.hpp \
-  /usr/include/boost/core/enable_if.hpp \
-  /usr/include/boost/range/concepts.hpp \
-  /usr/include/boost/concept_check.hpp \
-  /usr/include/boost/concept/assert.hpp \
-  /usr/include/boost/concept/detail/general.hpp \
-  /usr/include/boost/concept/detail/backward_compatibility.hpp \
-  /usr/include/boost/concept/detail/has_constraints.hpp \
-  /usr/include/boost/type_traits/conditional.hpp \
-  /usr/include/boost/type_traits/conversion_traits.hpp \
-  /usr/include/boost/concept/usage.hpp \
-  /usr/include/boost/concept/detail/concept_def.hpp \
-  /usr/include/boost/preprocessor/seq/for_each_i.hpp \
-  /usr/include/boost/concept/detail/concept_undef.hpp \
-  /usr/include/boost/iterator/iterator_concepts.hpp \
-  /usr/include/boost/range/value_type.hpp \
-  /usr/include/boost/range/detail/misc_concept.hpp \
-  /usr/include/boost/type_traits/make_unsigned.hpp \
-  /usr/include/boost/type_traits/is_signed.hpp \
-  /usr/include/boost/type_traits/is_unsigned.hpp \
-  /usr/include/boost/type_traits/add_volatile.hpp \
-  /usr/include/boost/range/detail/has_member_size.hpp \
-  /usr/include/boost/utility.hpp \
-  /usr/include/boost/utility/base_from_member.hpp \
-  /usr/include/boost/preprocessor/repetition/enum_binary_params.hpp \
-  /usr/include/boost/preprocessor/repetition/repeat_from_to.hpp \
-  /usr/include/boost/utility/binary.hpp \
-  /usr/include/boost/preprocessor/control/deduce_d.hpp \
-  /usr/include/boost/preprocessor/seq/cat.hpp \
-  /usr/include/boost/preprocessor/arithmetic/mod.hpp \
-  /usr/include/boost/preprocessor/arithmetic/detail/div_base.hpp \
-  /usr/include/boost/utility/identity_type.hpp \
-  /usr/include/boost/type_traits/function_traits.hpp \
-  /usr/include/boost/core/checked_delete.hpp \
-  /usr/include/boost/range/distance.hpp \
-  /usr/include/boost/iterator/distance.hpp \
-  /usr/include/boost/range/empty.hpp \
-  /usr/include/boost/range/algorithm/equal.hpp \
-  /usr/include/boost/range/detail/safe_bool.hpp \
-  /usr/include/boost/next_prior.hpp \
-  /usr/include/boost/type_traits/has_plus.hpp \
-  /usr/include/boost/type_traits/detail/has_binary_operator.hpp \
-  /usr/include/boost/type_traits/make_void.hpp \
-  /usr/include/boost/type_traits/has_plus_assign.hpp \
-  /usr/include/boost/type_traits/has_minus.hpp \
-  /usr/include/boost/type_traits/has_minus_assign.hpp \
-  /usr/include/boost/iterator/advance.hpp \
-  /usr/include/boost/range/iterator_range_io.hpp \
-  /usr/include/boost/range/detail/str_types.hpp \
-  /usr/include/boost/algorithm/string/compare.hpp \
-  /usr/include/boost/algorithm/string/find.hpp \
-  /usr/include/boost/algorithm/string/finder.hpp \
-  /usr/include/boost/algorithm/string/constants.hpp \
-  /usr/include/boost/algorithm/string/detail/finder.hpp \
-  /usr/include/boost/algorithm/string/detail/predicate.hpp \
-  /usr/include/boost/interprocess/sync/file_lock.hpp \
-  /usr/include/boost/interprocess/detail/config_begin.hpp \
-  /usr/include/boost/interprocess/detail/workaround.hpp \
-  /usr/include/boost/interprocess/exceptions.hpp \
-  /usr/include/boost/interprocess/errors.hpp \
-  /usr/include/boost/interprocess/detail/config_end.hpp \
-  /usr/include/boost/interprocess/detail/os_file_functions.hpp \
-  /usr/include/boost/interprocess/permissions.hpp \
-  /usr/include/boost/interprocess/interprocess_fwd.hpp \
-  /usr/include/boost/interprocess/detail/std_fwd.hpp \
-  /usr/include/boost/move/detail/std_ns_begin.hpp \
-  /usr/include/boost/move/detail/std_ns_end.hpp \
-  /usr/include/boost/move/detail/type_traits.hpp \
-  /usr/include/boost/move/detail/config_begin.hpp \
-  /usr/include/boost/move/detail/workaround.hpp \
-  /usr/include/boost/move/detail/meta_utils.hpp \
-  /usr/include/boost/move/detail/meta_utils_core.hpp \
-  /usr/include/boost/move/detail/config_end.hpp \
-  /usr/include/fcntl.h \
-  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
-  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
-  /usr/include/linux/falloc.h \
-  /usr/include/x86_64-linux-gnu/bits/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
-  /usr/include/x86_64-linux-gnu/sys/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/statx.h \
-  /usr/include/linux/stat.h \
-  /usr/include/linux/types.h \
-  /usr/include/x86_64-linux-gnu/asm/types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
-  /usr/include/dirent.h \
-  /usr/include/x86_64-linux-gnu/bits/dirent.h \
-  /usr/include/x86_64-linux-gnu/bits/dirent_ext.h \
-  /usr/include/boost/interprocess/detail/os_thread_functions.hpp \
-  /usr/include/boost/interprocess/streams/bufferstream.hpp \
-  /usr/include/boost/interprocess/detail/posix_time_types_wrk.hpp \
-  /usr/include/boost/date_time/microsec_time_clock.hpp \
-  /usr/include/boost/shared_ptr.hpp \
-  /usr/include/boost/smart_ptr/shared_ptr.hpp \
-  /usr/include/boost/smart_ptr/detail/shared_count.hpp \
-  /usr/include/boost/smart_ptr/bad_weak_ptr.hpp \
-  /usr/include/boost/smart_ptr/detail/sp_counted_base.hpp \
-  /usr/include/boost/smart_ptr/detail/sp_has_gcc_intrinsics.hpp \
-  /usr/include/boost/smart_ptr/detail/sp_has_sync_intrinsics.hpp \
-  /usr/include/boost/smart_ptr/detail/sp_counted_base_gcc_atomic.hpp \
-  /usr/include/boost/smart_ptr/detail/sp_typeinfo_.hpp \
-  /usr/include/boost/smart_ptr/detail/sp_counted_impl.hpp \
-  /usr/include/boost/smart_ptr/detail/sp_noexcept.hpp \
-  /usr/include/boost/checked_delete.hpp \
-  /usr/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp \
-  /usr/include/boost/smart_ptr/detail/sp_convertible.hpp \
-  /usr/include/boost/smart_ptr/detail/sp_nullptr_t.hpp \
-  /usr/include/boost/smart_ptr/detail/spinlock_pool.hpp \
-  /usr/include/boost/smart_ptr/detail/spinlock.hpp \
-  /usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp \
-  /usr/include/boost/smart_ptr/detail/yield_k.hpp \
-  /usr/include/boost/smart_ptr/detail/sp_thread_pause.hpp \
-  /usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp \
-  /usr/include/boost/config/pragma_message.hpp \
-  /usr/include/boost/smart_ptr/detail/operator_bool.hpp \
-  /usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
-  /usr/include/boost/smart_ptr/detail/local_counted_base.hpp \
-  /usr/include/boost/date_time/compiler_config.hpp \
-  /usr/include/boost/date_time/locale_config.hpp \
-  /usr/include/boost/date_time/c_time.hpp \
-  /usr/include/x86_64-linux-gnu/sys/time.h \
-  /usr/include/boost/date_time/time_clock.hpp \
-  /usr/include/boost/date_time/posix_time/ptime.hpp \
-  /usr/include/boost/date_time/posix_time/posix_time_system.hpp \
-  /usr/include/boost/date_time/posix_time/posix_time_config.hpp \
-  /usr/include/boost/date_time/time_duration.hpp \
-  /usr/include/boost/date_time/special_defs.hpp \
-  /usr/include/boost/date_time/time_defs.hpp \
-  /usr/include/boost/operators.hpp \
-  /usr/include/boost/date_time/time_resolution_traits.hpp \
-  /usr/include/boost/date_time/int_adapter.hpp \
-  /usr/include/boost/date_time/gregorian/gregorian_types.hpp \
-  /usr/include/boost/date_time/date.hpp \
-  /usr/include/boost/date_time/year_month_day.hpp \
-  /usr/include/boost/date_time/period.hpp \
-  /usr/include/boost/date_time/gregorian/greg_calendar.hpp \
-  /usr/include/boost/date_time/gregorian/greg_weekday.hpp \
-  /usr/include/boost/date_time/constrained_value.hpp \
-  /usr/include/boost/type_traits/is_base_of.hpp \
-  /usr/include/boost/date_time/date_defs.hpp \
-  /usr/include/boost/date_time/gregorian/greg_day_of_year.hpp \
-  /usr/include/boost/date_time/gregorian_calendar.hpp \
-  /usr/include/boost/date_time/gregorian_calendar.ipp \
-  /usr/include/boost/date_time/gregorian/greg_ymd.hpp \
-  /usr/include/boost/date_time/gregorian/greg_day.hpp \
-  /usr/include/boost/date_time/gregorian/greg_year.hpp \
-  /usr/include/boost/date_time/gregorian/greg_month.hpp \
-  /usr/include/boost/date_time/gregorian/greg_duration.hpp \
-  /usr/include/boost/date_time/date_duration.hpp \
-  /usr/include/boost/date_time/date_duration_types.hpp \
-  /usr/include/boost/date_time/gregorian/greg_duration_types.hpp \
-  /usr/include/boost/date_time/gregorian/greg_date.hpp \
-  /usr/include/boost/date_time/adjust_functors.hpp \
-  /usr/include/boost/date_time/wrapping_int.hpp \
-  /usr/include/boost/date_time/date_generators.hpp \
-  /usr/include/boost/date_time/date_clock_device.hpp \
-  /usr/include/boost/date_time/date_iterator.hpp \
-  /usr/include/boost/date_time/time_system_split.hpp \
-  /usr/include/boost/date_time/time_system_counted.hpp \
-  /usr/include/boost/date_time/time.hpp \
-  /usr/include/boost/date_time/posix_time/posix_time_duration.hpp \
-  /usr/include/boost/interprocess/sync/detail/common_algorithms.hpp \
-  /usr/include/boost/interprocess/sync/spin/wait.hpp \
-  /usr/include/boost/interprocess/sync/detail/locks.hpp \
-  /usr/include/boost/move/utility_core.hpp \
-  /usr/include/boost/move/core.hpp \
-  /usr/include/pcl-1.12/pcl/io/impl/pcd_io.hpp \
-  /usr/include/boost/algorithm/string/trim.hpp \
-  /usr/include/boost/algorithm/string/detail/trim.hpp \
-  /usr/include/boost/algorithm/string/classification.hpp \
-  /usr/include/boost/algorithm/string/detail/classification.hpp \
-  /usr/include/boost/algorithm/string/predicate_facade.hpp \
-  /usr/include/c++/11/fstream \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/pcl-1.12/pcl/common/io.h \
-  /usr/include/pcl-1.12/pcl/common/impl/io.hpp \
-  /usr/include/pcl-1.12/pcl/common/concatenate.h \
-  /usr/include/pcl-1.12/pcl/common/copy_point.h \
-  /usr/include/pcl-1.12/pcl/common/impl/copy_point.hpp \
-  /usr/include/pcl-1.12/pcl/io/low_level_io.h \
-  /usr/include/x86_64-linux-gnu/sys/mman.h \
-  /usr/include/x86_64-linux-gnu/bits/mman.h \
-  /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
-  /usr/include/x86_64-linux-gnu/bits/mman-linux.h \
-  /usr/include/x86_64-linux-gnu/bits/mman-shared.h \
-  /usr/include/x86_64-linux-gnu/sys/fcntl.h \
-  /usr/include/pcl-1.12/pcl/io/lzf.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h \
-  /usr/include/opencv4/opencv2/features2d/features2d.hpp \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/BowVector.h \
-  /usr/include/boost/serialization/serialization.hpp \
-  /usr/include/boost/serialization/strong_typedef.hpp \
-  /usr/include/boost/type_traits/has_nothrow_assign.hpp \
-  /usr/include/boost/type_traits/is_assignable.hpp \
-  /usr/include/boost/type_traits/has_nothrow_constructor.hpp \
-  /usr/include/boost/type_traits/is_default_constructible.hpp \
-  /usr/include/boost/type_traits/has_nothrow_copy.hpp \
-  /usr/include/boost/type_traits/is_copy_constructible.hpp \
-  /usr/include/boost/type_traits/is_constructible.hpp \
-  /usr/include/boost/type_traits/is_destructible.hpp \
-  /usr/include/boost/serialization/access.hpp \
-  /usr/include/boost/serialization/map.hpp \
-  /usr/include/boost/serialization/nvp.hpp \
-  /usr/include/boost/core/nvp.hpp \
-  /usr/include/boost/serialization/level.hpp \
-  /usr/include/boost/type_traits/is_fundamental.hpp \
-  /usr/include/boost/serialization/level_enum.hpp \
-  /usr/include/boost/serialization/tracking.hpp \
   /usr/include/boost/mpl/greater.hpp \
   /usr/include/boost/mpl/aux_/preprocessed/gcc/greater.hpp \
+  /usr/include/boost/type_traits/is_pointer.hpp \
   /usr/include/boost/serialization/tracking_enum.hpp \
   /usr/include/boost/serialization/type_info_implementation.hpp \
   /usr/include/boost/serialization/traits.hpp \
@@ -1899,16 +1378,35 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
   /usr/include/boost/serialization/collection_size_type.hpp \
   /usr/include/boost/serialization/is_bitwise_serializable.hpp \
   /usr/include/boost/serialization/item_version_type.hpp \
+  /usr/include/boost/cstdint.hpp \
   /usr/include/boost/integer_traits.hpp \
+  /usr/include/boost/limits.hpp \
+  /usr/include/boost/assert.hpp \
   /usr/include/boost/serialization/library_version_type.hpp \
   /usr/include/boost/serialization/detail/stack_constructor.hpp \
   /usr/include/boost/aligned_storage.hpp \
   /usr/include/boost/type_traits/aligned_storage.hpp \
   /usr/include/boost/type_traits/alignment_of.hpp \
   /usr/include/boost/type_traits/type_with_alignment.hpp \
+  /usr/include/boost/type_traits/is_pod.hpp \
+  /usr/include/boost/type_traits/is_scalar.hpp \
+  /usr/include/boost/type_traits/is_member_pointer.hpp \
+  /usr/include/boost/type_traits/is_member_function_pointer.hpp \
+  /usr/include/boost/type_traits/detail/is_member_function_pointer_cxx_11.hpp \
+  /usr/include/boost/type_traits/conditional.hpp \
   /usr/include/boost/serialization/utility.hpp \
+  /usr/include/boost/type_traits/remove_const.hpp \
+  /usr/include/boost/mpl/and.hpp \
+  /usr/include/boost/mpl/aux_/nested_type_wknd.hpp \
+  /usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp \
   /usr/include/boost/serialization/collections_save_imp.hpp \
   /usr/include/boost/serialization/version.hpp \
+  /usr/include/boost/mpl/assert.hpp \
+  /usr/include/boost/mpl/not.hpp \
+  /usr/include/boost/mpl/aux_/config/gpu.hpp \
+  /usr/include/boost/mpl/aux_/config/pp_counter.hpp \
+  /usr/include/boost/mpl/less.hpp \
+  /usr/include/boost/mpl/aux_/preprocessed/gcc/less.hpp \
   /usr/include/boost/mpl/comparison.hpp \
   /usr/include/boost/mpl/not_equal_to.hpp \
   /usr/include/boost/mpl/aux_/preprocessed/gcc/not_equal_to.hpp \
@@ -1916,90 +1414,143 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
   /usr/include/boost/mpl/aux_/preprocessed/gcc/less_equal.hpp \
   /usr/include/boost/mpl/greater_equal.hpp \
   /usr/include/boost/mpl/aux_/preprocessed/gcc/greater_equal.hpp \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/FeatureVector.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/BowVector.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/ORBVocabulary.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/FORB.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/FClass.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/TemplatedVocabulary.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/FeatureVector.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/ScoringObject.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/DBoW2/DUtils/Random.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/ORBextractor.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/se3.hpp \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/ImuTypes.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/SerializationUtils.h \
+  /usr/include/boost/move/utility_core.hpp \
+  /usr/include/boost/move/detail/config_begin.hpp \
+  /usr/include/boost/move/detail/workaround.hpp \
+  /usr/include/boost/move/core.hpp \
+  /usr/include/boost/move/detail/config_end.hpp \
+  /usr/include/boost/move/detail/meta_utils.hpp \
+  /usr/include/boost/move/detail/meta_utils_core.hpp \
+  /usr/local/include/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/FeatureVector.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/BowVector.h \
+  /usr/local/include/ORB_SLAM3/ORBVocabulary.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/FORB.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/FClass.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/TemplatedVocabulary.h \
+  /usr/include/c++/11/fstream \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
+  /usr/local/include/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/FeatureVector.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/ScoringObject.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/DUtils/Random.h \
+  /usr/local/include/ORB_SLAM3/ORBextractor.h \
+  /usr/local/include/ORB_SLAM3/Frame.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp \
+  /usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp \
+  /usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/se3.hpp \
+  /usr/local/include/ORB_SLAM3/ImuTypes.h \
+  /usr/include/eigen3/Eigen/Geometry \
+  /usr/local/include/ORB_SLAM3/SerializationUtils.h \
   /usr/include/boost/serialization/vector.hpp \
   /usr/include/boost/serialization/collections_load_imp.hpp \
   /usr/include/boost/serialization/detail/is_default_constructible.hpp \
+  /usr/include/boost/utility/enable_if.hpp \
+  /usr/include/boost/core/enable_if.hpp \
   /usr/include/boost/serialization/array_wrapper.hpp \
   /usr/include/boost/serialization/split_member.hpp \
   /usr/include/boost/serialization/array_optimization.hpp \
+  /usr/include/boost/mpl/always.hpp \
+  /usr/include/boost/mpl/aux_/preprocessor/default_params.hpp \
+  /usr/include/boost/mpl/aux_/arity_spec.hpp \
+  /usr/include/boost/mpl/apply.hpp \
+  /usr/include/boost/mpl/apply_fwd.hpp \
+  /usr/include/boost/mpl/aux_/preprocessed/gcc/apply_fwd.hpp \
+  /usr/include/boost/mpl/placeholders.hpp \
+  /usr/include/boost/mpl/arg.hpp \
+  /usr/include/boost/mpl/arg_fwd.hpp \
+  /usr/include/boost/mpl/aux_/na_assert.hpp \
+  /usr/include/boost/mpl/aux_/arg_typedef.hpp \
+  /usr/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp \
+  /usr/include/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp \
+  /usr/include/boost/mpl/lambda.hpp \
+  /usr/include/boost/mpl/bind.hpp \
+  /usr/include/boost/mpl/bind_fwd.hpp \
+  /usr/include/boost/mpl/aux_/config/bind.hpp \
+  /usr/include/boost/mpl/aux_/preprocessed/gcc/bind_fwd.hpp \
+  /usr/include/boost/mpl/next.hpp \
+  /usr/include/boost/mpl/next_prior.hpp \
+  /usr/include/boost/mpl/aux_/common_name_wknd.hpp \
+  /usr/include/boost/mpl/protect.hpp \
+  /usr/include/boost/mpl/aux_/preprocessed/gcc/bind.hpp \
+  /usr/include/boost/mpl/aux_/full_lambda.hpp \
+  /usr/include/boost/mpl/quote.hpp \
+  /usr/include/boost/mpl/aux_/has_type.hpp \
+  /usr/include/boost/mpl/aux_/config/bcc.hpp \
+  /usr/include/boost/mpl/aux_/preprocessed/gcc/quote.hpp \
+  /usr/include/boost/mpl/aux_/template_arity.hpp \
+  /usr/include/boost/mpl/aux_/preprocessed/gcc/template_arity.hpp \
+  /usr/include/boost/mpl/aux_/preprocessed/gcc/full_lambda.hpp \
+  /usr/include/boost/mpl/aux_/preprocessed/gcc/apply.hpp \
   /usr/include/boost/serialization/collection_traits.hpp \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_vertex.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/optimizable_graph.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/openmp_mutex.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/config.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/hyper_graph.h \
+  /usr/local/include/ORB_SLAM3/Converter.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_vertex.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/optimizable_graph.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/openmp_mutex.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/config.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/hyper_graph.h \
+  /usr/include/c++/11/bitset \
   /usr/include/c++/11/tr1/unordered_map \
   /usr/include/c++/11/tr1/type_traits \
   /usr/include/c++/11/tr1/functional_hash.h \
   /usr/include/c++/11/tr1/hashtable.h \
   /usr/include/c++/11/tr1/hashtable_policy.h \
   /usr/include/c++/11/tr1/unordered_map.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/parameter.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/parameter_container.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/jacobian_workspace.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/stuff/macros.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/creators.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/parameter.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/parameter_container.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/jacobian_workspace.h \
+  /usr/include/eigen3/Eigen/StdVector \
+  /usr/include/eigen3/Eigen/src/StlSupport/StdVector.h \
+  /usr/include/eigen3/Eigen/src/StlSupport/details.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/stuff/macros.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/creators.h \
   /usr/include/eigen3/Eigen/Cholesky \
   /usr/include/c++/11/stack \
   /usr/include/c++/11/bits/stl_stack.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_vertex.hpp \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_binary_edge.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_edge.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/robust_kernel.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_vertex.hpp \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_binary_edge.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_edge.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/robust_kernel.h \
   /usr/include/c++/11/tr1/memory \
   /usr/include/c++/11/tr1/shared_ptr.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_binary_edge.hpp \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_unary_edge.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_unary_edge.hpp \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/se3_ops.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/se3_ops.hpp \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/se3quat.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_sba.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/sim3.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/sim3.hpp \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/rxso3.hpp \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/sim_details.hpp \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Settings.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/CameraModels/GeometricCamera.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_binary_edge.hpp \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_unary_edge.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_unary_edge.hpp \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/types/se3_ops.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/types/se3_ops.hpp \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/types/se3quat.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_sba.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/types/sim3.h \
+  /usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/sim3.hpp \
+  /usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/rxso3.hpp \
+  /usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/sim_details.hpp \
+  /usr/local/include/ORB_SLAM3/Settings.h \
+  /usr/local/include/ORB_SLAM3/CameraModels/GeometricCamera.h \
   /usr/include/boost/serialization/export.hpp \
   /usr/include/boost/serialization/extended_type_info.hpp \
   /usr/include/c++/11/cstdarg \
+  /usr/include/boost/noncopyable.hpp \
+  /usr/include/boost/core/noncopyable.hpp \
   /usr/include/boost/serialization/config.hpp \
   /usr/include/boost/config/abi_prefix.hpp \
   /usr/include/boost/config/abi_suffix.hpp \
   /usr/include/boost/serialization/static_warning.hpp \
   /usr/include/boost/mpl/print.hpp \
   /usr/include/boost/serialization/assume_abstract.hpp \
+  /usr/include/boost/type_traits/is_abstract.hpp \
   /usr/include/boost/serialization/singleton.hpp \
   /usr/include/boost/archive/detail/auto_link_archive.hpp \
   /usr/include/boost/archive/detail/decl.hpp \
   /usr/include/boost/archive/detail/abi_prefix.hpp \
   /usr/include/boost/archive/detail/abi_suffix.hpp \
   /usr/include/boost/archive/detail/register_archive.hpp \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/GeometricTools.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrameDatabase.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Map.h \
+  /usr/local/include/ORB_SLAM3/Converter.h \
+  /usr/local/include/ORB_SLAM3/GeometricTools.h \
+  /usr/local/include/ORB_SLAM3/KeyFrameDatabase.h \
+  /usr/local/include/ORB_SLAM3/Map.h \
   /opt/ros/humble/include/pangolin/pangolin.h \
   /opt/ros/humble/include/pangolin/platform.h \
   /opt/ros/humble/include/pangolin/utils/assert.h \
@@ -2076,17 +1627,17 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
   /opt/ros/humble/include/pangolin/video/video_input.h \
   /opt/ros/humble/include/pangolin/video/video_output.h \
   /usr/include/boost/serialization/list.hpp \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/CameraModels/GeometricCamera.h \
+  /usr/local/include/ORB_SLAM3/CameraModels/GeometricCamera.h \
   /usr/include/boost/serialization/array.hpp \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Atlas.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/CameraModels/Pinhole.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/CameraModels/GeometricCamera.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/TwoViewReconstruction.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapDrawer.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/LocalMapping.h \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/LoopClosing.h \
+  /usr/local/include/ORB_SLAM3/Atlas.h \
+  /usr/local/include/ORB_SLAM3/CameraModels/Pinhole.h \
+  /usr/local/include/ORB_SLAM3/CameraModels/GeometricCamera.h \
+  /usr/local/include/ORB_SLAM3/TwoViewReconstruction.h \
+  /usr/local/include/ORB_SLAM3/CameraModels/KannalaBrandt8.h \
+  /usr/local/include/ORB_SLAM3/MapDrawer.h \
+  /usr/local/include/ORB_SLAM3/System.h \
+  /usr/local/include/ORB_SLAM3/LocalMapping.h \
+  /usr/local/include/ORB_SLAM3/LoopClosing.h \
   /usr/include/boost/algorithm/string.hpp \
   /usr/include/boost/algorithm/string/std_containers_traits.hpp \
   /usr/include/boost/algorithm/string/std/string_traits.hpp \
@@ -2094,7 +1645,114 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
   /usr/include/boost/algorithm/string/sequence_traits.hpp \
   /usr/include/boost/algorithm/string/std/list_traits.hpp \
   /usr/include/boost/algorithm/string/std/slist_traits.hpp \
+  /usr/include/boost/algorithm/string/config.hpp \
   /usr/include/c++/11/ext/slist \
+  /usr/include/boost/algorithm/string/trim.hpp \
+  /usr/include/boost/range/begin.hpp \
+  /usr/include/boost/range/config.hpp \
+  /usr/include/boost/range/iterator.hpp \
+  /usr/include/boost/range/range_fwd.hpp \
+  /usr/include/boost/range/mutable_iterator.hpp \
+  /usr/include/boost/range/detail/extract_optional_type.hpp \
+  /usr/include/boost/iterator/iterator_traits.hpp \
+  /usr/include/boost/range/detail/msvc_has_iterator_workaround.hpp \
+  /usr/include/boost/range/const_iterator.hpp \
+  /usr/include/boost/range/end.hpp \
+  /usr/include/boost/range/detail/implementation_help.hpp \
+  /usr/include/boost/range/detail/common.hpp \
+  /usr/include/boost/range/detail/sfinae.hpp \
+  /usr/include/boost/range/as_literal.hpp \
+  /usr/include/boost/range/iterator_range.hpp \
+  /usr/include/boost/range/iterator_range_core.hpp \
+  /usr/include/boost/iterator/iterator_facade.hpp \
+  /usr/include/boost/iterator/interoperable.hpp \
+  /usr/include/boost/mpl/or.hpp \
+  /usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp \
+  /usr/include/boost/type_traits/is_convertible.hpp \
+  /usr/include/boost/type_traits/add_lvalue_reference.hpp \
+  /usr/include/boost/type_traits/add_reference.hpp \
+  /usr/include/boost/iterator/detail/config_def.hpp \
+  /usr/include/boost/iterator/detail/config_undef.hpp \
+  /usr/include/boost/iterator/iterator_categories.hpp \
+  /usr/include/boost/iterator/detail/facade_iterator_category.hpp \
+  /usr/include/boost/core/use_default.hpp \
+  /usr/include/boost/detail/indirect_traits.hpp \
+  /usr/include/boost/type_traits/remove_pointer.hpp \
+  /usr/include/boost/detail/select_type.hpp \
+  /usr/include/boost/iterator/detail/enable_if.hpp \
+  /usr/include/boost/type_traits/add_const.hpp \
+  /usr/include/boost/type_traits/add_pointer.hpp \
+  /usr/include/boost/range/functions.hpp \
+  /usr/include/boost/range/size.hpp \
+  /usr/include/boost/range/size_type.hpp \
+  /usr/include/boost/range/difference_type.hpp \
+  /usr/include/boost/range/has_range_iterator.hpp \
+  /usr/include/boost/range/concepts.hpp \
+  /usr/include/boost/concept_check.hpp \
+  /usr/include/boost/concept/assert.hpp \
+  /usr/include/boost/concept/detail/general.hpp \
+  /usr/include/boost/concept/detail/backward_compatibility.hpp \
+  /usr/include/boost/concept/detail/has_constraints.hpp \
+  /usr/include/boost/type_traits/conversion_traits.hpp \
+  /usr/include/boost/concept/usage.hpp \
+  /usr/include/boost/concept/detail/concept_def.hpp \
+  /usr/include/boost/preprocessor/seq/for_each_i.hpp \
+  /usr/include/boost/preprocessor/repetition/for.hpp \
+  /usr/include/boost/preprocessor/repetition/detail/for.hpp \
+  /usr/include/boost/preprocessor/seq/seq.hpp \
+  /usr/include/boost/preprocessor/seq/elem.hpp \
+  /usr/include/boost/preprocessor/seq/size.hpp \
+  /usr/include/boost/preprocessor/seq/detail/is_empty.hpp \
+  /usr/include/boost/preprocessor/seq/enum.hpp \
+  /usr/include/boost/concept/detail/concept_undef.hpp \
+  /usr/include/boost/iterator/iterator_concepts.hpp \
+  /usr/include/boost/range/value_type.hpp \
+  /usr/include/boost/range/detail/misc_concept.hpp \
+  /usr/include/boost/type_traits/make_unsigned.hpp \
+  /usr/include/boost/type_traits/is_signed.hpp \
+  /usr/include/boost/type_traits/is_unsigned.hpp \
+  /usr/include/boost/type_traits/add_volatile.hpp \
+  /usr/include/boost/range/detail/has_member_size.hpp \
+  /usr/include/boost/utility.hpp \
+  /usr/include/boost/utility/base_from_member.hpp \
+  /usr/include/boost/preprocessor/repetition/enum_binary_params.hpp \
+  /usr/include/boost/preprocessor/repetition/repeat_from_to.hpp \
+  /usr/include/boost/utility/binary.hpp \
+  /usr/include/boost/preprocessor/control/deduce_d.hpp \
+  /usr/include/boost/preprocessor/seq/cat.hpp \
+  /usr/include/boost/preprocessor/seq/fold_left.hpp \
+  /usr/include/boost/preprocessor/seq/transform.hpp \
+  /usr/include/boost/preprocessor/arithmetic/mod.hpp \
+  /usr/include/boost/preprocessor/arithmetic/detail/div_base.hpp \
+  /usr/include/boost/preprocessor/comparison/less_equal.hpp \
+  /usr/include/boost/preprocessor/logical/not.hpp \
+  /usr/include/boost/utility/identity_type.hpp \
+  /usr/include/boost/type_traits/function_traits.hpp \
+  /usr/include/boost/core/checked_delete.hpp \
+  /usr/include/boost/range/distance.hpp \
+  /usr/include/boost/iterator/distance.hpp \
+  /usr/include/boost/range/empty.hpp \
+  /usr/include/boost/range/rbegin.hpp \
+  /usr/include/boost/range/reverse_iterator.hpp \
+  /usr/include/boost/iterator/reverse_iterator.hpp \
+  /usr/include/boost/iterator/iterator_adaptor.hpp \
+  /usr/include/boost/range/rend.hpp \
+  /usr/include/boost/range/algorithm/equal.hpp \
+  /usr/include/boost/range/detail/safe_bool.hpp \
+  /usr/include/boost/next_prior.hpp \
+  /usr/include/boost/type_traits/has_plus.hpp \
+  /usr/include/boost/type_traits/detail/has_binary_operator.hpp \
+  /usr/include/boost/type_traits/make_void.hpp \
+  /usr/include/boost/type_traits/has_plus_assign.hpp \
+  /usr/include/boost/type_traits/has_minus.hpp \
+  /usr/include/boost/type_traits/has_minus_assign.hpp \
+  /usr/include/boost/iterator/advance.hpp \
+  /usr/include/boost/range/iterator_range_io.hpp \
+  /usr/include/boost/range/detail/str_types.hpp \
+  /usr/include/boost/algorithm/string/detail/trim.hpp \
+  /usr/include/boost/algorithm/string/classification.hpp \
+  /usr/include/boost/algorithm/string/detail/classification.hpp \
+  /usr/include/boost/algorithm/string/predicate_facade.hpp \
   /usr/include/boost/algorithm/string/case_conv.hpp \
   /usr/include/boost/iterator/transform_iterator.hpp \
   /usr/include/boost/utility/result_of.hpp \
@@ -2110,6 +1768,13 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
   /usr/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp \
   /usr/include/boost/utility/detail/result_of_iterate.hpp \
   /usr/include/boost/algorithm/string/detail/case_conv.hpp \
+  /usr/include/boost/algorithm/string/predicate.hpp \
+  /usr/include/boost/algorithm/string/compare.hpp \
+  /usr/include/boost/algorithm/string/find.hpp \
+  /usr/include/boost/algorithm/string/finder.hpp \
+  /usr/include/boost/algorithm/string/constants.hpp \
+  /usr/include/boost/algorithm/string/detail/finder.hpp \
+  /usr/include/boost/algorithm/string/detail/predicate.hpp \
   /usr/include/boost/algorithm/string/split.hpp \
   /usr/include/boost/algorithm/string/iter_find.hpp \
   /usr/include/boost/algorithm/string/concept.hpp \
@@ -2119,6 +1784,10 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
   /usr/include/boost/preprocessor/iterate.hpp \
   /usr/include/boost/function/detail/prologue.hpp \
   /usr/include/boost/config/no_tr1/functional.hpp \
+  /usr/include/boost/throw_exception.hpp \
+  /usr/include/boost/assert/source_location.hpp \
+  /usr/include/boost/current_function.hpp \
+  /usr/include/boost/exception/exception.hpp \
   /usr/include/boost/function/function_base.hpp \
   /usr/include/boost/integer.hpp \
   /usr/include/boost/integer_fwd.hpp \
@@ -2131,6 +1800,8 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
   /usr/include/boost/type_traits/has_trivial_destructor.hpp \
   /usr/include/boost/type_traits/composite_traits.hpp \
   /usr/include/boost/type_traits/is_union.hpp \
+  /usr/include/boost/ref.hpp \
+  /usr/include/boost/core/ref.hpp \
   /usr/include/boost/type_traits/enable_if.hpp \
   /usr/include/boost/function_equal.hpp \
   /usr/include/boost/function/function_fwd.hpp \
@@ -2150,6 +1821,7 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
   /usr/include/boost/algorithm/string/detail/util.hpp \
   /usr/include/boost/algorithm/string/join.hpp \
   /usr/include/boost/algorithm/string/detail/sequence.hpp \
+  /usr/include/boost/mpl/logical.hpp \
   /usr/include/boost/algorithm/string/replace.hpp \
   /usr/include/boost/algorithm/string/find_format.hpp \
   /usr/include/boost/algorithm/string/detail/find_format.hpp \
@@ -2159,8 +1831,53 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
   /usr/include/boost/algorithm/string/formatter.hpp \
   /usr/include/boost/algorithm/string/detail/formatter.hpp \
   /usr/include/boost/algorithm/string/erase.hpp \
-  /home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h
+  /opt/ros/humble/include/message_filters/message_filters/subscriber.h \
+  /opt/ros/humble/include/message_filters/message_filters/connection.h \
+  /opt/ros/humble/include/message_filters/message_filters/visibility_control.h \
+  /opt/ros/humble/include/message_filters/message_filters/simple_filter.h \
+  /opt/ros/humble/include/message_filters/message_filters/signal1.h \
+  /opt/ros/humble/include/message_filters/message_filters/message_event.h \
+  /opt/ros/humble/include/message_filters/message_filters/parameter_adapter.h \
+  /opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h \
+  /opt/ros/humble/include/message_filters/message_filters/message_traits.h \
+  /opt/ros/humble/include/message_filters/message_filters/null_types.h \
+  /opt/ros/humble/include/message_filters/message_filters/signal9.h \
+  /opt/ros/humble/include/message_filters/message_filters/synchronizer.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/header.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__builder.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__type_support.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/point_cloud2_iterator.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__builder.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__traits.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__type_support.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/impl/point_cloud2_iterator.hpp \
+  /usr/local/include/ORB_SLAM3/ImuTypes.h
 
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__type_support.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__builder.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/point_cloud2_iterator.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__type_support.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__builder.hpp:
+
+/opt/ros/humble/include/message_filters/message_filters/null_types.h:
+
+/opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h:
+
+/opt/ros/humble/include/message_filters/message_filters/parameter_adapter.h:
 
 /usr/include/boost/algorithm/string/detail/formatter.hpp:
 
@@ -2168,9 +1885,9 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/boost/algorithm/string/detail/find_format_all.hpp:
 
-/usr/include/boost/algorithm/string/replace.hpp:
+/usr/include/boost/algorithm/string/find_format.hpp:
 
-/usr/include/boost/algorithm/string/detail/util.hpp:
+/usr/include/boost/algorithm/string/replace.hpp:
 
 /usr/include/boost/function/detail/maybe_include.hpp:
 
@@ -2182,6 +1899,8 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/boost/preprocessor/enum.hpp:
 
+/usr/include/boost/config/no_tr1/memory.hpp:
+
 /usr/include/boost/bind/mem_fn.hpp:
 
 /usr/include/boost/function_equal.hpp:
@@ -2190,11 +1909,19 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/boost/core/demangle.hpp:
 
+/usr/include/boost/container_hash/hash_fwd.hpp:
+
 /usr/include/boost/type_index/type_index_facade.hpp:
+
+/usr/include/boost/type_index/stl_type_index.hpp:
 
 /usr/include/boost/integer_fwd.hpp:
 
 /usr/include/boost/integer.hpp:
+
+/usr/include/boost/exception/exception.hpp:
+
+/usr/include/boost/current_function.hpp:
 
 /usr/include/boost/function/detail/prologue.hpp:
 
@@ -2203,6 +1930,10 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/boost/algorithm/string/find_iterator.hpp:
 
 /usr/include/boost/algorithm/string/split.hpp:
+
+/usr/include/boost/algorithm/string/finder.hpp:
+
+/usr/include/boost/algorithm/string/predicate.hpp:
 
 /usr/include/boost/algorithm/string/detail/case_conv.hpp:
 
@@ -2224,7 +1955,117 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/boost/algorithm/string/case_conv.hpp:
 
+/usr/include/boost/algorithm/string/detail/trim.hpp:
+
+/usr/include/boost/algorithm/string/find.hpp:
+
+/usr/include/boost/iterator/advance.hpp:
+
+/usr/include/boost/type_traits/make_void.hpp:
+
+/usr/include/boost/type_traits/detail/has_binary_operator.hpp:
+
+/usr/include/boost/range/algorithm/equal.hpp:
+
+/usr/include/boost/iterator/iterator_adaptor.hpp:
+
+/usr/include/boost/iterator/reverse_iterator.hpp:
+
+/usr/include/boost/range/empty.hpp:
+
+/usr/include/boost/iterator/distance.hpp:
+
+/usr/include/boost/range/distance.hpp:
+
+/usr/include/boost/core/checked_delete.hpp:
+
+/usr/include/boost/utility/identity_type.hpp:
+
+/usr/include/boost/preprocessor/logical/not.hpp:
+
+/usr/include/boost/preprocessor/comparison/less_equal.hpp:
+
+/usr/include/boost/preprocessor/seq/transform.hpp:
+
+/usr/include/boost/preprocessor/seq/fold_left.hpp:
+
+/usr/include/boost/preprocessor/seq/cat.hpp:
+
+/usr/include/boost/preprocessor/control/deduce_d.hpp:
+
+/usr/include/boost/utility/binary.hpp:
+
+/usr/include/boost/utility/base_from_member.hpp:
+
+/usr/include/boost/range/detail/has_member_size.hpp:
+
+/usr/include/boost/type_traits/make_unsigned.hpp:
+
+/usr/include/boost/range/value_type.hpp:
+
+/usr/include/boost/iterator/iterator_concepts.hpp:
+
+/usr/include/boost/concept/detail/concept_undef.hpp:
+
+/usr/include/boost/preprocessor/seq/size.hpp:
+
+/usr/include/boost/preprocessor/seq/elem.hpp:
+
+/usr/include/boost/preprocessor/seq/seq.hpp:
+
+/usr/include/boost/preprocessor/repetition/detail/for.hpp:
+
+/usr/include/boost/preprocessor/repetition/for.hpp:
+
+/usr/include/boost/preprocessor/seq/for_each_i.hpp:
+
+/usr/include/boost/concept/detail/concept_def.hpp:
+
+/usr/include/boost/concept/usage.hpp:
+
+/usr/include/boost/type_traits/conversion_traits.hpp:
+
+/usr/include/boost/concept/detail/backward_compatibility.hpp:
+
+/usr/include/boost/concept/assert.hpp:
+
+/usr/include/boost/range/functions.hpp:
+
+/usr/include/boost/iterator/detail/enable_if.hpp:
+
+/usr/include/boost/type_traits/remove_pointer.hpp:
+
+/usr/include/boost/iterator/detail/facade_iterator_category.hpp:
+
+/usr/include/boost/type_traits/add_reference.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp:
+
+/usr/include/boost/range/detail/sfinae.hpp:
+
+/usr/include/boost/range/end.hpp:
+
+/usr/include/boost/range/detail/msvc_has_iterator_workaround.hpp:
+
+/usr/include/boost/iterator/iterator_traits.hpp:
+
+/usr/include/boost/range/detail/extract_optional_type.hpp:
+
+/usr/include/boost/range/iterator.hpp:
+
+/usr/include/boost/range/config.hpp:
+
+/usr/include/boost/range/begin.hpp:
+
+/usr/include/boost/algorithm/string/concept.hpp:
+
+/usr/include/boost/algorithm/string/trim.hpp:
+
 /usr/include/c++/11/ext/slist:
+
+/usr/include/boost/algorithm/string/config.hpp:
+
+/usr/include/boost/algorithm/string/sequence_traits.hpp:
 
 /usr/include/boost/algorithm/string/std/string_traits.hpp:
 
@@ -2232,11 +2073,17 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/boost/algorithm/string.hpp:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/LoopClosing.h:
+/usr/local/include/ORB_SLAM3/LoopClosing.h:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/CameraModels/Pinhole.h:
+/usr/local/include/ORB_SLAM3/CameraModels/KannalaBrandt8.h:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Atlas.h:
+/usr/local/include/ORB_SLAM3/TwoViewReconstruction.h:
+
+/usr/include/boost/range/rbegin.hpp:
+
+/usr/local/include/ORB_SLAM3/CameraModels/Pinhole.h:
+
+/usr/local/include/ORB_SLAM3/Atlas.h:
 
 /usr/include/boost/serialization/array.hpp:
 
@@ -2256,6 +2103,10 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/pangolin/utils/range.h:
 
+/opt/ros/humble/include/pangolin/gl/glsl.hpp:
+
+/opt/ros/humble/include/pangolin/gl/glsl.h:
+
 /opt/ros/humble/include/pangolin/plot/plotter.h:
 
 /opt/ros/humble/include/pangolin/gl/glvbo.h:
@@ -2263,6 +2114,8 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /opt/ros/humble/include/pangolin/gl/colour.h:
 
 /opt/ros/humble/include/pangolin/gl/glchar.h:
+
+/opt/ros/humble/include/pangolin/gl/gltext.h:
 
 /opt/ros/humble/include/pangolin/gl/glfont.h:
 
@@ -2282,15 +2135,27 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/pangolin/handler/handler.h:
 
+/usr/include/c++/11/any:
+
 /opt/ros/humble/include/pangolin/utils/file_utils.h:
 
 /opt/ros/humble/include/pangolin/var/varvaluet.h:
 
 /opt/ros/humble/include/pangolin/var/varvalue.h:
 
+/opt/ros/humble/include/pangolin/display/widgets.h:
+
+/usr/include/boost/range/const_iterator.hpp:
+
+/opt/ros/humble/include/pangolin/display/attach.h:
+
 /usr/include/boost/algorithm/string/detail/find_format_store.hpp:
 
 /opt/ros/humble/include/pangolin/display/view.h:
+
+/usr/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp:
+
+/opt/ros/humble/include/pangolin/display/display.hpp:
 
 /opt/ros/humble/include/pangolin/windowing/handler_enums.h:
 
@@ -2306,19 +2171,27 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/pangolin/utils/params.h:
 
+/opt/ros/humble/include/pangolin/gl/glpangoglu.h:
+
 /opt/ros/humble/include/pangolin/gl/glinclude.h:
 
 /opt/ros/humble/include/pangolin/display/display.h:
 
 /opt/ros/humble/include/pangolin/utils/assert.h:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/GeometricTools.h:
+/opt/ros/humble/include/pangolin/pangolin.h:
+
+/usr/local/include/ORB_SLAM3/Map.h:
+
+/usr/local/include/ORB_SLAM3/GeometricTools.h:
 
 /usr/include/boost/archive/detail/abi_suffix.hpp:
 
-/usr/include/boost/archive/detail/abi_prefix.hpp:
+/usr/include/boost/archive/detail/auto_link_archive.hpp:
 
 /usr/include/boost/serialization/singleton.hpp:
+
+/usr/include/boost/type_traits/is_abstract.hpp:
 
 /usr/include/boost/serialization/assume_abstract.hpp:
 
@@ -2328,37 +2201,49 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/boost/config/abi_prefix.hpp:
 
-/usr/include/boost/serialization/export.hpp:
+/usr/include/boost/core/noncopyable.hpp:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/CameraModels/GeometricCamera.h:
+/usr/include/boost/noncopyable.hpp:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/sim_details.hpp:
+/usr/include/boost/serialization/extended_type_info.hpp:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/sim3.h:
+/usr/local/include/ORB_SLAM3/Settings.h:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:
+/usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/sim_details.hpp:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/se3_ops.hpp:
+/usr/local/include/ORB_SLAM3/MapDrawer.h:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_unary_edge.hpp:
+/usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/rxso3.hpp:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_unary_edge.h:
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/types/sim3.h:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_sba.h:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/types/se3quat.h:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_unary_edge.hpp:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_binary_edge.hpp:
 
 /usr/include/c++/11/tr1/shared_ptr.h:
 
 /usr/include/c++/11/tr1/memory:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/robust_kernel.h:
+/opt/ros/humble/include/std_msgs/std_msgs/msg/header.hpp:
+
+/usr/include/boost/range/range_fwd.hpp:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/robust_kernel.h:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_edge.h:
 
 /usr/include/c++/11/bits/stl_stack.h:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/creators.h:
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/jacobian_workspace.h:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/jacobian_workspace.h:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/parameter_container.h:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/parameter.h:
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/parameter_container.h:
 
 /usr/include/c++/11/tr1/unordered_map.h:
 
@@ -2370,21 +2255,69 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/c++/11/tr1/unordered_map:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/hyper_graph.h:
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/openmp_mutex.h:
 
-/usr/include/boost/algorithm/string/sequence_traits.hpp:
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/optimizable_graph.h:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/config.h:
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_vertex.h:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/openmp_mutex.h:
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/optimizable_graph.h:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:
+/usr/local/include/ORB_SLAM3/Converter.h:
 
 /usr/include/boost/serialization/collection_traits.hpp:
 
+/usr/include/boost/mpl/aux_/preprocessed/gcc/apply.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/template_arity.hpp:
+
+/usr/include/boost/mpl/aux_/template_arity.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/quote.hpp:
+
+/usr/include/boost/mpl/aux_/config/bcc.hpp:
+
+/usr/include/boost/mpl/aux_/has_type.hpp:
+
+/usr/include/boost/mpl/protect.hpp:
+
+/usr/include/boost/mpl/aux_/common_name_wknd.hpp:
+
+/usr/include/boost/mpl/next.hpp:
+
+/usr/local/include/ORB_SLAM3/CameraModels/GeometricCamera.h:
+
+/usr/include/boost/mpl/aux_/config/bind.hpp:
+
+/usr/include/boost/range/as_literal.hpp:
+
+/usr/include/boost/mpl/lambda.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp:
+
+/usr/include/boost/mpl/aux_/arg_typedef.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp:
+
+/usr/include/boost/mpl/aux_/na_assert.hpp:
+
+/usr/include/boost/mpl/apply_fwd.hpp:
+
+/usr/include/boost/mpl/apply.hpp:
+
+/usr/include/boost/mpl/aux_/arity_spec.hpp:
+
+/usr/include/boost/range/iterator_range_core.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessor/default_params.hpp:
+
+/usr/include/boost/mpl/always.hpp:
+
 /usr/include/boost/serialization/array_optimization.hpp:
+
+/usr/include/boost/core/enable_if.hpp:
+
+/usr/include/boost/utility/enable_if.hpp:
 
 /usr/include/boost/serialization/detail/is_default_constructible.hpp:
 
@@ -2392,13 +2325,47 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/boost/serialization/vector.hpp:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/SerializationUtils.h:
+/usr/include/boost/range/size_type.hpp:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/ORBVocabulary.h:
+/usr/local/include/ORB_SLAM3/SerializationUtils.h:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/FeatureVector.h:
+/usr/include/boost/archive/detail/abi_prefix.hpp:
+
+/usr/local/include/ORB_SLAM3/ImuTypes.h:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:
+
+/opt/ros/humble/include/message_filters/message_filters/synchronizer.h:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/DUtils/Random.h:
+
+/usr/include/boost/algorithm/string/detail/util.hpp:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/ScoringObject.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
+/usr/include/c++/11/fstream:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/TemplatedVocabulary.h:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/FClass.h:
+
+/usr/local/include/ORB_SLAM3/ORBVocabulary.h:
+
+/usr/include/boost/move/detail/meta_utils_core.hpp:
+
+/usr/include/boost/move/detail/meta_utils.hpp:
+
+/usr/include/boost/move/core.hpp:
+
+/usr/include/boost/move/detail/workaround.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/greater_equal.hpp:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/types/se3_ops.h:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/less_equal.hpp:
 
@@ -2406,11 +2373,43 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/boost/mpl/not_equal_to.hpp:
 
+/usr/include/boost/mpl/aux_/preprocessed/gcc/less.hpp:
+
+/usr/include/boost/mpl/aux_/config/pp_counter.hpp:
+
+/usr/include/boost/mpl/aux_/config/gpu.hpp:
+
+/usr/include/boost/mpl/not.hpp:
+
+/usr/include/boost/mpl/assert.hpp:
+
 /usr/include/boost/serialization/collections_save_imp.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:
+
+/usr/include/boost/mpl/aux_/nested_type_wknd.hpp:
+
+/opt/ros/humble/include/pangolin/video/video_output_interface.h:
+
+/usr/include/boost/mpl/and.hpp:
+
+/usr/include/boost/type_traits/remove_const.hpp:
+
+/usr/include/boost/type_traits/conditional.hpp:
+
+/usr/include/boost/type_traits/detail/is_member_function_pointer_cxx_11.hpp:
+
+/usr/include/boost/algorithm/string/detail/classification.hpp:
+
+/usr/include/boost/type_traits/alignment_of.hpp:
 
 /usr/include/boost/serialization/detail/stack_constructor.hpp:
 
 /usr/include/boost/serialization/library_version_type.hpp:
+
+/usr/include/boost/assert.hpp:
+
+/usr/include/boost/limits.hpp:
 
 /usr/include/boost/integer_traits.hpp:
 
@@ -2426,689 +2425,15 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/boost/serialization/tracking_enum.hpp:
 
-/usr/include/boost/serialization/level_enum.hpp:
-
-/usr/include/boost/algorithm/string/std/slist_traits.hpp:
-
-/usr/include/boost/type_traits/is_fundamental.hpp:
-
-/usr/include/boost/serialization/level.hpp:
-
-/usr/include/boost/core/nvp.hpp:
-
-/usr/include/boost/serialization/nvp.hpp:
-
-/usr/include/boost/type_traits/is_copy_constructible.hpp:
-
-/usr/include/boost/type_traits/is_default_constructible.hpp:
-
-/usr/include/boost/type_traits/is_assignable.hpp:
-
-/usr/include/boost/serialization/serialization.hpp:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/BowVector.h:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/sim3.hpp:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapPoint.h:
-
-/usr/include/opencv4/opencv2/features2d/features2d.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h:
-
-/opt/ros/humble/include/pangolin/display/widgets.h:
-
-/usr/include/x86_64-linux-gnu/bits/mman.h:
-
-/usr/include/pcl-1.12/pcl/common/concatenate.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
-
-/usr/include/c++/11/fstream:
-
-/usr/include/boost/type_traits/alignment_of.hpp:
-
-/usr/include/boost/algorithm/string/detail/classification.hpp:
-
-/usr/include/boost/algorithm/string/detail/trim.hpp:
-
-/usr/include/boost/algorithm/string/concept.hpp:
-
-/usr/include/boost/algorithm/string/trim.hpp:
-
-/usr/include/pcl-1.12/pcl/io/impl/pcd_io.hpp:
-
-/usr/include/boost/move/core.hpp:
-
-/usr/include/boost/interprocess/sync/detail/locks.hpp:
-
-/usr/include/boost/interprocess/sync/spin/wait.hpp:
-
-/usr/include/boost/interprocess/sync/detail/common_algorithms.hpp:
-
-/usr/include/boost/date_time/posix_time/posix_time_duration.hpp:
-
-/usr/include/boost/date_time/time_system_counted.hpp:
-
-/usr/include/boost/date_time/date_generators.hpp:
-
-/usr/include/boost/type_index/stl_type_index.hpp:
-
-/usr/include/boost/date_time/wrapping_int.hpp:
-
-/usr/include/boost/date_time/adjust_functors.hpp:
-
-/usr/include/boost/algorithm/string/find_format.hpp:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:
-
-/usr/include/boost/date_time/gregorian/greg_duration_types.hpp:
-
-/usr/include/boost/date_time/gregorian/greg_month.hpp:
-
-/usr/include/boost/date_time/gregorian/greg_year.hpp:
-
-/usr/include/boost/date_time/gregorian/greg_ymd.hpp:
-
-/usr/include/boost/date_time/gregorian/greg_day_of_year.hpp:
-
-/usr/include/boost/date_time/date_defs.hpp:
-
-/usr/include/boost/date_time/constrained_value.hpp:
-
-/usr/include/boost/date_time/gregorian/greg_weekday.hpp:
-
-/usr/include/boost/date_time/gregorian/greg_calendar.hpp:
-
-/usr/include/boost/date_time/gregorian/gregorian_types.hpp:
-
-/usr/include/boost/operators.hpp:
-
-/usr/include/boost/date_time/posix_time/posix_time_config.hpp:
-
-/usr/include/boost/date_time/posix_time/posix_time_system.hpp:
-
-/usr/include/boost/date_time/c_time.hpp:
-
-/usr/include/boost/smart_ptr/detail/local_counted_base.hpp:
-
-/usr/include/boost/smart_ptr/detail/sp_thread_pause.hpp:
-
-/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:
-
-/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:
-
-/usr/include/boost/smart_ptr/detail/sp_nullptr_t.hpp:
-
-/usr/include/boost/smart_ptr/detail/sp_convertible.hpp:
-
-/usr/include/boost/checked_delete.hpp:
-
-/usr/include/boost/smart_ptr/detail/sp_counted_impl.hpp:
-
-/usr/include/boost/smart_ptr/detail/sp_typeinfo_.hpp:
-
-/usr/include/boost/smart_ptr/detail/sp_has_sync_intrinsics.hpp:
-
-/usr/include/boost/smart_ptr/detail/sp_has_gcc_intrinsics.hpp:
-
-/usr/include/boost/smart_ptr/detail/sp_counted_base.hpp:
-
-/usr/include/boost/smart_ptr/shared_ptr.hpp:
-
-/usr/include/boost/date_time/microsec_time_clock.hpp:
-
-/usr/include/boost/interprocess/detail/posix_time_types_wrk.hpp:
-
-/usr/include/boost/interprocess/streams/bufferstream.hpp:
-
-/usr/include/boost/interprocess/detail/os_thread_functions.hpp:
-
-/opt/ros/humble/include/pangolin/gl/glsl.h:
-
-/usr/include/x86_64-linux-gnu/bits/dirent_ext.h:
-
-/usr/include/x86_64-linux-gnu/bits/dirent.h:
-
-/usr/include/boost/type_traits/is_base_of.hpp:
-
-/usr/include/dirent.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
-
-/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
-
-/usr/include/x86_64-linux-gnu/asm/posix_types.h:
-
-/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
-
-/usr/include/asm-generic/int-ll64.h:
-
-/usr/include/linux/types.h:
-
-/usr/include/linux/stat.h:
-
-/usr/include/x86_64-linux-gnu/bits/statx.h:
-
-/usr/include/boost/type_traits/has_nothrow_constructor.hpp:
-
-/usr/include/boost/config/pragma_message.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/stat.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
-
-/usr/include/linux/falloc.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
-
-/usr/include/x86_64-linux-gnu/bits/fcntl.h:
-
-/usr/include/boost/config/no_tr1/memory.hpp:
-
-/usr/include/fcntl.h:
-
-/usr/include/boost/move/detail/meta_utils_core.hpp:
-
-/usr/include/boost/move/detail/meta_utils.hpp:
-
-/usr/include/boost/move/detail/workaround.hpp:
-
-/usr/include/boost/interprocess/detail/os_file_functions.hpp:
-
-/usr/include/boost/interprocess/detail/config_end.hpp:
-
-/usr/include/pcl-1.12/pcl/common/impl/copy_point.hpp:
-
-/usr/include/boost/interprocess/exceptions.hpp:
-
-/usr/include/boost/interprocess/detail/config_begin.hpp:
-
-/usr/include/boost/interprocess/sync/file_lock.hpp:
-
-/usr/include/boost/algorithm/string/finder.hpp:
-
-/usr/include/boost/algorithm/string/find.hpp:
-
-/usr/include/boost/iterator/advance.hpp:
-
-/usr/include/boost/type_traits/make_void.hpp:
-
-/usr/include/boost/type_traits/detail/has_binary_operator.hpp:
-
-/usr/include/boost/range/algorithm/equal.hpp:
-
-/usr/include/boost/range/empty.hpp:
-
-/usr/include/boost/iterator/distance.hpp:
-
-/usr/include/boost/range/distance.hpp:
-
-/usr/include/boost/smart_ptr/detail/shared_count.hpp:
-
-/usr/include/boost/core/checked_delete.hpp:
-
-/usr/include/boost/utility/identity_type.hpp:
-
-/usr/include/boost/preprocessor/seq/cat.hpp:
-
-/usr/include/boost/preprocessor/control/deduce_d.hpp:
-
-/usr/include/boost/utility/binary.hpp:
-
-/usr/include/boost/utility/base_from_member.hpp:
-
-/usr/include/boost/range/detail/has_member_size.hpp:
-
-/usr/include/boost/type_traits/make_unsigned.hpp:
-
-/usr/include/boost/iterator/iterator_concepts.hpp:
-
-/usr/include/boost/concept/detail/concept_undef.hpp:
-
-/usr/include/boost/preprocessor/seq/for_each_i.hpp:
-
-/usr/include/boost/concept/detail/concept_def.hpp:
-
-/usr/include/boost/concept/usage.hpp:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/LocalMapping.h:
-
-/usr/include/boost/type_traits/conversion_traits.hpp:
-
-/usr/include/boost/type_traits/conditional.hpp:
-
-/usr/include/boost/concept/detail/backward_compatibility.hpp:
-
-/usr/include/boost/concept/assert.hpp:
-
-/usr/include/boost/core/enable_if.hpp:
-
-/usr/include/boost/utility/enable_if.hpp:
-
-/usr/include/boost/range/size_type.hpp:
-
-/usr/include/boost/range/functions.hpp:
-
-/usr/include/boost/assert.hpp:
-
-/usr/include/boost/algorithm/string/config.hpp:
-
-/usr/include/boost/algorithm/string/predicate.hpp:
-
-/usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_common.hpp:
-
-/usr/include/boost/numeric/conversion/detail/numeric_cast_traits.hpp:
-
-/usr/include/boost/numeric/conversion/detail/bounds.hpp:
-
-/usr/include/boost/exception/exception.hpp:
-
-/usr/include/boost/config/no_tr1/cmath.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/less.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/times.hpp:
-
-/usr/include/boost/mpl/multiplies.hpp:
-
-/usr/include/boost/numeric/conversion/detail/udt_builtin_mixture.hpp:
-
-/usr/include/boost/numeric/conversion/detail/sign_mixture.hpp:
-
-/usr/include/boost/numeric/conversion/int_float_mixture_enum.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/time.h:
-
-/usr/include/boost/limits.hpp:
-
-/usr/include/boost/numeric/conversion/detail/int_float_mixture.hpp:
+/usr/include/boost/type_traits/is_pointer.hpp:
 
 /usr/include/boost/serialization/version.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp:
 
-/usr/include/boost/mpl/aux_/comparison_op.hpp:
-
-/usr/include/boost/mpl/equal_to.hpp:
-
-/usr/include/boost/numeric/conversion/detail/meta.hpp:
-
-/usr/include/boost/numeric/conversion/detail/conversion_traits.hpp:
-
-/usr/include/boost/numeric/conversion/converter.hpp:
-
-/usr/include/boost/numeric/conversion/cast.hpp:
-
-/usr/include/pcl-1.12/pcl/io/file_io.h:
-
-/usr/include/boost/date_time/locale_config.hpp:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__builder.hpp:
-
-/usr/include/boost/date_time/date_duration.hpp:
-
-/usr/include/pcl-1.12/pcl/PolygonMesh.h:
-
-/usr/include/x86_64-linux-gnu/sys/fcntl.h:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/vertices__traits.hpp:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/vertices__builder.hpp:
-
-/usr/include/boost/type_traits/has_nothrow_assign.hpp:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/vertices__struct.hpp:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/vertices.hpp:
-
-/usr/include/pcl-1.12/pcl/Vertices.h:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__traits.hpp:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__struct.hpp:
-
-/usr/include/boost/container_hash/hash_fwd.hpp:
-
-/usr/include/pcl-1.12/pcl/ModelCoefficients.h:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__traits.hpp:
-
-/usr/include/pcl-1.12/pcl/PointIndices.h:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__type_support.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__builder.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__type_support.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__builder.hpp:
-
-/usr/include/boost/iterator/detail/enable_if.hpp:
-
-/usr/include/boost/type_traits/remove_pointer.hpp:
-
-/usr/include/boost/type_traits/detail/is_member_function_pointer_cxx_11.hpp:
-
-/usr/include/boost/type_traits/is_volatile.hpp:
-
-/usr/include/boost/algorithm/string/iter_find.hpp:
-
-/usr/include/boost/type_traits/is_class.hpp:
-
-/usr/include/boost/type_traits/is_pointer.hpp:
-
-/usr/include/boost/iterator/detail/facade_iterator_category.hpp:
-
-/usr/include/boost/type_traits/add_reference.hpp:
-
-/usr/include/boost/type_traits/is_abstract.hpp:
-
-/usr/include/c++/11/bits/fstream.tcc:
-
-/usr/include/boost/type_traits/is_floating_point.hpp:
-
-/usr/include/boost/type_traits/is_integral.hpp:
-
-/usr/include/boost/type_traits/is_arithmetic.hpp:
-
-/usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:
-
-/usr/include/boost/type_traits/is_function.hpp:
-
-/usr/include/boost/type_traits/is_rvalue_reference.hpp:
-
-/usr/include/boost/type_traits/is_lvalue_reference.hpp:
-
-/usr/include/boost/function/function_template.hpp:
-
-/usr/include/boost/type_traits/is_reference.hpp:
-
-/usr/include/boost/type_traits/is_destructible.hpp:
-
-/usr/include/boost/type_traits/add_rvalue_reference.hpp:
-
-/usr/include/boost/type_traits/declval.hpp:
-
-/usr/include/boost/type_traits/is_enum.hpp:
-
-/usr/include/boost/type_traits/detail/config.hpp:
-
-/usr/include/boost/type_traits/intrinsics.hpp:
-
-/usr/include/boost/iterator/iterator_adaptor.hpp:
-
-/usr/include/boost/iterator/reverse_iterator.hpp:
-
-/usr/include/boost/range/begin.hpp:
-
-/usr/include/boost/numeric/conversion/detail/converter.hpp:
-
-/usr/include/boost/type_traits/is_const.hpp:
-
-/opt/ros/humble/include/pangolin/display/attach.h:
-
-/usr/include/boost/range/const_iterator.hpp:
-
-/usr/include/boost/range/detail/msvc_has_iterator_workaround.hpp:
-
-/usr/include/boost/iterator/iterator_traits.hpp:
-
-/usr/include/boost/smart_ptr/detail/sp_noexcept.hpp:
-
-/usr/include/boost/range/detail/extract_optional_type.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/header.hpp:
-
-/usr/include/boost/range/range_fwd.hpp:
-
-/usr/include/boost/range/detail/sfinae.hpp:
-
-/usr/include/boost/range/config.hpp:
-
-/usr/include/boost/range/end.hpp:
-
-/usr/include/boost/core/noncopyable.hpp:
-
-/usr/include/boost/noncopyable.hpp:
-
-/usr/include/boost/type_traits/is_constructible.hpp:
-
-/usr/include/boost/foreach.hpp:
-
-/usr/include/boost/mpl/aux_/unwrap.hpp:
-
-/usr/include/boost/mpl/push_front.hpp:
-
-/usr/include/boost/mpl/front_inserter.hpp:
-
-/usr/include/boost/utility/addressof.hpp:
-
-/usr/include/boost/mpl/aux_/inserter_algorithm.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/reverse_fold_impl.hpp:
-
-/usr/include/boost/mpl/aux_/reverse_fold_impl.hpp:
-
-/usr/include/c++/11/any:
-
-/usr/include/boost/mpl/reverse_fold.hpp:
-
-/usr/include/boost/mpl/remove_if.hpp:
-
-/usr/include/pcl-1.12/pcl/PCLImage.h:
-
-/usr/include/boost/predef/platform/android.h:
-
-/usr/include/boost/type_traits/remove_const.hpp:
-
-/usr/include/boost/predef/os/bsd/free.h:
-
-/usr/include/boost/predef/os/bsd/dragonfly.h:
-
-/usr/include/boost/predef/os/bsd/bsdi.h:
-
-/usr/include/boost/predef/os/bsd.h:
-
-/usr/include/boost/predef/os/macos.h:
-
-/usr/include/boost/predef/library/c/_prefix.h:
-
-/usr/include/boost/predef/library/c/gnu.h:
-
-/usr/include/boost/predef/detail/test.h:
-
-/usr/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp:
-
-/opt/ros/humble/include/pangolin/display/display.hpp:
-
-/usr/include/boost/predef/other/endian.h:
-
-/usr/include/boost/serialization/tracking.hpp:
-
-/usr/include/boost/range/detail/implementation_help.hpp:
-
-/usr/include/pcl-1.12/pcl/conversions.h:
-
-/usr/include/boost/smart_ptr/bad_weak_ptr.hpp:
-
-/opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h:
-
-/usr/include/boost/mpl/aux_/has_size.hpp:
-
-/usr/include/boost/mpl/aux_/O1_size_impl.hpp:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__type_support.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_if_impl.hpp:
-
-/usr/include/boost/mpl/aux_/iter_fold_if_impl.hpp:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/TemplatedVocabulary.h:
-
-/usr/include/boost/range/iterator_range_core.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessor/default_params.hpp:
-
-/usr/include/boost/mpl/always.hpp:
-
-/usr/include/asm-generic/bitsperlong.h:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp:
-
-/opt/ros/humble/include/pangolin/gl/gltext.h:
-
-/usr/include/boost/mpl/iter_fold_if.hpp:
-
-/usr/include/boost/mpl/aux_/msvc_type.hpp:
-
-/opt/ros/humble/include/pangolin/pangolin.h:
-
-/usr/include/boost/mpl/deref.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/apply.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/template_arity.hpp:
-
-/usr/include/boost/date_time/date_iterator.hpp:
-
-/usr/include/boost/mpl/aux_/template_arity.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/quote.hpp:
-
-/usr/include/boost/interprocess/errors.hpp:
-
-/usr/include/boost/mpl/aux_/config/bcc.hpp:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Tracking.h:
-
-/usr/include/boost/mpl/aux_/has_type.hpp:
-
-/usr/include/boost/mpl/protect.hpp:
-
-/usr/include/boost/mpl/aux_/config/bind.hpp:
-
-/usr/include/boost/range/as_literal.hpp:
-
-/usr/include/boost/mpl/lambda.hpp:
-
-/usr/include/boost/mpl/aux_/arg_typedef.hpp:
-
-/usr/include/boost/mpl/aux_/arity_spec.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/mman.h:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp:
-
-/usr/include/boost/mpl/aux_/na_assert.hpp:
-
-/usr/include/boost/mpl/apply_fwd.hpp:
-
-/usr/include/boost/mpl/apply.hpp:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/FrameDrawer.h:
-
-/usr/include/boost/mpl/aux_/iter_apply.hpp:
-
-/usr/include/boost/mpl/aux_/begin_end_impl.hpp:
-
-/usr/include/boost/mpl/aux_/contains_impl.hpp:
-
-/usr/include/boost/mpl/contains.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:
-
-/opt/ros/humble/include/pangolin/video/video_output_interface.h:
-
-/usr/include/boost/mpl/and.hpp:
-
-/usr/include/boost/predef/os/ios.h:
-
-/usr/include/boost/preprocessor/seq/fold_left.hpp:
-
-/usr/include/boost/preprocessor/seq/transform.hpp:
-
-/usr/include/boost/preprocessor/seq/elem.hpp:
-
-/usr/include/boost/preprocessor/seq/seq.hpp:
-
-/usr/include/boost/preprocessor/repetition/detail/for.hpp:
-
-/usr/include/boost/date_time/year_month_day.hpp:
-
-/usr/include/boost/preprocessor/repetition/for.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp:
-
-/usr/include/boost/preprocessor/seq/for_each.hpp:
-
-/usr/include/pcl-1.12/pcl/register_point_struct.h:
-
-/usr/include/pcl-1.12/pcl/impl/point_types.hpp:
-
-/usr/include/pcl-1.12/pcl/point_types.h:
-
-/usr/include/pcl-1.12/pcl/pcl_exports.h:
-
-/usr/include/pcl-1.12/pcl/console/print.h:
-
-/usr/include/pcl-1.12/pcl/types.h:
-
-/usr/include/boost/preprocessor/logical/not.hpp:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_vertex.hpp:
-
-/usr/include/boost/preprocessor/comparison/less_equal.hpp:
-
-/usr/include/boost/type_traits/detail/yes_no_type.hpp:
-
-/usr/include/boost/preprocessor/comparison/equal.hpp:
-
-/usr/include/pcl-1.12/pcl/pcl_config.h:
-
-/usr/include/pcl-1.12/pcl/pcl_macros.h:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__traits.hpp:
-
-/usr/include/boost/current_function.hpp:
-
-/usr/include/pcl-1.12/pcl/exceptions.h:
-
-/usr/include/boost/preprocessor/seq/size.hpp:
-
-/usr/include/boost/mpl/begin_end_fwd.hpp:
-
-/usr/include/boost/interprocess/detail/workaround.hpp:
-
-/usr/include/boost/type_traits/integral_constant.hpp:
-
-/usr/include/boost/date_time/int_adapter.hpp:
-
-/usr/include/boost/type_traits/is_same.hpp:
-
-/usr/include/boost/mpl/empty_fwd.hpp:
-
-/usr/include/boost/mpl/vector/aux_/empty.hpp:
-
-/usr/include/boost/mpl/vector/aux_/size.hpp:
-
-/usr/include/boost/mpl/O1_size_fwd.hpp:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Viewer.h:
-
-/usr/include/boost/mpl/prior.hpp:
-
-/usr/include/boost/mpl/advance_fwd.hpp:
-
 /usr/include/boost/mpl/aux_/config/forwarding.hpp:
 
-/usr/include/boost/type.hpp:
-
-/usr/include/boost/mpl/eval_if.hpp:
+/usr/include/boost/mpl/void.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/apply_wrap.hpp:
 
@@ -3118,109 +2443,47 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/boost/mpl/aux_/include_preprocessed.hpp:
 
-/usr/include/boost/type_traits/remove_cv.hpp:
-
-/usr/include/boost/mpl/aux_/config/has_apply.hpp:
-
 /usr/include/boost/preprocessor/repetition/enum_trailing_params.hpp:
 
 /usr/include/boost/preprocessor/repetition/enum_params.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/mman-linux.h:
 
 /usr/include/boost/preprocessor/array/data.hpp:
 
 /usr/include/boost/mpl/aux_/config/msvc_typename.hpp:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_edge.h:
+/usr/include/boost/mpl/aux_/config/arrays.hpp:
+
+/usr/include/boost/mpl/aux_/yes_no.hpp:
+
+/usr/include/boost/mpl/aux_/type_wrapper.hpp:
 
 /usr/include/boost/mpl/has_xxx.hpp:
 
 /usr/include/boost/mpl/apply_wrap.hpp:
 
-/usr/include/boost/mpl/is_sequence.hpp:
-
 /usr/include/boost/mpl/numeric_cast.hpp:
 
 /usr/include/boost/mpl/aux_/numeric_op.hpp:
 
-/usr/include/boost/mpl/if.hpp:
+/usr/include/boost/mpl/aux_/comparison_op.hpp:
 
-/usr/include/boost/mpl/aux_/largest_int.hpp:
-
-/usr/include/boost/mpl/integral_c_fwd.hpp:
-
-/usr/include/boost/mpl/plus.hpp:
-
-/usr/include/boost/range/rbegin.hpp:
-
-/usr/include/boost/mpl/vector/aux_/vector0.hpp:
-
-/usr/include/boost/mpl/clear_fwd.hpp:
-
-/usr/include/boost/mpl/back_fwd.hpp:
-
-/opt/ros/humble/include/pangolin/gl/glpangoglu.h:
-
-/usr/include/boost/mpl/pop_back_fwd.hpp:
-
-/usr/include/boost/mpl/next.hpp:
-
-/usr/include/boost/mpl/vector/aux_/push_back.hpp:
-
-/usr/include/boost/mpl/pop_front_fwd.hpp:
-
-/usr/include/boost/mpl/aux_/common_name_wknd.hpp:
-
-/usr/include/boost/mpl/vector/aux_/push_front.hpp:
-
-/usr/include/boost/mpl/vector/aux_/front.hpp:
-
-/usr/include/boost/mpl/aux_/type_wrapper.hpp:
-
-/usr/include/boost/mpl/void.hpp:
-
-/usr/include/boost/serialization/extended_type_info.hpp:
-
-/usr/include/boost/mpl/aux_/config/typeof.hpp:
-
-/usr/include/boost/mpl/vector/aux_/tag.hpp:
-
-/usr/include/boost/mpl/at_fwd.hpp:
-
-/opt/ros/humble/include/pangolin/gl/glsl.hpp:
-
-/usr/include/linux/stddef.h:
-
-/usr/include/boost/mpl/vector/aux_/at.hpp:
-
-/usr/include/boost/mpl/vector/vector10.hpp:
-
-/usr/include/boost/mpl/vector/vector20.hpp:
-
-/usr/include/boost/cstdint.hpp:
-
-/usr/include/boost/preprocessor/stringize.hpp:
+/usr/include/boost/mpl/equal_to.hpp:
 
 /usr/include/boost/mpl/identity.hpp:
 
-/usr/include/boost/numeric/conversion/conversion_traits.hpp:
+/usr/include/boost/range/detail/implementation_help.hpp:
 
-/usr/include/boost/mpl/aux_/config/pp_counter.hpp:
+/usr/include/boost/serialization/tracking.hpp:
 
-/usr/include/boost/mpl/aux_/config/gpu.hpp:
+/usr/include/boost/serialization/level_enum.hpp:
 
-/usr/include/boost/mpl/aux_/config/arrays.hpp:
-
-/usr/include/boost/preprocessor/comparison/less.hpp:
-
-/usr/include/boost/mpl/aux_/yes_no.hpp:
-
-/usr/include/boost/mpl/aux_/value_wknd.hpp:
+/usr/include/boost/mpl/integral_c_fwd.hpp:
 
 /usr/include/boost/mpl/aux_/config/overload_resolution.hpp:
 
-/usr/include/boost/mpl/aux_/config/eti.hpp:
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp:
+
+/usr/include/boost/preprocessor/arithmetic/sub.hpp:
 
 /usr/include/boost/type_traits/has_trivial_copy.hpp:
 
@@ -3256,9 +2519,9 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/boost/preprocessor/facilities/identity.hpp:
 
-/usr/include/boost/preprocessor/logical/bitand.hpp:
+/usr/local/include/ORB_SLAM3/KeyFrameDatabase.h:
 
-/usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:
+/usr/include/boost/preprocessor/logical/bitand.hpp:
 
 /usr/include/boost/preprocessor/arithmetic/inc.hpp:
 
@@ -3276,11 +2539,11 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/boost/preprocessor/control/iif.hpp:
 
+/opt/ros/humble/include/message_filters/message_filters/connection.h:
+
 /usr/include/boost/preprocessor/control/if.hpp:
 
 /usr/include/boost/serialization/split_member.hpp:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/vertices__type_support.hpp:
 
 /usr/include/boost/preprocessor/punctuation/comma_if.hpp:
 
@@ -3304,15 +2567,113 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/boost/mpl/aux_/config/lambda.hpp:
 
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp:
+
+/usr/include/boost/mpl/aux_/config/ctps.hpp:
+
 /usr/include/boost/mpl/aux_/na_fwd.hpp:
+
+/usr/include/boost/mpl/integral_c_tag.hpp:
+
+/usr/include/boost/mpl/bool_fwd.hpp:
+
+/usr/include/boost/mpl/bool.hpp:
 
 /usr/include/boost/mpl/aux_/na.hpp:
 
+/usr/include/boost/mpl/aux_/config/intel.hpp:
+
+/usr/include/boost/preprocessor/arithmetic/detail/div_base.hpp:
+
+/usr/include/boost/mpl/aux_/config/adl.hpp:
+
+/usr/include/boost/mpl/aux_/adl_barrier.hpp:
+
 /usr/include/boost/mpl/aux_/na_spec.hpp:
 
-/usr/include/boost/mpl/aux_/nested_type_wknd.hpp:
+/usr/include/boost/mpl/aux_/config/eti.hpp:
 
-/usr/include/boost/mpl/integral_c_tag.hpp:
+/usr/include/boost/mpl/aux_/config/workaround.hpp:
+
+/usr/include/boost/mpl/aux_/value_wknd.hpp:
+
+/usr/include/boost/mpl/if.hpp:
+
+/usr/include/boost/mpl/eval_if.hpp:
+
+/usr/include/boost/type_traits/is_same.hpp:
+
+/usr/include/boost/mpl/aux_/config/has_apply.hpp:
+
+/usr/include/boost/type_traits/remove_cv.hpp:
+
+/usr/include/boost/algorithm/string/iter_find.hpp:
+
+/usr/include/boost/type_traits/is_class.hpp:
+
+/usr/include/c++/11/bits/fstream.tcc:
+
+/usr/include/boost/type_traits/is_floating_point.hpp:
+
+/usr/include/boost/type_traits/is_integral.hpp:
+
+/usr/include/boost/type_traits/is_arithmetic.hpp:
+
+/usr/include/boost/algorithm/string/std/slist_traits.hpp:
+
+/usr/include/boost/type_traits/is_fundamental.hpp:
+
+/usr/include/boost/serialization/level.hpp:
+
+/usr/include/boost/cstdint.hpp:
+
+/usr/include/boost/preprocessor/stringize.hpp:
+
+/usr/include/boost/core/nvp.hpp:
+
+/usr/include/boost/serialization/nvp.hpp:
+
+/usr/include/boost/type_traits/is_constructible.hpp:
+
+/usr/include/boost/type_traits/is_copy_constructible.hpp:
+
+/usr/include/boost/type_traits/is_default_constructible.hpp:
+
+/usr/include/boost/type_traits/has_nothrow_constructor.hpp:
+
+/usr/include/boost/type_traits/detail/yes_no_type.hpp:
+
+/usr/include/boost/type_traits/is_function.hpp:
+
+/usr/include/boost/type_traits/is_rvalue_reference.hpp:
+
+/usr/include/boost/type_traits/is_lvalue_reference.hpp:
+
+/usr/include/boost/function/function_template.hpp:
+
+/usr/include/boost/type_traits/is_reference.hpp:
+
+/usr/include/boost/type_traits/is_void.hpp:
+
+/usr/include/boost/type_traits/is_destructible.hpp:
+
+/usr/include/boost/type_traits/add_rvalue_reference.hpp:
+
+/usr/include/boost/type_traits/declval.hpp:
+
+/usr/include/boost/type_traits/is_assignable.hpp:
+
+/usr/include/boost/type_traits/is_const.hpp:
+
+/usr/include/boost/type_traits/is_enum.hpp:
+
+/usr/include/boost/type_traits/detail/config.hpp:
+
+/usr/include/boost/type_traits/intrinsics.hpp:
+
+/usr/include/boost/type_traits/integral_constant.hpp:
+
+/usr/include/boost/type_traits/has_nothrow_assign.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessor/enum.hpp:
 
@@ -3322,13 +2683,9 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/boost/detail/workaround.hpp:
 
-/usr/include/boost/mpl/aux_/config/workaround.hpp:
+/usr/include/boost/operators.hpp:
 
-/usr/include/boost/mpl/vector/aux_/pop_back.hpp:
-
-/usr/include/boost/mpl/aux_/config/intel.hpp:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/stuff/macros.h:
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/hyper_graph.h:
 
 /usr/include/boost/config/detail/posix_features.hpp:
 
@@ -3338,15 +2695,11 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/boost/config/detail/select_platform_config.hpp:
 
-/usr/include/boost/smart_ptr/detail/yield_k.hpp:
-
 /usr/include/c++/11/version:
 
 /usr/include/boost/config/detail/select_stdlib_config.hpp:
 
 /usr/include/boost/config/compiler/gcc.hpp:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__type_support.hpp:
 
 /usr/include/boost/detail/select_type.hpp:
 
@@ -3358,35 +2711,17 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/boost/config.hpp:
 
-/usr/include/boost/preprocessor/arithmetic/detail/div_base.hpp:
+/usr/include/boost/serialization/serialization.hpp:
 
-/usr/include/boost/mpl/aux_/config/adl.hpp:
+/usr/local/include/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/BowVector.h:
 
-/usr/include/boost/mpl/aux_/adl_barrier.hpp:
+/usr/local/include/ORB_SLAM3/FrameDrawer.h:
 
-/usr/include/boost/mpl/bool_fwd.hpp:
+/usr/local/include/ORB_SLAM3/Viewer.h:
 
-/usr/include/boost/mpl/bool.hpp:
+/usr/include/opencv4/opencv2/features2d/features2d.hpp:
 
-/usr/include/boost/mpl/not.hpp:
-
-/usr/include/pcl-1.12/pcl/io/lzf.h:
-
-/usr/include/boost/mpl/assert.hpp:
-
-/usr/include/pcl-1.12/pcl/point_struct_traits.h:
-
-/usr/include/boost/range/value_type.hpp:
-
-/usr/include/pcl-1.12/pcl/type_traits.h:
-
-/usr/include/pcl-1.12/pcl/PCLHeader.h:
-
-/usr/include/eigen3/Eigen/src/StlSupport/StdVector.h:
-
-/usr/include/boost/range/iterator.hpp:
-
-/usr/include/pcl-1.12/pcl/point_cloud.h:
+/usr/local/include/ORB_SLAM3/Tracking.h:
 
 /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:
 
@@ -3422,19 +2757,13 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp:
 
-/usr/include/boost/date_time/time.hpp:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__type_support.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__builder.hpp:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_sba.h:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__struct.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/minus.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/polygon_stamped.hpp:
 
@@ -3448,11 +2777,7 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance_stamped.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__builder.hpp:
-
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
-
-/usr/include/boost/mpl/vector/aux_/back.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
 
@@ -3460,19 +2785,17 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/eigen3/Eigen/src/Core/NestByValue.h:
 
-/usr/include/boost/mpl/limits/vector.hpp:
-
 /usr/include/c++/11/tr1/exp_integral.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/usr/include/boost/numeric/conversion/sign_mixture_enum.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
 /usr/include/opencv4/opencv2/core/ovx.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
@@ -3512,8 +2835,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/buffer_implementation_base.hpp:
 
-/usr/include/boost/mpl/aux_/clear_impl.hpp:
-
 /usr/include/boost/mpl/aux_/has_apply.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process.hpp:
@@ -3542,19 +2863,9 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp:
 
-/usr/include/boost/archive/detail/auto_link_archive.hpp:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/so3.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp:
 
-/usr/include/boost/mpl/distance_fwd.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
-
-/usr/include/pcl-1.12/pcl/for_each_type.h:
 
 /opt/ros/humble/include/tracetools/tracetools/utils.hpp:
 
@@ -3564,9 +2875,9 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
-/usr/include/boost/algorithm/string/yes_no_type.hpp:
-
 /usr/include/boost/range/detail/str_types.hpp:
+
+/usr/include/boost/algorithm/string/yes_no_type.hpp:
 
 /opt/ros/humble/include/rcpputils/rcpputils/time.hpp:
 
@@ -3600,11 +2911,11 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/rmw/rmw/error_handling.h:
 
-/usr/include/boost/mpl/vector/aux_/O1_size.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/exceptions.hpp:
 
 /opt/ros/humble/include/rcl/rcl/logging_rosout.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/impl/point_cloud2_iterator.hpp:
 
 /usr/include/boost/mpl/aux_/integral_wrapper.hpp:
 
@@ -3628,8 +2939,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/c++/11/cxxabi.h:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_binary_edge.hpp:
-
 /usr/include/c++/11/bits/basic_ios.h:
 
 /usr/include/boost/serialization/map.hpp:
@@ -3644,8 +2953,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
 
-/usr/include/boost/mpl/aux_/push_back_impl.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:
@@ -3654,19 +2961,13 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/GL/glu.h:
 
-/usr/include/boost/date_time/special_defs.hpp:
-
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h:
 
 /opt/ros/humble/include/rcutils/rcutils/logging.h:
 
-/usr/include/boost/mpl/vector/aux_/preprocessed/typeof_based/vector20.hpp:
-
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:
 
 /usr/include/boost/serialization/void_cast_fwd.hpp:
-
-/usr/include/boost/numeric/conversion/udt_builtin_mixture_enum.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__type_support.hpp:
 
@@ -3693,8 +2994,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /opt/ros/humble/include/rcpputils/rcpputils/visibility_control.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/model_coefficients.hpp:
 
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp:
 
@@ -3726,15 +3025,11 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/c++/11/condition_variable:
 
-/usr/include/boost/date_time/time_defs.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:
 
 /opt/ros/humble/include/pangolin/video/stream_info.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/boost/smart_ptr/detail/sp_counted_base_gcc_atomic.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/signal_ext.h:
 
@@ -3743,8 +3038,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /opt/ros/humble/include/rclcpp/rclcpp/guard_condition.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/contexts/default_context.hpp:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/point_indices.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h:
 
@@ -3762,6 +3055,10 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/rcpputils/rcpputils/scope_exit.hpp:
 
+/usr/include/boost/serialization/export.hpp:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/common.hpp:
+
 /opt/ros/humble/include/rcl/rcl/event.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_common.hpp:
@@ -3773,8 +3070,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/boost/config/helper_macros.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:
 
 /opt/ros/humble/include/rcl/rcl/time.h:
 
@@ -3792,8 +3087,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/boost/algorithm/string/detail/find_format.hpp:
 
-/usr/include/boost/mpl/vector/aux_/pop_front.hpp:
-
 /opt/ros/humble/include/rcl/rcl/service.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:
@@ -3803,6 +3096,8 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /opt/ros/humble/include/pangolin/video/video_output.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_base.hpp:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/stuff/macros.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__struct.hpp:
 
@@ -3820,8 +3115,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h:
 
-/usr/include/boost/predef/detail/_cassert.h:
-
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp:
 
 /opt/ros/humble/include/rcl/rcl/client.h:
@@ -3838,6 +3131,8 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/requested_deadline_missed.h:
 
+/usr/local/include/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/FORB.h:
+
 /usr/include/opencv4/opencv2/stitching/detail/seam_finders.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h:
@@ -3851,8 +3146,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/offered_deadline_missed.h:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/message_lost.h:
 
@@ -3888,8 +3181,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/fold_impl.hpp:
-
 /usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/events_statuses.h:
@@ -3904,10 +3195,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/rcutils/rcutils/types/char_array.h:
 
-/usr/include/boost/date_time/compiler_config.hpp:
-
-/usr/include/boost/mpl/begin_end.hpp:
-
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_enable_topic_statistics.hpp:
@@ -3915,6 +3202,8 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /opt/ros/humble/include/rcutils/rcutils/time.h:
 
 /opt/ros/humble/include/rcutils/rcutils/snprintf.h:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_binary_edge.h:
 
 /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp:
 
@@ -3952,8 +3241,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/boost/type_traits/has_nothrow_copy.hpp:
 
-/usr/include/boost/mpl/size_fwd.hpp:
-
 /usr/include/c++/11/tr1/modified_bessel_func.tcc:
 
 /usr/include/c++/11/bits/ostream.tcc:
@@ -3970,8 +3257,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/eigen3/Eigen/src/Core/Replicate.h:
 
-/usr/include/boost/mpl/vector/aux_/item.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
@@ -3981,8 +3266,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/boost/preprocessor/logical/bool.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h:
-
-/usr/include/boost/mpl/aux_/lambda_spec.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
@@ -4014,10 +3297,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/se3quat.h:
-
-/usr/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:
 
 /usr/include/c++/11/map:
@@ -4025,8 +3304,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/opencv4/opencv2/flann/kdtree_index.h:
 
 /usr/include/c++/11/list:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__struct.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
 
@@ -4056,8 +3333,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/rcutils/rcutils/types/string_map.h:
 
-/usr/include/x86_64-linux-gnu/bits/stat.h:
-
 /usr/include/boost/mpl/aux_/is_msvc_eti_arg.hpp:
 
 /usr/include/opencv4/opencv2/flann/result_set.h:
@@ -4070,11 +3345,7 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/string.h:
 
-/usr/include/boost/mpl/O1_size.hpp:
-
 /usr/include/c++/11/bits/streambuf.tcc:
-
-/usr/include/boost/mpl/contains_fwd.hpp:
 
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
@@ -4082,11 +3353,7 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/c++/11/bits/locale_classes.h:
 
-/usr/include/boost/mpl/clear.hpp:
-
 /usr/include/c++/11/ostream:
-
-/usr/include/pcl-1.12/pcl/PCLPointCloud2.h:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
 
@@ -4095,8 +3362,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/c++/11/unordered_set:
 
 /usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h:
-
-/usr/include/boost/mpl/vector/aux_/preprocessed/typeof_based/vector10.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
@@ -4148,8 +3413,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/c++/11/bits/stringfwd.h:
 
-/usr/include/boost/preprocessor/comparison/not_equal.hpp:
-
 /usr/include/c++/11/bits/string_view.tcc:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
@@ -4184,10 +3447,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/opencv4/opencv2/flann/flann_base.hpp:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/MapDrawer.h:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/types/se3_ops.h:
-
 /usr/include/c++/11/cstring:
 
 /usr/include/c++/11/bits/atomic_futex.h:
@@ -4198,9 +3457,9 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/rclcpp/rclcpp/serialized_message.hpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
+/usr/local/include/ORB_SLAM3/ORBextractor.h:
 
-/usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_long_long.hpp:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
 /usr/include/unistd.h:
 
@@ -4214,15 +3473,11 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/c++/11/bits/stl_algobase.h:
 
-/usr/include/boost/mpl/vector/aux_/clear.hpp:
-
 /usr/include/c++/11/cwchar:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/opencv4/opencv2/stitching/warpers.hpp:
-
-/usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
@@ -4231,6 +3486,8 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/synchronization_policy_common.hpp:
 
 /usr/include/boost/mpl/aux_/config/integral.hpp:
+
+/usr/local/include/ORB_SLAM3/MapPoint.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__traits.hpp:
 
@@ -4244,15 +3501,11 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/c++/11/bits/functexcept.h:
 
-/usr/include/boost/mpl/aux_/traits_lambda_spec.hpp:
-
 /usr/include/c++/11/vector:
 
 /usr/include/boost/mpl/print.hpp:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
-
-/usr/include/x86_64-linux-gnu/bits/mman-shared.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:
 
@@ -4267,8 +3520,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/boost/preprocessor/repetition/enum_shifted_params.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
-
-/usr/include/boost/mpl/push_front_fwd.hpp:
 
 /usr/include/boost/preprocessor/variadic/size.hpp:
 
@@ -4302,8 +3553,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/opencv4/opencv2/flann/autotuned_index.h:
 
-/usr/include/boost/mpl/same_as.hpp:
-
 /usr/include/boost/mpl/limits/arity.hpp:
 
 /usr/include/c++/11/bits/sstream.tcc:
@@ -4317,6 +3566,10 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /opt/ros/humble/include/pangolin/utils/is_streamable.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/usr/include/eigen3/Eigen/src/StlSupport/StdVector.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__traits.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/types.h:
 
@@ -4347,8 +3600,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/eigen3/Eigen/src/Core/Visitor.h:
 
 /opt/ros/humble/include/pangolin/image/typed_image.h:
-
-/usr/include/boost/mpl/vector.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
 
@@ -4404,11 +3655,7 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
-/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
-
 /home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:
-
-/usr/include/boost/date_time/period.hpp:
 
 /usr/include/pthread.h:
 
@@ -4430,8 +3677,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/boost/type_traits/add_volatile.hpp:
 
-/usr/include/boost/predef/os/bsd/open.h:
-
 /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:
 
 /usr/include/boost/serialization/utility.hpp:
@@ -4442,15 +3687,13 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
-/usr/include/boost/preprocessor/identity.hpp:
-
 /usr/include/eigen3/Eigen/StdVector:
+
+/usr/include/boost/preprocessor/identity.hpp:
 
 /usr/include/c++/11/set:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/DBoW2/DUtils/Random.h:
 
 /opt/ros/humble/include/rmw/rmw/serialized_message.h:
 
@@ -4486,13 +3729,13 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/c++/11/bits/std_function.h:
 
+/usr/local/include/ORB_SLAM3/System.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:
 
 /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h:
-
-/usr/include/boost/date_time/posix_time/ptime.hpp:
 
 /usr/include/boost/range/iterator_range.hpp:
 
@@ -4514,17 +3757,19 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/boost/type_traits/is_union.hpp:
 
-/usr/include/boost/numeric/conversion/converter_policies.hpp:
-
 /usr/include/opencv4/opencv2/flann/random.h:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/opt/ros/humble/include/message_filters/message_filters/signal1.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/include/boost/archive/detail/register_archive.hpp:
 
 /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp:
+
+/opt/ros/humble/include/message_filters/message_filters/simple_filter.h:
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h:
 
@@ -4580,10 +3825,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__type_support.hpp:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Map.h:
-
-/usr/include/boost/mpl/aux_/find_if_pred.hpp:
-
 /usr/include/c++/11/bits/stl_construct.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
@@ -4598,15 +3839,11 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/c++/11/bits/shared_ptr.h:
 
-/usr/include/boost/smart_ptr/detail/spinlock.hpp:
-
 /usr/include/boost/move/detail/config_end.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/include/c++/11/debug/debug.h:
-
-/usr/include/pcl-1.12/pcl/io/pcd_io.h:
 
 /opt/ros/humble/include/rcl/rcl/publisher.h:
 
@@ -4616,9 +3853,9 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/c++/11/initializer_list:
 
-/opt/ros/humble/include/pangolin/utils/type_convert.h:
-
 /usr/include/boost/preprocessor/seq/detail/is_empty.hpp:
+
+/opt/ros/humble/include/pangolin/utils/type_convert.h:
 
 /usr/include/boost/preprocessor/list/detail/fold_right.hpp:
 
@@ -4700,8 +3937,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/c++/11/ext/type_traits.h:
 
-/usr/include/boost/mpl/times.hpp:
-
 /usr/include/sched.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
@@ -4711,8 +3946,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/x86_64-linux-gnu/bits/sigthread.h:
 
 /usr/include/c++/11/chrono:
-
-/usr/include/pcl-1.12/pcl/PCLPointField.h:
 
 /usr/include/c++/11/bits/quoted_string.h:
 
@@ -4726,11 +3959,15 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/c++/11/bits/basic_string.tcc:
 
+/opt/ros/humble/include/message_filters/message_filters/subscriber.h:
+
 /usr/include/opencv4/opencv2/flann/nn_index.h:
 
 /opt/ros/humble/include/rcl/rcl/network_flow_endpoints.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/so3.hpp:
 
 /usr/include/locale.h:
 
@@ -4752,6 +3989,8 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/c++/11/bits/hashtable_policy.h:
 
+/opt/ros/humble/include/message_filters/message_filters/signal9.h:
+
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
 /usr/include/strings.h:
@@ -4761,8 +4000,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/boost/mpl/aux_/numeric_cast_utils.hpp:
 
 /usr/include/c++/11/bits/exception_defines.h:
-
-/usr/include/boost/mpl/back_inserter.hpp:
 
 /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:
 
@@ -4775,8 +4012,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
 /usr/include/c++/11/bits/uses_allocator.h:
-
-/usr/include/boost/date_time/gregorian_calendar.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h:
 
@@ -4808,19 +4043,25 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/eigen3/Eigen/Cholesky:
 
+/usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/types.hpp:
+
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3_stamped.hpp:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/parameter.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/service.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/Fuzzy.h:
 
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/types/se3_ops.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/plus.hpp:
-
 /usr/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_vertex.hpp:
 
 /usr/include/boost/type_traits/remove_reference.hpp:
 
@@ -4852,8 +4093,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/c++/11/bits/ptr_traits.h:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/vector.hpp:
-
 /usr/include/stdint.h:
 
 /usr/include/c++/11/bits/erase_if.h:
@@ -4868,23 +4107,13 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/pangolin/utils/uri.h:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Settings.h:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Frame.h:
-
 /usr/include/c++/11/ext/concurrence.h:
-
-/usr/include/boost/numeric/conversion/detail/is_subranged.hpp:
 
 /usr/include/c++/11/ext/alloc_traits.h:
 
 /usr/include/opencv4/opencv2/flann/miniflann.hpp:
 
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__type_support.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/asm-generic/types.h:
 
 /usr/include/opencv4/opencv2/imgproc.hpp:
 
@@ -4894,8 +4123,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
-/usr/include/boost/predef/os/bsd/net.h:
-
 /usr/include/eigen3/Eigen/src/Core/Dot.h:
 
 /opt/ros/humble/include/pangolin/var/varstate.h:
@@ -4904,8 +4131,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/pangolin/gl/gldraw.h:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/ImuTypes.h:
-
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
 /usr/include/boost/iterator/detail/config_undef.hpp:
@@ -4913,8 +4138,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/qos_event.hpp:
-
-/usr/include/boost/mpl/push_back.hpp:
 
 /usr/include/boost/preprocessor/repetition/repeat.hpp:
 
@@ -4925,8 +4148,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/c++/11/tr1/legendre_function.tcc:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/ORBextractor.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h:
 
@@ -4941,8 +4162,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/c++/11/bits/invoke.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
-
-/usr/include/linux/posix_types.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:
 
@@ -4996,11 +4215,7 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/boost/core/no_exceptions_support.hpp:
 
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_field.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_intra_process_buffer_type.hpp:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/ScoringObject.h:
 
 /opt/ros/humble/include/message_filters/message_filters/message_traits.h:
 
@@ -5036,8 +4251,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
-/usr/include/boost/smart_ptr/detail/operator_bool.hpp:
-
 /usr/include/c++/11/cerrno:
 
 /usr/include/c++/11/string:
@@ -5056,6 +4269,8 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
+/usr/local/include/ORB_SLAM3/KeyFrame.h:
+
 /usr/include/c++/11/complex:
 
 /opt/ros/humble/include/rmw/rmw/subscription_options.h:
@@ -5066,7 +4281,7 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/asm-generic/errno-base.h:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/rxso3.hpp:
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/creators.h:
 
 /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h:
 
@@ -5077,6 +4292,8 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/rotation_matrix.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp:
 
@@ -5102,8 +4319,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
-/usr/include/x86_64-linux-gnu/asm/types.h:
-
 /usr/include/opencv4/opencv2/flann/lsh_index.h:
 
 /usr/include/boost/type_traits/aligned_storage.hpp:
@@ -5114,10 +4329,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/c++/11/iomanip:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp:
-
-/usr/include/c++/11/cctype:
-
 /usr/include/opencv4/opencv2/core/fast_math.hpp:
 
 /usr/include/c++/11/locale:
@@ -5127,8 +4338,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/ctype.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__struct.hpp:
-
-/usr/include/boost/mpl/push_back_fwd.hpp:
 
 /usr/include/boost/mpl/aux_/config/nttp.hpp:
 
@@ -5144,13 +4353,7 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
 
-/usr/include/boost/mpl/vector/aux_/begin_end.hpp:
-
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__traits.hpp:
-
-/usr/include/boost/date_time/time_clock.hpp:
-
-/usr/include/boost/mpl/find.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
@@ -5165,8 +4368,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/x86_64-linux-gnu/bits/signum-generic.h:
 
 /usr/include/c++/11/string_view:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_vertex.h:
 
 /usr/include/opencv4/opencv2/imgproc/types_c.h:
 
@@ -5188,9 +4389,13 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/stdio.h:
 
+/usr/local/include/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/FeatureVector.h:
+
 /usr/include/c++/11/ratio:
 
 /opt/ros/humble/include/rcutils/rcutils/logging_macros.h:
+
+/opt/ros/humble/include/message_filters/message_filters/visibility_control.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
@@ -5198,9 +4403,9 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/c++/11/bits/stl_multiset.h:
 
-/usr/include/c++/11/bits/hashtable.h:
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__builder.hpp:
 
-/usr/include/boost/mpl/inserter.hpp:
+/usr/include/c++/11/bits/hashtable.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
 
@@ -5208,15 +4413,9 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/c++/11/bits/enable_special_members.h:
 
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__type_support.hpp:
-
 /usr/include/opencv4/opencv2/core/core.hpp:
 
-/usr/include/boost/mpl/aux_/fold_impl.hpp:
-
 /usr/include/c++/11/bits/move.h:
-
-/usr/include/boost/date_time/date.hpp:
 
 /usr/include/c++/11/bits/stl_algo.h:
 
@@ -5272,6 +4471,8 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h:
 
+/usr/local/include/ORB_SLAM3/LocalMapping.h:
+
 /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h:
 
 /usr/include/c++/11/bits/atomic_base.h:
@@ -5280,7 +4481,7 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/opencv4/opencv2/flann/hierarchical_clustering_index.h:
 
-/usr/include/boost/predef/make.h:
+/usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__type_support.hpp:
 
@@ -5318,8 +4519,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp:
 
-/usr/include/boost/date_time/date_duration_types.hpp:
-
 /usr/include/boost/type_traits/has_plus.hpp:
 
 /usr/include/boost/type_traits/is_convertible.hpp:
@@ -5328,13 +4527,7 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/opencv4/opencv2/photo.hpp:
 
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__struct.hpp:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp:
-
-/usr/include/boost/type_traits/is_void.hpp:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/formatstring.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__struct.hpp:
 
@@ -5342,17 +4535,11 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h:
 
-/usr/include/boost/date_time/time_resolution_traits.hpp:
-
-/usr/include/boost/mpl/sequence_tag.hpp:
-
 /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__builder.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/MatrixBase.h:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrame.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp:
 
@@ -5376,10 +4563,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/pangolin/compat/type_traits.h:
 
-/usr/include/pcl-1.12/pcl/common/impl/io.hpp:
-
-/usr/include/boost/mpl/aux_/has_begin.hpp:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
 
 /usr/include/boost/function.hpp:
@@ -5394,8 +4577,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
 
-/usr/include/boost/mpl/fold.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/publisher_factory.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_factory.hpp:
@@ -5404,15 +4585,11 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/rclcpp/rclcpp/generic_subscription.hpp:
 
-/usr/include/boost/mpl/long.hpp:
-
 /usr/include/c++/11/bits/fs_dir.h:
 
 /usr/include/boost/mpl/less_equal.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_clock_interface.hpp:
-
-/usr/include/boost/date_time/gregorian/greg_day.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_logging_interface.hpp:
 
@@ -5452,13 +4629,9 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp:
 
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/polygon_mesh.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/node_options.hpp:
 
 /opt/ros/humble/include/pangolin/image/image.h:
-
-/usr/include/boost/interprocess/interprocess_fwd.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_publisher.hpp:
 
@@ -5469,8 +4642,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/eigen3/Eigen/src/Core/GeneralProduct.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface_traits.hpp:
-
-/usr/include/boost/foreach_fwd.hpp:
 
 /usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h:
 
@@ -5509,6 +4680,8 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_client.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/se3.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp:
 
@@ -5549,6 +4722,8 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp:
 
 /usr/include/opencv4/opencv2/flann/lsh_table.h:
 
@@ -5612,17 +4787,23 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp:
 
-/usr/include/boost/preprocessor/arithmetic/sub.hpp:
+/usr/include/boost/type_traits/is_volatile.hpp:
 
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp:
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/imu.hpp:
 
-/usr/include/boost/mpl/aux_/config/ctps.hpp:
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp:
 
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp:
+/usr/include/boost/mpl/placeholders.hpp:
 
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__builder.hpp:
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__type_support.hpp:
 
 /usr/include/boost/algorithm/string/detail/replace_storage.hpp:
 
@@ -5640,15 +4821,11 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/boost/utility.hpp:
 
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__builder.hpp:
-
 /usr/include/eigen3/Eigen/src/Core/Map.h:
 
 /usr/include/c++/11/ios:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp:
 
@@ -5656,13 +4833,9 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp:
 
 /usr/include/opencv4/opencv2/opencv.hpp:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/FClass.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
@@ -5686,9 +4859,9 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:
 
-/usr/include/boost/algorithm/string/detail/find_iterator.hpp:
-
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__traits.hpp:
+
+/usr/include/boost/algorithm/string/detail/find_iterator.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform.hpp:
 
@@ -5699,10 +4872,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp:
 
 /usr/include/c++/11/queue:
-
-/usr/include/boost/mpl/placeholders.hpp:
-
-/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /usr/include/inttypes.h:
 
@@ -5731,8 +4900,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h:
 
 /usr/include/opencv4/opencv2/core.hpp:
-
-/usr/include/pcl-1.12/pcl/common/copy_point.h:
 
 /usr/include/opencv4/opencv2/core/version.hpp:
 
@@ -5769,8 +4936,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
 
 /usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__builder.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h:
 
@@ -5844,11 +5009,7 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/opencv4/opencv2/core/optim.hpp:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_binary_edge.h:
-
-/usr/include/boost/move/detail/std_ns_end.hpp:
-
-/usr/include/pcl-1.12/pcl/memory.h:
+/usr/include/c++/11/bits/random.h:
 
 /usr/include/opencv4/opencv2/imgproc/imgproc.hpp:
 
@@ -5861,8 +5022,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge_export.h:
 
 /usr/include/opencv4/opencv2/features2d.hpp:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/System.h:
 
 /usr/include/opencv4/opencv2/flann/defines.h:
 
@@ -5878,8 +5037,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/opencv4/opencv2/core/async.hpp:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/TwoViewReconstruction.h:
-
 /usr/include/opencv4/opencv2/dnn/version.hpp:
 
 /usr/include/opencv4/opencv2/dnn/dict.hpp:
@@ -5891,8 +5048,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /opt/ros/humble/include/rclcpp/rclcpp/create_timer.hpp:
 
 /usr/include/opencv4/opencv2/dnn/dnn.inl.hpp:
-
-/usr/include/boost/mpl/front_fwd.hpp:
 
 /usr/include/c++/11/backward/auto_ptr.h:
 
@@ -5916,17 +5071,11 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/opencv4/opencv2/flann/heap.h:
 
-/usr/include/eigen3/Eigen/src/Core/CoreIterators.h:
-
-/usr/include/opencv4/opencv2/flann/kdtree_single_index.h:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/quaternion_stamped.hpp:
 
 /usr/include/opencv4/opencv2/flann/logger.h:
 
 /usr/include/opencv4/opencv2/flann/linear_index.h:
-
-/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
 
@@ -5946,19 +5095,13 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h:
 
-/usr/include/boost/shared_ptr.hpp:
-
 /usr/include/opencv4/opencv2/videoio.hpp:
 
 /usr/include/opencv4/opencv2/ml/ml.inl.hpp:
 
 /usr/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp:
 
-/usr/include/asm-generic/posix_types.h:
-
 /usr/include/opencv4/opencv2/objdetect/face.hpp:
-
-/usr/include/boost/mpl/aux_/arithmetic_op.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessor/params.hpp:
 
@@ -5981,8 +5124,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/c++/11/stack:
 
 /usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:
-
-/usr/include/boost/mpl/iterator_tags.hpp:
 
 /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h:
 
@@ -6022,6 +5163,8 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/opencv4/opencv2/video/background_segm.hpp:
 
+/usr/include/c++/11/filesystem:
+
 /usr/include/c++/11/bits/fs_path.h:
 
 /usr/include/asm-generic/errno.h:
@@ -6036,29 +5179,19 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/eigen3/Eigen/src/Core/util/Constants.h:
 
-/usr/include/pcl-1.12/pcl/common/io.h:
-
 /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/XprHelper.h:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/image_encodings.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/util/Memory.h:
 
-/usr/include/boost/mpl/sequence_tag_fwd.hpp:
-
 /usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:
-
-/usr/include/boost/mpl/pair.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h:
 
 /usr/include/c++/11/numeric:
 
 /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h:
-
-/usr/include/boost/mpl/minus.hpp:
 
 /usr/include/endian.h:
 
@@ -6073,8 +5206,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h:
 
 /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h:
-
-/usr/include/boost/date_time/gregorian/greg_date.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h:
 
@@ -6110,8 +5241,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/pangolin/gl/glpixformat.h:
 
-/usr/include/boost/mpl/aux_/push_front_impl.hpp:
-
 /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:
 
 /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h:
@@ -6132,8 +5261,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/eigen3/Eigen/src/Core/EigenBase.h:
 
-/usr/include/boost/mpl/find_if.hpp:
-
 /usr/include/eigen3/Eigen/src/Core/Product.h:
 
 /usr/include/boost/algorithm/string/detail/finder.hpp:
@@ -6149,10 +5276,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
 
 /opt/ros/humble/include/pangolin/var/varwrapper.h:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/DBoW2/DBoW2/FORB.h:
-
-/usr/include/boost/date_time/time_system_split.hpp:
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h:
 
@@ -6196,8 +5319,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/eigen3/Eigen/src/Core/TriangularMatrix.h:
 
-/usr/include/boost/mpl/vector/aux_/include_preprocessed.hpp:
-
 /usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h:
 
 /usr/include/boost/preprocessor/logical/and.hpp:
@@ -6224,6 +5345,10 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h:
 
+/usr/include/opencv4/opencv2/flann/kdtree_single_index.h:
+
+/usr/include/eigen3/Eigen/src/Core/CoreIterators.h:
+
 /usr/include/eigen3/Eigen/src/Core/BooleanRedux.h:
 
 /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h:
@@ -6231,8 +5356,6 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /usr/include/eigen3/Eigen/src/Core/StlIterators.h:
 
 /opt/ros/humble/include/pangolin/video/video.h:
-
-/usr/include/boost/move/detail/std_ns_begin.hpp:
 
 /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__builder.hpp:
 
@@ -6246,11 +5369,7 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/eigen3/Eigen/src/misc/Kernel.h:
 
-/usr/include/boost/numeric/conversion/numeric_cast_traits.hpp:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__type_support.hpp:
-
-/usr/include/boost/interprocess/detail/std_fwd.hpp:
 
 /usr/include/eigen3/Eigen/src/misc/Image.h:
 
@@ -6274,6 +5393,8 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/eigen3/Eigen/Householder:
 
+/usr/local/include/ORB_SLAM3/Frame.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:
 
 /usr/include/eigen3/Eigen/src/Householder/Householder.h:
@@ -6282,35 +5403,25 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/eigen3/Eigen/Geometry:
 
-/usr/include/boost/date_time/gregorian/greg_duration.hpp:
-
-/usr/include/boost/interprocess/permissions.hpp:
-
 /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h:
 
-/usr/include/pcl-1.12/pcl/io/low_level_io.h:
-
-/usr/include/boost/move/detail/type_traits.hpp:
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/config.h:
 
 /usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h:
 
 /usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:
 
-/usr/include/boost/numeric/conversion/bounds.hpp:
-
 /usr/include/boost/mpl/aux_/config/gcc.hpp:
 
 /usr/include/eigen3/Eigen/src/Geometry/Translation.h:
 
-/usr/include/c++/11/cstdarg:
-
 /usr/include/boost/range/rend.hpp:
+
+/usr/include/c++/11/cstdarg:
 
 /usr/include/boost/mpl/arg.hpp:
 
 /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h:
-
-/usr/include/boost/mpl/vector/aux_/iterator.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
 
@@ -6320,39 +5431,15 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h:
 
-/usr/include/boost/date_time/gregorian_calendar.ipp:
-
-/usr/include/boost/mpl/vector/vector0.hpp:
-
 /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h:
 
 /usr/include/boost/version.hpp:
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h:
 
-/usr/include/boost/date_time/date_clock_device.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
-
-/usr/include/c++/11/filesystem:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/se3.hpp:
-
-/usr/include/c++/11/bits/random.h:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/rotation_matrix.hpp:
-
-/usr/include/boost/mpl/long_fwd.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/types.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/common.hpp:
 
 /usr/include/boost/utility/detail/result_of_iterate.hpp:
 
@@ -6360,19 +5447,17 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /usr/include/c++/11/random:
 
-/usr/include/boost/predef/version_number.h:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:
+/usr/include/eigen3/Eigen/src/Core/util/XprHelper.h:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/formatstring.hpp:
 
 /usr/include/boost/preprocessor/iteration/detail/bounds/lower1.hpp:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/Converter.h:
+/usr/local/include/ORB_SLAM3/Thirdparty/g2o/g2o/core/base_unary_edge.h:
 
 /usr/include/boost/mpl/comparison.hpp:
-
-/usr/include/boost/date_time/time_duration.hpp:
 
 /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h:
 
@@ -6381,6 +5466,8 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 /opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.hpp:
 
 /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp:
+
+/usr/local/include/ORB_SLAM3/Thirdparty/Sophus/sophus/sim3.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__traits.hpp:
 
@@ -6406,6 +5493,10 @@ CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o: /home/loq/roboracer_ws/src/rob
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__traits.hpp:
 
-/home/loq/orb_slam3_ws/src/ORB_SLAM3/include/KeyFrameDatabase.h:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__type_support.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__builder.hpp:
+
+/usr/include/c++/11/cctype:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp:

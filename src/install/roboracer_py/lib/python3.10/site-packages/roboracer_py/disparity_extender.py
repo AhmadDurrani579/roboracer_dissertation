@@ -1,197 +1,204 @@
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from sensor_msgs.msg import LaserScan
-from ackermann_msgs.msg import AckermannDriveStamped, AckermannDrive
 import numpy as np
- 
- 
+from math import sin, cos, pi
+from sensor_msgs.msg import LaserScan
+from visualization_msgs.msg import Marker
+from ackermann_msgs.msg import AckermannDriveStamped
+from std_msgs.msg import ColorRGBA
+from geometry_msgs.msg import Point
+from rclpy.duration import Duration
+
 class DisparityExtender(Node):
     def __init__(self):
-        super().__init__("disparity_extender")
-        self.CAR_WIDTH = 0.31  # in meters, make it a ROS parameter if needed
-        self.DIFFERENCE_THRESHOLD = 0.1  # in meters, make it a ROS parameter
-        self.SPEED = 1.0  # m/s, make it a ROS parameter
-        self.SAFETY_PERCENTAGE = 10.0  #  Make it a ROS parameter.  Paper uses percentages like 20%
+        super().__init__('disparity_extender')
         self.laser_sub = self.create_subscription(
-            LaserScan, '/hokuyo/scan', self.laser_callback, 10
+            LaserScan, '/hokuyo/scan', self.lidar_callback, 10  # Corrected topic name
         )
         self.drive_pub = self.create_publisher(
-            AckermannDriveStamped, '/ackermann_cmd', 10
-        )
-        self.radians_per_point = 0.0 # Initialize here, calculated in callback
-        self.previous_steering_angle = 0.0  # Add this line
+            AckermannDriveStamped, '/ackermann_cmd', 10)  # Corrected topic name
+        self.marker_pub = self.create_publisher(Marker, '/viz_marker', 10)
+        self.marker_scan = self.create_publisher(LaserScan, '/viz_scan', 10)
 
-    def preprocess_lidar(self, ranges):
-        """
-        Preprocessing of the LiDAR data.
-        Possible Improvements: smoothing of outliers in the data and placing
-        a cap on the maximum distance a point can be.
-        """
-        # remove quadrant of LiDAR directly behind us
-        # self.radians_per_elem = (2 * np.pi) / len(ranges) # This is calculated *per message*
-        # Crop to approximately the front 270 degrees (adjust indices if needed)
-        proc_ranges = np.array(ranges[90:-90])  # Ensure float type for nan handling.  Good!
+        # Parameters
+        self.car_half_width = 0.1225
+        self.disparity_threshold = 1.0
+        self.safety_margin = 3.0
+        self.min_speed = 2.0
+        self.max_speed = 6.5
+        self.safety_dist = 0.8
+        self.dist_for_max_speed = 1.0
+        self.smoothing_factor = 0.1
+        self.deadband = 0.2
+        self.max_steering_change = 1.0
+        self.prev_steering_angle = 0.0
+        self.desired_min_angle = -2*pi/3  # -90°
+        self.desired_max_angle =  2*pi/3    # +90°
 
-        # eighth = int(len(ranges)/8) # Unused variable
-        return proc_ranges
-    
-     
-    def get_differences(self, ranges):
-        """
-        Gets the absolute difference between adjacent elements in
-        the LiDAR data and returns them in an array.
-        Possible Improvements: replace for loop with numpy array arithmetic
-        """
-        # differences = [0.]  # set first element to 0.  Better to handle edge in subtraction.
-        # for i in range(1, len(ranges)):
-        #     differences.append(abs(ranges[i]-ranges[i-1]))
-        # return differences
+        self.get_logger().info("Optimized Disparity Extender node started.")
 
-        # Numpy implementation (more efficient)
-        ranges = np.nan_to_num(ranges, nan=0.0, posinf=0.0, neginf=0.0) # <--- Handle -inf
-        differences = np.abs(np.diff(ranges)) # diff calculates differences, abs for absolute
-        return np.insert(differences, 0, 0.0) # insert a 0 at the beginning to match size.
+    def detect_disparities(self, lidar_data, threshold=0.5):
+        """Detect disparities using a more robust method with rolling window."""
+        diffs = np.abs(np.diff(lidar_data))
+        window_size = 4
+        smoothed_diffs = np.convolve(diffs, np.ones(window_size)/window_size, mode='same')
+        return np.where(smoothed_diffs > threshold)[0] + 1
 
-    
-    def get_disparities(self, differences, threshold):
-        """
-        Gets the indexes of the LiDAR points that were greatly
-        different to their adjacent point.
-        Possible Improvements: replace for loop with numpy array arithmetic
-        """
-        # disparities = []
-        # for index, difference in enumerate(differences):
-        #     if difference > threshold:
-        #         disparities.append(index)
-        # return disparities
-        
-        # Numpy implementation
-        disparities = np.where(differences > threshold)[0] # where returns indices
-        return disparities
+    def process_disparity(self, lidar_data, index, angle_inc):
+        """Process disparity by extending the obstacle based on car width and distance."""
+        if index >= len(lidar_data):
+            return lidar_data
 
-    def get_num_points_to_cover(self, dist, width):
-        """
-        Returns the number of LiDAR points that correspond to a width at
-        a given distance.
-        We calculate the angle that would span the width at this distance,
-        then convert this angle to the number of LiDAR points that
-        span this angle.
-        Current math for angle:
-            sin(angle/2) = (w/2)/d) = w/2d
-            angle/2 = sininv(w/2d)
-            angle = 2sininv(w/2d)
-            where w is the width to cover, and d is the distance to the close
-            point.
-        Possible Improvements: use a different method to calculate the angle.  The current one is correct.
-        """
-        angle = 2 * np.arcsin(width / (2 * dist))
-        num_points = int(np.ceil(angle / self.radians_per_point))
-        return num_points
+        d_left = lidar_data[index - 1] if index > 0 else lidar_data[index]
+        d_right = lidar_data[index]
+        closer = min(d_left, d_right)
 
-    def cover_points(self, num_points, start_idx, cover_right, ranges):
-        """
-        'covers' a number of LiDAR points with the distance of a closer
-        LiDAR point, to avoid us crashing with the corner of the car.
-        num_points: the number of points to cover
-        start_idx: the LiDAR point we are using as our distance
-        cover_right: True/False, decides whether we cover the points to
-                     right or to the left of start_idx
-        ranges: the LiDAR points
-        Possible improvements: reduce this function to fewer lines.  It's already pretty compact.
-        """
-        new_dist = ranges[start_idx]
-        if cover_right:
-            # for i in range(num_points): # vectorized
-            #     next_idx = start_idx+1+i
-            #     if next_idx >= len(ranges): break
-            #     if ranges[next_idx] > new_dist:
-            #         ranges[next_idx] = new_dist
-            
-            indices_to_cover = np.arange(start_idx + 1, min(start_idx + 1 + num_points, len(ranges)))
-            ranges[indices_to_cover] = np.minimum(ranges[indices_to_cover], new_dist)
-
+        # calculate samples to overwrite based on car width and distance (this is simulation based) #TODO adjust it while working on hardware
+        if closer > 0.3:
+            angle_span = np.arctan2(self.car_half_width, closer)
+            num_samples = int(angle_span / angle_inc) + 1
         else:
-            # for i in range(num_points):
-            #     next_idx = start_idx-1-i
-            #     if next_idx < 0: break
-            #     if ranges[next_idx] > new_dist:
-            #         ranges[next_idx] = new_dist
-            indices_to_cover = np.arange(start_idx - 1, max(start_idx - 1 - num_points, -1), -1)
-            ranges[indices_to_cover] = np.minimum(ranges[indices_to_cover], new_dist)
-        return ranges
+            num_samples = int(self.safety_margin)
 
-    def extend_disparities(self, disparities, ranges, car_width, extra_pct):
-        """
-        For each pair of points we have decided have a large difference
-        between them, we choose which side to cover (the opposite to
-        the closer point), call the cover function, and return the
-        resultant covered array.
-        Possible Improvements: reduce to fewer lines
-        """
-        width_to_cover = (car_width / 2) * (1 + extra_pct / 100)
-        close_dist = 0.0  # Initialize close_dist to a default value
-        for index in disparities:
-            first_idx = index - 1
-            if first_idx < 0 or first_idx + 1 >= len(ranges):
-                continue  # Skip if index is out of bounds
-            points = ranges[first_idx:first_idx + 2]
-            close_idx = first_idx + np.argmin(points)
-            far_idx = first_idx + np.argmax(points)
-            close_dist = ranges[close_idx] # error was happening here
-            num_points_to_cover = self.get_num_points_to_cover(close_dist, width_to_cover)
-            cover_right = close_idx < far_idx
-            ranges = self.cover_points(num_points_to_cover, close_idx, cover_right, ranges)
-        return ranges
-            
-    def get_steering_angle(self, range_index, range_len):
-        """
-        Calculate the angle that corresponds to a given LiDAR point and
-        process it into a steering angle.
-        Possible improvements: smoothing of aggressive steering angles
-        """
-        lidar_angle = (range_index - (range_len / 2)) * self.radians_per_point
-        steering_angle = np.clip(lidar_angle, np.radians(-90), np.radians(90))
-        
-        # Apply a simple smoothing filter (e.g., exponential moving average)
-        alpha = 0.1  # Smoothing factor (0 < alpha < 1).  Adjust as needed.  Lowered alpha further
-        steering_angle = alpha * steering_angle + (1 - alpha) * self.previous_steering_angle
-        steering_angle = np.clip(steering_angle, np.radians(-30), np.radians(30)) # added limit
-        self.previous_steering_angle = steering_angle # update
-        return steering_angle
-    
-    def laser_callback(self, scan_msg: LaserScan):
-        ranges = scan_msg.ranges
-        self.radians_per_point = (2 * np.pi) / len(ranges) # Correct calculation
-        proc_ranges = self.preprocess_lidar(ranges)
-        differences = self.get_differences(proc_ranges)
-        disparities = self.get_disparities(differences, self.DIFFERENCE_THRESHOLD)
-        proc_ranges = self.extend_disparities(disparities, proc_ranges,
-                                             self.CAR_WIDTH, self.SAFETY_PERCENTAGE)
-        steering_angle = self.get_steering_angle(proc_ranges.argmax(),
-                                                 len(proc_ranges))
-        speed = self.SPEED
-        
-        self.publish_drive(speed, steering_angle)
-            
-    def publish_drive(self, speed, steering):
+        # overwrite samples in both directions
+        for j in range(-num_samples, num_samples + 1):
+            idx = index + j
+            if 0 <= idx < len(lidar_data) and lidar_data[idx] > closer:
+                lidar_data[idx] = closer
+        return lidar_data
+
+    def compute_path_integral(self, processed_scan, angle_min, angle_inc, front_indices):
+        """Compute path integral with balanced distance and angle weighting."""
+        path_integral = np.zeros(len(processed_scan))
+        for i in front_indices:
+            distance = processed_scan[i] ** 1
+            angle = angle_min + i * angle_inc
+            # weight by distance and angle (favor paths that are far and straight)
+            weight = (distance ** 2) * (2.0 - abs(angle) / (pi/2))  # wider FOV
+            path_integral[i] = weight
+        return path_integral
+
+    def find_optimal_angle(self, path_integral, angle_min, angle_inc, front_indices):
+        """Find the optimal steering angle."""
+        max_value = -1
+        max_index = None
+        for i in front_indices:
+            if path_integral[i] > max_value:
+                max_value = path_integral[i]
+                max_index = i
+        if max_index is None:
+            return 0.0
+        return angle_min + max_index * angle_inc
+
+    def smooth_steering(self, new_angle):
+        """Smooth the steering angle with a low-pass filter."""
+        angle_change = new_angle - self.prev_steering_angle
+        if abs(angle_change) > self.deadband:
+            smoothed_angle = self.smoothing_factor * self.prev_steering_angle + (1 - self.smoothing_factor) * new_angle
+            limited_angle = self.prev_steering_angle + np.sign(angle_change) * min(abs(angle_change), self.max_steering_change)
+            self.prev_steering_angle = limited_angle
+            return limited_angle
+        return self.prev_steering_angle
+
+    def adjust_speed(self, front_dist):
+        """Adjust speed based on the distance to the nearest obstacle."""
+        if front_dist < self.safety_dist:
+            return self.min_speed * 0.5
+        if front_dist > self.dist_for_max_speed:
+            return self.max_speed
+        ratio = (front_dist - self.safety_dist) / (self.dist_for_max_speed - self.safety_dist)
+        return self.min_speed + ratio * (self.max_speed - self.min_speed)
+
+    def expand_obstacle_buffer(self, lidar_data, angle_min, angle_inc):
+        expanded_data = np.copy(lidar_data)
+        # Iterate through each point
+        for i in range(len(lidar_data)):
+            # If this point is an obstacle (e.g., its distance is within a threshold)
+            if lidar_data[i] < self.safety_dist + 0.5: # Or some other threshold for an obstacle
+                # Then, mark a range of points around it as effectively closer
+                # This creates the "buffer"
+                num_buffer_samples = int(self.car_half_width / (lidar_data[i] * angle_inc)) + 1 # Dynamic buffer based on distance
+                for j in range(-num_buffer_samples, num_buffer_samples + 1):
+                    idx = i + j
+                    if 0 <= idx < len(lidar_data):
+                        # Make these buffer points effectively closer to the obstacle's distance
+                        expanded_data[idx] = min(expanded_data[idx], lidar_data[i] * 1.1) # Maybe a bit more than the actual obstacle distance
+        return expanded_data
+
+    def lidar_callback(self, scan_msg):
+        #LIDAR data to numpy array
+        ranges = np.array(scan_msg.ranges)
+        angle_min = scan_msg.angle_min
+        angle_max = scan_msg.angle_max
+        angle_inc = scan_msg.angle_increment
+
+        #filter out-of-range values
+        valid_mask = (ranges >= scan_msg.range_min) & (ranges <= scan_msg.range_max)
+        ranges[~valid_mask] = scan_msg.range_max
+
+        # smooth the LIDAR data
+        smoothed_data = np.convolve(ranges, np.ones(5)/2, mode='same')
+
+        # detect and process disparities (i hope this is working tbh)
+        disparity_indices = self.detect_disparities(smoothed_data, threshold=self.disparity_threshold)
+        for idx in disparity_indices:
+            smoothed_data = self.process_disparity(smoothed_data, idx, angle_inc)
+
+        # expand obstacle buffer
+        expanded_data = self.expand_obstacle_buffer(smoothed_data, angle_min, angle_inc)
+
+        # plus minus 90 for better side detection
+        angles = angle_min + np.arange(len(expanded_data)) * angle_inc
+        front_mask = (angles >= self.desired_min_angle) & (angles <= self.desired_max_angle)
+        front_indices = np.where(front_mask)[0]
+
+        # compute path integral and find optimal angle
+        path_integral = self.compute_path_integral(expanded_data, angle_min, angle_inc, front_indices)
+        computed_angle = self.find_optimal_angle(path_integral, angle_min, angle_inc, front_indices)
+
+        # smooth the steering angle
+        steering_angle = self.smooth_steering(computed_angle)
+
+        # adjust speed based on front distance
+        front_dist = expanded_data[front_indices].max()
+        speed = self.adjust_speed(front_dist)
+
         drive_msg = AckermannDriveStamped()
-        drive_msg.header.stamp = self.get_clock().now().to_msg()
-        drive_msg.header.frame_id = "car_1_base_link" # Make this a ROS parameter
-        sub_drive_msg = AckermannDrive()
-        sub_drive_msg.steering_angle = float(steering)
-        sub_drive_msg.steering_angle_velocity = 0.0
-        sub_drive_msg.speed = float(speed)
-        sub_drive_msg.acceleration = 0.0
-        sub_drive_msg.jerk = 0.0
-        drive_msg.drive = sub_drive_msg
+        drive_msg.drive.steering_angle = steering_angle
+        drive_msg.drive.speed = speed
         self.drive_pub.publish(drive_msg)
+
+        p0 = Point(x=0.0, y=0.0, z=0.0)
+        p1 = Point(x=front_dist * cos(steering_angle), y=front_dist * sin(steering_angle), z=0.0)
+        marker = Marker()
+        marker.header.frame_id = scan_msg.header.frame_id
+        marker.header.stamp = scan_msg.header.stamp
+        marker.action = Marker.ADD
+        marker.type = Marker.ARROW
+        marker.id = 1
+        marker.pose.orientation.w = 1.0
+        marker.scale.x = 0.2
+        marker.scale.y = 0.4
+        marker.scale.z = 0.6
+        marker.color = ColorRGBA(a=1.0, r=0.0, g=1.0, b=0.0)
+        marker.points = [p0, p1]
+        marker.lifetime = Duration(seconds=1).to_msg()
+        self.marker_pub.publish(marker)
+
+        scan_msg.ranges = expanded_data.tolist()
+        self.marker_scan.publish(scan_msg)
 
 def main(args=None):
     rclpy.init(args=args)
     node = DisparityExtender()
-    rclpy.spin(node)
-    rclpy.shutdown()
- 
-if __name__ == "__main__":
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        node.get_logger().info("Keyboard interrupt detected, shutting down")
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
+
+if __name__ == '__main__':
     main()

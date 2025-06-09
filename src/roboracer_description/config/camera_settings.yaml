@@ -1,0 +1,100 @@
+%YAML:1.0
+
+#--------------------------------------------------------------------------------------------
+# Camera Parameters. Adjust them!
+#--------------------------------------------------------------------------------------------
+File.version: "1.0" # Version of the configuration file.
+
+Camera.type: "PinHole" # Camera model. "PinHole" for standard perspective cameras (like plumb_bob).
+
+# Camera calibration and distortion parameters (OpenCV format)
+# IMPORTANT: Note the 'Camera1.' prefix here. Some ORB-SLAM3 examples (especially for datasets)
+# use 'Camera1.' or 'Camera2.' for clarity or if they were adapted from stereo setups.
+# For a single RGB-D camera, ORB-SLAM3 typically expects 'Camera.fx', 'Camera.fy', etc.
+# If you encounter issues, try changing 'Camera1.' to 'Camera.' for these parameters.
+Camera1.fx: 535.4
+Camera1.fy: 539.2
+Camera1.cx: 320.1
+Camera1.cy: 247.6
+
+Camera1.k1: 0.0 # Radial distortion coefficient k1
+Camera1.k2: 0.0 # Radial distortion coefficient k2
+Camera1.p1: 0.0 # Tangential distortion coefficient p1
+Camera1.p2: 0.0 # Tangential distortion coefficient p2
+# Note: k3 is often omitted if it's 0.0, but can be added as Camera1.k3: 0.0 if needed.
+
+Camera.width: 640  # Image width in pixels
+Camera.height: 480 # Image height in pixels
+
+# Camera frames per second
+Camera.fps: 30 # Frame rate of your camera. Ensure this matches your actual camera's FPS.
+
+# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
+Camera.RGB: 1 # Set to 1 for RGB images (common in ROS), 0 for BGR.
+
+# Close/Far threshold. Baseline times.
+# Stereo.ThDepth: This is the maximum depth (in meters) that ORB-SLAM3 will consider.
+#                 Points beyond this depth are ignored.
+Stereo.ThDepth: 40.0
+# Stereo.b: This is the baseline (distance between stereo cameras) in meters.
+#           For RGB-D, it's often set to a small value or derived from a virtual baseline if depth is from a single sensor.
+#           If your depth data is directly from a depth sensor (not triangulated stereo), this parameter might not be
+#           directly used for depth calculation, but it's often present in the config for consistency with stereo modes.
+Stereo.b: 0.0747
+
+# Depth map values factor
+# CRITICAL: This factor is applied to the raw depth image values to convert them to meters.
+# Your previous `ros2 topic echo /car_1/rgbd_camera/depth/image_raw` showed `encoding: 32FC1`,
+# which means your depth values are already in meters (float).
+# Therefore, for your specific camera setup, this should be 1.0, not 5000.0.
+# If you use 5000.0 with 32FC1 data, your map will be scaled incorrectly (5000 times too small).
+RGBD.DepthMapFactor: 1.0 # <--- CHANGE THIS TO 1.0 FOR YOUR 32FC1 DEPTH DATA
+
+#--------------------------------------------------------------------------------------------
+# ORB Parameters (Feature extraction settings)
+#--------------------------------------------------------------------------------------------
+
+# ORB Extractor: Number of features per image
+ORBextractor.nFeatures: 1000
+
+# ORB Extractor: Scale factor between levels in the scale pyramid
+ORBextractor.scaleFactor: 1.2
+
+# ORB Extractor: Number of levels in the scale pyramid
+ORBextractor.nLevels: 8
+
+# ORB Extractor: Fast threshold
+# Image is divided in a grid. At each cell FAST are extracted imposing a minimum response.
+# Firstly we impose iniThFAST. If no corners are detected we impose a lower value minThFAST
+# You can lower these values if your images have low contrast
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters (Settings for the visualization window)
+#--------------------------------------------------------------------------------------------
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1.0
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2.0
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3.0
+Viewer.ViewpointX: 0.0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -1.8
+Viewer.ViewpointF: 500.0
+
+
+IMU.NoiseGyro: 1.6968e-04
+IMU.NoiseAcc: 2.0000e-3
+IMU.GyroWalk: 1.9393e-05
+IMU.AccWalk: 3.0000e-3
+IMU.Frequency: 200.0
+IMU.T_b_c1: !!opencv-matrix
+    rows: 4
+    cols: 4
+    dt: f
+    data: [1.0, 0.0, 0.0, 0.0,
+           0.0, 1.0, 0.0, 0.0,
+           0.0, 0.0, 1.0, 0.0,
+           0.0, 0.0, 0.0, 1.0]

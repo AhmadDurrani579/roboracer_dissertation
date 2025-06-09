@@ -284,11 +284,10 @@
 
     <!-- Camera Mounting Joint -->  
     <joint name="car_1_camera_joint" type="fixed">
-    <origin xyz="0.40 0 0.10" rpy="0 0 0"/> <!-- Front-mounted position -->
-    <parent link="car_1_chassis"/>
+    <origin xyz="0.40 0 0.15" rpy="0 0 0"/> <!-- Front-mounted position -->
+    <parent link="car_1_base_link"/>
     <child link="car_1_camera_link"/>
     </joint>
-
 
 
   <!-- ================== GAZEBO PLUGINS ================== -->
@@ -369,13 +368,12 @@
 
 
 <gazebo reference="car_1_camera_link">
-  <sensor name="camera_sensor" type="camera">
-    <gz_frame_id>car_1_camera_link</gz_frame_id>
-    <always_on>true</always_on>
+  <sensor name="rgbd_camera" type="rgbd_camera">
     <update_rate>30.0</update_rate>
+    <always_on>1</always_on>
     <visualize>true</visualize>
-    <topic>/camera/image_raw</topic>
-    <camera name="head">
+    <pose>0 0 0 0 0 0</pose>
+    <camera>
       <horizontal_fov>1.047</horizontal_fov>
       <image>
         <width>640</width>
@@ -386,13 +384,21 @@
         <near>0.1</near>
         <far>10.0</far>
       </clip>
-      <lens>
-        <type>pinhole</type>
-      </lens>
     </camera>
+    <depth_camera>
+      <image>
+        <width>640</width>
+        <height>480</height>
+        <format>FLOAT32</format>
+      </image>
+      <clip>
+        <near>0.1</near>
+        <far>10.0</far>
+      </clip>
+    </depth_camera>
+    <topic>rgbd_camera</topic> <!-- This is the Ignition transport topic prefix -->
   </sensor>
 </gazebo>
-
 
   <!-- Ackermann Steering Control -->
   <gazebo>

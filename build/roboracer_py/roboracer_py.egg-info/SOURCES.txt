@@ -12,6 +12,10 @@ resource/roboracer_py
 roboracer_py/__init__.py
 roboracer_py/disparity_extender.py
 roboracer_py/gap_follow.py
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
+roboracer_py.egg-info/PKG-INFO
+roboracer_py.egg-info/SOURCES.txt
+roboracer_py.egg-info/dependency_links.txt
+roboracer_py.egg-info/entry_points.txt
+roboracer_py.egg-info/requires.txt
+roboracer_py.egg-info/top_level.txt
+roboracer_py.egg-info/zip-safe

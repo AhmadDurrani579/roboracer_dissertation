@@ -27,6 +27,7 @@ _colcon_prefix_chain_powershell_source_script "/home/loq/Downloads/ros2-ackerman
 _colcon_prefix_chain_powershell_source_script "/home/loq/drivingcar_ws/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/loq/turtlebot3_ws/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/loq/ros2_action_ws/install\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "/home/loq/roboracer_ws/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/loq/bumperbot_ws/install\local_setup.ps1"
 
 # source this prefix

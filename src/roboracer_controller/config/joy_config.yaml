@@ -1,8 +1,16 @@
-joystick:
+joy_teleop:
   ros__parameters:
-    device_id: 0
-    device_name: ""
-    deadzone: 0.5
-    autorepeat_rate: 20.0
-    sticky_buttons: false
-    coalesce_interval_ms: 1
+    move:
+      type: topic
+      interface_type: ackermann_msgs/msg/AckermannDriveStamped
+      topic_name: /ackermann_cmd
+      deadman_buttons: [5]  # hold this to enable drive
+      axis_mappings:
+        drive-speed:
+          axis: 1         # usually left stick vertical
+          scale: 2.0      # max speed in m/s
+          offset: 0.0
+        drive-steering_angle:
+          axis: 3         # usually right stick horizontal
+          scale: 0.4      # max steering angle in radians
+          offset: 0.0
