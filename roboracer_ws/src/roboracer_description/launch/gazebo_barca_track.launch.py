@@ -15,7 +15,7 @@ def generate_launch_description():
 
     # 2. Path Configuration
     pkg_dir = get_package_share_directory('roboracer_description')
-    world_path = os.path.join(pkg_dir, 'world', 'track_porto.world')
+    world_path = os.path.join(pkg_dir, 'world', 'track_barca.world')
     urdf_path = os.path.join(pkg_dir, 'urdf', 'f1tenth_chassis.urdf')
 
     share_dir, _ = os.path.split(pkg_dir)
@@ -65,10 +65,10 @@ def generate_launch_description():
         arguments=[
             '-topic', '/robot_description',
             '-name', 'car_1',
-            '-x', '1.67', '-y', '6.24', '-z', '0.1',
+            '-x', '0.0', '-y', '0.0', '-z', '0.1',
             '-R', '0.0',  # roll
             '-P', '0.0',  # pitch
-            '-Y', '-3.11'   # yaw
+            '-Y', '0.30'   # yaw
         ],
         parameters=[{'use_sim_time': True}], output='screen'
     )

@@ -13,8 +13,8 @@ class FollowTheGapNode(Node):
 
         # parameters
         self.declare_parameter('safety_radius', 3.5)
-        self.declare_parameter('max_throttle', 2.0)
-        self.declare_parameter('min_throttle', 1.0)
+        self.declare_parameter('max_throttle', 0.5)
+        self.declare_parameter('min_throttle', 0.2)
         self.declare_parameter('max_steering_angle', 0.69)
         self.declare_parameter('gap_alpha', 2.0)
         self.declare_parameter('base_bubble', 1.0)

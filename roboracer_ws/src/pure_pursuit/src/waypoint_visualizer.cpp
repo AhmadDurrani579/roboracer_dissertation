@@ -18,7 +18,7 @@
 #include "visualization_msgs/msg/marker_array.hpp"
 
 WaypointVisualizer::WaypointVisualizer() : Node("waypoint_visualizer_node") {
-    this->declare_parameter("waypoints_path", "/sim_ws/src/pure_pursuit/racelines/levin_blocked.csv");
+    this->declare_parameter("waypoints_path", "/sim_ws/src/pure_pursuit/racelines/e7_floor5.csv");
     this->declare_parameter("rviz_waypoints_topic", "/waypoints");
 
     waypoints_path = this->get_parameter("waypoints_path").as_string();
@@ -70,7 +70,7 @@ void WaypointVisualizer::download_waypoints() {  // put all data in vectors
 void WaypointVisualizer::visualize_points() {
     auto marker_array = visualization_msgs::msg::MarkerArray();
     auto marker = visualization_msgs::msg::Marker();
-    marker.header.frame_id = "odom";
+    marker.header.frame_id = "map";
     marker.header.stamp = rclcpp::Clock().now();
     marker.type = visualization_msgs::msg::Marker::SPHERE;
     marker.action = visualization_msgs::msg::Marker::ADD;

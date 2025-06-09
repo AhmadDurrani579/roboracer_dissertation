@@ -10,53 +10,77 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-# Find dependencies
-foreach(PACKAGE 
-  ament_cmake 
+
+find_package(ament_cmake          REQUIRED)
+find_package(rclcpp               REQUIRED)
+find_package(geometry_msgs        REQUIRED)
+find_package(nav_msgs             REQUIRED)
+find_package(ackermann_msgs       REQUIRED)
+find_package(sensor_msgs          REQUIRED)
+find_package(std_msgs             REQUIRED)
+find_package(visualization_msgs   REQUIRED)
+find_package(tf2                  REQUIRED)
+find_package(tf2_ros              REQUIRED)
+find_package(tf2_geometry_msgs    REQUIRED)
+find_package(eigen3_cmake_module  REQUIRED)
+find_package(Eigen3               REQUIRED)
+
+
+
+
+
+include_directories(
+  include
+  ${EIGEN3_INCLUDE_DIRS}     
+)
+
+
+add_executable(pure_pursuit
+  src/pure_pursuit.cpp
+)
+
+ament_target_dependencies(pure_pursuit
   rclcpp
-  rclpy
-  geometry_msgs
-  nav_msgs
   ackermann_msgs
-  sensor_msgs
+  nav_msgs
+  visualization_msgs
+  tf2_ros
+  tf2
+  tf2_geometry_msgs
+)
+
+target_include_directories(pure_pursuit PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+  ${EIGEN3_INCLUDE_DIRS}
+)
+
+
+target_link_libraries(pure_pursuit
+  ${qpOASES_LIBRARY}              
+)
+
+
+add_executable(waypoint_visualizer
+  src/waypoint_visualizer.cpp
+)
+
+ament_target_dependencies(waypoint_visualizer
+  rclcpp
+  geometry_msgs
   std_msgs
   visualization_msgs
   eigen3_cmake_module
   Eigen3
-  tf2_ros
-  tf2)
-
-  find_package(${PACKAGE} REQUIRED)
-
-endforeach()
-
-
-# Include Cpp "include" directory
-include_directories(include)
-include_directories(
-  ${EIGEN3_INCLUDE_DIRS}
 )
 
-# Create Cpp executable
-add_executable(pure_pursuit src/pure_pursuit.cpp)
 
-ament_target_dependencies(pure_pursuit
-  rclcpp geometry_msgs ackermann_msgs nav_msgs sensor_msgs std_msgs visualization_msgs tf2_ros tf2 eigen3_cmake_module Eigen3
-)
-
-add_executable(waypoint_visualizer src/waypoint_visualizer.cpp)
-
-ament_target_dependencies(waypoint_visualizer
-  rclcpp geometry_msgs std_msgs visualization_msgs eigen3_cmake_module Eigen3
-)
-
-# Install Cpp executables
 install(TARGETS
   pure_pursuit
   waypoint_visualizer
-  DESTINATION lib/${PROJECT_NAME})
+  DESTINATION lib/${PROJECT_NAME}
+)
 
-# Install launch files and config
 install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
 install(DIRECTORY config DESTINATION share/${PROJECT_NAME})
 
