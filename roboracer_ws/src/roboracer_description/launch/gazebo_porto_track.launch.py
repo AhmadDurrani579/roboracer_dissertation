@@ -68,7 +68,7 @@ def generate_launch_description():
             '-x', '1.67', '-y', '6.24', '-z', '0.1',
             '-R', '0.0',  # roll
             '-P', '0.0',  # pitch
-            '-Y', '-3.11'   # yaw
+            '-Y', '-0.02'   # yaw
         ],
         parameters=[{'use_sim_time': True}], output='screen'
     )

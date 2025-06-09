@@ -10,13 +10,12 @@ pure_pursuit:
 
     # Pure Pursuit Parameters
     # Lookahead is computed using the following: lookahead = min(max(min_lookahead, max_lookahead * curr_velocity / lookahead_ratio), max_lookahead);
-    min_lookahead: 3.5
-    max_lookahead: 5.5
-    lookahead_ratio: 6.0
-    K_p: 0.4
+    min_lookahead: 2.5
+    max_lookahead: 5.0 # lookahead when the car is going around max velocity
+    lookahead_ratio: 8.0 # approximately the max velocity
+    K_p: 0.5
     steering_limit: 45.0
-    velocity_percentage: 0.6
-
+    velocity_percentage: 0.9 # the limit, can only do 1 lap with clean tires
 waypoint_visualizer_node:
   ros__parameters:
     waypoints_path: "/home/dev/roboracer_ws/src/pure_pursuit/racelines/porto_track.csv"
