@@ -1,4 +1,5 @@
 /home/loq/roboracer_ws/install/roboracer_visual_odom/lib/roboracer_visual_odom/visual_odom
+/home/loq/roboracer_ws/install/roboracer_visual_odom/lib/roboracer_visual_odom/rgbd_pointcloud_publisher
 /home/loq/roboracer_ws/install/roboracer_visual_odom/share/ament_index/resource_index/package_run_dependencies/roboracer_visual_odom
 /home/loq/roboracer_ws/install/roboracer_visual_odom/share/ament_index/resource_index/parent_prefix_path/roboracer_visual_odom
 /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/environment/ament_prefix_path.sh
@@ -11,6 +12,7 @@
 /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/local_setup.dsv
 /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/package.dsv
 /home/loq/roboracer_ws/install/roboracer_visual_odom/share/ament_index/resource_index/packages/roboracer_visual_odom
+/home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/cmake/ament_cmake_export_dependencies-extras.cmake
 /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/cmake/roboracer_visual_odomConfig.cmake
 /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/cmake/roboracer_visual_odomConfig-version.cmake
 /home/loq/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/package.xml

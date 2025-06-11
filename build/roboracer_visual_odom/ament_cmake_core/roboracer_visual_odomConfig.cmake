@@ -36,7 +36,7 @@ endif()
 set(roboracer_visual_odom_FOUND_AMENT_PACKAGE TRUE)
 
 # include all config extra files
-set(_extras "")
+set(_extras "ament_cmake_export_dependencies-extras.cmake")
 foreach(_extra ${_extras})
   include("${roboracer_visual_odom_DIR}/${_extra}")
 endforeach()

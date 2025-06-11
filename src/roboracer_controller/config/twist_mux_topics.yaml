@@ -1,0 +1,12 @@
+ackermann_mux:
+  ros__parameters:
+    use_stamped: false
+    topics:
+      joystick:
+        topic   : /ackermann_cmd/joystick
+        timeout : 0.5
+        priority: 99
+      planner:
+        topic   : /ackermann_cmd/planner
+        timeout : 0.5
+        priority: 50

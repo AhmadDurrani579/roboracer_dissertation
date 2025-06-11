@@ -1,0 +1,20 @@
+[0.905s] Invoking command in '/home/loq/roboracer_ws/build/roboracer_py': PYTHONPATH=/home/loq/roboracer_ws/build/roboracer_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loq/roboracer_ws/install/roboracer_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/loq/roboracer_ws/build/roboracer_py/build --no-deps symlink_data --force
+[1.138s] running develop
+[1.306s] running egg_info
+[1.307s] writing roboracer_py.egg-info/PKG-INFO
+[1.307s] writing dependency_links to roboracer_py.egg-info/dependency_links.txt
+[1.307s] writing entry points to roboracer_py.egg-info/entry_points.txt
+[1.307s] writing requirements to roboracer_py.egg-info/requires.txt
+[1.307s] writing top-level names to roboracer_py.egg-info/top_level.txt
+[1.310s] reading manifest file 'roboracer_py.egg-info/SOURCES.txt'
+[1.310s] writing manifest file 'roboracer_py.egg-info/SOURCES.txt'
+[1.312s] running build_ext
+[1.312s] Creating /home/loq/roboracer_ws/install/roboracer_py/lib/python3.10/site-packages/roboracer-py.egg-link (link to .)
+[1.313s] Installing disparity_extender script to /home/loq/roboracer_ws/install/roboracer_py/lib/roboracer_py
+[1.313s] Installing gap_follow script to /home/loq/roboracer_ws/install/roboracer_py/lib/roboracer_py
+[1.313s] 
+[1.313s] Installed /home/loq/roboracer_ws/build/roboracer_py
+[1.313s] running symlink_data
+[1.313s] symbolically linking /home/loq/roboracer_ws/build/roboracer_py/resource/roboracer_py -> /home/loq/roboracer_ws/install/roboracer_py/share/ament_index/resource_index/packages
+[1.313s] symbolically linking /home/loq/roboracer_ws/build/roboracer_py/package.xml -> /home/loq/roboracer_ws/install/roboracer_py/share/roboracer_py
+[1.353s] Invoked command in '/home/loq/roboracer_ws/build/roboracer_py' returned '0': PYTHONPATH=/home/loq/roboracer_ws/build/roboracer_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loq/roboracer_ws/install/roboracer_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/loq/roboracer_ws/build/roboracer_py/build --no-deps symlink_data --force

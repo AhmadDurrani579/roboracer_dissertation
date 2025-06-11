@@ -264,7 +264,7 @@
 
   <joint name="imu_joint" type="fixed">
     <origin xyz="0.1 0 0.1" rpy="0 0 0"/>
-    <parent link="car_1_chassis"/>
+    <parent link="car_1_base_link"/>
     <child link="car_1_imu_link"/>
   </joint>
 
@@ -349,7 +349,7 @@
   <gazebo reference="car_1_imu_link">
     <sensor name="imu_sensor" type="imu">
       <always_on>true</always_on>
-      <update_rate>100</update_rate>
+      <update_rate>400.0</update_rate>
       <topic>/model/car_1/imu</topic>
       <imu>
         <angular_velocity>

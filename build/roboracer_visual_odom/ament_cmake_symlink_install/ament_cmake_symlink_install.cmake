@@ -310,7 +310,7 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install("TARGETS" "visual_odom" "DESTINATION" "lib/roboracer_visual_odom")
+# install("TARGETS" "visual_odom" "rgbd_pointcloud_publisher" "DESTINATION" "lib/roboracer_visual_odom")
 include("/home/loq/roboracer_ws/build/roboracer_visual_odom/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/loq/roboracer_ws/build/roboracer_visual_odom/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/roboracer_visual_odom" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
@@ -348,6 +348,9 @@ ament_cmake_symlink_install_files("/home/loq/roboracer_ws/src/roboracer_visual_o
 
 # install(FILES "/home/loq/roboracer_ws/build/roboracer_visual_odom/ament_cmake_index/share/ament_index/resource_index/packages/roboracer_visual_odom" "DESTINATION" "share/ament_index/resource_index/packages")
 ament_cmake_symlink_install_files("/home/loq/roboracer_ws/src/roboracer_visual_odom" FILES "/home/loq/roboracer_ws/build/roboracer_visual_odom/ament_cmake_index/share/ament_index/resource_index/packages/roboracer_visual_odom" "DESTINATION" "share/ament_index/resource_index/packages")
+
+# install(FILES "/home/loq/roboracer_ws/build/roboracer_visual_odom/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/roboracer_visual_odom/cmake")
+ament_cmake_symlink_install_files("/home/loq/roboracer_ws/src/roboracer_visual_odom" FILES "/home/loq/roboracer_ws/build/roboracer_visual_odom/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/roboracer_visual_odom/cmake")
 
 # install(FILES "/home/loq/roboracer_ws/build/roboracer_visual_odom/ament_cmake_core/roboracer_visual_odomConfig.cmake" "/home/loq/roboracer_ws/build/roboracer_visual_odom/ament_cmake_core/roboracer_visual_odomConfig-version.cmake" "DESTINATION" "share/roboracer_visual_odom/cmake")
 ament_cmake_symlink_install_files("/home/loq/roboracer_ws/src/roboracer_visual_odom" FILES "/home/loq/roboracer_ws/build/roboracer_visual_odom/ament_cmake_core/roboracer_visual_odomConfig.cmake" "/home/loq/roboracer_ws/build/roboracer_visual_odom/ament_cmake_core/roboracer_visual_odomConfig-version.cmake" "DESTINATION" "share/roboracer_visual_odom/cmake")

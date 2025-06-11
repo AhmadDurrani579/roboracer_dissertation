@@ -1,7 +1,0 @@
-[01m[K/home/loq/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:24:10:[m[K [01;31m[Kfatal error: [m[Kimu/IMU.h: No such file or directory
-   24 | #include [01;31m[K<imu/IMU.h>[m[K
-      |          [01;31m[K^~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/visual_odom.dir/build.make:76: CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/visual_odom.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

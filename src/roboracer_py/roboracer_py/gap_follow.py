@@ -145,7 +145,7 @@ class GapFollow(Node):
         drive_msg.header.frame_id = "car_1_base_link"
 
         sub_drive_msg = AckermannDrive()
-        sub_drive_msg.steering_angle = float(steering)
+        sub_drive_msg.steering_angle = float(0.0)
         sub_drive_msg.steering_angle_velocity = 0.0
         sub_drive_msg.speed = float(speed)
         sub_drive_msg.acceleration = 0.0

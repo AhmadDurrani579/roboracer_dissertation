@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/loq/roboracer_ws/build/roboracer_visual_odom
 
 # The main recursive "all" target.
 all: CMakeFiles/visual_odom.dir/all
+all: CMakeFiles/rgbd_pointcloud_publisher.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +75,7 @@ preinstall:
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/roboracer_visual_odom_uninstall.dir/clean
 clean: CMakeFiles/visual_odom.dir/clean
+clean: CMakeFiles/rgbd_pointcloud_publisher.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -135,7 +137,7 @@ CMakeFiles/roboracer_visual_odom_uninstall.dir/clean:
 CMakeFiles/visual_odom.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/visual_odom.dir/build.make CMakeFiles/visual_odom.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/visual_odom.dir/build.make CMakeFiles/visual_odom.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/loq/roboracer_ws/build/roboracer_visual_odom/CMakeFiles --progress-num=1,2 "Built target visual_odom"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/loq/roboracer_ws/build/roboracer_visual_odom/CMakeFiles --progress-num=3,4 "Built target visual_odom"
 .PHONY : CMakeFiles/visual_odom.dir/all
 
 # Build rule for subdir invocation for target.
@@ -153,6 +155,32 @@ visual_odom: CMakeFiles/visual_odom.dir/rule
 CMakeFiles/visual_odom.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/visual_odom.dir/build.make CMakeFiles/visual_odom.dir/clean
 .PHONY : CMakeFiles/visual_odom.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/rgbd_pointcloud_publisher.dir
+
+# All Build rule for target.
+CMakeFiles/rgbd_pointcloud_publisher.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd_pointcloud_publisher.dir/build.make CMakeFiles/rgbd_pointcloud_publisher.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd_pointcloud_publisher.dir/build.make CMakeFiles/rgbd_pointcloud_publisher.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/loq/roboracer_ws/build/roboracer_visual_odom/CMakeFiles --progress-num=1,2 "Built target rgbd_pointcloud_publisher"
+.PHONY : CMakeFiles/rgbd_pointcloud_publisher.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/rgbd_pointcloud_publisher.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/loq/roboracer_ws/build/roboracer_visual_odom/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rgbd_pointcloud_publisher.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/loq/roboracer_ws/build/roboracer_visual_odom/CMakeFiles 0
+.PHONY : CMakeFiles/rgbd_pointcloud_publisher.dir/rule
+
+# Convenience name for target.
+rgbd_pointcloud_publisher: CMakeFiles/rgbd_pointcloud_publisher.dir/rule
+.PHONY : rgbd_pointcloud_publisher
+
+# clean rule for target.
+CMakeFiles/rgbd_pointcloud_publisher.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd_pointcloud_publisher.dir/build.make CMakeFiles/rgbd_pointcloud_publisher.dir/clean
+.PHONY : CMakeFiles/rgbd_pointcloud_publisher.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

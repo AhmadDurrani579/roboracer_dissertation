@@ -1,0 +1,25 @@
+[0.942s] Invoking command in '/home/loq/roboracer_ws/build/roboracer_yolov8_detector': PYTHONPATH=/home/loq/roboracer_ws/build/roboracer_yolov8_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/loq/roboracer_ws/build/roboracer_yolov8_detector/build --no-deps symlink_data
+[1.220s] running develop
+[1.422s] running egg_info
+[1.422s] creating roboracer_yolov8_detector.egg-info
+[1.422s] writing roboracer_yolov8_detector.egg-info/PKG-INFO
+[1.423s] writing dependency_links to roboracer_yolov8_detector.egg-info/dependency_links.txt
+[1.423s] writing entry points to roboracer_yolov8_detector.egg-info/entry_points.txt
+[1.423s] writing requirements to roboracer_yolov8_detector.egg-info/requires.txt
+[1.423s] writing top-level names to roboracer_yolov8_detector.egg-info/top_level.txt
+[1.423s] writing manifest file 'roboracer_yolov8_detector.egg-info/SOURCES.txt'
+[1.425s] reading manifest file 'roboracer_yolov8_detector.egg-info/SOURCES.txt'
+[1.425s] writing manifest file 'roboracer_yolov8_detector.egg-info/SOURCES.txt'
+[1.427s] running build_ext
+[1.427s] Creating /home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages/roboracer-yolov8-detector.egg-link (link to .)
+[1.428s] Installing detection_3d_node script to /home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/roboracer_yolov8_detector
+[1.428s] Installing yolov8_detection_node script to /home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/roboracer_yolov8_detector
+[1.428s] 
+[1.428s] Installed /home/loq/roboracer_ws/build/roboracer_yolov8_detector
+[1.428s] running symlink_data
+[1.428s] creating /home/loq/roboracer_ws/install/roboracer_yolov8_detector/share/ament_index
+[1.428s] creating /home/loq/roboracer_ws/install/roboracer_yolov8_detector/share/ament_index/resource_index
+[1.428s] creating /home/loq/roboracer_ws/install/roboracer_yolov8_detector/share/ament_index/resource_index/packages
+[1.429s] symbolically linking /home/loq/roboracer_ws/build/roboracer_yolov8_detector/resource/roboracer_yolov8_detector -> /home/loq/roboracer_ws/install/roboracer_yolov8_detector/share/ament_index/resource_index/packages
+[1.429s] symbolically linking /home/loq/roboracer_ws/build/roboracer_yolov8_detector/package.xml -> /home/loq/roboracer_ws/install/roboracer_yolov8_detector/share/roboracer_yolov8_detector
+[1.477s] Invoked command in '/home/loq/roboracer_ws/build/roboracer_yolov8_detector' returned '0': PYTHONPATH=/home/loq/roboracer_ws/build/roboracer_yolov8_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loq/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/loq/roboracer_ws/build/roboracer_yolov8_detector/build --no-deps symlink_data

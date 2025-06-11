@@ -15,7 +15,7 @@ def generate_launch_description():
 
     # 2. Path Configuration
     pkg_dir = get_package_share_directory('roboracer_description')
-    world_path = os.path.join(pkg_dir, 'world', 'levine_loop.world')
+    world_path = os.path.join(pkg_dir, 'world', 'small_house.world')
     urdf_path = os.path.join(pkg_dir, 'urdf', 'f1tenth_chassis.urdf')
 
     # 3. Ignition Gazebo Launch
@@ -68,7 +68,7 @@ def generate_launch_description():
     # 5. Robot Spawning and State Publishers (delayed until clock is active)
     spawn_robot = Node(
         package='ros_gz_sim', executable='create',
-        arguments=['-topic', '/robot_description', '-name', 'car_1', '-x', '0.0', '-y', '-18.3', '-z', '0.0'],
+        arguments=['-topic', '/robot_description', '-name', 'car_1', '-x', '-5.0', '-y', '0.0', '-z', '0.0'],
         parameters=[{'use_sim_time': True}], output='screen'
     )
     robot_state_publisher = Node(
@@ -105,7 +105,7 @@ def generate_launch_description():
         package='roboracer_controller',
         executable='ackermann_to_twist.py',
         name='ackermann_to_twist',
-        parameters=[joystick_config_path],
+        parameters=[{'use_sim_time': True}, joystick_config_path], # Add use_sim_time
         output='screen'
     )
 
@@ -150,12 +150,4 @@ def generate_launch_description():
     # Start ackermann_controller immediately
     ld.add_action(ackermann_controller)
     ld.add_action(camera_info_relay)
-
-    # Register the event handler to start tf_echo after ackermann_controller starts
-    # ld.add_action(RegisterEventHandler(
-    #     OnProcessStart(
-    #         target_action=ackermann_controller,
-    #         on_start=[tf_echo_node]
-    #     )
-    # ))
     return ld

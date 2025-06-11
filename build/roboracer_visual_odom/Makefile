@@ -210,6 +210,43 @@ visual_odom/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/visual_odom.dir/build.make CMakeFiles/visual_odom.dir/build
 .PHONY : visual_odom/fast
 
+#=============================================================================
+# Target rules for targets named rgbd_pointcloud_publisher
+
+# Build rule for target.
+rgbd_pointcloud_publisher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rgbd_pointcloud_publisher
+.PHONY : rgbd_pointcloud_publisher
+
+# fast build rule for target.
+rgbd_pointcloud_publisher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd_pointcloud_publisher.dir/build.make CMakeFiles/rgbd_pointcloud_publisher.dir/build
+.PHONY : rgbd_pointcloud_publisher/fast
+
+src/rgbd_pointcloud_publisher.o: src/rgbd_pointcloud_publisher.cpp.o
+.PHONY : src/rgbd_pointcloud_publisher.o
+
+# target to build an object file
+src/rgbd_pointcloud_publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd_pointcloud_publisher.dir/build.make CMakeFiles/rgbd_pointcloud_publisher.dir/src/rgbd_pointcloud_publisher.cpp.o
+.PHONY : src/rgbd_pointcloud_publisher.cpp.o
+
+src/rgbd_pointcloud_publisher.i: src/rgbd_pointcloud_publisher.cpp.i
+.PHONY : src/rgbd_pointcloud_publisher.i
+
+# target to preprocess a source file
+src/rgbd_pointcloud_publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd_pointcloud_publisher.dir/build.make CMakeFiles/rgbd_pointcloud_publisher.dir/src/rgbd_pointcloud_publisher.cpp.i
+.PHONY : src/rgbd_pointcloud_publisher.cpp.i
+
+src/rgbd_pointcloud_publisher.s: src/rgbd_pointcloud_publisher.cpp.s
+.PHONY : src/rgbd_pointcloud_publisher.s
+
+# target to generate assembly for a file
+src/rgbd_pointcloud_publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd_pointcloud_publisher.dir/build.make CMakeFiles/rgbd_pointcloud_publisher.dir/src/rgbd_pointcloud_publisher.cpp.s
+.PHONY : src/rgbd_pointcloud_publisher.cpp.s
+
 src/visual_odom.o: src/visual_odom.cpp.o
 .PHONY : src/visual_odom.o
 
@@ -249,7 +286,11 @@ help:
 	@echo "... test"
 	@echo "... roboracer_visual_odom_uninstall"
 	@echo "... uninstall"
+	@echo "... rgbd_pointcloud_publisher"
 	@echo "... visual_odom"
+	@echo "... src/rgbd_pointcloud_publisher.o"
+	@echo "... src/rgbd_pointcloud_publisher.i"
+	@echo "... src/rgbd_pointcloud_publisher.s"
 	@echo "... src/visual_odom.o"
 	@echo "... src/visual_odom.i"
 	@echo "... src/visual_odom.s"

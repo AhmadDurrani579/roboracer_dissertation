@@ -31,6 +31,7 @@ install(PROGRAMS
    ${PROJECT_NAME}/noisy_controller.py
    ${PROJECT_NAME}/static_tf_publisher.py
    ${PROJECT_NAME}/custom_robot_state_publisher.py
+   ${PROJECT_NAME}/twist_relay.py
    DESTINATION lib/${PROJECT_NAME}
 )
 

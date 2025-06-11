@@ -1,0 +1,16 @@
+joy_teleop:
+  ros__parameters:
+    move:
+      type: topic
+      interface_type: ackermann_msgs/msg/AckermannDriveStamped
+      topic_name: /ackermann_cmd/joystick
+      deadman_buttons: [5]  # Press R1 to activate
+      axis_mappings:
+        drive-speed:
+          axis: 1        # Left stick vertical
+          scale: 2.0     # Max speed (tune this)
+          offset: 0.0
+        drive-steering_angle:
+          axis: 3        # Right stick horizontal
+          scale: 0.4     # Max steering angle in radians (about 23°)
+          offset: 0.0
