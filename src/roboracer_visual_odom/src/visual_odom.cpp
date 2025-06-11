@@ -266,19 +266,6 @@ void process_frame(const cv::Mat& rgb_img, const cv::Mat& depth_img, const built
     last_image_timestamp_ = timestamp;
 
     try {
-
-      if (vImuMeas.empty()) {
-         RCLCPP_ERROR(this->get_logger(), "NO IMU measurements for this frame, skipping SLAM!");
-        return;
-      }
-      for (const auto& imu : vImuMeas) {
-        if (std::isnan(imu.a.x()) || std::isnan(imu.a.y()) || std::isnan(imu.a.z()) ||
-            std::isnan(imu.w.x()) || std::isnan(imu.w.y()) || std::isnan(imu.w.z())) {
-            RCLCPP_ERROR(this->get_logger(), "NaN in IMU measurements! Skipping SLAM frame.");
-            return;
-        }
-      }
-
         Sophus::SE3f Tcw = slam_->TrackRGBD(rgb_img, depth_img, timestamp, vImuMeas);
 
         // --- (Optional) LOG: Tracking state ---
