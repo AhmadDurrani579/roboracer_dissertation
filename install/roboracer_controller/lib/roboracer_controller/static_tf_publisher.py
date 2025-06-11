@@ -1,1 +1,0 @@
-/home/loq/roboracer_ws/src/roboracer_controller/roboracer_controller/static_tf_publisher.py

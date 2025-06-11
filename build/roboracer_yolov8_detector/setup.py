@@ -1,1 +1,0 @@
-/home/loq/roboracer_ws/src/roboracer_yolov8_detector/setup.py

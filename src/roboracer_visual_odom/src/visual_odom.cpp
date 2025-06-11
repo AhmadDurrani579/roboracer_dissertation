@@ -266,8 +266,31 @@ void process_frame(const cv::Mat& rgb_img, const cv::Mat& depth_img, const built
     last_image_timestamp_ = timestamp;
 
     try {
-        Sophus::SE3f Tcw = slam_->TrackRGBD(rgb_img, depth_img, timestamp, vImuMeas);
 
+    std::vector<ORB_SLAM3::IMU::Point> vImuFiltered;
+    for (size_t i = 0; i < vImuMeas.size(); ++i) {
+        const auto& imu = vImuMeas[i];
+
+        Eigen::Vector3f gyro(imu.w.x(), imu.w.y(), imu.w.z());
+        Eigen::Vector3f acc(imu.a.x(), imu.a.y(), imu.a.z());
+
+        if (!gyro.allFinite() || !acc.allFinite()) {
+            std::cerr << "[WARNING] Dropping IMU sample at t=" << imu.t
+                      << " due to NaN in gyro or acc. "
+                      << "gyro=" << gyro.transpose()
+                      << ", acc=" << acc.transpose() << std::endl;
+            continue;
+        }
+
+        vImuFiltered.push_back(imu);
+    }
+
+    if (vImuFiltered.empty()) {
+        RCLCPP_WARN(this->get_logger(), "All IMU data invalid, skipping frame.");
+        return;
+    }
+
+    Sophus::SE3f Tcw = slam_->TrackRGBD(rgb_img, depth_img, timestamp, vImuFiltered);
         // --- (Optional) LOG: Tracking state ---
         int tracking_state = slam_->GetTrackingState();
         RCLCPP_INFO(this->get_logger(), "Tracking state: %d", tracking_state);
@@ -302,97 +325,23 @@ void process_frame(const cv::Mat& rgb_img, const cv::Mat& depth_img, const built
     }
 }
 
-// void publish_dense_pointcloud(const cv::Mat& rgb_img, const cv::Mat& depth_img, const builtin_interfaces::msg::Time& stamp_ros) {
-//     // ---- Use intrinsics from YAML ----
-//     const float fx = 535.4f; // Focal length x
-//     const float fy = 539.2f; // Focal length y
-//     const float cx = 320.1f; // Optical center x
-//     const float cy = 247.6f; // Optical center y
 
-//     // ---- Defensive checks ----
-//     if (rgb_img.empty() || depth_img.empty()) {
-//         RCLCPP_ERROR(this->get_logger(), "Empty images!");
-//         return;
-//     }
-//     if (rgb_img.size() != depth_img.size()) {
-//         RCLCPP_ERROR(this->get_logger(), "Size mismatch! RGB: %dx%d, Depth: %dx%d",
-//                     rgb_img.cols, rgb_img.rows, depth_img.cols, depth_img.rows);
-//         return;
-//     }
-//     if (depth_img.type() != CV_32F) {
-//         RCLCPP_ERROR(this->get_logger(), "Depth image not CV_32F!");
-//         return;
-//     }
-//     if (rgb_img.type() != CV_8UC3) {
-//         RCLCPP_ERROR(this->get_logger(), "RGB image not CV_8UC3!");
-//         return;
-//     }
-
-//     int width = depth_img.cols;
-//     int height = depth_img.rows;
-
-//     // ---- Prepare PointCloud2 msg ----
-//     sensor_msgs::msg::PointCloud2 cloud_msg;
-//     cloud_msg.header.stamp = stamp_ros;
-//     cloud_msg.header.frame_id = camera_frame_;
-//     cloud_msg.height = 1;
-//     cloud_msg.width = 0; // Will increment with each valid point
-//     cloud_msg.is_dense = false;
-
-//     sensor_msgs::msg::PointField field_x, field_y, field_z, field_rgb;
-//     field_x.name = "x";   field_x.offset = 0;  field_x.datatype = sensor_msgs::msg::PointField::FLOAT32; field_x.count = 1;
-//     field_y.name = "y";   field_y.offset = 4;  field_y.datatype = sensor_msgs::msg::PointField::FLOAT32; field_y.count = 1;
-//     field_z.name = "z";   field_z.offset = 8;  field_z.datatype = sensor_msgs::msg::PointField::FLOAT32; field_z.count = 1;
-//     field_rgb.name = "rgb"; field_rgb.offset = 12; field_rgb.datatype = sensor_msgs::msg::PointField::FLOAT32; field_rgb.count = 1;
-//     cloud_msg.fields = {field_x, field_y, field_z, field_rgb};
-//     cloud_msg.point_step = 16; // 4 floats (x,y,z,rgb)
-//     cloud_msg.data.clear();
-
-//     for (int v = 0; v < height; ++v) {
-//         for (int u = 0; u < width; ++u) {
-//             float d = depth_img.at<float>(v, u);
-//             if (std::isnan(d) || d <= 0.1f || d > 6.0f) continue;
-
-//             float Z = d;
-//             float X = (u - cx) * Z / fx;
-//             float Y = (v - cy) * Z / fy;
-
-//             // ---- Get color ----
-//             // NOTE: If your images are truly RGB (Camera.RGB: 1 in YAML), and OpenCV loads as BGR,
-//             // you might want to convert from RGB to BGR. But if color looks fine, keep as is.
-//             cv::Vec3b rgb = rgb_img.at<cv::Vec3b>(v, u);
-//             uint8_t r = rgb[2];
-//             uint8_t g = rgb[1];
-//             uint8_t b = rgb[0];
-
-//             // Pack RGB into float
-//             uint32_t rgb_uint = (r << 16) | (g << 8) | b;
-//             float rgb_float;
-//             std::memcpy(&rgb_float, &rgb_uint, sizeof(float));
-
-//             // Add to cloud_msg
-//             size_t idx = cloud_msg.data.size();
-//             cloud_msg.data.resize(idx + cloud_msg.point_step);
-//             std::memcpy(&cloud_msg.data[idx + 0], &X, sizeof(float));
-//             std::memcpy(&cloud_msg.data[idx + 4], &Y, sizeof(float));
-//             std::memcpy(&cloud_msg.data[idx + 8], &Z, sizeof(float));
-//             std::memcpy(&cloud_msg.data[idx + 12], &rgb_float, sizeof(float));
-
-//             ++cloud_msg.width;
-//         }
-//     }
-//     cloud_msg.row_step = cloud_msg.point_step * cloud_msg.width;
-
-//     rgbd_cloud_pub_->publish(cloud_msg);
-// }
-
-
-  void publish_results(const Sophus::SE3f& Tcw, const builtin_interfaces::msg::Time& stamp) {
+void publish_results(const Sophus::SE3f& Tcw, const builtin_interfaces::msg::Time& stamp) {
     const Eigen::Matrix3f Rcw = Tcw.rotationMatrix();
     const Eigen::Vector3f tcw = Tcw.translation();
     const Eigen::Matrix3f Rwc = Rcw.transpose();
-    const Eigen::Vector3d twc = -(Rwc * tcw).cast<double>();
-    const Eigen::Quaterniond q(Rwc.cast<double>());
+    const Eigen::Vector3f twc_f = -Rwc * tcw;
+
+    // Convert to double for ROS messages
+    const Eigen::Vector3d twc = twc_f.cast<double>();
+    const Eigen::Quaterniond q(Eigen::Matrix3d(Rwc.cast<double>()));
+
+    // Log translation and quaternion
+
+    if (!twc.allFinite() || !std::isfinite(q.norm())) {
+        std::cerr << "[ERROR] Non-finite values detected in pose! Skipping publish." << std::endl;
+        return;
+    }
 
     geometry_msgs::msg::PoseStamped pose_msg;
     pose_msg.header.stamp = stamp;
@@ -401,12 +350,19 @@ void process_frame(const cv::Mat& rgb_img, const cv::Mat& depth_img, const built
     pose_msg.pose.position.y = twc.y();
     pose_msg.pose.position.z = twc.z();
     pose_msg.pose.orientation = tf2::toMsg(tf2::Quaternion(q.x(), q.y(), q.z(), q.w()));
+
     pose_pub_->publish(pose_msg);
 
+    // Limit path size
+    const size_t max_path_length = 500;
     path_msg_.poses.push_back(pose_msg);
+    if (path_msg_.poses.size() > max_path_length)
+        path_msg_.poses.erase(path_msg_.poses.begin());
     path_msg_.header.stamp = stamp;
+    path_msg_.header.frame_id = map_frame_;
     path_pub_->publish(path_msg_);
 
+    // Publish TF
     geometry_msgs::msg::TransformStamped transform;
     transform.header.stamp = stamp;
     transform.header.frame_id = map_frame_;
@@ -415,8 +371,9 @@ void process_frame(const cv::Mat& rgb_img, const cv::Mat& depth_img, const built
     transform.transform.translation.y = twc.y();
     transform.transform.translation.z = twc.z();
     transform.transform.rotation = pose_msg.pose.orientation;
+
     tf_broadcaster_->sendTransform(transform);
-  }
+}
 
   void publish_map_points(const builtin_interfaces::msg::Time& stamp) {
     if (!slam_) return;

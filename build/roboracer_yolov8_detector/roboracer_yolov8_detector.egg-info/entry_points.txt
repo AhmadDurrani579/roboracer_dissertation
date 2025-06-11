@@ -1,4 +1,0 @@
-[console_scripts]
-detection_3d_node = roboracer_yolov8_detector.detection_3d_node:main
-yolov8_detection_node = roboracer_yolov8_detector.yolov8_detection_node:main
-

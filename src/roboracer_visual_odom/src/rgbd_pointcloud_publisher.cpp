@@ -44,8 +44,11 @@ public:
     max_depth_m_ = this->get_parameter("max_depth_m").as_double();
 
     // Setup publishers
+    rclcpp::QoS qos_profile(rclcpp::QoSInitialization::from_rmw(rmw_qos_profile_default));
+    qos_profile.keep_last(10).reliable().durability_volatile();
+
     pointcloud_pub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>(
-        output_pointcloud_topic_, rclcpp::QoS(10)); // QoS can be adjusted if needed
+        output_pointcloud_topic_, qos_profile);
 
     // Setup subscribers and approximate time synchronizer
     rgb_sub_.subscribe(this, rgb_topic_);
