@@ -72,20 +72,15 @@ RUN git clone https://github.com/strasdat/Sophus.git /tmp/Sophus && \
     ldconfig
 
 
-# Install ORB_SLAM3 library
+# Install ORB_SLAM3 library by cloning it directly to its final destination
 RUN git clone -b v1.0-release https://github.com/UZ-SLAMLab/ORB_SLAM3.git /usr/local/ORB_SLAM3 && \
     cd /usr/local/ORB_SLAM3 && \
     sed -i -E 's/make -j[0-9]*/make -j1/g; s/make -j\b/make -j1/g' build.sh && \
     sed -i 's|cmake .. -DCMAKE_BUILD_TYPE=Release|cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_STANDARD=14|g' build.sh && \
     chmod +x build.sh && \
     CMAKE_POLICY_VERSION_MINIMUM=3.5 ./build.sh && \
-    # Create symbolic links for libraries
-    ln -sf /usr/local/ORB_SLAM3/lib/lib*.so* /usr/local/lib/ && \
+    ln -s /usr/local/ORB_SLAM3/lib/libORB_SLAM3.so /usr/local/lib/libORB_SLAM3.so && \
     ldconfig
-
-# Add ORB_SLAM3 to include path with all necessary subdirectories
-ENV CPLUS_INCLUDE_PATH="/usr/local/ORB_SLAM3:/usr/local/ORB_SLAM3/include:/usr/local/ORB_SLAM3/Thirdparty/DBoW2:/usr/local/ORB_SLAM3/Thirdparty/g2o:/usr/local/ORB_SLAM3/Thirdparty/Sophus:/usr/local/ORB_SLAM3/Thirdparty/DBoW2/DBoW2:/usr/local/ORB_SLAM3/Thirdparty/g2o/g2o:/usr/local/ORB_SLAM3/Thirdparty/Sophus/sophus:$CPLUS_INCLUDE_PATH"
-ENV LD_LIBRARY_PATH="/usr/local/ORB_SLAM3/lib:$LD_LIBRARY_PATH"
 
 ENV CMAKE_PREFIX_PATH="/usr/local:$CMAKE_PREFIX_PATH"
 RUN echo 'source /opt/ros/humble/setup.bash' >> /etc/bash.bashrc

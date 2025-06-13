@@ -22,8 +22,9 @@ find_package(PCL REQUIRED)
 find_package(pcl_conversions REQUIRED)
 
 # ——— ORB-SLAM3 locations ———
-set(ORB_SLAM3_INC  "/usr/local/include/ORB_SLAM3")  # Updated to installed location
-set(ORB_SLAM3_LIB  "/usr/local/lib/libORB_SLAM3.so") # Updated to installed location
+# The main directory where ORB_SLAM3 was cloned and built
+set(ORB_SLAM3_ROOT "/usr/local/ORB_SLAM3")
+set(ORB_SLAM3_LIB "${ORB_SLAM3_ROOT}/lib/libORB_SLAM3.so")
 
 # Critical additional includes
 set(ORB_SLAM3_EXTRA_INCLUDES
@@ -38,12 +39,9 @@ add_executable(visual_odom src/visual_odom.cpp)
 
 # Include dirs
 target_include_directories(visual_odom PRIVATE
-  "/usr/local/include/ORB_SLAM3"
-  "/usr/local/include/ORB_SLAM3/Thirdparty/DBoW2"  # For DBoW2 includes
-  "/usr/local/include/ORB_SLAM3/Thirdparty/DBoW2/DBoW2"  # Direct path to headers
-  "/usr/local/include/ORB_SLAM3/Thirdparty/g2o"
-  ${ORB_SLAM3_INC}
-  ${ORB_SLAM3_EXTRA_INCLUDES}
+  "${ORB_SLAM3_ROOT}" # This allows includes like "Thirdparty/DBoW2/..."
+  "${ORB_SLAM3_ROOT}/include" # This allows includes like "System.h"
+  "${ORB_SLAM3_ROOT}/include/CameraModels" # This allows includes like "GeometricCamera.h"
   ${Sophus_INCLUDE_DIRS}
   ${OpenCV_INCLUDE_DIRS}
   ${EIGEN3_INCLUDE_DIRS}
