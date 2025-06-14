@@ -31,9 +31,9 @@ public:
     this->declare_parameter<std::string>("rgb_topic", "/car_1/rgbd_camera/rgb/image_raw");
     this->declare_parameter<std::string>("depth_topic", "/car_1/rgbd_camera/depth/image_raw");
     this->declare_parameter<std::string>("vocabulary_path",
-      "/home/loq/orb_slam3_ws/src/ORB_SLAM3/Vocabulary/ORBvoc.txt");
+      "/usr/local/ORB_SLAM3/Vocabulary/ORBvoc.txt");
     this->declare_parameter<std::string>("settings_path",
-      "/home/loq/roboracer_ws/src/roboracer_description/config/camera_settings.yaml");
+      "/home/dev/roboracer_ws/src/roboracer_description/config/camera_settings.yaml");
     this->declare_parameter<std::string>("map_frame", "map");
     this->declare_parameter<std::string>("camera_frame", "car_1_rgbd_camera_link");
     this->declare_parameter<double>("max_time_diff", 0.05);
@@ -226,6 +226,10 @@ void imu_callback(const sensor_msgs::msg::Imu::SharedPtr msg) {
       // IMU-enabled call (with IMU measurements vector!)
       Sophus::SE3f Tcw = slam_->TrackRGBD(rgb_img, depth_img, timestamp, vImuMeas);
 
+      // --- Log SLAM State ---
+      auto current_state = slam_->GetTrackingState();
+      RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 2000, "Current ORB-SLAM3 state: %d", static_cast<int>(current_state));
+
       // --- Feature Visualization ---
       cv::Mat img_with_features = rgb_img.clone();
       cv::Ptr<cv::ORB> detector = cv::ORB::create();
@@ -243,10 +247,10 @@ void imu_callback(const sensor_msgs::msg::Imu::SharedPtr msg) {
       img_bridge.toImageMsg(out_msg);
       features_image_pub_->publish(out_msg);
 
-      if (slam_->GetTrackingState() == ORB_SLAM3::Tracking::eTrackingState::LOST) {
+      if (current_state == ORB_SLAM3::Tracking::eTrackingState::LOST) {
         RCLCPP_WARN_THROTTLE(get_logger(), *get_clock(), 1000, "Tracking lost");
       }
-      if (slam_->GetTrackingState() == ORB_SLAM3::Tracking::eTrackingState::OK) {
+      if (current_state == ORB_SLAM3::Tracking::eTrackingState::OK) {
         publish_results(Tcw, stamp_ros);
         publish_map_points(stamp_ros);
       }

@@ -17,7 +17,6 @@ find_package(cv_bridge REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(Pangolin REQUIRED)
-find_package(Sophus REQUIRED)
 find_package(PCL REQUIRED)
 find_package(pcl_conversions REQUIRED)
 
@@ -42,7 +41,7 @@ target_include_directories(visual_odom PRIVATE
   "${ORB_SLAM3_ROOT}" # This allows includes like "Thirdparty/DBoW2/..."
   "${ORB_SLAM3_ROOT}/include" # This allows includes like "System.h"
   "${ORB_SLAM3_ROOT}/include/CameraModels" # This allows includes like "GeometricCamera.h"
-  ${Sophus_INCLUDE_DIRS}
+  "${ORB_SLAM3_ROOT}/Thirdparty/Sophus"
   ${OpenCV_INCLUDE_DIRS}
   ${EIGEN3_INCLUDE_DIRS}
   ${Pangolin_INCLUDE_DIRS}
@@ -52,7 +51,6 @@ target_include_directories(visual_odom PRIVATE
 # Link libraries
 target_link_libraries(visual_odom
   ${ORB_SLAM3_LIB}
-  Sophus::Sophus
   ${OpenCV_LIBS}           # Use _LIBS instead of _LIBRARIES
   Eigen3::Eigen
   ${Pangolin_LIBRARIES}

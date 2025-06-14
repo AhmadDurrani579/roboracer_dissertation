@@ -45,14 +45,18 @@ def generate_launch_description():
             '/hokuyo/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan',
             '/model/car_1/imu@sensor_msgs/msg/Imu@gz.msgs.IMU',
             '/model/car_1/joint_state@sensor_msgs/msg/JointState@gz.msgs.Model',
-            '/camera/image_raw@sensor_msgs/msg/Image@gz.msgs.Image',
-            '/camera/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo',
+            # Bridge for the RGBD Camera
+            '/car_1/rgbd_camera/image@sensor_msgs/msg/Image[gz.msgs.Image',
+            '/car_1/rgbd_camera/depth_image@sensor_msgs/msg/Image[gz.msgs.Image',
+            '/car_1/rgbd_camera/camera_info@sensor_msgs/msg/CameraInfo[gz.msgs.CameraInfo',
         ],
         remappings=[
             ('/model/car_1/cmd_vel', '/car_1/cmd_vel'),
             ('/model/car_1/imu', '/car_1/imu'),
-            ('/camera/image_raw', '/car_1/camera/image_raw'),
-            ('/camera/camera_info', '/car_1/camera/camera_info'),
+            # Remap the bridged topics to what the visual_odom node expects
+            ('/car_1/rgbd_camera/image', '/car_1/rgbd_camera/rgb/image_raw'),
+            ('/car_1/rgbd_camera/depth_image', '/car_1/rgbd_camera/depth/image_raw'),
+            ('/car_1/rgbd_camera/camera_info', '/car_1/rgbd_camera/camera_info'),
         ],
         parameters=[{'use_sim_time': True}],
         output='screen'

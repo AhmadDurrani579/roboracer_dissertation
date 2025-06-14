@@ -1,63 +1,69 @@
 %YAML:1.0
-
 #--------------------------------------------------------------------------------------------
-# Camera Parameters. Adjust them!
+# Camera Parameters.
 #--------------------------------------------------------------------------------------------
-File.version: "1.0"
-
+# Camera model: "PinHole" corresponds to the "plumb_bob" distortion model.
 Camera.type: "PinHole"
 
-# Camera calibration and distortion parameters (OpenCV)
-Camera1.fx: 606.6037834985766
-Camera1.fy: 606.6037834985766
-Camera1.cx: 320.0
-Camera1.cy: 240.0
+# Camera calibration and distortion parameters (OpenCV format)
+# These values are extracted directly from your /car_1/rgbd_camera/depth/camera_info topic.
+# K matrix: [fx 0 cx; 0 fy cy; 0 0 1]
+Camera.fx: 554.3827056884766
+Camera.fy: 554.3827056884766
+Camera.cx: 320.0
+Camera.cy: 240.0
 
-Camera1.k1: 0.0
-Camera1.k2: 0.0
-Camera1.p1: 0.0
-Camera1.p2: 0.0
-Camera1.k3: 0.0
+# Distortion coefficients (D matrix) from your camera_info.
+# Since all values are 0.0, it indicates no distortion or already rectified images.
+Camera.k1: 0.0
+Camera.k2: 0.0
+Camera.p1: 0.0
+Camera.p2: 0.0
+Camera.k3: 0.0 # Include k3 for completeness, even if zero.
 
-# Camera frames per second 
-Camera.fps: 30
-
-# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
-Camera.RGB: 1
-
-# Camera resolution
+# Image dimensions from your camera_info.
 Camera.width: 640
 Camera.height: 480
-#--------------------------------------------------------------------------------------------
-# ORB Parameters
-#--------------------------------------------------------------------------------------------
 
-# ORB Extractor: Number of features per image
+# Camera frame rate (FPS). This is not directly in camera_info,
+# but 30.0 is a common default. Adjust if your camera operates at a different FPS.
+Camera.fps: 30.0
+
+# For RGB-D, this is the factor by which depth values in the depth image need to be divided to get meters.
+# Your depth image encoding is "32FC1", which means the data is already in meters (float).
+# Therefore, the DepthMapFactor should be 1.0.
+RGBD.DepthMapFactor: 1.0
+
+# This parameter is the maximum allowed depth in meters.
+# Points beyond this distance will not be used by ORB-SLAM3.
+# A common value for indoor/close-range environments. You can adjust based on your needs.
+Stereo.ThDepth: 10.0 # Assuming a max valid range of 10 meters from your previous input.
+
+# Set to 1 if your image is RGB, 0 if BGR.
+# Most ROS camera drivers output RGB.
+Camera.RGB: 1
+
+#--------------------------------------------------------------------------------------------
+# ORB Parameters (Feature extraction settings)
+# These are standard default values. You can tune them for specific environments.
+#--------------------------------------------------------------------------------------------
 ORBextractor.nFeatures: 1000
-
-# ORB Extractor: Scale factor between levels in the scale pyramid
 ORBextractor.scaleFactor: 1.2
-
-# ORB Extractor: Number of levels in the scale pyramid
 ORBextractor.nLevels: 8
-
-# ORB Extractor: Fast threshold
-# Image is divided in a grid. At each cell FAST are extracted imposing a minimum response.
-# Firstly we impose iniThFAST. If no corners are detected we impose a lower value minThFAST
-# You can lower these values if your images have low contrast
 ORBextractor.iniThFAST: 20
 ORBextractor.minThFAST: 7
 
 #--------------------------------------------------------------------------------------------
-# Viewer Parameters
+# Viewer Parameters (Settings for the visualization window)
+# These control the appearance of the SLAM visualization.
 #--------------------------------------------------------------------------------------------
 Viewer.KeyFrameSize: 0.05
-Viewer.KeyFrameLineWidth: 1.0
+Viewer.KeyFrameLineWidth: 1
 Viewer.GraphLineWidth: 0.9
-Viewer.PointSize: 2.0
+Viewer.PointSize: 2
 Viewer.CameraSize: 0.08
-Viewer.CameraLineWidth: 3.0
-Viewer.ViewpointX: 0.0
+Viewer.CameraLineWidth: 3
+Viewer.ViewpointX: 0
 Viewer.ViewpointY: -0.7
 Viewer.ViewpointZ: -1.8
-Viewer.ViewpointF: 500.0
+Viewer.ViewpointF: 500

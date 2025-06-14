@@ -60,16 +60,16 @@ RUN apt-get update && \
     rm -rf /Pangolin && \
     ldconfig
 
-# Install Sophus library for Lie groups
-RUN git clone https://github.com/strasdat/Sophus.git /tmp/Sophus && \
-    cd /tmp/Sophus && \
-    mkdir build && cd build && \
-    cmake .. -DCMAKE_BUILD_TYPE=Release && \
-    make -j$(nproc) && \
-    make install && \
-    cd / && \
-    rm -rf /tmp/Sophus && \
-    ldconfig
+# # Install Sophus library for Lie groups
+# RUN git clone https://github.com/strasdat/Sophus.git /tmp/Sophus && \
+#     cd /tmp/Sophus && \
+#     mkdir build && cd build && \
+#     cmake .. -DCMAKE_BUILD_TYPE=Release && \
+#     make -j$(nproc) && \
+#     make install && \
+#     cd / && \
+#     rm -rf /tmp/Sophus && \
+#     ldconfig
 
 
 # Install ORB_SLAM3 library by cloning it directly to its final destination
@@ -82,7 +82,6 @@ RUN git clone -b v1.0-release https://github.com/UZ-SLAMLab/ORB_SLAM3.git /usr/l
     ln -s /usr/local/ORB_SLAM3/lib/libORB_SLAM3.so /usr/local/lib/libORB_SLAM3.so && \
     ldconfig
 
-ENV CMAKE_PREFIX_PATH="/usr/local:$CMAKE_PREFIX_PATH"
 RUN echo 'source /opt/ros/humble/setup.bash' >> /etc/bash.bashrc
 
 ENTRYPOINT ["/bin/bash"]
