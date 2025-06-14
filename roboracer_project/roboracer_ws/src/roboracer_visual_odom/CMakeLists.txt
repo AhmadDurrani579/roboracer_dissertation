@@ -19,6 +19,7 @@ find_package(Eigen3 REQUIRED)
 find_package(Pangolin REQUIRED)
 find_package(PCL REQUIRED)
 find_package(pcl_conversions REQUIRED)
+find_package(message_filters REQUIRED)
 
 # ——— ORB-SLAM3 locations ———
 # The main directory where ORB_SLAM3 was cloned and built
@@ -79,9 +80,51 @@ ament_target_dependencies(visual_odom
   pcl_conversions
 )
 
-# Install
-install(TARGETS visual_odom
+# --- NEW: Build the rgbd_pointcloud_publisher node ---
+add_executable(rgbd_pointcloud_publisher src/rgbd_pointcloud_publisher.cpp)
+
+# Include dirs for rgbd_pointcloud_publisher (minimal, mostly just OpenCV and ROS)
+target_include_directories(rgbd_pointcloud_publisher PRIVATE
+  ${OpenCV_INCLUDE_DIRS}
+)
+
+# Link libraries for rgbd_pointcloud_publisher
+target_link_libraries(rgbd_pointcloud_publisher
+  ${OpenCV_LIBS}
+)
+
+# ROS2 dependencies for rgbd_pointcloud_publisher
+ament_target_dependencies(rgbd_pointcloud_publisher
+  rclcpp
+  sensor_msgs
+  cv_bridge
+  message_filters # <--- Needed for ApproximateTimeSynchronizer
+)
+
+# ——— Install Targets ———
+install(TARGETS
+  visual_odom
+  rgbd_pointcloud_publisher # <--- Add the new executable here
   DESTINATION lib/${PROJECT_NAME}
+)
+
+# ——— Export dependencies for the package ———
+# This ensures other packages that depend on roboracer_visual_odom can find its dependencies
+ament_export_dependencies(
+  rclcpp
+  sensor_msgs
+  geometry_msgs
+  nav_msgs
+  tf2_ros
+  tf2_geometry_msgs
+  cv_bridge
+  OpenCV # Export OpenCV if other packages might use it via this one
+  Eigen3
+  Pangolin
+  # Sophus # We are using the one from ORB_SLAM3, so not exporting the system one
+  PCL
+  pcl_conversions
+  message_filters # <--- Export message_filters
 )
 
 ament_package()
