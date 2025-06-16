@@ -140,16 +140,20 @@ The entire simulation environment is containerized using Docker and can be launc
 
 ### 🚀 How to Run
 
-The project is launched using the `run.sh` script located in the root directory.
+The project is launched using the `run.sh` script located in the root directory. Use the `--build` flag to force a rebuild of the Docker images.
 
 ```bash
+# To run with existing images
 ./run.sh
+
+# To rebuild images and then run
+./run.sh --build
 ```
 
 This script performs the following steps:
 1.  **Configures X11 forwarding** to allow GUI applications (like Gazebo and RViz) to run from within the Docker containers.
-2.  **Builds and starts the `f1tenth_gym_ros` container.** This module has its own `docker-compose.yml` which mounts the `f1tenth_gym_ros` directory into the container, allowing you to modify the code on the fly.
-3.  **Builds and starts the `roboracer_project` container.** This module also has its own `docker-compose.yml` (and a variant for NVIDIA GPUs) that mounts the project's workspace into the container.
+2.  **Builds and starts the `f1tenth_gym_ros` container.** This module has its own `docker-compose.yml` which mounts the `f1tenth_gym_ros` directory into the container.
+3.  **Builds and starts the `roboracer_project` container.** This module also has its own `docker-compose.yml` that mounts the project's workspace into the container.
 
 After running the script, two containers will be active, each with its own simulation environment.
 
@@ -184,6 +188,51 @@ Once inside the container, you can launch the simulation and your algorithms.
     source install/setup.bash
     ros2 launch pure_pursuit sim_pure_pursuit_launch.py 
     ```
+
+### 📦 Running Commands in the Roboracer Container
+
+This container is used for Gazebo simulations and testing computer vision packages like YOLO and visual odometry.
+
+1.  **Open a Shell:**
+    First, get a shell inside the running `roboracer_dissertation` container.
+    ```bash
+    docker exec -it roboracer_dissertation /bin/bash
+    ```
+
+2.  **Build and Source the Workspace:**
+    Inside the container, you will be in the `/home/dev/roboracer_ws` directory. Build the workspace and source it.
+    ```bash
+    colcon build && source install/setup.bash
+    ```
+
+3.  **Launch the Gazebo Simulation:**
+    Now, you can launch the Gazebo simulation.
+    ```bash
+    ros2 launch roboracer_description gazebo.launch.py
+    ```
+
+4.  **Running Individual Computer Vision Nodes:**
+    The following nodes can be run in separate terminals after launching the Gazebo simulation. Remember to open a new shell and source the workspace for each command.
+
+    - **Visual Odometry:**
+      ```bash
+      ros2 run roboracer_visual_odom visual_odom
+      ```
+
+    - **RGB-D Pointcloud Publisher:**
+      ```bash
+      ros2 run roboracer_visual_odom rgbd_pointcloud_publisher
+      ```
+
+    - **YOLOv8 Detection:**
+      ```bash
+      ros2 run roboracer_yolov8_detector yolov8_detection_node
+      ```
+
+    - **3D Detection:**
+      ```bash
+      ros2 run roboracer_yolov8_detector detection_3d_node
+      ```
 
 
 
