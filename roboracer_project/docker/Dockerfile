@@ -84,6 +84,7 @@ RUN git clone -b v1.0-release https://github.com/UZ-SLAMLab/ORB_SLAM3.git /usr/l
 
 RUN echo 'source /opt/ros/humble/setup.bash' >> /etc/bash.bashrc
 
+WORKDIR /home/dev/roboracer_ws
 ENTRYPOINT ["/bin/bash"]
 
 

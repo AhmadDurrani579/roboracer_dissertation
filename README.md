@@ -125,5 +125,114 @@ Ensure the LiDAR is active and publishing to /scan before launching wall_follow.
 The node will compute the best path dynamically using gap-following logic.
 
 
+## 🐳 Docker Launch
+
+The project is divided into two main modules:
+1.  **F1TENTH Gym ROS:** A simulator for testing autonomous racing algorithms for a 1/10th scale F1 car.
+2.  **Roboracer Project:** A Gazebo-based simulator for testing computer vision packages like YOLO and visual odometry.
+
+The entire simulation environment is containerized using Docker and can be launched with a single script.
+
+### Prerequisites
+
+- [Docker](https://docs.docker.com/get-docker/) installed and running.
+- [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html) for GPU acceleration (required for Gazebo).
+
+### 🚀 How to Run
+
+The project is launched using the `run.sh` script located in the root directory. Use the `--build` flag to force a rebuild of the Docker images.
+
+```bash
+# To run with existing images
+./run.sh
+
+# To rebuild images and then run
+./run.sh --build
+```
+
+This script performs the following steps:
+1.  **Configures X11 forwarding** to allow GUI applications (like Gazebo and RViz) to run from within the Docker containers.
+2.  **Builds and starts the `f1tenth_gym_ros` container.** This module has its own `docker-compose.yml` which mounts the `f1tenth_gym_ros` directory into the container.
+3.  **Builds and starts the `roboracer_project` container.** This module also has its own `docker-compose.yml` that mounts the project's workspace into the container.
+
+After running the script, two containers will be active, each with its own simulation environment.
+
+### 📦 Running Commands in the F1TENTH Container
+
+To run commands inside the `f1tenth_gym_ros` container, you first need to open a shell in it:
+
+```bash
+docker exec -it f1tenth_gym_ros-sim-1 /bin/bash
+```
+
+Once inside the container, you can launch the simulation and your algorithms.
+
+1.  **Source the ROS 2 Workspace:**
+    Before running any ROS 2 commands, you need to source the workspace:
+    ```bash
+    colcon build && source install/setup.bash
+    ```
+
+2.  **Launch the Simulator:**
+    Use `ros2 launch` to start the F1TENTH simulator.
+
+    ```bash
+    ros2 launch f1tenth_gym_ros gym_bridge_launch.py
+    ```
+
+3.  **Run PP Algorithm:**
+    In a **new terminal**, open another shell in the container and run your algorithm.
+
+    ```bash
+    docker exec -it f1tenth_gym_ros-sim-1 /bin/bash
+    source install/setup.bash
+    ros2 launch pure_pursuit sim_pure_pursuit_launch.py 
+    ```
+
+### 📦 Running Commands in the Roboracer Container
+
+This container is used for Gazebo simulations and testing computer vision packages like YOLO and visual odometry.
+
+1.  **Open a Shell:**
+    First, get a shell inside the running `roboracer_dissertation` container.
+    ```bash
+    docker exec -it roboracer_dissertation /bin/bash
+    ```
+
+2.  **Build and Source the Workspace:**
+    Inside the container, you will be in the `/home/dev/roboracer_ws` directory. Build the workspace and source it.
+    ```bash
+    colcon build && source install/setup.bash
+    ```
+
+3.  **Launch the Gazebo Simulation:**
+    Now, you can launch the Gazebo simulation.
+    ```bash
+    ros2 launch roboracer_description gazebo.launch.py
+    ```
+
+4.  **Running Individual Computer Vision Nodes:**
+    The following nodes can be run in separate terminals after launching the Gazebo simulation. Remember to open a new shell and source the workspace for each command.
+
+    - **Visual Odometry:**
+      ```bash
+      ros2 run roboracer_visual_odom visual_odom
+      ```
+
+    - **RGB-D Pointcloud Publisher:**
+      ```bash
+      ros2 run roboracer_visual_odom rgbd_pointcloud_publisher
+      ```
+
+    - **YOLOv8 Detection:**
+      ```bash
+      ros2 run roboracer_yolov8_detector yolov8_detection_node
+      ```
+
+    - **3D Detection:**
+      ```bash
+      ros2 run roboracer_yolov8_detector detection_3d_node
+      ```
+
 
 
