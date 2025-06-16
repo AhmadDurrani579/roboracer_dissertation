@@ -125,5 +125,65 @@ Ensure the LiDAR is active and publishing to /scan before launching wall_follow.
 The node will compute the best path dynamically using gap-following logic.
 
 
+## 🐳 Docker Launch
+
+The project is divided into two main modules:
+1.  **F1TENTH Gym ROS:** A simulator for testing autonomous racing algorithms for a 1/10th scale F1 car.
+2.  **Roboracer Project:** A Gazebo-based simulator for testing computer vision packages like YOLO and visual odometry.
+
+The entire simulation environment is containerized using Docker and can be launched with a single script.
+
+### Prerequisites
+
+- [Docker](https://docs.docker.com/get-docker/) installed and running.
+- [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html) for GPU acceleration (required for Gazebo).
+
+### 🚀 How to Run
+
+The project is launched using the `run.sh` script located in the root directory.
+
+```bash
+./run.sh
+```
+
+This script performs the following steps:
+1.  **Configures X11 forwarding** to allow GUI applications (like Gazebo and RViz) to run from within the Docker containers.
+2.  **Builds and starts the `f1tenth_gym_ros` container.** This module has its own `docker-compose.yml` which mounts the `f1tenth_gym_ros` directory into the container, allowing you to modify the code on the fly.
+3.  **Builds and starts the `roboracer_project` container.** This module also has its own `docker-compose.yml` (and a variant for NVIDIA GPUs) that mounts the project's workspace into the container.
+
+After running the script, two containers will be active, each with its own simulation environment.
+
+### 📦 Running Commands in the F1TENTH Container
+
+To run commands inside the `f1tenth_gym_ros` container, you first need to open a shell in it:
+
+```bash
+docker exec -it f1tenth_gym_ros-sim-1 /bin/bash
+```
+
+Once inside the container, you can launch the simulation and your algorithms.
+
+1.  **Source the ROS 2 Workspace:**
+    Before running any ROS 2 commands, you need to source the workspace:
+    ```bash
+    colcon build && source install/setup.bash
+    ```
+
+2.  **Launch the Simulator:**
+    Use `ros2 launch` to start the F1TENTH simulator.
+
+    ```bash
+    ros2 launch f1tenth_gym_ros gym_bridge_launch.py
+    ```
+
+3.  **Run PP Algorithm:**
+    In a **new terminal**, open another shell in the container and run your algorithm.
+
+    ```bash
+    docker exec -it f1tenth_gym_ros-sim-1 /bin/bash
+    source install/setup.bash
+    ros2 launch pure_pursuit sim_pure_pursuit_launch.py 
+    ```
+
 
 
