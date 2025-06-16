@@ -17,68 +17,74 @@ find_package(cv_bridge REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(Pangolin REQUIRED)
+find_package(Sophus REQUIRED)
 find_package(PCL REQUIRED)
 find_package(pcl_conversions REQUIRED)
-find_package(message_filters REQUIRED)
+find_package(message_filters REQUIRED) # <--- Ensure message_filters is found here
 
 # ——— ORB-SLAM3 locations ———
-# The main directory where ORB_SLAM3 was cloned and built
-set(ORB_SLAM3_ROOT "/usr/local/ORB_SLAM3")
-set(ORB_SLAM3_LIB "${ORB_SLAM3_ROOT}/lib/libORB_SLAM3.so")
+set(ORB_SLAM3_INC  "/usr/local/include/ORB_SLAM3")  # Updated to installed location
+set(ORB_SLAM3_LIB  "/usr/local/lib/libORB_SLAM3.so") # Updated to installed location
 
 # Critical additional includes
 set(ORB_SLAM3_EXTRA_INCLUDES
   "/usr/local/include/ORB_SLAM3/CameraModels"
-  "/usr/local/include/ORB_SLAM3/Thirdparty/DBoW2/DBoW2"  # Changed from .../include
+  "/usr/local/include/ORB_SLAM3/Thirdparty/DBoW2/DBoW2"
   "/usr/local/include/ORB_SLAM3/Thirdparty/g2o"
   "/usr/local/include/ORB_SLAM3/Thirdparty/Sophus"
 )
 
-# ——— Build the node ———
-add_executable(visual_odom src/visual_odom.cpp)
+# ——— Build the visual_odom node ———
+add_executable(visual_odom src/visual_odom.cpp) # Assuming your ORB-SLAM3 node source is visual_odom.cpp
 
-# Include dirs
+# Include dirs for visual_odom
 target_include_directories(visual_odom PRIVATE
-  "${ORB_SLAM3_ROOT}" # This allows includes like "Thirdparty/DBoW2/..."
-  "${ORB_SLAM3_ROOT}/include" # This allows includes like "System.h"
-  "${ORB_SLAM3_ROOT}/include/CameraModels" # This allows includes like "GeometricCamera.h"
-  "${ORB_SLAM3_ROOT}/Thirdparty/Sophus"
+  "/usr/local/include/ORB_SLAM3"
+  "/usr/local/include/ORB_SLAM3/Thirdparty/DBoW2"
+  "/usr/local/include/ORB_SLAM3/Thirdparty/DBoW2/DBoW2"
+  "/usr/local/include/ORB_SLAM3/Thirdparty/g2o"
+  ${ORB_SLAM3_INC}
+  ${ORB_SLAM3_EXTRA_INCLUDES}
+  ${Sophus_INCLUDE_DIRS}
   ${OpenCV_INCLUDE_DIRS}
   ${EIGEN3_INCLUDE_DIRS}
   ${Pangolin_INCLUDE_DIRS}
   ${PCL_INCLUDE_DIRS}
 )
 
-# Link libraries
+# Link libraries for visual_odom
 target_link_libraries(visual_odom
   ${ORB_SLAM3_LIB}
-  ${OpenCV_LIBS}           # Use _LIBS instead of _LIBRARIES
+  Sophus::Sophus
+  ${OpenCV_LIBS}
   Eigen3::Eigen
   ${Pangolin_LIBRARIES}
   ${PCL_LIBRARIES}
-  ${PCL_COMMON_LIBRARIES}  # Additional PCL libs
+  ${PCL_COMMON_LIBRARIES}
   ${PCL_IO_LIBRARIES}
   GL
   GLEW
   pthread
-  dl                       # Add dynamic linking library
+  dl
 )
 
-# Threading support
+# Threading support for visual_odom
 target_compile_options(visual_odom PRIVATE -pthread)
 target_link_options(visual_odom PRIVATE -pthread)
 
-# ROS2 dependencies
+# ROS2 dependencies for visual_odom
 ament_target_dependencies(visual_odom
-  rclcpp 
-  sensor_msgs 
-  geometry_msgs 
+  rclcpp
+  sensor_msgs
+  geometry_msgs
   nav_msgs
-  tf2_ros 
-  tf2_geometry_msgs 
-  cv_bridge 
+  tf2_ros
+  tf2_geometry_msgs
+  cv_bridge
   pcl_conversions
+  message_filters # <--- ensure message_filters is here if visual_odom uses it
 )
+
 
 # --- NEW: Build the rgbd_pointcloud_publisher node ---
 add_executable(rgbd_pointcloud_publisher src/rgbd_pointcloud_publisher.cpp)
@@ -101,6 +107,7 @@ ament_target_dependencies(rgbd_pointcloud_publisher
   message_filters # <--- Needed for ApproximateTimeSynchronizer
 )
 
+
 # ——— Install Targets ———
 install(TARGETS
   visual_odom
@@ -121,7 +128,7 @@ ament_export_dependencies(
   OpenCV # Export OpenCV if other packages might use it via this one
   Eigen3
   Pangolin
-  # Sophus # We are using the one from ORB_SLAM3, so not exporting the system one
+  Sophus
   PCL
   pcl_conversions
   message_filters # <--- Export message_filters
