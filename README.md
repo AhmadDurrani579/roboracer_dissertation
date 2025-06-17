@@ -131,7 +131,7 @@ The project is divided into two main modules:
 1.  **F1TENTH Gym ROS:** A simulator for testing autonomous racing algorithms for a 1/10th scale F1 car.
 2.  **Roboracer Project:** A Gazebo-based simulator for testing computer vision packages like YOLO and visual odometry.
 
-The entire simulation environment is containerized using Docker and can be launched with dedicated scripts for each module.
+The entire simulation environment is containerized using Docker and can be launched with a single script.
 
 ### Prerequisites
 
@@ -140,31 +140,22 @@ The entire simulation environment is containerized using Docker and can be launc
 
 ### 🚀 How to Run
 
-The project is launched using dedicated scripts for each module, located in the root directory. Use the `--build` flag to force a rebuild of the Docker images.
+The project is launched using the `run.sh` script located in the root directory. Use the `--build` flag to force a rebuild of the Docker images.
 
--   **To launch the F1TENTH Gym ROS simulator:**
-    ```bash
-    # To run with existing images
-    ./run_f1tenth.sh
+```bash
+# To run with existing images
+./run.sh
 
-    # To rebuild images and then run
-    ./run_f1tenth.sh --build
-    ```
+# To rebuild images and then run
+./run.sh --build
+```
 
--   **To launch the Roboracer Gazebo simulator:**
-    ```bash
-    # To run with existing images
-    ./run_roboracer.sh
-
-    # To rebuild images and then run
-    ./run_roboracer.sh --build
-    ```
-
-These scripts perform the following steps:
+This script performs the following steps:
 1.  **Configures X11 forwarding** to allow GUI applications (like Gazebo and RViz) to run from within the Docker containers.
-2.  **Builds and starts the corresponding container** (`f1tenth_gym_ros` or `roboracer_project`). Each module has its own `docker-compose.yml` which mounts the necessary directories into the container.
+2.  **Builds and starts the `f1tenth_gym_ros` container.** This module has its own `docker-compose.yml` which mounts the `f1tenth_gym_ros` directory into the container.
+3.  **Builds and starts the `roboracer_project` container.** This module also has its own `docker-compose.yml` that mounts the project's workspace into the container.
 
-After running the desired script, a container will be active with its simulation environment.
+After running the script, two containers will be active, each with its own simulation environment.
 
 ### 📦 Running Commands in the F1TENTH Container
 

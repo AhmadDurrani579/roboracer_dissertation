@@ -37,9 +37,9 @@ RUN apt-get -y dist-upgrade
 RUN pip3 install transforms3d
 
 # f1tenth gym
-RUN git clone https://github.com/f1tenth/f1tenth_gym
-RUN cd f1tenth_gym && \
-    pip3 install -e .
+# RUN git clone https://github.com/f1tenth/f1tenth_gym
+# RUN cd f1tenth_gym && \
+#     pip3 install -e .
 
 # ros2 gym bridge
 RUN mkdir -p sim_ws/src/f1tenth_gym_ros

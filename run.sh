@@ -19,6 +19,12 @@ fi
 xauth nlist $DISPLAY | sed -e 's/^..../ffff/' | xauth -f $XAUTH_FILE nmerge -
 chmod 644 $XAUTH_FILE
 
+echo "Starting f1tenth_gym_ros container..."
+cd f1tenth_gym_ros
+docker compose up -d $BUILD_FLAG
+
+cd ..
+
 echo "Starting roboracer container..."
 cd roboracer_project
 # Select compose file based on GPU availability
@@ -29,4 +35,4 @@ else
 fi
 # Run roboracer container
 docker compose -f $COMPOSE_FILE run --rm $BUILD_FLAG roboracer_dissertation
-cd .. 
+cd ..
