@@ -1,12 +1,14 @@
 name: roboracer_dissertation
 services:
   roboracer_dissertation:
+    image: roboracer_dissertation:latest
     build:
       context: ..
       dockerfile: docker/Dockerfile
     container_name: roboracer_dissertation
     network_mode: host
     working_dir: /home/dev/roboracer_ws
+    restart: "no"
     environment:
       - DISPLAY=${DISPLAY}
       - QT_X11_NO_MITSHM=1

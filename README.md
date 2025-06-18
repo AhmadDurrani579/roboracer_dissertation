@@ -168,13 +168,7 @@ After running the desired script, a container will be active with its simulation
 
 ### 📦 Running Commands in the F1TENTH Container
 
-To run commands inside the `f1tenth_gym_ros` container, you first need to open a shell in it:
-
-```bash
-docker exec -it f1tenth_gym_ros-sim-1 /bin/bash
-```
-
-Once inside the container, you can launch the simulation and your algorithms.
+When you run `./run_f1tenth.sh`, you will be automatically connected to the F1TENTH container with an interactive shell. Once inside the container, you can launch the simulation and your algorithms.
 
 1.  **Source the ROS 2 Workspace:**
     Before running any ROS 2 commands, you need to source the workspace:
@@ -190,56 +184,58 @@ Once inside the container, you can launch the simulation and your algorithms.
     ```
 
 3.  **Run PP Algorithm:**
-    In a **new terminal**, open another shell in the container and run your algorithm.
+    In a **new terminal**, start another F1TENTH container and run your algorithm:
 
     ```bash
-    docker exec -it f1tenth_gym_ros-sim-1 /bin/bash
+    ./run_f1tenth.sh
+    # Once inside the container:
     source install/setup.bash
     ros2 launch pure_pursuit sim_pure_pursuit_launch.py 
     ```
 
 ### 📦 Running Commands in the Roboracer Container
 
-This container is used for Gazebo simulations and testing computer vision packages like YOLO and visual odometry.
+When you run `./run_roboracer.sh`, you will be automatically connected to the Roboracer container with an interactive shell. This container is used for Gazebo simulations and testing computer vision packages like YOLO and visual odometry.
 
-1.  **Open a Shell:**
-    First, get a shell inside the running `roboracer_dissertation` container.
-    ```bash
-    docker exec -it roboracer_dissertation /bin/bash
-    ```
-
-2.  **Build and Source the Workspace:**
-    Inside the container, you will be in the `/home/dev/roboracer_ws` directory. Build the workspace and source it.
+1.  **Launch the Gazebo Simulation:**
+    First, launch the Gazebo simulation:
     ```bash
     colcon build && source install/setup.bash
-    ```
-
-3.  **Launch the Gazebo Simulation:**
-    Now, you can launch the Gazebo simulation.
-    ```bash
     ros2 launch roboracer_description gazebo.launch.py
     ```
 
-4.  **Running Individual Computer Vision Nodes:**
-    The following nodes can be run in separate terminals after launching the Gazebo simulation. Remember to open a new shell and source the workspace for each command.
+2.  **Running Individual Computer Vision Nodes:**
+    The following nodes can be run in separate terminals after launching the Gazebo simulation. For each command, start a new roboracer container in a new terminal:
 
     - **Visual Odometry:**
       ```bash
+      ./run_roboracer.sh
+      # Once inside the container:
+      source install/setup.bash
       ros2 run roboracer_visual_odom visual_odom
       ```
 
     - **RGB-D Pointcloud Publisher:**
       ```bash
+      ./run_roboracer.sh
+      # Once inside the container:
+      source install/setup.bash
       ros2 run roboracer_visual_odom rgbd_pointcloud_publisher
       ```
 
     - **YOLOv8 Detection:**
       ```bash
+      ./run_roboracer.sh
+      # Once inside the container:
+      source install/setup.bash
       ros2 run roboracer_yolov8_detector yolov8_detection_node
       ```
 
     - **3D Detection:**
       ```bash
+      ./run_roboracer.sh
+      # Once inside the container:
+      source install/setup.bash
       ros2 run roboracer_yolov8_detector detection_3d_node
       ```
 

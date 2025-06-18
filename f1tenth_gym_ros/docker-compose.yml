@@ -20,14 +20,17 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-version: '3'
 services:
   sim:
     image: f1tenth_gym_ros:latest
-    build: ./
+    container_name: f1tenth_gym_ros_sim
+    build: 
+      context: ./
+      dockerfile: Dockerfile
     network_mode: host
     stdin_open: true
     tty: true
+    restart: "no"
     environment:
       - DISPLAY=${DISPLAY}
       - QT_X11_NO_MITSHM=1

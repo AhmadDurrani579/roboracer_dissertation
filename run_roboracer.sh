@@ -1,11 +1,16 @@
 #!/bin/bash
 
 BUILD_FLAG=""
-# Check for --build argument
-if [ "$1" == "--build" ]; then
-  BUILD_FLAG="--build"
-  echo "Rebuilding images as requested..."
-fi
+
+# Parse arguments
+for arg in "$@"; do
+  case $arg in
+    --build)
+      BUILD_FLAG="--build"
+      echo "Rebuilding images as requested..."
+      ;;
+  esac
+done
 
 echo "Setting up X11 for GUI applications..."
 # Allow X11 forwarding
@@ -21,12 +26,28 @@ chmod 644 $XAUTH_FILE
 
 echo "Starting roboracer container..."
 cd roboracer_project
+
 # Select compose file based on GPU availability
 if command -v nvidia-smi > /dev/null 2>&1; then
     COMPOSE_FILE="docker/docker-roboracer-compose-nvidia.yml"
 else
     COMPOSE_FILE="docker/docker-roboracer-compose.yml"
 fi
-# Run roboracer container
-docker compose -f $COMPOSE_FILE run --rm $BUILD_FLAG roboracer_dissertation
+
+# Stop existing container if running
+docker compose -f $COMPOSE_FILE down --remove-orphans 2>/dev/null
+
+# Start fresh container in detached mode
+docker compose -f $COMPOSE_FILE up -d $BUILD_FLAG --remove-orphans
+
+echo "Container started. Connecting to shell..."
+echo "To exit, type 'exit'. To reconnect later, run: docker compose -f $COMPOSE_FILE exec roboracer_dissertation bash"
+
+# Connect to the running container
+docker compose -f $COMPOSE_FILE exec roboracer_dissertation bash
+
+# Always remove the container after exit
+echo "Removing container..."
+docker compose -f $COMPOSE_FILE down --remove-orphans
+
 cd .. 
