@@ -1,0 +1,6 @@
+Invoking command in '/home/dev/roboracer_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/pure_pursuit -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/pure_pursuit
+Invoked command in '/home/dev/roboracer_ws/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/pure_pursuit -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/pure_pursuit
+Invoking command in '/home/dev/roboracer_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/pure_pursuit -- -j8 -l8
+Invoked command in '/home/dev/roboracer_ws/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/pure_pursuit -- -j8 -l8
+Invoking command in '/home/dev/roboracer_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/pure_pursuit
+Invoked command in '/home/dev/roboracer_ws/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/pure_pursuit

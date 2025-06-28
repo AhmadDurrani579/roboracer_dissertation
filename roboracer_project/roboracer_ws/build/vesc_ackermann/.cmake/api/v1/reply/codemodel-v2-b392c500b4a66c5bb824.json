@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-72d0e661fdd75a037ef4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "vesc_ackermann",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ackermann_to_vesc_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ackermann_to_vesc_node-2c947e1dcbc7cb8c38de.json",
+					"name" : "ackermann_to_vesc_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-151d4b3ae9bdc319af9c.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vesc_ackermann::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vesc_ackermann-734d7a28f73581fcbac1.json",
+					"name" : "vesc_ackermann",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vesc_ackermann_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vesc_ackermann_uninstall-06d1fad146f0f6c3891c.json",
+					"name" : "vesc_ackermann_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vesc_to_odom_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vesc_to_odom_node-de8ea2ec57e03c525834.json",
+					"name" : "vesc_to_odom_node",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/dev/roboracer_ws/build/vesc_ackermann",
+		"source" : "/home/dev/roboracer_ws/src/vesc/vesc_ackermann"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

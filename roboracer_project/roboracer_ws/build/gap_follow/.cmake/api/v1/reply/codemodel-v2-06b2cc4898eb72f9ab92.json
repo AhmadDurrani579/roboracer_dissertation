@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-79ca8c5289d5e72b3f21.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "gap_follow",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_gap_follow_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_gap_follow_egg-f669280cf80ebd1fd46d.json",
+					"name" : "ament_cmake_python_build_gap_follow_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_gap_follow::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_gap_follow-220a5cbc20214e2b498b.json",
+					"name" : "ament_cmake_python_copy_gap_follow",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_gap_follow_setup::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_gap_follow_setup-94b91ad93096e4ead938.json",
+					"name" : "ament_cmake_python_copy_gap_follow_setup",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gap_follow_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gap_follow_uninstall-6c6b346251059d7a3174.json",
+					"name" : "gap_follow_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "reactive_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-reactive_node-a49d180df5be545865d5.json",
+					"name" : "reactive_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-ce447b45e650abc366a4.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/dev/roboracer_ws/build/gap_follow",
+		"source" : "/home/dev/roboracer_ws/src/gap_follow"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

@@ -1,0 +1,38 @@
+[0.039s] Invoking command in '/home/dev/roboracer_ws/build/ackermann_mux': CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/vesc:/home/dev/roboracer_ws/install/vesc_driver:/home/dev/roboracer_ws/install/vesc_ackermann:/home/dev/roboracer_ws/install/roboracer_yolov8_detector:/home/dev/roboracer_ws/install/roboracer_py:/opt/ros/humble:/home/dev/roboracer_ws/install/vesc_msgs:/home/dev/roboracer_ws/install/udp_driver:/home/dev/roboracer_ws/install/serial_driver:/home/dev/roboracer_ws/install/roboracer_visual_odom:/home/dev/roboracer_ws/install/roboracer_localization:/home/dev/roboracer_ws/install/roboracer_description:/home/dev/roboracer_ws/install/roboracer_controller:/home/dev/roboracer_ws/install/pure_pursuit:/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/gap_follow:/home/dev/roboracer_ws/install/asio_cmake_module:/home/dev/roboracer_ws/install/ackermann_mux /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/ackermann_mux -- -j8 -l8
+[0.196s] [100%] Built target ackermann_mux
+[0.260s] Invoked command in '/home/dev/roboracer_ws/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/vesc:/home/dev/roboracer_ws/install/vesc_driver:/home/dev/roboracer_ws/install/vesc_ackermann:/home/dev/roboracer_ws/install/roboracer_yolov8_detector:/home/dev/roboracer_ws/install/roboracer_py:/opt/ros/humble:/home/dev/roboracer_ws/install/vesc_msgs:/home/dev/roboracer_ws/install/udp_driver:/home/dev/roboracer_ws/install/serial_driver:/home/dev/roboracer_ws/install/roboracer_visual_odom:/home/dev/roboracer_ws/install/roboracer_localization:/home/dev/roboracer_ws/install/roboracer_description:/home/dev/roboracer_ws/install/roboracer_controller:/home/dev/roboracer_ws/install/pure_pursuit:/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/gap_follow:/home/dev/roboracer_ws/install/asio_cmake_module:/home/dev/roboracer_ws/install/ackermann_mux /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/ackermann_mux -- -j8 -l8
+[0.261s] Invoking command in '/home/dev/roboracer_ws/build/ackermann_mux': CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/vesc:/home/dev/roboracer_ws/install/vesc_driver:/home/dev/roboracer_ws/install/vesc_ackermann:/home/dev/roboracer_ws/install/roboracer_yolov8_detector:/home/dev/roboracer_ws/install/roboracer_py:/opt/ros/humble:/home/dev/roboracer_ws/install/vesc_msgs:/home/dev/roboracer_ws/install/udp_driver:/home/dev/roboracer_ws/install/serial_driver:/home/dev/roboracer_ws/install/roboracer_visual_odom:/home/dev/roboracer_ws/install/roboracer_localization:/home/dev/roboracer_ws/install/roboracer_description:/home/dev/roboracer_ws/install/roboracer_controller:/home/dev/roboracer_ws/install/pure_pursuit:/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/gap_follow:/home/dev/roboracer_ws/install/asio_cmake_module:/home/dev/roboracer_ws/install/ackermann_mux /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/ackermann_mux
+[0.380s] -- Install configuration: ""
+[0.381s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/lib/ackermann_mux/ackermann_mux
+[0.382s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/launch
+[0.382s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/launch/ackermann_mux_launch.py
+[0.382s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/config
+[0.382s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/config/ackermann_mux_topics.yaml
+[0.382s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/config/joystick.yaml
+[0.382s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/config/ackermann_mux_locks.yaml
+[0.382s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/include
+[0.382s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/include/ackermann_mux
+[0.382s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/include/ackermann_mux/utils.hpp
+[0.383s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/include/ackermann_mux/params_helpers.hpp
+[0.383s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux_diagnostics.hpp
+[0.383s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux.hpp
+[0.388s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/include/ackermann_mux/topic_handle.hpp
+[0.388s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux_diagnostics_status.hpp
+[0.388s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/share/ament_index/resource_index/package_run_dependencies/ackermann_mux
+[0.388s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/share/ament_index/resource_index/parent_prefix_path/ackermann_mux
+[0.388s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/environment/ament_prefix_path.sh
+[0.388s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/environment/ament_prefix_path.dsv
+[0.388s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/environment/path.sh
+[0.388s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/environment/path.dsv
+[0.388s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/local_setup.bash
+[0.388s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/local_setup.sh
+[0.388s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/local_setup.zsh
+[0.388s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/local_setup.dsv
+[0.389s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/package.dsv
+[0.389s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/share/ament_index/resource_index/packages/ackermann_mux
+[0.389s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.389s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.389s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/cmake/ackermann_muxConfig.cmake
+[0.389s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/cmake/ackermann_muxConfig-version.cmake
+[0.389s] -- Up-to-date: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/package.xml
+[0.539s] Invoked command in '/home/dev/roboracer_ws/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/vesc:/home/dev/roboracer_ws/install/vesc_driver:/home/dev/roboracer_ws/install/vesc_ackermann:/home/dev/roboracer_ws/install/roboracer_yolov8_detector:/home/dev/roboracer_ws/install/roboracer_py:/opt/ros/humble:/home/dev/roboracer_ws/install/vesc_msgs:/home/dev/roboracer_ws/install/udp_driver:/home/dev/roboracer_ws/install/serial_driver:/home/dev/roboracer_ws/install/roboracer_visual_odom:/home/dev/roboracer_ws/install/roboracer_localization:/home/dev/roboracer_ws/install/roboracer_description:/home/dev/roboracer_ws/install/roboracer_controller:/home/dev/roboracer_ws/install/pure_pursuit:/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/gap_follow:/home/dev/roboracer_ws/install/asio_cmake_module:/home/dev/roboracer_ws/install/ackermann_mux /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/ackermann_mux

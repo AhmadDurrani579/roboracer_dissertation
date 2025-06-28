@@ -1,0 +1,24 @@
+[0.034s] Invoking command in '/home/dev/roboracer_ws/build/asio_cmake_module': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/asio_cmake_module -- -j8 -l8
+[0.401s] Invoked command in '/home/dev/roboracer_ws/build/asio_cmake_module' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/asio_cmake_module -- -j8 -l8
+[0.403s] Invoking command in '/home/dev/roboracer_ws/build/asio_cmake_module': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/asio_cmake_module
+[0.509s] -- Install configuration: ""
+[0.510s] -- Up-to-date: /home/dev/roboracer_ws/install/asio_cmake_module/share/ament_index/resource_index/package_run_dependencies/asio_cmake_module
+[0.510s] -- Up-to-date: /home/dev/roboracer_ws/install/asio_cmake_module/share/ament_index/resource_index/parent_prefix_path/asio_cmake_module
+[0.510s] -- Up-to-date: /home/dev/roboracer_ws/install/asio_cmake_module/share/asio_cmake_module/environment/ament_prefix_path.sh
+[0.510s] -- Up-to-date: /home/dev/roboracer_ws/install/asio_cmake_module/share/asio_cmake_module/environment/ament_prefix_path.dsv
+[0.510s] -- Up-to-date: /home/dev/roboracer_ws/install/asio_cmake_module/share/asio_cmake_module/environment/path.sh
+[0.510s] -- Up-to-date: /home/dev/roboracer_ws/install/asio_cmake_module/share/asio_cmake_module/environment/path.dsv
+[0.511s] -- Up-to-date: /home/dev/roboracer_ws/install/asio_cmake_module/share/asio_cmake_module/local_setup.bash
+[0.511s] -- Up-to-date: /home/dev/roboracer_ws/install/asio_cmake_module/share/asio_cmake_module/local_setup.sh
+[0.511s] -- Up-to-date: /home/dev/roboracer_ws/install/asio_cmake_module/share/asio_cmake_module/local_setup.zsh
+[0.511s] -- Up-to-date: /home/dev/roboracer_ws/install/asio_cmake_module/share/asio_cmake_module/local_setup.dsv
+[0.512s] -- Installing: /home/dev/roboracer_ws/install/asio_cmake_module/share/asio_cmake_module/package.dsv
+[0.512s] -- Up-to-date: /home/dev/roboracer_ws/install/asio_cmake_module/share/ament_index/resource_index/packages/asio_cmake_module
+[0.513s] -- Up-to-date: /home/dev/roboracer_ws/install/asio_cmake_module/share/asio_cmake_module/cmake/asio_cmake_module-extras.cmake
+[0.513s] -- Up-to-date: /home/dev/roboracer_ws/install/asio_cmake_module/share/asio_cmake_module/cmake/asio_cmake_moduleConfig.cmake
+[0.513s] -- Up-to-date: /home/dev/roboracer_ws/install/asio_cmake_module/share/asio_cmake_module/cmake/asio_cmake_moduleConfig-version.cmake
+[0.513s] -- Up-to-date: /home/dev/roboracer_ws/install/asio_cmake_module/share/asio_cmake_module/package.xml
+[0.513s] -- Up-to-date: /home/dev/roboracer_ws/install/asio_cmake_module/share/asio_cmake_module/cmake
+[0.514s] -- Up-to-date: /home/dev/roboracer_ws/install/asio_cmake_module/share/asio_cmake_module/cmake/Modules
+[0.514s] -- Up-to-date: /home/dev/roboracer_ws/install/asio_cmake_module/share/asio_cmake_module/cmake/Modules/FindASIO.cmake
+[0.560s] Invoked command in '/home/dev/roboracer_ws/build/asio_cmake_module' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/asio_cmake_module

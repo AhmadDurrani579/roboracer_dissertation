@@ -1,0 +1,83 @@
+[0.029s] Invoking command in '/home/dev/roboracer_ws/build/roboracer_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/roboracer_controller -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/roboracer_controller
+[0.343s] -- The C compiler identification is GNU 11.4.0
+[0.343s] -- The CXX compiler identification is GNU 11.4.0
+[0.344s] -- Detecting C compiler ABI info
+[0.344s] -- Detecting C compiler ABI info - done
+[0.344s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.344s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.344s]   CMake.
+[0.344s] 
+[0.344s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.345s]   to tell CMake that the project requires at least <min> but has been updated
+[0.345s]   to work with policies introduced by <max> or earlier.
+[0.345s] 
+[0.345s] [0m
+[0.350s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.350s] -- Detecting C compile features
+[0.350s] -- Detecting C compile features - done
+[0.365s] -- Detecting CXX compiler ABI info
+[0.467s] -- Detecting CXX compiler ABI info - done
+[0.494s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.494s] -- Detecting CXX compile features
+[0.495s] -- Detecting CXX compile features - done
+[0.509s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.674s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.831s] -- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)
+[0.837s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.908s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.925s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.943s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.976s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.012s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.097s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.130s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.163s] -- Found tf2_ros: 0.25.13 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.309s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.316s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.459s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")
+[1.520s] -- Found FastRTPS: /opt/ros/humble/include
+[1.602s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.621s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.707s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.710s] -- Found Threads: TRUE
+[1.968s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/humble/share/ackermann_msgs/cmake)
+[1.995s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.110s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.113s] -- Added test 'lint_cmake' to check CMake code style
+[2.114s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.117s] -- Added test 'xmllint' to check XML markup files
+[2.120s] -- Configuring done (2.0s)
+[2.135s] -- Generating done (0.0s)
+[2.136s] -- Build files have been written to: /home/dev/roboracer_ws/build/roboracer_controller
+[2.153s] Invoked command in '/home/dev/roboracer_ws/build/roboracer_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/roboracer_controller -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/roboracer_controller
+[2.156s] Invoking command in '/home/dev/roboracer_ws/build/roboracer_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/roboracer_controller -- -j8 -l8
+[2.293s] Invoked command in '/home/dev/roboracer_ws/build/roboracer_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/roboracer_controller -- -j8 -l8
+[2.301s] Invoking command in '/home/dev/roboracer_ws/build/roboracer_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/roboracer_controller
+[2.407s] -- Install configuration: ""
+[2.407s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/config
+[2.408s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/config/joy_config.yaml
+[2.411s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/config/joystick_teleop.launch.yaml
+[2.411s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/config/roboracer_controller.yaml
+[2.412s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/launch
+[2.412s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/launch/controller.launch.py
+[2.412s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/lib/roboracer_controller/ackerman_controller.py
+[2.413s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/lib/roboracer_controller/ackermann_to_twist.py
+[2.413s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/lib/roboracer_controller/noisy_controller.py
+[2.413s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/lib/roboracer_controller/static_tf_publisher.py
+[2.413s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/lib/roboracer_controller/custom_robot_state_publisher.py
+[2.417s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/share/ament_index/resource_index/package_run_dependencies/roboracer_controller
+[2.417s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/share/ament_index/resource_index/parent_prefix_path/roboracer_controller
+[2.417s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/environment/ament_prefix_path.sh
+[2.419s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/environment/ament_prefix_path.dsv
+[2.419s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/environment/path.sh
+[2.419s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/environment/path.dsv
+[2.419s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/local_setup.bash
+[2.419s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/local_setup.sh
+[2.419s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/local_setup.zsh
+[2.419s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/local_setup.dsv
+[2.420s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/package.dsv
+[2.420s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/share/ament_index/resource_index/packages/roboracer_controller
+[2.420s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/cmake/roboracer_controllerConfig.cmake
+[2.420s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/cmake/roboracer_controllerConfig-version.cmake
+[2.420s] -- Installing: /home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/package.xml
+[2.422s] Invoked command in '/home/dev/roboracer_ws/build/roboracer_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/roboracer_controller

@@ -1,0 +1,10 @@
+[  0%] Built target ament_cmake_python_copy_gap_follow
+[  0%] Built target ament_cmake_python_copy_gap_follow_setup
+[100%] Built target reactive_node
+running egg_info
+writing gap_follow.egg-info/PKG-INFO
+writing dependency_links to gap_follow.egg-info/dependency_links.txt
+writing top-level names to gap_follow.egg-info/top_level.txt
+reading manifest file 'gap_follow.egg-info/SOURCES.txt'
+writing manifest file 'gap_follow.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_gap_follow_egg

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/dev/roboracer_ws/build/roboracer_visual_odom/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

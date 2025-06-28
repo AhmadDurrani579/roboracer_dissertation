@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/dev/roboracer_ws/build/asio_cmake_module/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

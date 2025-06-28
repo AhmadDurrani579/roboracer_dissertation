@@ -1,0 +1,29 @@
+/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  warnings.warn(
+/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+  warnings.warn(
+[01m[K/home/loq/roboracer_ws/roboracer_dissertation/roboracer_project/roboracer_ws/src/gap_follow/src/reactive_node.cpp:[m[K In member function ‘[01m[Kvoid ReactiveFollowGap::preprocess_lidar(float*)[m[K’:
+[01m[K/home/loq/roboracer_ws/roboracer_dissertation/roboracer_project/roboracer_ws/src/gap_follow/src/reactive_node.cpp:24:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kranges[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   24 |     void preprocess_lidar([01;35m[Kfloat* ranges[m[K)
+      |                           [01;35m[K~~~~~~~^~~~~~[m[K
+[01m[K/home/loq/roboracer_ws/roboracer_dissertation/roboracer_project/roboracer_ws/src/gap_follow/src/reactive_node.cpp:[m[K In member function ‘[01m[Kvoid ReactiveFollowGap::find_max_gap(float*, int*)[m[K’:
+[01m[K/home/loq/roboracer_ws/roboracer_dissertation/roboracer_project/roboracer_ws/src/gap_follow/src/reactive_node.cpp:32:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kranges[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   32 |     void find_max_gap([01;35m[Kfloat* ranges[m[K, int* indice)
+      |                       [01;35m[K~~~~~~~^~~~~~[m[K
+[01m[K/home/loq/roboracer_ws/roboracer_dissertation/roboracer_project/roboracer_ws/src/gap_follow/src/reactive_node.cpp:32:43:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kindice[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   32 | id find_max_gap(float* ranges, [01;35m[Kint* indice[m[K)
+      |                                [01;35m[K~~~~~^~~~~~[m[K
+
+[01m[K/home/loq/roboracer_ws/roboracer_dissertation/roboracer_project/roboracer_ws/src/gap_follow/src/reactive_node.cpp:[m[K In member function ‘[01m[Kvoid ReactiveFollowGap::find_best_point(float*, int*)[m[K’:
+[01m[K/home/loq/roboracer_ws/roboracer_dissertation/roboracer_project/roboracer_ws/src/gap_follow/src/reactive_node.cpp:38:33:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kranges[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   38 |     void find_best_point([01;35m[Kfloat* ranges[m[K, int* indice)
+      |                          [01;35m[K~~~~~~~^~~~~~[m[K
+[01m[K/home/loq/roboracer_ws/roboracer_dissertation/roboracer_project/roboracer_ws/src/gap_follow/src/reactive_node.cpp:38:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kindice[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   38 | find_best_point(float* ranges, [01;35m[Kint* indice[m[K)
+      |                                [01;35m[K~~~~~^~~~~~[m[K
+
+[01m[K/home/loq/roboracer_ws/roboracer_dissertation/roboracer_project/roboracer_ws/src/gap_follow/src/reactive_node.cpp:[m[K In member function ‘[01m[Kvoid ReactiveFollowGap::lidar_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[01m[K/home/loq/roboracer_ws/roboracer_dissertation/roboracer_project/roboracer_ws/src/gap_follow/src/reactive_node.cpp:47:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kscan_msg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   47 | [01;35m[Ks::msg::LaserScan::ConstSharedPtr scan_msg[m[K)
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+

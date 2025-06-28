@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/dev/roboracer_ws/build/ackermann_mux/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

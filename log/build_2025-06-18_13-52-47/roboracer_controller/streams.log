@@ -1,0 +1,74 @@
+[0.263s] Invoking command in '/home/loq/roboracer_ws/roboracer_dissertation/build/roboracer_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble /usr/bin/cmake /home/loq/roboracer_ws/roboracer_dissertation/roboracer_project/roboracer_ws/src/roboracer_controller -DCMAKE_INSTALL_PREFIX=/home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller
+[0.591s] -- The C compiler identification is GNU 11.4.0
+[0.592s] -- The CXX compiler identification is GNU 11.4.0
+[0.592s] -- Detecting C compiler ABI info
+[0.592s] -- Detecting C compiler ABI info - done
+[0.592s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.592s] -- Detecting C compile features
+[0.592s] -- Detecting C compile features - done
+[0.592s] -- Detecting CXX compiler ABI info
+[0.680s] -- Detecting CXX compiler ABI info - done
+[0.691s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.691s] -- Detecting CXX compile features
+[0.692s] -- Detecting CXX compile features - done
+[0.710s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.970s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.153s] -- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)
+[1.155s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.253s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.267s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.287s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.314s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.347s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.416s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.441s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.467s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.604s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.606s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.646s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.659s] -- Looking for pthread.h
+[1.741s] -- Looking for pthread.h - found
+[1.741s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.838s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.839s] -- Found Threads: TRUE  
+[2.037s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/humble/share/ackermann_msgs/cmake)
+[2.058s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.182s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.183s] -- Added test 'lint_cmake' to check CMake code style
+[2.184s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.187s] -- Added test 'xmllint' to check XML markup files
+[2.189s] -- Configuring done
+[2.196s] -- Generating done
+[2.200s] -- Build files have been written to: /home/loq/roboracer_ws/roboracer_dissertation/build/roboracer_controller
+[2.227s] Invoked command in '/home/loq/roboracer_ws/roboracer_dissertation/build/roboracer_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble /usr/bin/cmake /home/loq/roboracer_ws/roboracer_dissertation/roboracer_project/roboracer_ws/src/roboracer_controller -DCMAKE_INSTALL_PREFIX=/home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller
+[2.228s] Invoking command in '/home/loq/roboracer_ws/roboracer_dissertation/build/roboracer_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble /usr/bin/cmake --build /home/loq/roboracer_ws/roboracer_dissertation/build/roboracer_controller -- -j8 -l8
+[2.286s] Invoked command in '/home/loq/roboracer_ws/roboracer_dissertation/build/roboracer_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble /usr/bin/cmake --build /home/loq/roboracer_ws/roboracer_dissertation/build/roboracer_controller -- -j8 -l8
+[2.291s] Invoking command in '/home/loq/roboracer_ws/roboracer_dissertation/build/roboracer_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble /usr/bin/cmake --install /home/loq/roboracer_ws/roboracer_dissertation/build/roboracer_controller
+[2.304s] -- Install configuration: ""
+[2.304s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/share/roboracer_controller/config
+[2.304s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/share/roboracer_controller/config/joy_config.yaml
+[2.304s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/share/roboracer_controller/config/joystick_teleop.launch.yaml
+[2.304s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/share/roboracer_controller/config/roboracer_controller.yaml
+[2.305s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/share/roboracer_controller/launch
+[2.305s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/share/roboracer_controller/launch/controller.launch.py
+[2.305s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/lib/roboracer_controller/ackerman_controller.py
+[2.305s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/lib/roboracer_controller/ackermann_to_twist.py
+[2.305s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/lib/roboracer_controller/noisy_controller.py
+[2.305s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/lib/roboracer_controller/static_tf_publisher.py
+[2.308s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/lib/roboracer_controller/custom_robot_state_publisher.py
+[2.308s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/share/ament_index/resource_index/package_run_dependencies/roboracer_controller
+[2.308s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/share/ament_index/resource_index/parent_prefix_path/roboracer_controller
+[2.308s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/share/roboracer_controller/environment/ament_prefix_path.sh
+[2.308s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/share/roboracer_controller/environment/ament_prefix_path.dsv
+[2.308s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/share/roboracer_controller/environment/path.sh
+[2.308s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/share/roboracer_controller/environment/path.dsv
+[2.308s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/share/roboracer_controller/local_setup.bash
+[2.308s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/share/roboracer_controller/local_setup.sh
+[2.308s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/share/roboracer_controller/local_setup.zsh
+[2.308s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/share/roboracer_controller/local_setup.dsv
+[2.309s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/share/roboracer_controller/package.dsv
+[2.309s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/share/ament_index/resource_index/packages/roboracer_controller
+[2.309s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/share/roboracer_controller/cmake/roboracer_controllerConfig.cmake
+[2.314s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/share/roboracer_controller/cmake/roboracer_controllerConfig-version.cmake
+[2.314s] -- Installing: /home/loq/roboracer_ws/roboracer_dissertation/install/roboracer_controller/share/roboracer_controller/package.xml
+[2.314s] Invoked command in '/home/loq/roboracer_ws/roboracer_dissertation/build/roboracer_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble /usr/bin/cmake --install /home/loq/roboracer_ws/roboracer_dissertation/build/roboracer_controller

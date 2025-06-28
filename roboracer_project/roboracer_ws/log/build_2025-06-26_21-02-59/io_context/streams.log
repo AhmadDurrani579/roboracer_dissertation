@@ -1,0 +1,38 @@
+[0.008s] Invoking command in '/home/dev/roboracer_ws/build/io_context': AMENT_PREFIX_PATH=/home/dev/roboracer_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/asio_cmake_module:/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/transport_drivers/io_context -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/io_context
+[0.165s] -- The C compiler identification is GNU 11.4.0
+[0.255s] -- The CXX compiler identification is GNU 11.4.0
+[0.262s] -- Detecting C compiler ABI info
+[0.334s] -- Detecting C compiler ABI info - done
+[0.356s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.357s] -- Detecting C compile features
+[0.357s] -- Detecting C compile features - done
+[0.373s] -- Detecting CXX compiler ABI info
+[0.453s] -- Detecting CXX compiler ABI info - done
+[0.469s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.470s] -- Detecting CXX compile features
+[0.470s] -- Detecting CXX compile features - done
+[0.481s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.614s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.873s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.881s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.892s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.907s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.928s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.997s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.002s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.120s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")
+[1.162s] -- Found FastRTPS: /opt/ros/humble/include
+[1.228s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.245s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.307s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.308s] -- Found Threads: TRUE
+[1.404s] [31mCMake Error at /usr/local/lib/python3.10/dist-packages/cmake/data/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake:227 (message):
+[1.404s]   Could NOT find ASIO (missing: ASIO_INCLUDE_DIRS)
+[1.404s] Call Stack (most recent call first):
+[1.404s]   /usr/local/lib/python3.10/dist-packages/cmake/data/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake:591 (_FPHSA_FAILURE_MESSAGE)
+[1.404s]   /home/dev/roboracer_ws/install/asio_cmake_module/share/asio_cmake_module/cmake/Modules/FindASIO.cmake:19 (find_package_handle_standard_args)
+[1.404s]   CMakeLists.txt:34 (find_package)
+[1.404s] 
+[1.404s] [0m
+[1.404s] -- Configuring incomplete, errors occurred!
+[1.412s] Invoked command in '/home/dev/roboracer_ws/build/io_context' returned '1': AMENT_PREFIX_PATH=/home/dev/roboracer_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/asio_cmake_module:/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/transport_drivers/io_context -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/io_context

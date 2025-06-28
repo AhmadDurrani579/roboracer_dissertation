@@ -1,0 +1,5 @@
+visual_odom:
+  ros__parameters:
+    settings_file: /home/loq/roboracer_ws/src/roboracer_description/config/orb_slam3_settings.yaml
+    vocab_file: /home/loq/orb_slam3_ws/src/ORB_SLAM3/Vocabulary/ORBvoc.txt
+    image_topic: /car_1/camera/image_raw

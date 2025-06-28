@@ -1,0 +1,6 @@
+Invoking command in '/home/dev/roboracer_ws/build/roboracer_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/roboracer_description -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/roboracer_description
+Invoked command in '/home/dev/roboracer_ws/build/roboracer_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/roboracer_description -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/roboracer_description
+Invoking command in '/home/dev/roboracer_ws/build/roboracer_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/roboracer_description -- -j8 -l8
+Invoked command in '/home/dev/roboracer_ws/build/roboracer_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/roboracer_description -- -j8 -l8
+Invoking command in '/home/dev/roboracer_ws/build/roboracer_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/roboracer_description
+Invoked command in '/home/dev/roboracer_ws/build/roboracer_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/roboracer_description

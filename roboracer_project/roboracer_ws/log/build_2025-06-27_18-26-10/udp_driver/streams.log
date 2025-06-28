@@ -1,0 +1,50 @@
+[0.044s] Invoking command in '/home/dev/roboracer_ws/build/udp_driver': CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/asio_cmake_module:/home/dev/roboracer_ws/install/vesc:/home/dev/roboracer_ws/install/vesc_driver:/home/dev/roboracer_ws/install/vesc_ackermann:/home/dev/roboracer_ws/install/roboracer_yolov8_detector:/home/dev/roboracer_ws/install/roboracer_py:/opt/ros/humble:/home/dev/roboracer_ws/install/vesc_msgs:/home/dev/roboracer_ws/install/udp_driver:/home/dev/roboracer_ws/install/serial_driver:/home/dev/roboracer_ws/install/roboracer_visual_odom:/home/dev/roboracer_ws/install/roboracer_localization:/home/dev/roboracer_ws/install/roboracer_description:/home/dev/roboracer_ws/install/roboracer_controller:/home/dev/roboracer_ws/install/pure_pursuit:/home/dev/roboracer_ws/install/gap_follow:/home/dev/roboracer_ws/install/ackermann_mux LD_LIBRARY_PATH=/home/dev/roboracer_ws/install/io_context/lib:/home/dev/roboracer_ws/install/vesc_driver/lib:/home/dev/roboracer_ws/install/vesc_ackermann/lib:/home/dev/roboracer_ws/install/vesc_msgs/lib:/home/dev/roboracer_ws/install/udp_driver/lib:/home/dev/roboracer_ws/install/serial_driver/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/udp_driver -- -j8 -l8
+[0.246s] [  8%] Built target udp_sender_node_exe
+[0.246s] [ 16%] Built target gtest
+[0.246s] [ 29%] Built target udp_driver
+[0.246s] [ 37%] Built target gtest_main
+[0.247s] [ 45%] Built target udp_receiver_node_exe
+[0.298s] [ 58%] Built target udp_driver_nodes
+[0.354s] [ 75%] Built target test_udp_socket
+[0.354s] [ 75%] Built target test_udp_data
+[0.357s] [ 83%] Built target test_udp_driver
+[0.361s] [ 91%] Built target test_udp_driver_nodes
+[0.363s] [100%] Built target udp_bridge_node_exe
+[0.374s] Invoked command in '/home/dev/roboracer_ws/build/udp_driver' returned '0': CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/asio_cmake_module:/home/dev/roboracer_ws/install/vesc:/home/dev/roboracer_ws/install/vesc_driver:/home/dev/roboracer_ws/install/vesc_ackermann:/home/dev/roboracer_ws/install/roboracer_yolov8_detector:/home/dev/roboracer_ws/install/roboracer_py:/opt/ros/humble:/home/dev/roboracer_ws/install/vesc_msgs:/home/dev/roboracer_ws/install/udp_driver:/home/dev/roboracer_ws/install/serial_driver:/home/dev/roboracer_ws/install/roboracer_visual_odom:/home/dev/roboracer_ws/install/roboracer_localization:/home/dev/roboracer_ws/install/roboracer_description:/home/dev/roboracer_ws/install/roboracer_controller:/home/dev/roboracer_ws/install/pure_pursuit:/home/dev/roboracer_ws/install/gap_follow:/home/dev/roboracer_ws/install/ackermann_mux LD_LIBRARY_PATH=/home/dev/roboracer_ws/install/io_context/lib:/home/dev/roboracer_ws/install/vesc_driver/lib:/home/dev/roboracer_ws/install/vesc_ackermann/lib:/home/dev/roboracer_ws/install/vesc_msgs/lib:/home/dev/roboracer_ws/install/udp_driver/lib:/home/dev/roboracer_ws/install/serial_driver/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/udp_driver -- -j8 -l8
+[0.374s] Invoking command in '/home/dev/roboracer_ws/build/udp_driver': CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/asio_cmake_module:/home/dev/roboracer_ws/install/vesc:/home/dev/roboracer_ws/install/vesc_driver:/home/dev/roboracer_ws/install/vesc_ackermann:/home/dev/roboracer_ws/install/roboracer_yolov8_detector:/home/dev/roboracer_ws/install/roboracer_py:/opt/ros/humble:/home/dev/roboracer_ws/install/vesc_msgs:/home/dev/roboracer_ws/install/udp_driver:/home/dev/roboracer_ws/install/serial_driver:/home/dev/roboracer_ws/install/roboracer_visual_odom:/home/dev/roboracer_ws/install/roboracer_localization:/home/dev/roboracer_ws/install/roboracer_description:/home/dev/roboracer_ws/install/roboracer_controller:/home/dev/roboracer_ws/install/pure_pursuit:/home/dev/roboracer_ws/install/gap_follow:/home/dev/roboracer_ws/install/ackermann_mux LD_LIBRARY_PATH=/home/dev/roboracer_ws/install/io_context/lib:/home/dev/roboracer_ws/install/vesc_driver/lib:/home/dev/roboracer_ws/install/vesc_ackermann/lib:/home/dev/roboracer_ws/install/vesc_msgs/lib:/home/dev/roboracer_ws/install/udp_driver/lib:/home/dev/roboracer_ws/install/serial_driver/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/udp_driver
+[0.472s] -- Install configuration: ""
+[0.476s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/lib/udp_driver/udp_receiver_node_exe
+[0.476s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/lib/udp_driver/udp_sender_node_exe
+[0.476s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/include
+[0.476s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/include/udp_driver
+[0.476s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/include/udp_driver/visibility_control.hpp
+[0.476s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/include/udp_driver/udp_sender_node.hpp
+[0.476s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/include/udp_driver/udp_socket.hpp
+[0.476s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/include/udp_driver/udp_receiver_node.hpp
+[0.476s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/include/udp_driver/udp_driver.hpp
+[0.477s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/environment/library_path.sh
+[0.477s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/environment/library_path.dsv
+[0.477s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/lib/libudp_driver.so
+[0.477s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/lib/libudp_driver_nodes.so
+[0.477s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/lib/udp_driver/udp_bridge_node_exe
+[0.477s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/share/ament_index/resource_index/package_run_dependencies/udp_driver
+[0.478s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/share/ament_index/resource_index/parent_prefix_path/udp_driver
+[0.478s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/environment/ament_prefix_path.sh
+[0.478s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/environment/ament_prefix_path.dsv
+[0.478s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/environment/path.sh
+[0.478s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/environment/path.dsv
+[0.478s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/local_setup.bash
+[0.478s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/local_setup.sh
+[0.478s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/local_setup.zsh
+[0.478s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/local_setup.dsv
+[0.478s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/package.dsv
+[0.478s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/share/ament_index/resource_index/packages/udp_driver
+[0.478s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/share/ament_index/resource_index/rclcpp_components/udp_driver
+[0.479s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.479s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.479s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[0.479s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/cmake/udp_driver-extras.cmake
+[0.479s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/cmake/udp_driverConfig.cmake
+[0.479s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/cmake/udp_driverConfig-version.cmake
+[0.479s] -- Up-to-date: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/package.xml
+[0.483s] Invoked command in '/home/dev/roboracer_ws/build/udp_driver' returned '0': CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/asio_cmake_module:/home/dev/roboracer_ws/install/vesc:/home/dev/roboracer_ws/install/vesc_driver:/home/dev/roboracer_ws/install/vesc_ackermann:/home/dev/roboracer_ws/install/roboracer_yolov8_detector:/home/dev/roboracer_ws/install/roboracer_py:/opt/ros/humble:/home/dev/roboracer_ws/install/vesc_msgs:/home/dev/roboracer_ws/install/udp_driver:/home/dev/roboracer_ws/install/serial_driver:/home/dev/roboracer_ws/install/roboracer_visual_odom:/home/dev/roboracer_ws/install/roboracer_localization:/home/dev/roboracer_ws/install/roboracer_description:/home/dev/roboracer_ws/install/roboracer_controller:/home/dev/roboracer_ws/install/pure_pursuit:/home/dev/roboracer_ws/install/gap_follow:/home/dev/roboracer_ws/install/ackermann_mux LD_LIBRARY_PATH=/home/dev/roboracer_ws/install/io_context/lib:/home/dev/roboracer_ws/install/vesc_driver/lib:/home/dev/roboracer_ws/install/vesc_ackermann/lib:/home/dev/roboracer_ws/install/vesc_msgs/lib:/home/dev/roboracer_ws/install/udp_driver/lib:/home/dev/roboracer_ws/install/serial_driver/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/udp_driver

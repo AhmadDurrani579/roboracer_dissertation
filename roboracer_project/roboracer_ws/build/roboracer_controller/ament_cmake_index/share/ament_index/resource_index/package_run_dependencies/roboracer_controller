@@ -1,0 +1,1 @@
+python3-urdf-parser-py;ros2launch;robot_state_publisher;xacro;controller_manager;rclpy;std_msgs;geometry_msgs;sensor_msgs;nav_msgs;tf2_ros;tf2_msgs;ackermann_msgs;ros_gz_bridge;transforms3d;joint_state_publisher;ament_lint_auto;ament_lint_common

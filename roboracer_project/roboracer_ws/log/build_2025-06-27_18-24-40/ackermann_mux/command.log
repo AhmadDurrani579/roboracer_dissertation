@@ -1,0 +1,6 @@
+Invoking command in '/home/dev/roboracer_ws/build/ackermann_mux': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/ackermann_mux -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/ackermann_mux
+Invoked command in '/home/dev/roboracer_ws/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/ackermann_mux -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/ackermann_mux
+Invoking command in '/home/dev/roboracer_ws/build/ackermann_mux': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/ackermann_mux -- -j8 -l8
+Invoked command in '/home/dev/roboracer_ws/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/ackermann_mux -- -j8 -l8
+Invoking command in '/home/dev/roboracer_ws/build/ackermann_mux': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/ackermann_mux
+Invoked command in '/home/dev/roboracer_ws/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/ackermann_mux

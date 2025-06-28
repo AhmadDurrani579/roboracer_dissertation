@@ -1,0 +1,39 @@
+[0.113s] Invoking command in '/home/dev/roboracer_ws/build/io_context': CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/asio_cmake_module:/home/dev/roboracer_ws/install/vesc:/home/dev/roboracer_ws/install/vesc_driver:/home/dev/roboracer_ws/install/vesc_ackermann:/home/dev/roboracer_ws/install/roboracer_yolov8_detector:/home/dev/roboracer_ws/install/roboracer_py:/opt/ros/humble:/home/dev/roboracer_ws/install/vesc_msgs:/home/dev/roboracer_ws/install/udp_driver:/home/dev/roboracer_ws/install/serial_driver:/home/dev/roboracer_ws/install/roboracer_visual_odom:/home/dev/roboracer_ws/install/roboracer_localization:/home/dev/roboracer_ws/install/roboracer_description:/home/dev/roboracer_ws/install/roboracer_controller:/home/dev/roboracer_ws/install/pure_pursuit:/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/gap_follow /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/io_context -- -j8 -l8
+[0.243s] [ 22%] Built target gtest_main
+[0.244s] [ 44%] Built target gtest
+[0.249s] [ 77%] Built target io_context
+[0.266s] [100%] Built target test_io_context
+[0.386s] Invoked command in '/home/dev/roboracer_ws/build/io_context' returned '0': CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/asio_cmake_module:/home/dev/roboracer_ws/install/vesc:/home/dev/roboracer_ws/install/vesc_driver:/home/dev/roboracer_ws/install/vesc_ackermann:/home/dev/roboracer_ws/install/roboracer_yolov8_detector:/home/dev/roboracer_ws/install/roboracer_py:/opt/ros/humble:/home/dev/roboracer_ws/install/vesc_msgs:/home/dev/roboracer_ws/install/udp_driver:/home/dev/roboracer_ws/install/serial_driver:/home/dev/roboracer_ws/install/roboracer_visual_odom:/home/dev/roboracer_ws/install/roboracer_localization:/home/dev/roboracer_ws/install/roboracer_description:/home/dev/roboracer_ws/install/roboracer_controller:/home/dev/roboracer_ws/install/pure_pursuit:/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/gap_follow /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/io_context -- -j8 -l8
+[0.387s] Invoking command in '/home/dev/roboracer_ws/build/io_context': CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/asio_cmake_module:/home/dev/roboracer_ws/install/vesc:/home/dev/roboracer_ws/install/vesc_driver:/home/dev/roboracer_ws/install/vesc_ackermann:/home/dev/roboracer_ws/install/roboracer_yolov8_detector:/home/dev/roboracer_ws/install/roboracer_py:/opt/ros/humble:/home/dev/roboracer_ws/install/vesc_msgs:/home/dev/roboracer_ws/install/udp_driver:/home/dev/roboracer_ws/install/serial_driver:/home/dev/roboracer_ws/install/roboracer_visual_odom:/home/dev/roboracer_ws/install/roboracer_localization:/home/dev/roboracer_ws/install/roboracer_description:/home/dev/roboracer_ws/install/roboracer_controller:/home/dev/roboracer_ws/install/pure_pursuit:/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/gap_follow /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/io_context
+[0.488s] -- Install configuration: ""
+[0.489s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/include
+[0.489s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/include/msg_converters
+[0.489s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/include/msg_converters/converters.hpp
+[0.489s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/include/msg_converters/std_msgs.hpp
+[0.489s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/include/msg_converters/udp_msgs.hpp
+[0.489s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/include/io_context
+[0.489s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/include/io_context/common.hpp
+[0.489s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/include/io_context/io_context.hpp
+[0.489s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/environment/library_path.sh
+[0.489s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/environment/library_path.dsv
+[0.489s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/lib/libio_context.so
+[0.490s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/ament_index/resource_index/package_run_dependencies/io_context
+[0.490s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/ament_index/resource_index/parent_prefix_path/io_context
+[0.491s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/environment/ament_prefix_path.sh
+[0.492s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/environment/ament_prefix_path.dsv
+[0.492s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/environment/path.sh
+[0.492s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/environment/path.dsv
+[0.492s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/local_setup.bash
+[0.492s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/local_setup.sh
+[0.492s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/local_setup.zsh
+[0.492s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/local_setup.dsv
+[0.492s] -- Installing: /home/dev/roboracer_ws/install/io_context/share/io_context/package.dsv
+[0.492s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/ament_index/resource_index/packages/io_context
+[0.492s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.493s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.493s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/cmake/ament_cmake_export_libraries-extras.cmake
+[0.493s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/cmake/io_context-extras.cmake
+[0.493s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/cmake/io_contextConfig.cmake
+[0.493s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/cmake/io_contextConfig-version.cmake
+[0.493s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/package.xml
+[0.494s] Invoked command in '/home/dev/roboracer_ws/build/io_context' returned '0': CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/asio_cmake_module:/home/dev/roboracer_ws/install/vesc:/home/dev/roboracer_ws/install/vesc_driver:/home/dev/roboracer_ws/install/vesc_ackermann:/home/dev/roboracer_ws/install/roboracer_yolov8_detector:/home/dev/roboracer_ws/install/roboracer_py:/opt/ros/humble:/home/dev/roboracer_ws/install/vesc_msgs:/home/dev/roboracer_ws/install/udp_driver:/home/dev/roboracer_ws/install/serial_driver:/home/dev/roboracer_ws/install/roboracer_visual_odom:/home/dev/roboracer_ws/install/roboracer_localization:/home/dev/roboracer_ws/install/roboracer_description:/home/dev/roboracer_ws/install/roboracer_controller:/home/dev/roboracer_ws/install/pure_pursuit:/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/gap_follow /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/io_context

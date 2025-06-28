@@ -1,0 +1,45 @@
+[1.196s] Invoking command in '/home/loq/roboracer_ws/roboracer_dissertation/f1tenth_gym_ros': PYTHONPATH=/home/loq/roboracer_ws/roboracer_dissertation/build/f1tenth_gym_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loq/roboracer_ws/roboracer_dissertation/install/f1tenth_gym_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/f1tenth_gym_ros build --build-base /home/loq/roboracer_ws/roboracer_dissertation/build/f1tenth_gym_ros/build install --record /home/loq/roboracer_ws/roboracer_dissertation/build/f1tenth_gym_ros/install.log --single-version-externally-managed install_data
+[1.591s] running egg_info
+[1.592s] creating ../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info
+[1.592s] writing ../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/PKG-INFO
+[1.592s] writing dependency_links to ../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/dependency_links.txt
+[1.592s] writing entry points to ../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/entry_points.txt
+[1.592s] writing requirements to ../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/requires.txt
+[1.592s] writing top-level names to ../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/top_level.txt
+[1.592s] writing manifest file '../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/SOURCES.txt'
+[1.592s] reading manifest file '../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/SOURCES.txt'
+[1.592s] adding license file 'LICENSE'
+[1.592s] writing manifest file '../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/SOURCES.txt'
+[1.592s] running build
+[1.592s] running build_py
+[1.592s] creating /home/loq/roboracer_ws/roboracer_dissertation/build/f1tenth_gym_ros/build
+[1.593s] creating /home/loq/roboracer_ws/roboracer_dissertation/build/f1tenth_gym_ros/build/lib
+[1.593s] creating /home/loq/roboracer_ws/roboracer_dissertation/build/f1tenth_gym_ros/build/lib/f1tenth_gym_ros
+[1.593s] copying f1tenth_gym_ros/__init__.py -> /home/loq/roboracer_ws/roboracer_dissertation/build/f1tenth_gym_ros/build/lib/f1tenth_gym_ros
+[1.593s] copying f1tenth_gym_ros/gym_bridge.py -> /home/loq/roboracer_ws/roboracer_dissertation/build/f1tenth_gym_ros/build/lib/f1tenth_gym_ros
+[1.593s] running install
+[1.593s] running install_lib
+[1.593s] creating /home/loq/roboracer_ws/roboracer_dissertation/install/f1tenth_gym_ros/lib/python3.10/site-packages/f1tenth_gym_ros
+[1.593s] copying /home/loq/roboracer_ws/roboracer_dissertation/build/f1tenth_gym_ros/build/lib/f1tenth_gym_ros/__init__.py -> /home/loq/roboracer_ws/roboracer_dissertation/install/f1tenth_gym_ros/lib/python3.10/site-packages/f1tenth_gym_ros
+[1.593s] copying /home/loq/roboracer_ws/roboracer_dissertation/build/f1tenth_gym_ros/build/lib/f1tenth_gym_ros/gym_bridge.py -> /home/loq/roboracer_ws/roboracer_dissertation/install/f1tenth_gym_ros/lib/python3.10/site-packages/f1tenth_gym_ros
+[1.593s] byte-compiling /home/loq/roboracer_ws/roboracer_dissertation/install/f1tenth_gym_ros/lib/python3.10/site-packages/f1tenth_gym_ros/__init__.py to __init__.cpython-310.pyc
+[1.593s] byte-compiling /home/loq/roboracer_ws/roboracer_dissertation/install/f1tenth_gym_ros/lib/python3.10/site-packages/f1tenth_gym_ros/gym_bridge.py to gym_bridge.cpython-310.pyc
+[1.593s] running install_data
+[1.593s] creating /home/loq/roboracer_ws/roboracer_dissertation/install/f1tenth_gym_ros/share/ament_index
+[1.593s] creating /home/loq/roboracer_ws/roboracer_dissertation/install/f1tenth_gym_ros/share/ament_index/resource_index
+[1.593s] creating /home/loq/roboracer_ws/roboracer_dissertation/install/f1tenth_gym_ros/share/ament_index/resource_index/packages
+[1.594s] copying resource/f1tenth_gym_ros -> /home/loq/roboracer_ws/roboracer_dissertation/install/f1tenth_gym_ros/share/ament_index/resource_index/packages
+[1.594s] copying package.xml -> /home/loq/roboracer_ws/roboracer_dissertation/install/f1tenth_gym_ros/share/f1tenth_gym_ros
+[1.594s] creating /home/loq/roboracer_ws/roboracer_dissertation/install/f1tenth_gym_ros/share/f1tenth_gym_ros/launch
+[1.594s] copying launch/gym_bridge_launch.py -> /home/loq/roboracer_ws/roboracer_dissertation/install/f1tenth_gym_ros/share/f1tenth_gym_ros/launch
+[1.594s] copying launch/opp_racecar.xacro -> /home/loq/roboracer_ws/roboracer_dissertation/install/f1tenth_gym_ros/share/f1tenth_gym_ros/launch
+[1.594s] copying launch/ego_racecar.xacro -> /home/loq/roboracer_ws/roboracer_dissertation/install/f1tenth_gym_ros/share/f1tenth_gym_ros/launch
+[1.594s] copying launch/gym_bridge.rviz -> /home/loq/roboracer_ws/roboracer_dissertation/install/f1tenth_gym_ros/share/f1tenth_gym_ros/launch
+[1.594s] creating /home/loq/roboracer_ws/roboracer_dissertation/install/f1tenth_gym_ros/share/f1tenth_gym_ros/config
+[1.594s] copying config/sim.yaml -> /home/loq/roboracer_ws/roboracer_dissertation/install/f1tenth_gym_ros/share/f1tenth_gym_ros/config
+[1.594s] running install_egg_info
+[1.594s] Copying ../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info to /home/loq/roboracer_ws/roboracer_dissertation/install/f1tenth_gym_ros/lib/python3.10/site-packages/f1tenth_gym_ros-0.0.0-py3.10.egg-info
+[1.594s] running install_scripts
+[1.595s] Installing gym_bridge script to /home/loq/roboracer_ws/roboracer_dissertation/install/f1tenth_gym_ros/lib/f1tenth_gym_ros
+[1.595s] writing list of installed files to '/home/loq/roboracer_ws/roboracer_dissertation/build/f1tenth_gym_ros/install.log'
+[1.620s] Invoked command in '/home/loq/roboracer_ws/roboracer_dissertation/f1tenth_gym_ros' returned '0': PYTHONPATH=/home/loq/roboracer_ws/roboracer_dissertation/build/f1tenth_gym_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loq/roboracer_ws/roboracer_dissertation/install/f1tenth_gym_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/f1tenth_gym_ros build --build-base /home/loq/roboracer_ws/roboracer_dissertation/build/f1tenth_gym_ros/build install --record /home/loq/roboracer_ws/roboracer_dissertation/build/f1tenth_gym_ros/install.log --single-version-externally-managed install_data

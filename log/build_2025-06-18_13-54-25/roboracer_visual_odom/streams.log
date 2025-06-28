@@ -1,0 +1,14 @@
+[0.535s] Invoking command in '/home/loq/roboracer_ws/roboracer_dissertation/build/roboracer_visual_odom': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble /usr/bin/cmake --build /home/loq/roboracer_ws/roboracer_dissertation/build/roboracer_visual_odom -- -j8 -l8
+[0.678s] [35m[1mConsolidate compiler generated dependencies of target rgbd_pointcloud_publisher[0m
+[0.678s] gmake[2]: *** No rule to make target '/usr/local/ORB_SLAM3/lib/libORB_SLAM3.so', needed by 'visual_odom'. Stop.
+[0.678s] gmake[2]: *** Waiting for unfinished jobs....
+[0.680s] [ 25%] [32mBuilding CXX object CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o[0m
+[0.680s] [ 75%] Built target rgbd_pointcloud_publisher
+[1.127s] [01m[K/home/loq/roboracer_ws/roboracer_dissertation/roboracer_project/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:13:10:[m[K [01;31m[Kfatal error: [m[Ksophus/se3.hpp: No such file or directory
+[1.127s]    13 | #include [01;31m[K<sophus/se3.hpp>[m[K
+[1.127s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.127s] compilation terminated.
+[1.134s] gmake[2]: *** [CMakeFiles/visual_odom.dir/build.make:76: CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o] Error 1
+[1.134s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/visual_odom.dir/all] Error 2
+[1.134s] gmake: *** [Makefile:146: all] Error 2
+[1.138s] Invoked command in '/home/loq/roboracer_ws/roboracer_dissertation/build/roboracer_visual_odom' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/loq/drivingcar_ws/install/self_driving_car_pkg:/home/loq/bumperbot_ws/install/bumperbot_py_example:/home/loq/ros2_action_ws/install/lifecycle_py:/home/loq/ros2_action_ws/install/action_py:/opt/ros/humble /usr/bin/cmake --build /home/loq/roboracer_ws/roboracer_dissertation/build/roboracer_visual_odom -- -j8 -l8

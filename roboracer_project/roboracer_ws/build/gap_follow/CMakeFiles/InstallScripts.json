@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/dev/roboracer_ws/build/gap_follow/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,25 @@
+[0.292s] Invoking command in '/home/dev/roboracer_ws/build/roboracer_visual_odom': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/roboracer_visual_odom -- -j8 -l8
+[0.409s] [ 50%] Built target rgbd_pointcloud_publisher
+[0.427s] [100%] Built target visual_odom
+[0.444s] Invoked command in '/home/dev/roboracer_ws/build/roboracer_visual_odom' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/roboracer_visual_odom -- -j8 -l8
+[0.445s] Invoking command in '/home/dev/roboracer_ws/build/roboracer_visual_odom': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/roboracer_visual_odom
+[0.631s] -- Install configuration: ""
+[0.631s] -- Up-to-date: /home/dev/roboracer_ws/install/roboracer_visual_odom/lib/roboracer_visual_odom/visual_odom
+[0.632s] -- Up-to-date: /home/dev/roboracer_ws/install/roboracer_visual_odom/lib/roboracer_visual_odom/rgbd_pointcloud_publisher
+[0.632s] -- Up-to-date: /home/dev/roboracer_ws/install/roboracer_visual_odom/share/ament_index/resource_index/package_run_dependencies/roboracer_visual_odom
+[0.632s] -- Up-to-date: /home/dev/roboracer_ws/install/roboracer_visual_odom/share/ament_index/resource_index/parent_prefix_path/roboracer_visual_odom
+[0.632s] -- Up-to-date: /home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/environment/ament_prefix_path.sh
+[0.632s] -- Up-to-date: /home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/environment/ament_prefix_path.dsv
+[0.632s] -- Up-to-date: /home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/environment/path.sh
+[0.633s] -- Up-to-date: /home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/environment/path.dsv
+[0.633s] -- Up-to-date: /home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/local_setup.bash
+[0.633s] -- Up-to-date: /home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/local_setup.sh
+[0.633s] -- Up-to-date: /home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/local_setup.zsh
+[0.633s] -- Up-to-date: /home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/local_setup.dsv
+[0.633s] -- Installing: /home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/package.dsv
+[0.634s] -- Up-to-date: /home/dev/roboracer_ws/install/roboracer_visual_odom/share/ament_index/resource_index/packages/roboracer_visual_odom
+[0.634s] -- Up-to-date: /home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.634s] -- Up-to-date: /home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/cmake/roboracer_visual_odomConfig.cmake
+[0.634s] -- Up-to-date: /home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/cmake/roboracer_visual_odomConfig-version.cmake
+[0.634s] -- Up-to-date: /home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/package.xml
+[0.664s] Invoked command in '/home/dev/roboracer_ws/build/roboracer_visual_odom' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/roboracer_visual_odom

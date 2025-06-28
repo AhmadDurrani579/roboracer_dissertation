@@ -1,0 +1,46 @@
+[0.037s] Invoking command in '/home/dev/roboracer_ws/build/gap_follow': CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/vesc:/home/dev/roboracer_ws/install/vesc_driver:/home/dev/roboracer_ws/install/vesc_ackermann:/home/dev/roboracer_ws/install/roboracer_yolov8_detector:/home/dev/roboracer_ws/install/roboracer_py:/opt/ros/humble:/home/dev/roboracer_ws/install/vesc_msgs:/home/dev/roboracer_ws/install/udp_driver:/home/dev/roboracer_ws/install/serial_driver:/home/dev/roboracer_ws/install/roboracer_visual_odom:/home/dev/roboracer_ws/install/roboracer_localization:/home/dev/roboracer_ws/install/roboracer_description:/home/dev/roboracer_ws/install/roboracer_controller:/home/dev/roboracer_ws/install/pure_pursuit:/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/gap_follow:/home/dev/roboracer_ws/install/asio_cmake_module:/home/dev/roboracer_ws/install/ackermann_mux /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/gap_follow -- -j8 -l8
+[0.192s] [100%] Built target reactive_node
+[0.193s] [ 50%] Built target ament_cmake_python_copy_gap_follow_setup
+[0.200s] [100%] Built target ament_cmake_python_copy_gap_follow
+[0.500s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.501s]   warnings.warn(
+[0.501s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[0.501s]   warnings.warn(
+[0.501s] running egg_info
+[0.501s] writing gap_follow.egg-info/PKG-INFO
+[0.501s] writing dependency_links to gap_follow.egg-info/dependency_links.txt
+[0.501s] writing top-level names to gap_follow.egg-info/top_level.txt
+[0.501s] reading manifest file 'gap_follow.egg-info/SOURCES.txt'
+[0.501s] writing manifest file 'gap_follow.egg-info/SOURCES.txt'
+[0.524s] [100%] Built target ament_cmake_python_build_gap_follow_egg
+[0.593s] Invoked command in '/home/dev/roboracer_ws/build/gap_follow' returned '0': CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/vesc:/home/dev/roboracer_ws/install/vesc_driver:/home/dev/roboracer_ws/install/vesc_ackermann:/home/dev/roboracer_ws/install/roboracer_yolov8_detector:/home/dev/roboracer_ws/install/roboracer_py:/opt/ros/humble:/home/dev/roboracer_ws/install/vesc_msgs:/home/dev/roboracer_ws/install/udp_driver:/home/dev/roboracer_ws/install/serial_driver:/home/dev/roboracer_ws/install/roboracer_visual_odom:/home/dev/roboracer_ws/install/roboracer_localization:/home/dev/roboracer_ws/install/roboracer_description:/home/dev/roboracer_ws/install/roboracer_controller:/home/dev/roboracer_ws/install/pure_pursuit:/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/gap_follow:/home/dev/roboracer_ws/install/asio_cmake_module:/home/dev/roboracer_ws/install/ackermann_mux /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/gap_follow -- -j8 -l8
+[0.594s] Invoking command in '/home/dev/roboracer_ws/build/gap_follow': CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/vesc:/home/dev/roboracer_ws/install/vesc_driver:/home/dev/roboracer_ws/install/vesc_ackermann:/home/dev/roboracer_ws/install/roboracer_yolov8_detector:/home/dev/roboracer_ws/install/roboracer_py:/opt/ros/humble:/home/dev/roboracer_ws/install/vesc_msgs:/home/dev/roboracer_ws/install/udp_driver:/home/dev/roboracer_ws/install/serial_driver:/home/dev/roboracer_ws/install/roboracer_visual_odom:/home/dev/roboracer_ws/install/roboracer_localization:/home/dev/roboracer_ws/install/roboracer_description:/home/dev/roboracer_ws/install/roboracer_controller:/home/dev/roboracer_ws/install/pure_pursuit:/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/gap_follow:/home/dev/roboracer_ws/install/asio_cmake_module:/home/dev/roboracer_ws/install/ackermann_mux /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/gap_follow
+[0.848s] -- Install configuration: ""
+[0.848s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/lib/gap_follow/reactive_node
+[0.848s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/environment/pythonpath.sh
+[0.848s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/environment/pythonpath.dsv
+[0.849s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/local/lib/python3.10/dist-packages/gap_follow-0.0.0-py3.10.egg-info
+[0.849s] -- Installing: /home/dev/roboracer_ws/install/gap_follow/local/lib/python3.10/dist-packages/gap_follow-0.0.0-py3.10.egg-info/top_level.txt
+[0.849s] -- Installing: /home/dev/roboracer_ws/install/gap_follow/local/lib/python3.10/dist-packages/gap_follow-0.0.0-py3.10.egg-info/PKG-INFO
+[0.849s] -- Installing: /home/dev/roboracer_ws/install/gap_follow/local/lib/python3.10/dist-packages/gap_follow-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.849s] -- Installing: /home/dev/roboracer_ws/install/gap_follow/local/lib/python3.10/dist-packages/gap_follow-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.849s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/local/lib/python3.10/dist-packages/gap_follow
+[0.849s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/local/lib/python3.10/dist-packages/gap_follow/__init__.py
+[0.849s] Listing '/home/dev/roboracer_ws/install/gap_follow/local/lib/python3.10/dist-packages/gap_follow'...
+[0.850s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/lib/gap_follow/reactive_node.py
+[0.850s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/ament_index/resource_index/package_run_dependencies/gap_follow
+[0.850s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/ament_index/resource_index/parent_prefix_path/gap_follow
+[0.850s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/environment/ament_prefix_path.sh
+[0.850s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/environment/ament_prefix_path.dsv
+[0.850s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/environment/path.sh
+[0.850s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/environment/path.dsv
+[0.850s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/local_setup.bash
+[0.850s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/local_setup.sh
+[0.850s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/local_setup.zsh
+[0.850s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/local_setup.dsv
+[0.850s] -- Installing: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/package.dsv
+[0.850s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/ament_index/resource_index/packages/gap_follow
+[0.851s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/cmake/gap_followConfig.cmake
+[0.851s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/cmake/gap_followConfig-version.cmake
+[0.851s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/package.xml
+[1.171s] Invoked command in '/home/dev/roboracer_ws/build/gap_follow' returned '0': CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/vesc:/home/dev/roboracer_ws/install/vesc_driver:/home/dev/roboracer_ws/install/vesc_ackermann:/home/dev/roboracer_ws/install/roboracer_yolov8_detector:/home/dev/roboracer_ws/install/roboracer_py:/opt/ros/humble:/home/dev/roboracer_ws/install/vesc_msgs:/home/dev/roboracer_ws/install/udp_driver:/home/dev/roboracer_ws/install/serial_driver:/home/dev/roboracer_ws/install/roboracer_visual_odom:/home/dev/roboracer_ws/install/roboracer_localization:/home/dev/roboracer_ws/install/roboracer_description:/home/dev/roboracer_ws/install/roboracer_controller:/home/dev/roboracer_ws/install/pure_pursuit:/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/gap_follow:/home/dev/roboracer_ws/install/asio_cmake_module:/home/dev/roboracer_ws/install/ackermann_mux /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/gap_follow

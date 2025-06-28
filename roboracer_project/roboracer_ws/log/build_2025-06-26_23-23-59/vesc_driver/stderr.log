@@ -1,0 +1,7 @@
+[01m[K/home/dev/roboracer_ws/src/vesc/vesc_driver/src/vesc_interface.cpp:45:10:[m[K [01;31m[Kfatal error: [m[Kserial_driver/serial_driver.hpp: No such file or directory
+   45 | #include [01;31m[K"serial_driver/serial_driver.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vesc_driver.dir/build.make:93: CMakeFiles/vesc_driver.dir/src/vesc_interface.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:159: CMakeFiles/vesc_driver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

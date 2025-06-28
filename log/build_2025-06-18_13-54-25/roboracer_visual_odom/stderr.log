@@ -1,0 +1,9 @@
+gmake[2]: *** No rule to make target '/usr/local/ORB_SLAM3/lib/libORB_SLAM3.so', needed by 'visual_odom'. Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/home/loq/roboracer_ws/roboracer_dissertation/roboracer_project/roboracer_ws/src/roboracer_visual_odom/src/visual_odom.cpp:13:10:[m[K [01;31m[Kfatal error: [m[Ksophus/se3.hpp: No such file or directory
+   13 | #include [01;31m[K<sophus/se3.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/visual_odom.dir/build.make:76: CMakeFiles/visual_odom.dir/src/visual_odom.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/visual_odom.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

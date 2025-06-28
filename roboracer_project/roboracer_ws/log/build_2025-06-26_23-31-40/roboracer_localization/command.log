@@ -1,0 +1,4 @@
+Invoking command in '/home/dev/roboracer_ws/build/roboracer_localization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/roboracer_localization -- -j8 -l8
+Invoked command in '/home/dev/roboracer_ws/build/roboracer_localization' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/roboracer_localization -- -j8 -l8
+Invoking command in '/home/dev/roboracer_ws/build/roboracer_localization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/roboracer_localization
+Invoked command in '/home/dev/roboracer_ws/build/roboracer_localization' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/roboracer_localization

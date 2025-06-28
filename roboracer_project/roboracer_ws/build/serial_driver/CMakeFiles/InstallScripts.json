@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/dev/roboracer_ws/build/serial_driver/cmake_install.cmake",
+		"/home/dev/roboracer_ws/build/serial_driver/gtest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

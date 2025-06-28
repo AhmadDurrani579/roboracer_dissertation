@@ -1,0 +1,55 @@
+[0.021s] Invoking command in '/home/dev/roboracer_ws/build/udp_driver': AMENT_PREFIX_PATH=/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/asio_cmake_module:/opt/ros/humble LD_LIBRARY_PATH=/home/dev/roboracer_ws/install/io_context/lib:${LD_LIBRARY_PATH} /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/udp_driver -- -j8 -l8
+[0.175s] [  8%] Built target gtest
+[0.179s] [ 16%] Built target udp_receiver_node_exe
+[0.180s] [ 25%] Built target gtest_main
+[0.183s] [ 33%] Built target udp_sender_node_exe
+[0.197s] [ 45%] Built target udp_driver
+[0.248s] [ 58%] Built target udp_driver_nodes
+[0.310s] [ 66%] Built target udp_bridge_node_exe
+[0.311s] [ 75%] Built target test_udp_socket
+[0.318s] [ 83%] Built target test_udp_data
+[0.323s] [ 91%] Built target test_udp_driver_nodes
+[0.324s] [100%] Built target test_udp_driver
+[0.336s] Invoked command in '/home/dev/roboracer_ws/build/udp_driver' returned '0': AMENT_PREFIX_PATH=/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/asio_cmake_module:/opt/ros/humble LD_LIBRARY_PATH=/home/dev/roboracer_ws/install/io_context/lib:${LD_LIBRARY_PATH} /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/udp_driver -- -j8 -l8
+[0.338s] Invoking command in '/home/dev/roboracer_ws/build/udp_driver': AMENT_PREFIX_PATH=/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/asio_cmake_module:/opt/ros/humble LD_LIBRARY_PATH=/home/dev/roboracer_ws/install/io_context/lib:${LD_LIBRARY_PATH} /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/udp_driver
+[0.421s] -- Install configuration: ""
+[0.421s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/lib/udp_driver/udp_receiver_node_exe
+[0.421s] -- Set non-toolchain portion of runtime path of "/home/dev/roboracer_ws/install/udp_driver/lib/udp_driver/udp_receiver_node_exe" to ""
+[0.422s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/lib/udp_driver/udp_sender_node_exe
+[0.422s] -- Set non-toolchain portion of runtime path of "/home/dev/roboracer_ws/install/udp_driver/lib/udp_driver/udp_sender_node_exe" to ""
+[0.422s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/include
+[0.422s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/include/udp_driver
+[0.422s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/include/udp_driver/visibility_control.hpp
+[0.423s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/include/udp_driver/udp_sender_node.hpp
+[0.423s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/include/udp_driver/udp_socket.hpp
+[0.423s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/include/udp_driver/udp_receiver_node.hpp
+[0.423s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/include/udp_driver/udp_driver.hpp
+[0.424s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/environment/library_path.sh
+[0.424s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/environment/library_path.dsv
+[0.424s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/lib/libudp_driver.so
+[0.426s] -- Set non-toolchain portion of runtime path of "/home/dev/roboracer_ws/install/udp_driver/lib/libudp_driver.so" to ""
+[0.426s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/lib/libudp_driver_nodes.so
+[0.435s] -- Set non-toolchain portion of runtime path of "/home/dev/roboracer_ws/install/udp_driver/lib/libudp_driver_nodes.so" to ""
+[0.435s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/lib/udp_driver/udp_bridge_node_exe
+[0.436s] -- Set non-toolchain portion of runtime path of "/home/dev/roboracer_ws/install/udp_driver/lib/udp_driver/udp_bridge_node_exe" to ""
+[0.436s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/ament_index/resource_index/package_run_dependencies/udp_driver
+[0.436s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/ament_index/resource_index/parent_prefix_path/udp_driver
+[0.437s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/environment/ament_prefix_path.sh
+[0.437s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/environment/ament_prefix_path.dsv
+[0.437s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/environment/path.sh
+[0.437s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/environment/path.dsv
+[0.438s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/local_setup.bash
+[0.438s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/local_setup.sh
+[0.438s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/local_setup.zsh
+[0.438s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/local_setup.dsv
+[0.438s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/package.dsv
+[0.439s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/ament_index/resource_index/packages/udp_driver
+[0.439s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/ament_index/resource_index/rclcpp_components/udp_driver
+[0.439s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.440s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.440s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[0.440s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/cmake/udp_driver-extras.cmake
+[0.440s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/cmake/udp_driverConfig.cmake
+[0.440s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/cmake/udp_driverConfig-version.cmake
+[0.441s] -- Installing: /home/dev/roboracer_ws/install/udp_driver/share/udp_driver/package.xml
+[0.444s] Invoked command in '/home/dev/roboracer_ws/build/udp_driver' returned '0': AMENT_PREFIX_PATH=/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/asio_cmake_module:/opt/ros/humble LD_LIBRARY_PATH=/home/dev/roboracer_ws/install/io_context/lib:${LD_LIBRARY_PATH} /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/udp_driver

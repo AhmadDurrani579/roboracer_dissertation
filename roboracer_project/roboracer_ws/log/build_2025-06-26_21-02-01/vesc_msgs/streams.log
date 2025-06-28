@@ -1,0 +1,13 @@
+[0.038s] Invoking command in '/home/dev/roboracer_ws/build/vesc_msgs': /usr/local/bin/cmake /home/dev/roboracer_ws/src/vesc/vesc_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/vesc_msgs
+[0.322s] -- Configuring incomplete, errors occurred!
+[0.323s] [31mCMake Error at CMakeLists.txt:1 (cmake_minimum_required):
+[0.324s]   Compatibility with CMake < 3.5 has been removed from CMake.
+[0.324s] 
+[0.324s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.324s]   to tell CMake that the project requires at least <min> but has been updated
+[0.325s]   to work with policies introduced by <max> or earlier.
+[0.325s] 
+[0.326s]   Or, add -DCMAKE_POLICY_VERSION_MINIMUM=3.5 to try configuring anyway.
+[0.327s] 
+[0.327s] [0m
+[0.394s] Invoked command in '/home/dev/roboracer_ws/build/vesc_msgs' returned '1': /usr/local/bin/cmake /home/dev/roboracer_ws/src/vesc/vesc_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/vesc_msgs

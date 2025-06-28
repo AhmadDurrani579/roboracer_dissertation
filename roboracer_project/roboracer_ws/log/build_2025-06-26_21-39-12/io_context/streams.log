@@ -1,0 +1,20 @@
+[0.085s] Invoking command in '/home/dev/roboracer_ws/build/io_context': AMENT_PREFIX_PATH=/home/dev/roboracer_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/asio_cmake_module:/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/transport_drivers/io_context -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/io_context
+[0.162s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.472s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.475s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.484s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.495s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.513s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.570s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.572s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.744s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.819s] [31mCMake Error at /usr/local/lib/python3.10/dist-packages/cmake/data/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake:227 (message):
+[0.819s]   Could NOT find ASIO (missing: ASIO_INCLUDE_DIRS)
+[0.820s] Call Stack (most recent call first):
+[0.820s]   /usr/local/lib/python3.10/dist-packages/cmake/data/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake:591 (_FPHSA_FAILURE_MESSAGE)
+[0.820s]   /home/dev/roboracer_ws/install/asio_cmake_module/share/asio_cmake_module/cmake/Modules/FindASIO.cmake:19 (find_package_handle_standard_args)
+[0.820s]   CMakeLists.txt:34 (find_package)
+[0.820s] 
+[0.820s] [0m
+[0.820s] -- Configuring incomplete, errors occurred!
+[0.825s] Invoked command in '/home/dev/roboracer_ws/build/io_context' returned '1': AMENT_PREFIX_PATH=/home/dev/roboracer_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/asio_cmake_module:/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/transport_drivers/io_context -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/io_context

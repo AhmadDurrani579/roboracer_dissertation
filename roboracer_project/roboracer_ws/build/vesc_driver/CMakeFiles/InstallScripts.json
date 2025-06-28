@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/dev/roboracer_ws/build/vesc_driver/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

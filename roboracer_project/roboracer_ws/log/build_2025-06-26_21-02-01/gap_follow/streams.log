@@ -1,0 +1,15 @@
+[0.033s] Invoking command in '/home/dev/roboracer_ws/build/gap_follow': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/gap_follow -- -j8 -l8
+[0.318s] [  0%] Built target ament_cmake_python_copy_gap_follow
+[0.318s] [  0%] Built target ament_cmake_python_copy_gap_follow_setup
+[0.318s] [100%] Built target reactive_node
+[0.397s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.397s]   warnings.warn(
+[0.397s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[0.397s]   warnings.warn(
+[0.416s] running egg_info
+[0.416s] writing gap_follow.egg-info/PKG-INFO
+[0.416s] writing dependency_links to gap_follow.egg-info/dependency_links.txt
+[0.417s] writing top-level names to gap_follow.egg-info/top_level.txt
+[0.434s] reading manifest file 'gap_follow.egg-info/SOURCES.txt'
+[0.434s] writing manifest file 'gap_follow.egg-info/SOURCES.txt'
+[0.484s] [100%] Built target ament_cmake_python_build_gap_follow_egg

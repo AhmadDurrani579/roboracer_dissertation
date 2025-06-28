@@ -1,0 +1,131 @@
+[0.031s] Invoking command in '/home/dev/roboracer_ws/build/ackermann_mux': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/ackermann_mux -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/ackermann_mux
+[0.157s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.157s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.157s]   CMake.
+[0.157s] 
+[0.157s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.157s]   to tell CMake that the project requires at least <min> but has been updated
+[0.157s]   to work with policies introduced by <max> or earlier.
+[0.157s] 
+[0.157s] [0m
+[0.351s] -- The C compiler identification is GNU 11.4.0
+[0.606s] -- The CXX compiler identification is GNU 11.4.0
+[0.606s] -- Detecting C compiler ABI info
+[0.608s] -- Detecting C compiler ABI info - done
+[0.622s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.622s] -- Detecting C compile features
+[0.623s] -- Detecting C compile features - done
+[0.639s] -- Detecting CXX compiler ABI info
+[0.736s] -- Detecting CXX compiler ABI info - done
+[0.759s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.759s] -- Detecting CXX compile features
+[0.760s] -- Detecting CXX compile features - done
+[0.775s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.913s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[1.050s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.152s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.165s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.187s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.221s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.250s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.348s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.358s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.640s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")
+[1.755s] -- Found FastRTPS: /opt/ros/humble/include
+[1.875s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.898s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.003s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.005s] -- Found Threads: TRUE
+[2.134s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/humble/share/ackermann_msgs/cmake)
+[2.186s] -- Found diagnostic_updater: 4.0.6 (/opt/ros/humble/share/diagnostic_updater/cmake)
+[2.258s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.458s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.459s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[2.459s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.459s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.459s]   the cmake_policy command to set the policy and suppress this warning.
+[2.459s] 
+[2.459s] Call Stack (most recent call first):
+[2.459s]   /opt/ros/humble/share/launch_testing_ament_cmake/cmake/launch_testing_ament_cmake-extras.cmake:18 (find_package)
+[2.459s]   /opt/ros/humble/share/launch_testing_ament_cmake/cmake/launch_testing_ament_cmakeConfig.cmake:41 (include)
+[2.459s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:36 (find_package)
+[2.459s]   CMakeLists.txt:61 (ament_lint_auto_find_test_dependencies)
+[2.459s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.460s] [0m
+[2.486s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[2.486s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.486s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.486s]   the cmake_policy command to set the policy and suppress this warning.
+[2.486s] 
+[2.486s] Call Stack (most recent call first):
+[2.486s]   /opt/ros/humble/share/launch_testing_ament_cmake/cmake/launch_testing_ament_cmake-extras.cmake:18 (find_package)
+[2.486s]   /opt/ros/humble/share/launch_testing_ament_cmake/cmake/launch_testing_ament_cmakeConfig.cmake:41 (include)
+[2.486s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:36 (find_package)
+[2.486s]   CMakeLists.txt:61 (ament_lint_auto_find_test_dependencies)
+[2.486s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.486s] [0m
+[2.486s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6")
+[2.496s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5")
+[2.496s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.496s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.496s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.520s] -- Found PythonExtra: .so
+[2.553s] -- Added test 'xmllint' to check XML markup files
+[2.553s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.563s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.564s] -- Configured cppcheck include dirs: /home/dev/roboracer_ws/src/ackermann_mux/include
+[2.564s] -- Configured cppcheck exclude dirs and/or files: 
+[2.572s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.572s] -- Configured cpplint exclude dirs and/or files: 
+[2.573s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.575s] -- Added test 'lint_cmake' to check CMake code style
+[2.577s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.588s] -- Added test 'uncrustify' to check C / C++ code style
+[2.588s] -- Configured uncrustify additional arguments: 
+[2.591s] -- Configuring done (2.4s)
+[2.615s] -- Generating done (0.0s)
+[2.617s] -- Build files have been written to: /home/dev/roboracer_ws/build/ackermann_mux
+[2.632s] Invoked command in '/home/dev/roboracer_ws/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/ackermann_mux -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/ackermann_mux
+[2.634s] Invoking command in '/home/dev/roboracer_ws/build/ackermann_mux': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/ackermann_mux -- -j8 -l8
+[2.746s] [ 50%] [32mBuilding CXX object CMakeFiles/ackermann_mux.dir/src/ackermann_mux_node.cpp.o[0m
+[2.746s] [ 50%] [32mBuilding CXX object CMakeFiles/ackermann_mux.dir/src/ackermann_mux.cpp.o[0m
+[2.747s] [ 75%] [32mBuilding CXX object CMakeFiles/ackermann_mux.dir/src/ackermann_mux_diagnostics.cpp.o[0m
+[12.803s] [100%] [32m[1mLinking CXX executable ackermann_mux[0m
+[13.340s] [100%] Built target ackermann_mux
+[13.345s] Invoked command in '/home/dev/roboracer_ws/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/ackermann_mux -- -j8 -l8
+[13.346s] Invoking command in '/home/dev/roboracer_ws/build/ackermann_mux': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/ackermann_mux
+[13.407s] -- Install configuration: ""
+[13.407s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/lib/ackermann_mux/ackermann_mux
+[13.413s] -- Set non-toolchain portion of runtime path of "/home/dev/roboracer_ws/install/ackermann_mux/lib/ackermann_mux/ackermann_mux" to ""
+[13.413s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/launch
+[13.413s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/launch/ackermann_mux_launch.py
+[13.414s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/config
+[13.414s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/config/ackermann_mux_topics.yaml
+[13.414s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/config/joystick.yaml
+[13.414s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/config/ackermann_mux_locks.yaml
+[13.414s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/include
+[13.414s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/include/ackermann_mux
+[13.414s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/include/ackermann_mux/utils.hpp
+[13.414s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/include/ackermann_mux/params_helpers.hpp
+[13.414s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux_diagnostics.hpp
+[13.414s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux.hpp
+[13.414s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/include/ackermann_mux/topic_handle.hpp
+[13.414s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux_diagnostics_status.hpp
+[13.415s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ament_index/resource_index/package_run_dependencies/ackermann_mux
+[13.415s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ament_index/resource_index/parent_prefix_path/ackermann_mux
+[13.415s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/environment/ament_prefix_path.sh
+[13.415s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/environment/ament_prefix_path.dsv
+[13.416s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/environment/path.sh
+[13.416s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/environment/path.dsv
+[13.416s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/local_setup.bash
+[13.416s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/local_setup.sh
+[13.416s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/local_setup.zsh
+[13.416s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/local_setup.dsv
+[13.417s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/package.dsv
+[13.417s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ament_index/resource_index/packages/ackermann_mux
+[13.417s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/cmake/ament_cmake_export_include_directories-extras.cmake
+[13.417s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/cmake/ament_cmake_export_dependencies-extras.cmake
+[13.417s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/cmake/ackermann_muxConfig.cmake
+[13.417s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/cmake/ackermann_muxConfig-version.cmake
+[13.418s] -- Installing: /home/dev/roboracer_ws/install/ackermann_mux/share/ackermann_mux/package.xml
+[13.420s] Invoked command in '/home/dev/roboracer_ws/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/ackermann_mux

@@ -1,0 +1,30 @@
+[0.031s] Invoking command in '/home/dev/roboracer_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/pure_pursuit -- -j8 -l8
+[0.314s] [ 50%] Built target waypoint_visualizer
+[0.314s] [100%] Built target pure_pursuit
+[0.394s] Invoked command in '/home/dev/roboracer_ws/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/pure_pursuit -- -j8 -l8
+[0.398s] Invoking command in '/home/dev/roboracer_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/pure_pursuit
+[0.526s] -- Install configuration: ""
+[0.528s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/lib/pure_pursuit/pure_pursuit
+[0.529s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/lib/pure_pursuit/waypoint_visualizer
+[0.529s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/launch
+[0.529s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/launch/slam_toolbox.launch.py
+[0.529s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/launch/sim_pure_pursuit.rviz
+[0.529s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/launch/sim_pure_pursuit_launch.py
+[0.529s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/config
+[0.529s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/config/sim_config.yaml
+[0.529s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/config/mapper_params_online_async.yaml
+[0.529s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/share/ament_index/resource_index/package_run_dependencies/pure_pursuit
+[0.530s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/share/ament_index/resource_index/parent_prefix_path/pure_pursuit
+[0.530s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.sh
+[0.530s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.dsv
+[0.530s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/environment/path.sh
+[0.530s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/environment/path.dsv
+[0.530s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/local_setup.bash
+[0.530s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/local_setup.sh
+[0.530s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/local_setup.zsh
+[0.530s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/local_setup.dsv
+[0.530s] -- Installing: /home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/package.dsv
+[0.533s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/share/ament_index/resource_index/packages/pure_pursuit
+[0.533s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig.cmake
+[0.533s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig-version.cmake
+[0.533s] -- Up-to-date: /home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/package.xml

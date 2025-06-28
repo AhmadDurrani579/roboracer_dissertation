@@ -1,0 +1,2 @@
+Invoking command in '/home/dev/roboracer_ws/build/vesc_msgs': /usr/local/bin/cmake /home/dev/roboracer_ws/src/vesc/vesc_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/vesc_msgs
+Invoked command in '/home/dev/roboracer_ws/build/vesc_msgs' returned '1': /usr/local/bin/cmake /home/dev/roboracer_ws/src/vesc/vesc_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/vesc_msgs

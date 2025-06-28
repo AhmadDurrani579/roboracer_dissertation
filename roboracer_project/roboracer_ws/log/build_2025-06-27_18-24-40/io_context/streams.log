@@ -1,0 +1,39 @@
+[0.118s] Invoking command in '/home/dev/roboracer_ws/build/io_context': AMENT_PREFIX_PATH=/home/dev/roboracer_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/asio_cmake_module:/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/io_context -- -j8 -l8
+[0.246s] [ 22%] Built target gtest_main
+[0.251s] [ 44%] Built target gtest
+[0.266s] [ 77%] Built target io_context
+[0.289s] [100%] Built target test_io_context
+[0.789s] Invoked command in '/home/dev/roboracer_ws/build/io_context' returned '0': AMENT_PREFIX_PATH=/home/dev/roboracer_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/asio_cmake_module:/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/io_context -- -j8 -l8
+[0.790s] Invoking command in '/home/dev/roboracer_ws/build/io_context': AMENT_PREFIX_PATH=/home/dev/roboracer_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/asio_cmake_module:/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/io_context
+[0.899s] -- Install configuration: ""
+[0.900s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/include
+[0.900s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/include/msg_converters
+[0.900s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/include/msg_converters/converters.hpp
+[0.902s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/include/msg_converters/std_msgs.hpp
+[0.902s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/include/msg_converters/udp_msgs.hpp
+[0.902s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/include/io_context
+[0.902s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/include/io_context/common.hpp
+[0.902s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/include/io_context/io_context.hpp
+[0.903s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/environment/library_path.sh
+[0.903s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/environment/library_path.dsv
+[0.903s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/lib/libio_context.so
+[0.907s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/ament_index/resource_index/package_run_dependencies/io_context
+[0.907s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/ament_index/resource_index/parent_prefix_path/io_context
+[0.907s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/environment/ament_prefix_path.sh
+[0.908s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/environment/ament_prefix_path.dsv
+[0.908s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/environment/path.sh
+[0.908s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/environment/path.dsv
+[0.908s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/local_setup.bash
+[0.908s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/local_setup.sh
+[0.908s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/local_setup.zsh
+[0.908s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/local_setup.dsv
+[0.908s] -- Installing: /home/dev/roboracer_ws/install/io_context/share/io_context/package.dsv
+[0.908s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/ament_index/resource_index/packages/io_context
+[0.908s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.908s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.908s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/cmake/ament_cmake_export_libraries-extras.cmake
+[0.908s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/cmake/io_context-extras.cmake
+[0.908s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/cmake/io_contextConfig.cmake
+[0.908s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/cmake/io_contextConfig-version.cmake
+[0.908s] -- Up-to-date: /home/dev/roboracer_ws/install/io_context/share/io_context/package.xml
+[0.914s] Invoked command in '/home/dev/roboracer_ws/build/io_context' returned '0': AMENT_PREFIX_PATH=/home/dev/roboracer_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/asio_cmake_module:/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/io_context

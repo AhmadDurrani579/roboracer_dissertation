@@ -1,0 +1,4 @@
+Invoking command in '/home/dev/roboracer_ws/build/asio_cmake_module': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/asio_cmake_module -- -j8 -l8
+Invoked command in '/home/dev/roboracer_ws/build/asio_cmake_module' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/asio_cmake_module -- -j8 -l8
+Invoking command in '/home/dev/roboracer_ws/build/asio_cmake_module': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/asio_cmake_module
+Invoked command in '/home/dev/roboracer_ws/build/asio_cmake_module' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/asio_cmake_module

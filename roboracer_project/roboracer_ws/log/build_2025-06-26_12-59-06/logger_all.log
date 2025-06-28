@@ -1,0 +1,568 @@
+[0.085s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.085s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x78909332c8b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7890932f7f10>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7890932f7f10>>, mixin_verb=('build',))
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.216s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/dev/roboracer_ws'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/gap_follow) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/gap_follow) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/gap_follow) by extension 'ignore_ament_install'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/gap_follow) by extensions ['colcon_pkg']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/gap_follow) by extension 'colcon_pkg'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/gap_follow) by extensions ['colcon_meta']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/gap_follow) by extension 'colcon_meta'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/gap_follow) by extensions ['ros']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/gap_follow) by extension 'ros'
+[0.229s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gap_follow' with type 'ros.ament_cmake' and name 'gap_follow'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extension 'ignore'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extension 'ignore_ament_install'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extensions ['colcon_pkg']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extension 'ros'
+[0.231s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pure_pursuit' with type 'ros.ament_cmake' and name 'pure_pursuit'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_controller) by extension 'ignore'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_controller) by extension 'ignore_ament_install'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_controller) by extensions ['colcon_pkg']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_controller) by extension 'colcon_pkg'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_controller) by extensions ['colcon_meta']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_controller) by extension 'colcon_meta'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_controller) by extensions ['ros']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_controller) by extension 'ros'
+[0.231s] DEBUG:colcon.colcon_core.package_identification:Package 'src/roboracer_controller' with type 'ros.ament_cmake' and name 'roboracer_controller'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_description) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_description) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_description) by extension 'ignore_ament_install'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_description) by extensions ['colcon_pkg']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_description) by extension 'colcon_pkg'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_description) by extensions ['colcon_meta']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_description) by extension 'colcon_meta'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_description) by extensions ['ros']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_description) by extension 'ros'
+[0.233s] DEBUG:colcon.colcon_core.package_identification:Package 'src/roboracer_description' with type 'ros.ament_cmake' and name 'roboracer_description'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_localization) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_localization) by extension 'ignore'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_localization) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_localization) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_localization) by extension 'colcon_pkg'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_localization) by extensions ['colcon_meta']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_localization) by extension 'colcon_meta'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_localization) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_localization) by extension 'ros'
+[0.234s] DEBUG:colcon.colcon_core.package_identification:Package 'src/roboracer_localization' with type 'ros.ament_cmake' and name 'roboracer_localization'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_py) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_py) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_py) by extension 'ignore_ament_install'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_py) by extensions ['colcon_pkg']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_py) by extension 'colcon_pkg'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_py) by extensions ['colcon_meta']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_py) by extension 'colcon_meta'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_py) by extensions ['ros']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_py) by extension 'ros'
+[0.235s] DEBUG:colcon.colcon_core.package_identification:Package 'src/roboracer_py' with type 'ros.ament_python' and name 'roboracer_py'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_visual_odom) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_visual_odom) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_visual_odom) by extension 'ignore_ament_install'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_visual_odom) by extensions ['colcon_pkg']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_visual_odom) by extension 'colcon_pkg'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_visual_odom) by extensions ['colcon_meta']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_visual_odom) by extension 'colcon_meta'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_visual_odom) by extensions ['ros']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_visual_odom) by extension 'ros'
+[0.236s] DEBUG:colcon.colcon_core.package_identification:Package 'src/roboracer_visual_odom' with type 'ros.ament_cmake' and name 'roboracer_visual_odom'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_yolov8_detector) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_yolov8_detector) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_yolov8_detector) by extension 'ignore_ament_install'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_yolov8_detector) by extensions ['colcon_pkg']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_yolov8_detector) by extension 'colcon_pkg'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_yolov8_detector) by extensions ['colcon_meta']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_yolov8_detector) by extension 'colcon_meta'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_yolov8_detector) by extensions ['ros']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboracer_yolov8_detector) by extension 'ros'
+[0.237s] DEBUG:colcon.colcon_core.package_identification:Package 'src/roboracer_yolov8_detector' with type 'ros.ament_python' and name 'roboracer_yolov8_detector'
+[0.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.264s] Level 5:colcon.colcon_core.verb:set package 'gap_follow' build argument 'cmake_args' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'gap_follow' build argument 'cmake_target' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'gap_follow' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'gap_follow' build argument 'cmake_clean_cache' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'gap_follow' build argument 'cmake_clean_first' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'gap_follow' build argument 'cmake_force_configure' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'gap_follow' build argument 'ament_cmake_args' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'gap_follow' build argument 'catkin_cmake_args' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'gap_follow' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.265s] DEBUG:colcon.colcon_core.verb:Building package 'gap_follow' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dev/roboracer_ws/build/gap_follow', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dev/roboracer_ws/install/gap_follow', 'merge_install': False, 'path': '/home/dev/roboracer_ws/src/gap_follow', 'symlink_install': False, 'test_result_base': None}
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'cmake_args' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'cmake_target' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'cmake_clean_cache' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'cmake_clean_first' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'cmake_force_configure' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'ament_cmake_args' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'catkin_cmake_args' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.265s] DEBUG:colcon.colcon_core.verb:Building package 'pure_pursuit' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dev/roboracer_ws/build/pure_pursuit', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dev/roboracer_ws/install/pure_pursuit', 'merge_install': False, 'path': '/home/dev/roboracer_ws/src/pure_pursuit', 'symlink_install': False, 'test_result_base': None}
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'roboracer_controller' build argument 'cmake_args' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'roboracer_controller' build argument 'cmake_target' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'roboracer_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'roboracer_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'roboracer_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'roboracer_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'roboracer_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'roboracer_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'roboracer_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.266s] DEBUG:colcon.colcon_core.verb:Building package 'roboracer_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dev/roboracer_ws/build/roboracer_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dev/roboracer_ws/install/roboracer_controller', 'merge_install': False, 'path': '/home/dev/roboracer_ws/src/roboracer_controller', 'symlink_install': False, 'test_result_base': None}
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'roboracer_description' build argument 'cmake_args' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'roboracer_description' build argument 'cmake_target' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'roboracer_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'roboracer_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'roboracer_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'roboracer_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'roboracer_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'roboracer_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'roboracer_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.266s] DEBUG:colcon.colcon_core.verb:Building package 'roboracer_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dev/roboracer_ws/build/roboracer_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dev/roboracer_ws/install/roboracer_description', 'merge_install': False, 'path': '/home/dev/roboracer_ws/src/roboracer_description', 'symlink_install': False, 'test_result_base': None}
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'roboracer_localization' build argument 'cmake_args' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'roboracer_localization' build argument 'cmake_target' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'roboracer_localization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'roboracer_localization' build argument 'cmake_clean_cache' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'roboracer_localization' build argument 'cmake_clean_first' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'roboracer_localization' build argument 'cmake_force_configure' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'roboracer_localization' build argument 'ament_cmake_args' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'roboracer_localization' build argument 'catkin_cmake_args' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'roboracer_localization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.266s] DEBUG:colcon.colcon_core.verb:Building package 'roboracer_localization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dev/roboracer_ws/build/roboracer_localization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dev/roboracer_ws/install/roboracer_localization', 'merge_install': False, 'path': '/home/dev/roboracer_ws/src/roboracer_localization', 'symlink_install': False, 'test_result_base': None}
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'roboracer_py' build argument 'cmake_args' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'roboracer_py' build argument 'cmake_target' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'roboracer_py' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'roboracer_py' build argument 'cmake_clean_cache' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'roboracer_py' build argument 'cmake_clean_first' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'roboracer_py' build argument 'cmake_force_configure' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'roboracer_py' build argument 'ament_cmake_args' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'roboracer_py' build argument 'catkin_cmake_args' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'roboracer_py' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.267s] DEBUG:colcon.colcon_core.verb:Building package 'roboracer_py' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dev/roboracer_ws/build/roboracer_py', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dev/roboracer_ws/install/roboracer_py', 'merge_install': False, 'path': '/home/dev/roboracer_ws/src/roboracer_py', 'symlink_install': False, 'test_result_base': None}
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'roboracer_visual_odom' build argument 'cmake_args' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'roboracer_visual_odom' build argument 'cmake_target' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'roboracer_visual_odom' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'roboracer_visual_odom' build argument 'cmake_clean_cache' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'roboracer_visual_odom' build argument 'cmake_clean_first' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'roboracer_visual_odom' build argument 'cmake_force_configure' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'roboracer_visual_odom' build argument 'ament_cmake_args' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'roboracer_visual_odom' build argument 'catkin_cmake_args' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'roboracer_visual_odom' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.267s] DEBUG:colcon.colcon_core.verb:Building package 'roboracer_visual_odom' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dev/roboracer_ws/build/roboracer_visual_odom', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dev/roboracer_ws/install/roboracer_visual_odom', 'merge_install': False, 'path': '/home/dev/roboracer_ws/src/roboracer_visual_odom', 'symlink_install': False, 'test_result_base': None}
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'roboracer_yolov8_detector' build argument 'cmake_args' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'roboracer_yolov8_detector' build argument 'cmake_target' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'roboracer_yolov8_detector' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'roboracer_yolov8_detector' build argument 'cmake_clean_cache' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'roboracer_yolov8_detector' build argument 'cmake_clean_first' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'roboracer_yolov8_detector' build argument 'cmake_force_configure' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'roboracer_yolov8_detector' build argument 'ament_cmake_args' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'roboracer_yolov8_detector' build argument 'catkin_cmake_args' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'roboracer_yolov8_detector' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.268s] DEBUG:colcon.colcon_core.verb:Building package 'roboracer_yolov8_detector' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dev/roboracer_ws/build/roboracer_yolov8_detector', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dev/roboracer_ws/install/roboracer_yolov8_detector', 'merge_install': False, 'path': '/home/dev/roboracer_ws/src/roboracer_yolov8_detector', 'symlink_install': False, 'test_result_base': None}
+[0.268s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.269s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.269s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dev/roboracer_ws/src/gap_follow' with build type 'ament_cmake'
+[0.269s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dev/roboracer_ws/src/gap_follow'
+[0.271s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.271s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.271s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.275s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dev/roboracer_ws/src/pure_pursuit' with build type 'ament_cmake'
+[0.275s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dev/roboracer_ws/src/pure_pursuit'
+[0.275s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.275s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.278s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dev/roboracer_ws/src/roboracer_controller' with build type 'ament_cmake'
+[0.278s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dev/roboracer_ws/src/roboracer_controller'
+[0.278s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.278s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.282s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dev/roboracer_ws/src/roboracer_description' with build type 'ament_cmake'
+[0.282s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dev/roboracer_ws/src/roboracer_description'
+[0.282s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.282s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.285s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dev/roboracer_ws/src/roboracer_localization' with build type 'ament_cmake'
+[0.285s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dev/roboracer_ws/src/roboracer_localization'
+[0.285s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.285s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.288s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dev/roboracer_ws/src/roboracer_py' with build type 'ament_python'
+[0.288s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboracer_py', 'ament_prefix_path')
+[0.289s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_py/share/roboracer_py/hook/ament_prefix_path.ps1'
+[0.289s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dev/roboracer_ws/install/roboracer_py/share/roboracer_py/hook/ament_prefix_path.dsv'
+[0.290s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_py/share/roboracer_py/hook/ament_prefix_path.sh'
+[0.290s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.290s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.293s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dev/roboracer_ws/src/roboracer_visual_odom' with build type 'ament_cmake'
+[0.293s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dev/roboracer_ws/src/roboracer_visual_odom'
+[0.293s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.293s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.296s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dev/roboracer_ws/src/roboracer_yolov8_detector' with build type 'ament_python'
+[0.296s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboracer_yolov8_detector', 'ament_prefix_path')
+[0.296s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_yolov8_detector/share/roboracer_yolov8_detector/hook/ament_prefix_path.ps1'
+[0.297s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dev/roboracer_ws/install/roboracer_yolov8_detector/share/roboracer_yolov8_detector/hook/ament_prefix_path.dsv'
+[0.297s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_yolov8_detector/share/roboracer_yolov8_detector/hook/ament_prefix_path.sh'
+[0.298s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.298s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.303s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dev/roboracer_ws/build/gap_follow': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/gap_follow -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/gap_follow
+[0.306s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dev/roboracer_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/pure_pursuit -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/pure_pursuit
+[0.308s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dev/roboracer_ws/build/roboracer_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/roboracer_controller -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/roboracer_controller
+[0.309s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dev/roboracer_ws/build/roboracer_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/roboracer_description -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/roboracer_description
+[0.312s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dev/roboracer_ws/build/roboracer_localization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/roboracer_localization -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/roboracer_localization
+[0.604s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dev/roboracer_ws/src/roboracer_py'
+[0.604s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.604s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.611s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dev/roboracer_ws/build/roboracer_visual_odom': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/roboracer_visual_odom -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/roboracer_visual_odom
+[0.966s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dev/roboracer_ws/src/roboracer_yolov8_detector'
+[0.967s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.967s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.207s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dev/roboracer_ws/build/roboracer_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/roboracer_description -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/roboracer_description
+[1.207s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dev/roboracer_ws/build/roboracer_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/roboracer_description -- -j8 -l8
+[1.328s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dev/roboracer_ws/build/roboracer_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/roboracer_description -- -j8 -l8
+[1.424s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dev/roboracer_ws/build/roboracer_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/roboracer_description
+[1.434s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dev/roboracer_ws/src/roboracer_yolov8_detector': PYTHONPATH=/home/dev/roboracer_ws/build/roboracer_yolov8_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dev/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roboracer_yolov8_detector build --build-base /home/dev/roboracer_ws/build/roboracer_yolov8_detector/build install --record /home/dev/roboracer_ws/build/roboracer_yolov8_detector/install.log --single-version-externally-managed install_data
+[1.466s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dev/roboracer_ws/src/roboracer_py': PYTHONPATH=/home/dev/roboracer_ws/build/roboracer_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dev/roboracer_ws/install/roboracer_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roboracer_py build --build-base /home/dev/roboracer_ws/build/roboracer_py/build install --record /home/dev/roboracer_ws/build/roboracer_py/install.log --single-version-externally-managed install_data
+[1.584s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dev/roboracer_ws/build/roboracer_localization' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/roboracer_localization -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/roboracer_localization
+[1.585s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dev/roboracer_ws/build/roboracer_localization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/roboracer_localization -- -j8 -l8
+[1.837s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_yolov8_detector' for CMake module files
+[1.837s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_yolov8_detector' for CMake config files
+[1.839s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_yolov8_detector/lib'
+[1.839s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_yolov8_detector/bin'
+[1.841s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_yolov8_detector/lib/pkgconfig/roboracer_yolov8_detector.pc'
+[1.842s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages'
+[1.842s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboracer_yolov8_detector', 'pythonpath')
+[1.842s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_yolov8_detector/share/roboracer_yolov8_detector/hook/pythonpath.ps1'
+[1.843s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dev/roboracer_ws/install/roboracer_yolov8_detector/share/roboracer_yolov8_detector/hook/pythonpath.dsv'
+[1.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_yolov8_detector/share/roboracer_yolov8_detector/hook/pythonpath.sh'
+[1.843s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dev/roboracer_ws/src/roboracer_yolov8_detector' returned '0': PYTHONPATH=/home/dev/roboracer_ws/build/roboracer_yolov8_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dev/roboracer_ws/install/roboracer_yolov8_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roboracer_yolov8_detector build --build-base /home/dev/roboracer_ws/build/roboracer_yolov8_detector/build install --record /home/dev/roboracer_ws/build/roboracer_yolov8_detector/install.log --single-version-externally-managed install_data
+[1.845s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_yolov8_detector/bin'
+[1.845s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roboracer_yolov8_detector)
+[1.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_yolov8_detector/share/roboracer_yolov8_detector/package.ps1'
+[1.846s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dev/roboracer_ws/install/roboracer_yolov8_detector/share/roboracer_yolov8_detector/package.dsv'
+[1.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_yolov8_detector/share/roboracer_yolov8_detector/package.sh'
+[1.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_yolov8_detector/share/roboracer_yolov8_detector/package.bash'
+[1.849s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_yolov8_detector/share/roboracer_yolov8_detector/package.zsh'
+[1.850s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dev/roboracer_ws/install/roboracer_yolov8_detector/share/colcon-core/packages/roboracer_yolov8_detector)
+[1.853s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_py' for CMake module files
+[1.856s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dev/roboracer_ws/src/roboracer_py' returned '0': PYTHONPATH=/home/dev/roboracer_ws/build/roboracer_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dev/roboracer_ws/install/roboracer_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roboracer_py build --build-base /home/dev/roboracer_ws/build/roboracer_py/build install --record /home/dev/roboracer_ws/build/roboracer_py/install.log --single-version-externally-managed install_data
+[1.857s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_py' for CMake config files
+[1.858s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_py/lib'
+[1.858s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_py/bin'
+[1.858s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_py/lib/pkgconfig/roboracer_py.pc'
+[1.858s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_py/lib/python3.10/site-packages'
+[1.858s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboracer_py', 'pythonpath')
+[1.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_py/share/roboracer_py/hook/pythonpath.ps1'
+[1.859s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dev/roboracer_ws/install/roboracer_py/share/roboracer_py/hook/pythonpath.dsv'
+[1.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_py/share/roboracer_py/hook/pythonpath.sh'
+[1.860s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_py/bin'
+[1.860s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roboracer_py)
+[1.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_py/share/roboracer_py/package.ps1'
+[1.861s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dev/roboracer_ws/install/roboracer_py/share/roboracer_py/package.dsv'
+[1.863s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_py/share/roboracer_py/package.sh'
+[1.863s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_py/share/roboracer_py/package.bash'
+[1.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_py/share/roboracer_py/package.zsh'
+[1.864s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dev/roboracer_ws/install/roboracer_py/share/colcon-core/packages/roboracer_py)
+[1.869s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dev/roboracer_ws/build/roboracer_localization' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/roboracer_localization -- -j8 -l8
+[1.869s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dev/roboracer_ws/build/roboracer_localization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/roboracer_localization
+[1.970s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roboracer_localization)
+[1.971s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_localization' for CMake module files
+[1.971s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dev/roboracer_ws/build/roboracer_localization' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/roboracer_localization
+[1.972s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_localization' for CMake config files
+[1.972s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboracer_localization', 'cmake_prefix_path')
+[1.973s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_localization/share/roboracer_localization/hook/cmake_prefix_path.ps1'
+[1.973s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dev/roboracer_ws/install/roboracer_localization/share/roboracer_localization/hook/cmake_prefix_path.dsv'
+[1.974s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_localization/share/roboracer_localization/hook/cmake_prefix_path.sh'
+[1.975s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_localization/lib'
+[1.975s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_localization/bin'
+[1.975s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_localization/lib/pkgconfig/roboracer_localization.pc'
+[1.975s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_localization/lib/python3.10/site-packages'
+[1.976s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_localization/bin'
+[1.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_localization/share/roboracer_localization/package.ps1'
+[1.977s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dev/roboracer_ws/install/roboracer_localization/share/roboracer_localization/package.dsv'
+[1.978s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_localization/share/roboracer_localization/package.sh'
+[1.979s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_localization/share/roboracer_localization/package.bash'
+[1.979s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_localization/share/roboracer_localization/package.zsh'
+[1.979s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dev/roboracer_ws/install/roboracer_localization/share/colcon-core/packages/roboracer_localization)
+[1.980s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roboracer_localization)
+[1.980s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_localization' for CMake module files
+[1.980s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_localization' for CMake config files
+[1.981s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboracer_localization', 'cmake_prefix_path')
+[1.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_localization/share/roboracer_localization/hook/cmake_prefix_path.ps1'
+[1.981s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dev/roboracer_ws/install/roboracer_localization/share/roboracer_localization/hook/cmake_prefix_path.dsv'
+[1.982s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_localization/share/roboracer_localization/hook/cmake_prefix_path.sh'
+[1.983s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_localization/lib'
+[1.983s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_localization/bin'
+[1.983s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_localization/lib/pkgconfig/roboracer_localization.pc'
+[1.984s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_localization/lib/python3.10/site-packages'
+[1.984s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_localization/bin'
+[1.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_localization/share/roboracer_localization/package.ps1'
+[1.986s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dev/roboracer_ws/install/roboracer_localization/share/roboracer_localization/package.dsv'
+[1.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_localization/share/roboracer_localization/package.sh'
+[1.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_localization/share/roboracer_localization/package.bash'
+[1.988s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_localization/share/roboracer_localization/package.zsh'
+[1.989s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dev/roboracer_ws/install/roboracer_localization/share/colcon-core/packages/roboracer_localization)
+[2.352s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dev/roboracer_ws/build/gap_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/gap_follow -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/gap_follow
+[2.360s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dev/roboracer_ws/build/gap_follow': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/gap_follow -- -j8 -l8
+[2.432s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dev/roboracer_ws/build/roboracer_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/roboracer_controller -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/roboracer_controller
+[2.435s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dev/roboracer_ws/build/roboracer_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/roboracer_controller -- -j8 -l8
+[2.480s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dev/roboracer_ws/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/pure_pursuit -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/pure_pursuit
+[2.481s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dev/roboracer_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/pure_pursuit -- -j8 -l8
+[2.497s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roboracer_description)
+[2.497s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_description' for CMake module files
+[2.498s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dev/roboracer_ws/build/roboracer_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/roboracer_description
+[2.498s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_description' for CMake config files
+[2.515s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboracer_description', 'cmake_prefix_path')
+[2.516s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_description/share/roboracer_description/hook/cmake_prefix_path.ps1'
+[2.516s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dev/roboracer_ws/install/roboracer_description/share/roboracer_description/hook/cmake_prefix_path.dsv'
+[2.517s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_description/share/roboracer_description/hook/cmake_prefix_path.sh'
+[2.517s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_description/bin'
+[2.517s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_description/lib/pkgconfig/roboracer_description.pc'
+[2.518s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_description/lib/python3.10/site-packages'
+[2.518s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_description/bin'
+[2.518s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_description/share/roboracer_description/package.ps1'
+[2.519s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dev/roboracer_ws/install/roboracer_description/share/roboracer_description/package.dsv'
+[2.519s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_description/share/roboracer_description/package.sh'
+[2.520s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_description/share/roboracer_description/package.bash'
+[2.520s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_description/share/roboracer_description/package.zsh'
+[2.521s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dev/roboracer_ws/install/roboracer_description/share/colcon-core/packages/roboracer_description)
+[2.522s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roboracer_description)
+[2.522s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_description' for CMake module files
+[2.523s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_description' for CMake config files
+[2.537s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboracer_description', 'cmake_prefix_path')
+[2.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_description/share/roboracer_description/hook/cmake_prefix_path.ps1'
+[2.540s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dev/roboracer_ws/install/roboracer_description/share/roboracer_description/hook/cmake_prefix_path.dsv'
+[2.541s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_description/share/roboracer_description/hook/cmake_prefix_path.sh'
+[2.541s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_description/bin'
+[2.541s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_description/lib/pkgconfig/roboracer_description.pc'
+[2.542s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_description/lib/python3.10/site-packages'
+[2.542s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_description/bin'
+[2.542s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_description/share/roboracer_description/package.ps1'
+[2.543s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dev/roboracer_ws/install/roboracer_description/share/roboracer_description/package.dsv'
+[2.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_description/share/roboracer_description/package.sh'
+[2.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_description/share/roboracer_description/package.bash'
+[2.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_description/share/roboracer_description/package.zsh'
+[2.547s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dev/roboracer_ws/install/roboracer_description/share/colcon-core/packages/roboracer_description)
+[2.572s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dev/roboracer_ws/build/roboracer_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/roboracer_controller -- -j8 -l8
+[2.580s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dev/roboracer_ws/build/roboracer_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/roboracer_controller
+[2.700s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roboracer_controller)
+[2.700s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_controller' for CMake module files
+[2.701s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dev/roboracer_ws/build/roboracer_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/roboracer_controller
+[2.702s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_controller' for CMake config files
+[2.702s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboracer_controller', 'cmake_prefix_path')
+[2.702s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/hook/cmake_prefix_path.ps1'
+[2.703s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/hook/cmake_prefix_path.dsv'
+[2.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/hook/cmake_prefix_path.sh'
+[2.704s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_controller/lib'
+[2.704s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_controller/bin'
+[2.704s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_controller/lib/pkgconfig/roboracer_controller.pc'
+[2.704s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_controller/lib/python3.10/site-packages'
+[2.704s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_controller/bin'
+[2.705s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/package.ps1'
+[2.705s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/package.dsv'
+[2.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/package.sh'
+[2.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/package.bash'
+[2.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/package.zsh'
+[2.707s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dev/roboracer_ws/install/roboracer_controller/share/colcon-core/packages/roboracer_controller)
+[2.708s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roboracer_controller)
+[2.708s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_controller' for CMake module files
+[2.708s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_controller' for CMake config files
+[2.709s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboracer_controller', 'cmake_prefix_path')
+[2.709s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/hook/cmake_prefix_path.ps1'
+[2.709s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/hook/cmake_prefix_path.dsv'
+[2.710s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/hook/cmake_prefix_path.sh'
+[2.711s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_controller/lib'
+[2.711s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_controller/bin'
+[2.711s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_controller/lib/pkgconfig/roboracer_controller.pc'
+[2.711s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_controller/lib/python3.10/site-packages'
+[2.712s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_controller/bin'
+[2.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/package.ps1'
+[2.715s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/package.dsv'
+[2.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/package.sh'
+[2.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/package.bash'
+[2.719s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_controller/share/roboracer_controller/package.zsh'
+[2.719s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dev/roboracer_ws/install/roboracer_controller/share/colcon-core/packages/roboracer_controller)
+[5.777s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dev/roboracer_ws/build/gap_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/gap_follow -- -j8 -l8
+[5.779s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dev/roboracer_ws/build/gap_follow': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/gap_follow
+[5.871s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dev/roboracer_ws/build/roboracer_visual_odom' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/dev/roboracer_ws/src/roboracer_visual_odom -DCMAKE_INSTALL_PREFIX=/home/dev/roboracer_ws/install/roboracer_visual_odom
+[5.873s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dev/roboracer_ws/build/roboracer_visual_odom': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/roboracer_visual_odom -- -j8 -l8
+[5.893s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gap_follow)
+[5.894s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/gap_follow' for CMake module files
+[5.894s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dev/roboracer_ws/build/gap_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/gap_follow
+[5.895s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/gap_follow' for CMake config files
+[5.895s] Level 1:colcon.colcon_core.shell:create_environment_hook('gap_follow', 'cmake_prefix_path')
+[5.896s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/gap_follow/share/gap_follow/hook/cmake_prefix_path.ps1'
+[5.897s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dev/roboracer_ws/install/gap_follow/share/gap_follow/hook/cmake_prefix_path.dsv'
+[5.897s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/gap_follow/share/gap_follow/hook/cmake_prefix_path.sh'
+[5.898s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/gap_follow/lib'
+[5.898s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/gap_follow/bin'
+[5.898s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/gap_follow/lib/pkgconfig/gap_follow.pc'
+[5.898s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/gap_follow/lib/python3.10/site-packages'
+[5.898s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/gap_follow/bin'
+[5.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/gap_follow/share/gap_follow/package.ps1'
+[5.899s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dev/roboracer_ws/install/gap_follow/share/gap_follow/package.dsv'
+[5.899s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/gap_follow/share/gap_follow/package.sh'
+[5.899s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/gap_follow/share/gap_follow/package.bash'
+[5.900s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/gap_follow/share/gap_follow/package.zsh'
+[5.900s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dev/roboracer_ws/install/gap_follow/share/colcon-core/packages/gap_follow)
+[5.900s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gap_follow)
+[5.900s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/gap_follow' for CMake module files
+[5.901s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/gap_follow' for CMake config files
+[5.901s] Level 1:colcon.colcon_core.shell:create_environment_hook('gap_follow', 'cmake_prefix_path')
+[5.901s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/gap_follow/share/gap_follow/hook/cmake_prefix_path.ps1'
+[5.902s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dev/roboracer_ws/install/gap_follow/share/gap_follow/hook/cmake_prefix_path.dsv'
+[5.902s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/gap_follow/share/gap_follow/hook/cmake_prefix_path.sh'
+[5.902s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/gap_follow/lib'
+[5.903s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/gap_follow/bin'
+[5.903s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/gap_follow/lib/pkgconfig/gap_follow.pc'
+[5.903s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/gap_follow/lib/python3.10/site-packages'
+[5.903s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/gap_follow/bin'
+[5.903s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/gap_follow/share/gap_follow/package.ps1'
+[5.904s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dev/roboracer_ws/install/gap_follow/share/gap_follow/package.dsv'
+[5.904s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/gap_follow/share/gap_follow/package.sh'
+[5.904s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/gap_follow/share/gap_follow/package.bash'
+[5.905s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/gap_follow/share/gap_follow/package.zsh'
+[5.905s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dev/roboracer_ws/install/gap_follow/share/colcon-core/packages/gap_follow)
+[12.978s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dev/roboracer_ws/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/pure_pursuit -- -j8 -l8
+[12.991s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dev/roboracer_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/pure_pursuit
+[13.086s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pure_pursuit)
+[13.086s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/pure_pursuit' for CMake module files
+[13.086s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dev/roboracer_ws/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/pure_pursuit
+[13.087s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/pure_pursuit' for CMake config files
+[13.087s] Level 1:colcon.colcon_core.shell:create_environment_hook('pure_pursuit', 'cmake_prefix_path')
+[13.087s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/hook/cmake_prefix_path.ps1'
+[13.088s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/hook/cmake_prefix_path.dsv'
+[13.088s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/hook/cmake_prefix_path.sh'
+[13.089s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/pure_pursuit/lib'
+[13.089s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/pure_pursuit/bin'
+[13.089s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/pure_pursuit/lib/pkgconfig/pure_pursuit.pc'
+[13.089s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/pure_pursuit/lib/python3.10/site-packages'
+[13.089s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/pure_pursuit/bin'
+[13.089s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/package.ps1'
+[13.090s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/package.dsv'
+[13.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/package.sh'
+[13.091s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/package.bash'
+[13.091s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/package.zsh'
+[13.091s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dev/roboracer_ws/install/pure_pursuit/share/colcon-core/packages/pure_pursuit)
+[13.092s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pure_pursuit)
+[13.092s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/pure_pursuit' for CMake module files
+[13.093s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/pure_pursuit' for CMake config files
+[13.093s] Level 1:colcon.colcon_core.shell:create_environment_hook('pure_pursuit', 'cmake_prefix_path')
+[13.093s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/hook/cmake_prefix_path.ps1'
+[13.093s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/hook/cmake_prefix_path.dsv'
+[13.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/hook/cmake_prefix_path.sh'
+[13.094s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/pure_pursuit/lib'
+[13.094s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/pure_pursuit/bin'
+[13.094s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/pure_pursuit/lib/pkgconfig/pure_pursuit.pc'
+[13.094s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/pure_pursuit/lib/python3.10/site-packages'
+[13.094s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/pure_pursuit/bin'
+[13.095s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/package.ps1'
+[13.095s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/package.dsv'
+[13.095s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/package.sh'
+[13.096s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/package.bash'
+[13.096s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/pure_pursuit/share/pure_pursuit/package.zsh'
+[13.096s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dev/roboracer_ws/install/pure_pursuit/share/colcon-core/packages/pure_pursuit)
+[29.484s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dev/roboracer_ws/build/roboracer_visual_odom' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/roboracer_visual_odom -- -j8 -l8
+[29.485s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dev/roboracer_ws/build/roboracer_visual_odom': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/roboracer_visual_odom
+[29.560s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roboracer_visual_odom)
+[29.561s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_visual_odom' for CMake module files
+[29.561s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dev/roboracer_ws/build/roboracer_visual_odom' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/roboracer_visual_odom
+[29.561s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_visual_odom' for CMake config files
+[29.562s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboracer_visual_odom', 'cmake_prefix_path')
+[29.562s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/hook/cmake_prefix_path.ps1'
+[29.562s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/hook/cmake_prefix_path.dsv'
+[29.562s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/hook/cmake_prefix_path.sh'
+[29.563s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_visual_odom/lib'
+[29.563s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_visual_odom/bin'
+[29.563s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_visual_odom/lib/pkgconfig/roboracer_visual_odom.pc'
+[29.563s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_visual_odom/lib/python3.10/site-packages'
+[29.563s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_visual_odom/bin'
+[29.564s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/package.ps1'
+[29.564s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/package.dsv'
+[29.564s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/package.sh'
+[29.565s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/package.bash'
+[29.565s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/package.zsh'
+[29.565s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dev/roboracer_ws/install/roboracer_visual_odom/share/colcon-core/packages/roboracer_visual_odom)
+[29.566s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roboracer_visual_odom)
+[29.566s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_visual_odom' for CMake module files
+[29.566s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_visual_odom' for CMake config files
+[29.567s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboracer_visual_odom', 'cmake_prefix_path')
+[29.567s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/hook/cmake_prefix_path.ps1'
+[29.567s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/hook/cmake_prefix_path.dsv'
+[29.567s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/hook/cmake_prefix_path.sh'
+[29.568s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_visual_odom/lib'
+[29.568s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_visual_odom/bin'
+[29.568s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_visual_odom/lib/pkgconfig/roboracer_visual_odom.pc'
+[29.568s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_visual_odom/lib/python3.10/site-packages'
+[29.568s] Level 1:colcon.colcon_core.environment:checking '/home/dev/roboracer_ws/install/roboracer_visual_odom/bin'
+[29.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/package.ps1'
+[29.569s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/package.dsv'
+[29.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/package.sh'
+[29.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/package.bash'
+[29.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/dev/roboracer_ws/install/roboracer_visual_odom/share/roboracer_visual_odom/package.zsh'
+[29.570s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dev/roboracer_ws/install/roboracer_visual_odom/share/colcon-core/packages/roboracer_visual_odom)
+[29.571s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[29.571s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[29.571s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[29.571s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[29.579s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[29.579s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[29.579s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[29.579s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[29.582s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[29.582s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[29.583s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dev/roboracer_ws/install/local_setup.ps1'
+[29.584s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dev/roboracer_ws/install/_local_setup_util_ps1.py'
+[29.586s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dev/roboracer_ws/install/setup.ps1'
+[29.587s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dev/roboracer_ws/install/local_setup.sh'
+[29.588s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dev/roboracer_ws/install/_local_setup_util_sh.py'
+[29.588s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dev/roboracer_ws/install/setup.sh'
+[29.590s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dev/roboracer_ws/install/local_setup.bash'
+[29.591s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dev/roboracer_ws/install/setup.bash'
+[29.591s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dev/roboracer_ws/install/local_setup.zsh'
+[29.592s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dev/roboracer_ws/install/setup.zsh'

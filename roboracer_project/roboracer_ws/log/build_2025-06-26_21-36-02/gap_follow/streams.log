@@ -1,0 +1,46 @@
+[0.031s] Invoking command in '/home/dev/roboracer_ws/build/gap_follow': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/gap_follow -- -j8 -l8
+[0.309s] [  0%] Built target ament_cmake_python_copy_gap_follow_setup
+[0.309s] [  0%] Built target ament_cmake_python_copy_gap_follow
+[0.309s] [100%] Built target reactive_node
+[0.374s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.374s]   warnings.warn(
+[0.375s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[0.375s]   warnings.warn(
+[0.380s] running egg_info
+[0.381s] writing gap_follow.egg-info/PKG-INFO
+[0.383s] writing dependency_links to gap_follow.egg-info/dependency_links.txt
+[0.383s] writing top-level names to gap_follow.egg-info/top_level.txt
+[0.386s] reading manifest file 'gap_follow.egg-info/SOURCES.txt'
+[0.387s] writing manifest file 'gap_follow.egg-info/SOURCES.txt'
+[0.430s] [100%] Built target ament_cmake_python_build_gap_follow_egg
+[0.440s] Invoked command in '/home/dev/roboracer_ws/build/gap_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/gap_follow -- -j8 -l8
+[0.441s] Invoking command in '/home/dev/roboracer_ws/build/gap_follow': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/gap_follow
+[0.611s] -- Install configuration: ""
+[0.613s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/lib/gap_follow/reactive_node
+[0.618s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/environment/pythonpath.sh
+[0.618s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/environment/pythonpath.dsv
+[0.618s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/local/lib/python3.10/dist-packages/gap_follow-0.0.0-py3.10.egg-info
+[0.618s] -- Installing: /home/dev/roboracer_ws/install/gap_follow/local/lib/python3.10/dist-packages/gap_follow-0.0.0-py3.10.egg-info/top_level.txt
+[0.618s] -- Installing: /home/dev/roboracer_ws/install/gap_follow/local/lib/python3.10/dist-packages/gap_follow-0.0.0-py3.10.egg-info/PKG-INFO
+[0.618s] -- Installing: /home/dev/roboracer_ws/install/gap_follow/local/lib/python3.10/dist-packages/gap_follow-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.618s] -- Installing: /home/dev/roboracer_ws/install/gap_follow/local/lib/python3.10/dist-packages/gap_follow-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.618s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/local/lib/python3.10/dist-packages/gap_follow
+[0.619s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/local/lib/python3.10/dist-packages/gap_follow/__init__.py
+[0.660s] Listing '/home/dev/roboracer_ws/install/gap_follow/local/lib/python3.10/dist-packages/gap_follow'...
+[0.661s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/lib/gap_follow/reactive_node.py
+[0.661s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/ament_index/resource_index/package_run_dependencies/gap_follow
+[0.661s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/ament_index/resource_index/parent_prefix_path/gap_follow
+[0.661s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/environment/ament_prefix_path.sh
+[0.661s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/environment/ament_prefix_path.dsv
+[0.661s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/environment/path.sh
+[0.661s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/environment/path.dsv
+[0.661s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/local_setup.bash
+[0.662s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/local_setup.sh
+[0.662s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/local_setup.zsh
+[0.664s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/local_setup.dsv
+[0.672s] -- Installing: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/package.dsv
+[0.672s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/ament_index/resource_index/packages/gap_follow
+[0.672s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/cmake/gap_followConfig.cmake
+[0.672s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/cmake/gap_followConfig-version.cmake
+[0.672s] -- Up-to-date: /home/dev/roboracer_ws/install/gap_follow/share/gap_follow/package.xml
+[0.696s] Invoked command in '/home/dev/roboracer_ws/build/gap_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/gap_follow

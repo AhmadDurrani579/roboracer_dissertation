@@ -1,0 +1,69 @@
+%YAML:1.0
+#--------------------------------------------------------------------------------------------
+# Camera Parameters.
+#--------------------------------------------------------------------------------------------
+# Camera model: "PinHole" corresponds to the "plumb_bob" distortion model.
+Camera.type: "PinHole"
+
+# Camera calibration and distortion parameters (OpenCV format)
+# These values are extracted directly from your /car_1/rgbd_camera/depth/camera_info topic.
+# K matrix: [fx 0 cx; 0 fy cy; 0 0 1]
+Camera.fx: 554.3827056884766
+Camera.fy: 554.3827056884766
+Camera.cx: 320.0
+Camera.cy: 240.0
+
+# Distortion coefficients (D matrix) from your camera_info.
+# Since all values are 0.0, it indicates no distortion or already rectified images.
+Camera.k1: 0.0
+Camera.k2: 0.0
+Camera.p1: 0.0
+Camera.p2: 0.0
+Camera.k3: 0.0 # Include k3 for completeness, even if zero.
+
+# Image dimensions from your camera_info.
+Camera.width: 640
+Camera.height: 480
+
+# Camera frame rate (FPS). This is not directly in camera_info,
+# but 30.0 is a common default. Adjust if your camera operates at a different FPS.
+Camera.fps: 30.0
+
+# For RGB-D, this is the factor by which depth values in the depth image need to be divided to get meters.
+# Your depth image encoding is "32FC1", which means the data is already in meters (float).
+# Therefore, the DepthMapFactor should be 1.0.
+RGBD.DepthMapFactor: 1.0
+
+# This parameter is the maximum allowed depth in meters.
+# Points beyond this distance will not be used by ORB-SLAM3.
+# A common value for indoor/close-range environments. You can adjust based on your needs.
+Stereo.ThDepth: 10.0 # Assuming a max valid range of 10 meters from your previous input.
+
+# Set to 1 if your image is RGB, 0 if BGR.
+# Most ROS camera drivers output RGB.
+Camera.RGB: 1
+
+#--------------------------------------------------------------------------------------------
+# ORB Parameters (Feature extraction settings)
+# These are standard default values. You can tune them for specific environments.
+#--------------------------------------------------------------------------------------------
+ORBextractor.nFeatures: 1000
+ORBextractor.scaleFactor: 1.2
+ORBextractor.nLevels: 8
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters (Settings for the visualization window)
+# These control the appearance of the SLAM visualization.
+#--------------------------------------------------------------------------------------------
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3
+Viewer.ViewpointX: 0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -1.8
+Viewer.ViewpointF: 500

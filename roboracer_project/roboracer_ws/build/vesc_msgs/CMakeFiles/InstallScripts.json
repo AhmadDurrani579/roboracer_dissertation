@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/dev/roboracer_ws/build/vesc_msgs/cmake_install.cmake",
+		"/home/dev/roboracer_ws/build/vesc_msgs/vesc_msgs__py/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

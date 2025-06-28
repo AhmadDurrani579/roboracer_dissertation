@@ -1,0 +1,47 @@
+[0.023s] Invoking command in '/home/dev/roboracer_ws/build/serial_driver': AMENT_PREFIX_PATH=/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/asio_cmake_module:/opt/ros/humble LD_LIBRARY_PATH=/home/dev/roboracer_ws/install/io_context/lib:${LD_LIBRARY_PATH} /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/serial_driver -- -j8 -l8
+[0.228s] [ 20%] Built target serial_driver
+[0.229s] [ 33%] Built target gtest_main
+[0.234s] [ 46%] Built target gtest
+[0.237s] [ 60%] Built target serial_bridge
+[0.283s] [ 73%] Built target test_serial_port
+[0.295s] [ 86%] Built target test_serial_driver
+[0.331s] [100%] Built target serial_driver_nodes
+[0.363s] Invoked command in '/home/dev/roboracer_ws/build/serial_driver' returned '0': AMENT_PREFIX_PATH=/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/asio_cmake_module:/opt/ros/humble LD_LIBRARY_PATH=/home/dev/roboracer_ws/install/io_context/lib:${LD_LIBRARY_PATH} /usr/local/bin/cmake --build /home/dev/roboracer_ws/build/serial_driver -- -j8 -l8
+[0.371s] Invoking command in '/home/dev/roboracer_ws/build/serial_driver': AMENT_PREFIX_PATH=/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/asio_cmake_module:/opt/ros/humble LD_LIBRARY_PATH=/home/dev/roboracer_ws/install/io_context/lib:${LD_LIBRARY_PATH} /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/serial_driver
+[0.480s] -- Install configuration: ""
+[0.481s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/lib/serial_driver/serial_bridge
+[0.482s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/include
+[0.482s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/include/serial_driver
+[0.482s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/include/serial_driver/visibility_control.hpp
+[0.482s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/include/serial_driver/serial_port.hpp
+[0.482s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/include/serial_driver/serial_bridge_node.hpp
+[0.482s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/include/serial_driver/serial_driver.hpp
+[0.482s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/serial_driver/environment/library_path.sh
+[0.482s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/serial_driver/environment/library_path.dsv
+[0.484s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/lib/libserial_driver.so
+[0.488s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/lib/libserial_driver_nodes.so
+[0.488s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/serial_driver/launch
+[0.488s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/serial_driver/launch/serial_driver_bridge_node.launch.py
+[0.488s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/serial_driver/params
+[0.488s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/serial_driver/params/example.params.yaml
+[0.488s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/ament_index/resource_index/package_run_dependencies/serial_driver
+[0.488s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/ament_index/resource_index/parent_prefix_path/serial_driver
+[0.488s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/serial_driver/environment/ament_prefix_path.sh
+[0.489s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/serial_driver/environment/ament_prefix_path.dsv
+[0.490s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/serial_driver/environment/path.sh
+[0.491s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/serial_driver/environment/path.dsv
+[0.491s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/serial_driver/local_setup.bash
+[0.491s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/serial_driver/local_setup.sh
+[0.491s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/serial_driver/local_setup.zsh
+[0.491s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/serial_driver/local_setup.dsv
+[0.491s] -- Installing: /home/dev/roboracer_ws/install/serial_driver/share/serial_driver/package.dsv
+[0.491s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/ament_index/resource_index/packages/serial_driver
+[0.491s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/ament_index/resource_index/rclcpp_components/serial_driver
+[0.492s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/serial_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.492s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/serial_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.492s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/serial_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[0.492s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/serial_driver/cmake/serial_driver-extras.cmake
+[0.492s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/serial_driver/cmake/serial_driverConfig.cmake
+[0.492s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/serial_driver/cmake/serial_driverConfig-version.cmake
+[0.492s] -- Up-to-date: /home/dev/roboracer_ws/install/serial_driver/share/serial_driver/package.xml
+[0.492s] Invoked command in '/home/dev/roboracer_ws/build/serial_driver' returned '0': AMENT_PREFIX_PATH=/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/roboracer_ws/install/io_context:/home/dev/roboracer_ws/install/asio_cmake_module:/opt/ros/humble LD_LIBRARY_PATH=/home/dev/roboracer_ws/install/io_context/lib:${LD_LIBRARY_PATH} /usr/local/bin/cmake --install /home/dev/roboracer_ws/build/serial_driver
