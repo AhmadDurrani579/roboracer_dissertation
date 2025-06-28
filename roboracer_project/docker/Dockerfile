@@ -35,6 +35,32 @@ RUN apt-get update && \
 COPY docker/python-requirements.txt /python-requirements.txt
 RUN pip install --no-cache-dir -r /python-requirements.txt && \
     rm /python-requirements.txt
+    
+    
+RUN apt-get update && apt-get install -y \
+    ros-humble-serial-driver \
+    libasio-dev \
+    ros-humble-udp-msgs && rm -rf /var/lib/apt/lists/*
+
+
+RUN echo "forcing rebuild for urg_node install"
+RUN apt-get update && apt-get install -y ros-humble-urg-node
+
+
+RUN apt-get update && apt-get install -y \
+    ros-humble-joy \
+    ros-humble-joy-teleop \
+    ros-humble-teleop-tools \
+    ros-humble-ackermann-msgs \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+
+RUN apt-get update && \
+    apt-get install -y \
+    ros-humble-realsense2-camera \
+    ros-humble-realsense2-camera-msgs  \
+    && rm -rf /var/lib/apt/lists/*
+
 
 # Copy ros requirements and install them
 COPY docker/ros-requirements.txt /ros-requirements.txt
