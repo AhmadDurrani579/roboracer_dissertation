@@ -12,6 +12,17 @@ The system is designed for **dynamic environments (no hardcoding)** and integrat
 
 # 🎥 Demo Videos
 
+
+
+
+## ⚡ Simulation  (RVIZ + ROS 2)
+👉 https://youtu.be/6xqyErS30Lw  
+- RVIZ motor control integrated with ROS 2  
+- Ackermann steering validated  
+- Real-time robot movement  
+
+---
+
 ## ⚡ Real Hardware (VESC + ROS 2)
 👉 https://youtube.com/shorts/0dPR5gpo4pw  
 
