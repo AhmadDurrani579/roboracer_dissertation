@@ -56,11 +56,11 @@ The system is designed for **dynamic environments (no hardcoding)** and integrat
 
 # 🖼️ Project Visuals
 
-## 🧪 Simulation (Gazebo + RViz)
-![Simulation](media/gazebo.png)
+## 🧪 Simulation (RViz)
+![Simulation](media/part2_perception_p57_0.jpeg)
 
 ## 🔧 Real Robot Setup
-![Robot](media/robot.jpg)
+![Robot](media/part1_vesc_p38_0.jpeg)
 
 ---
 
