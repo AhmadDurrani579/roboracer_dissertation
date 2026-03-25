@@ -1,0 +1,25 @@
+<world name="default">
+  <scene>
+    <ambient>0.5 0.5 0.5 1</ambient>
+    <background>0.8 0.8 0.8 1</background>
+    <shadows>1</shadows>
+  </scene>
+  <model name="my_scene">
+    <static>1</static>
+    <include>
+      <uri>model://barca_track</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+  </model>
+  <model name="some_other_model">
+    <link name="some_link">
+      <visual name="some_visual">
+        <geometry>
+          <mesh>
+            <uri>file:///home/loq/roboracer_ws/src/roboracer_description/meshes/barca_track.DAE</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</world>

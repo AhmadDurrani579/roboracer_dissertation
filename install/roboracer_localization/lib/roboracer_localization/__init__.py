@@ -1,1 +1,0 @@
-/home/loq/roboracer_ws/src/roboracer_localization/src/roboracer_localization/__init__.py

@@ -1,0 +1,35 @@
+name: roboracer_dissertation
+services:
+  roboracer_dissertation:
+    image: roboracer_dissertation:latest
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: roboracer_dissertation
+    network_mode: host
+    working_dir: /home/dev/roboracer_ws
+    restart: "no"
+    stdin_open: true
+    tty: true
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+      - QT_QPA_PLATFORM=xcb
+      - XAUTHORITY=/tmp/.docker.xauth
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /tmp/.docker.xauth:/tmp/.docker.xauth
+      # Workspace
+      - ../roboracer_ws:/home/dev/roboracer_ws:rw
+    devices:
+      - /dev/dri:/dev/dri
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    runtime: nvidia
